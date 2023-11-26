@@ -1,0 +1,33 @@
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "tfc:field_guide": {
+      "viewedEntries": [
+        "tfc:mechanics/mechanical_power",
+        "tfc:mechanics/bellows",
+        "tfc:mechanics/crankshaft",
+        "tfc:getting_started/pottery",
+        "tfc:getting_started/pit_kiln",
+        "tfc:mechanics/charcoal_forge"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "railcraft:guide_book": {
+      "viewedEntries": [
+        "railcraft:track_type/abandoned",
+        "railcraft:track_type/iron"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "ad_astra:astrodux": {
+      "viewedEntries": [
+        "ad_astra:the_first_launch/oxygen"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    }
+  }
+}
