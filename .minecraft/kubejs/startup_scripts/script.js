@@ -121,9 +121,6 @@ e.create('glowstring').displayName('Glow String')
 //Soot
 e.create('soot').displayName('Soot')
 
-//Bauxite Dust
-e.create('bauxitedust').displayName('Bauxite Dust')
-
 //Iron Hook
 e.create('iron_hook').displayName('Metal Hook')
 

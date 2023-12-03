@@ -15,7 +15,7 @@ craftingTable.remove(<item:create:andesite_alloy>);
 <recipetype:create:mixing>.remove(<item:create:andesite_alloy>);
 
 function addTFCPotteryFire(ItemIn as string, ItemOut as string) as void { 
-<recipetype:tfc:heating>.addJsonRecipe("PotteryFire_kiln" + ItemOut, {
+<recipetype:tfc:heating>.addJsonRecipe("pottery_fire_kiln" + ItemOut.replace(":","_"), {
   "type": "tfc:heating",
   "ingredient": {
     "item": ItemIn
@@ -25,7 +25,7 @@ function addTFCPotteryFire(ItemIn as string, ItemOut as string) as void {
   },
   "temperature": 1399
 });
-<recipetype:create_dd:superheating>.addJsonRecipe("PotteryFire_superheating" + ItemOut, {
+<recipetype:create_dd:superheating>.addJsonRecipe("pottery_fire_superheating" + ItemOut.replace(":","_"), {
   "type": "create_dd:superheating",
   "ingredients": [
     {
@@ -38,7 +38,7 @@ function addTFCPotteryFire(ItemIn as string, ItemOut as string) as void {
     }
   ]
 });
-<recipetype:immersiveengineering:alloy>.addJsonRecipe("PotteryFire_alloy" + ItemOut, {
+<recipetype:immersiveengineering:alloy>.addJsonRecipe("pottery_fire_alloy" + ItemOut.replace(":","_"), {
   "type": "immersiveengineering:alloy",
   "input0": {
     "base_ingredient": {
@@ -62,9 +62,35 @@ addTFCPotteryFire("kubejs:unfired_material_engineering_processor_press","kubejs:
 addTFCPotteryFire("kubejs:unfired_material_logic_processor_press","kubejs:fired_material_logic_processor_press");
 addTFCPotteryFire("kubejs:unfired_material_silicon_press","kubejs:fired_material_silicon_press");
 
+
+
+<recipetype:minecraft:smelting>.remove(<item:embers:flat_stamp>);
+<recipetype:minecraft:smelting>.remove(<item:embers:ingot_stamp>);
+<recipetype:minecraft:smelting>.remove(<item:embers:nugget_stamp>);
+<recipetype:minecraft:smelting>.remove(<item:embers:plate_stamp>);
+
+addTFCPotteryFire("embers:raw_flat_stamp","embers:flat_stamp");
+addTFCPotteryFire("embers:raw_ingot_stamp","embers:ingot_stamp");
+addTFCPotteryFire("embers:raw_nugget_stamp","embers:nugget_stamp");
+addTFCPotteryFire("embers:raw_plate_stamp","embers:plate_stamp");
+
+
 //mods.embers.Mixer.add(<liquid:red_alloy>*144, [<liquid:copper>*144,<liquid:redstone>*576]);
 
-
+<recipetype:tfc:glassworking>.addJsonRecipe("vac_tube_glassworking", {
+    "type": "tfc:glassworking",
+    "operations": [
+        "blow",
+        "pinch",
+        "stretch"
+    ],
+    "batch": {
+        "item": "tfc:silica_glass_batch"
+    },
+    "result": {
+        "item": "kubejs:casing_electron_tube"
+    }
+});
 
 <recipetype:create:item_application>.addJsonRecipe("item_application_shaft", {
   "type": "create:item_application",
@@ -85,7 +111,7 @@ addTFCPotteryFire("kubejs:unfired_material_silicon_press","kubejs:fired_material
 );
 
 function addTFCPotteryCompat(ItemIn as string, ItemOut as string) as void { 
-<recipetype:create_dd:superheating>.addJsonRecipe("tfc_pottery_compat_superheat" + ItemOut, {
+<recipetype:create_dd:superheating>.addJsonRecipe("tfc_pottery_compat_superheat" + ItemOut.replace(":","_"),{
   "type": "create_dd:superheating",
   "ingredients": [
     {
@@ -98,7 +124,7 @@ function addTFCPotteryCompat(ItemIn as string, ItemOut as string) as void {
     }
   ]
 });
-<recipetype:immersiveengineering:alloy>.addJsonRecipe("tfc_pottery_compat_alloy" + ItemOut, {
+<recipetype:immersiveengineering:alloy>.addJsonRecipe("tfc_pottery_compat_alloy" + ItemOut.replace(":","_"), {
   "type": "immersiveengineering:alloy",
   "input0": {
     "base_ingredient": {
@@ -136,7 +162,7 @@ addTFCPotteryCompat("tfc:ceramic/unfired_blowpipe","tfc:ceramic_blowpipe");
 addTFCPotteryCompat("tfc:ceramic/unfired_bowl","tfc:ceramic/bowl");
 addTFCPotteryCompat("tfc:ceramic/unfired_brick","minecraft:brick");
 addTFCPotteryCompat("tfc:ceramic/unfired_chisel_head_mold","tfc:ceramic/chisel_head_mold");
-addTFCPotteryCompat("tfc:ceramic/unfired_crucible","tfc:heating/crucible");
+addTFCPotteryCompat("tfc:ceramic/unfired_crucible","tfc:crucible");
 addTFCPotteryCompat("tfc:ceramic/unfired_fire_brick","tfc:ceramic/fire_brick");
 addTFCPotteryCompat("tfc:ceramic/unfired_fire_ingot_mold","tfc:ceramic/fire_ingot_mold");
 addTFCPotteryCompat("tfc:ceramic/unfired_flower_pot","minecraft:flower_pot");

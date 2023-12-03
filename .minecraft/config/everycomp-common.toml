@@ -133,6 +133,10 @@
 			[general.types.leaves_type.deeperdarker]
 				echo = true
 
+			[general.types.leaves_type.naturesaura]
+				ancient = true
+				golden = true
+
 		[general.types.cake]
 
 			[general.types.cake.tfc]

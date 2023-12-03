@@ -9,7 +9,13 @@
         "tfc:mechanics/crankshaft",
         "tfc:getting_started/pottery",
         "tfc:getting_started/pit_kiln",
-        "tfc:mechanics/charcoal_forge"
+        "tfc:mechanics/charcoal_forge",
+        "tfc:mechanics/papermaking",
+        "tfc:mechanics/leather_making",
+        "tfc:mechanics/glassworking",
+        "tfc:mechanics/glassworking_applications",
+        "tfc:mechanics/scribing_table",
+        "tfc:getting_started/firepit"
       ],
       "bookmarks": [],
       "completedManualQuests": []
