@@ -118,9 +118,6 @@ e.create('ironwrenchhead').displayName('Wrought Iron Wrench Head')
 //Glow String
 e.create('glowstring').displayName('Glow String')
 
-//Soot
-e.create('soot').displayName('Soot')
-
 //Iron Hook
 e.create('iron_hook').displayName('Metal Hook')
 
@@ -141,7 +138,7 @@ e.create('fired_material_silicon_press').displayName('Fired Silicon Processor Ca
 StartupEvents.registry('fluid', e => {
 	//red_mud
 	e.create('red_mud')
-		.thinTexture(0xAF5C24)
+		.thickTexture(0xAF5C24)
 		.bucketColor(0xAF5C24)
 		.displayName('Red Mud')
 
@@ -178,23 +175,17 @@ StartupEvents.registry('fluid', e => {
 		.bucketColor(0xCBCDC0)
 		.displayName('Hydrochloric Acid')
 
-	//liquid_grog
-	e.create('liquid_grog')
-		.thinTexture(0x42FF5C)
-		.bucketColor(0x42FF5C)
-		.displayName('Liquid Grog')
-	
-	//kerosene
-	e.create('kerosene')
-		.thinTexture(0x040B6E)
-		.bucketColor(0x040B6E)
-		.displayName('Kerosene')
-
 	//liquidCatalyst
 	e.create('liquidcatalyst')
 		.thinTexture(0xC4C1BC)
 		.bucketColor(0xC4C1BC)
 		.displayName('Liquid Catalyst')
+
+	//MoltenRedAlloy
+	e.create('moltenredalloy')
+		.thickTexture(0xEB8F80)
+		.bucketColor(0xEB8F80)
+		.displayName('Molten Red Alloy')
 
 	//LiquidCarbonSolution
 	e.create('liquid_carbon_solution')

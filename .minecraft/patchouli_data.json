@@ -1,7 +1,37 @@
 {
   "bookGuiScale": 0,
-  "clickedVisualize": false,
+  "clickedVisualize": true,
   "bookData": {
+    "naturesaura:book": {
+      "viewedEntries": [
+        "naturesaura:practices/aura_plants",
+        "naturesaura:intro/intro",
+        "naturesaura:intro/aura",
+        "naturesaura:intro/botany",
+        "naturesaura:practices/gold_trees",
+        "naturesaura:using/dimension_rail",
+        "naturesaura:effects/explosions",
+        "naturesaura:items/eye",
+        "naturesaura:devices/grated_chute"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "bloodmagic:guide": {
+      "viewedEntries": [
+        "bloodmagic:alchemy_array/functional_arrays/time_arrays",
+        "bloodmagic:alchemy_array/functional_arrays/crafting_array",
+        "bloodmagic:dungeons/endless_realm",
+        "bloodmagic:dungeons/keys",
+        "bloodmagic:dungeons/tau_fruit",
+        "bloodmagic:dungeons/demonite",
+        "bloodmagic:dungeons/lobby",
+        "bloodmagic:utility/ore_processing",
+        "bloodmagic:utility/teleposer"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
     "tfc:field_guide": {
       "viewedEntries": [
         "tfc:mechanics/mechanical_power",
@@ -15,7 +45,17 @@
         "tfc:mechanics/glassworking",
         "tfc:mechanics/glassworking_applications",
         "tfc:mechanics/scribing_table",
-        "tfc:getting_started/firepit"
+        "tfc:getting_started/firepit",
+        "tfc:tfc_ie_changes/multiblocks",
+        "tfc:mechanics/composter",
+        "tfc:tfc_ie_changes/ores",
+        "tfc:tfc_ie_changes/alloys",
+        "tfc:tfc_ie_changes/chemicals",
+        "tfc:tfc_ie_changes/blueprint",
+        "tfc:tfc_ie_changes/jute",
+        "tfc:tfc_ie_changes/external_heater",
+        "tfc:firmaciv/navigation",
+        "tfc:mechanics/aqueducts"
       ],
       "bookmarks": [],
       "completedManualQuests": []

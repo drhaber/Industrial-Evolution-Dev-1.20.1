@@ -43,19 +43,11 @@
 				white_cedar = true
 				willow = true
 
-			[general.types.wood_type.forbidden_arcanus]
-				aurum = true
-				edelwood = true
-
 			[general.types.wood_type.create_dd]
 				rose = true
 				smoked = true
 				spirit = true
 				rubber = true
-
-			[general.types.wood_type.nethers_exoticism]
-				jabuticaba = true
-				ramboutan = true
 
 			[general.types.wood_type.aether]
 				skyroot = true
@@ -81,14 +73,7 @@
 				strophar = true
 				glacian = true
 
-			[general.types.wood_type.deeperdarker]
-				echo = true
-
 		[general.types.leaves_type]
-
-			[general.types.leaves_type.forbidden_arcanus]
-				aurum = true
-				nuggety_aurum = true
 
 			[general.types.leaves_type.create_dd]
 				rubber = true
@@ -105,9 +90,6 @@
 				transformation = true
 				mining = true
 				sorting = true
-
-			[general.types.leaves_type.nethers_exoticism]
-				jaboticaba = true
 
 			[general.types.leaves_type.aether]
 				skyroot = true
@@ -129,13 +111,6 @@
 
 			[general.types.leaves_type.ad_astra]
 				glacian = true
-
-			[general.types.leaves_type.deeperdarker]
-				echo = true
-
-			[general.types.leaves_type.naturesaura]
-				ancient = true
-				golden = true
 
 		[general.types.cake]
 

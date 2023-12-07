@@ -14,6 +14,8 @@ craftingTable.addShapeless("andesite_alloy_lump_zinc", <item:kubejs:andesite_all
 craftingTable.remove(<item:create:andesite_alloy>);
 <recipetype:create:mixing>.remove(<item:create:andesite_alloy>);
 
+craftingTable.addShapeless("archaic_lump", <item:kubejs:unfired_archaic_lump> * 4, [<item:tfc:fire_clay_block>,<item:minecraft:soul_sand>,<item:tfc:powder/graphite>]);
+
 function addTFCPotteryFire(ItemIn as string, ItemOut as string) as void { 
 <recipetype:tfc:heating>.addJsonRecipe("pottery_fire_kiln" + ItemOut.replace(":","_"), {
   "type": "tfc:heating",
@@ -62,7 +64,8 @@ addTFCPotteryFire("kubejs:unfired_material_engineering_processor_press","kubejs:
 addTFCPotteryFire("kubejs:unfired_material_logic_processor_press","kubejs:fired_material_logic_processor_press");
 addTFCPotteryFire("kubejs:unfired_material_silicon_press","kubejs:fired_material_silicon_press");
 
-
+addTFCPotteryFire("kubejs:unfired_archaic_lump","embers:archaic_brick");
+addTFCPotteryFire("embers:caminite_blend","embers:caminite_brick");
 
 <recipetype:minecraft:smelting>.remove(<item:embers:flat_stamp>);
 <recipetype:minecraft:smelting>.remove(<item:embers:ingot_stamp>);

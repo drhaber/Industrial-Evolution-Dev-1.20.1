@@ -8,13 +8,18 @@ import crafttweaker.api.util.random.Percentaged;
 import crafttweaker.api.fluid.IFluidStack;
 import crafttweaker.api.tag.manager.ITagManager;
 import crafttweaker.api.bracket.BracketHandlers;
+import mods.jeitweaker.Jei;
+
+<recipetype:jumbofurnace:jumbo_smelting>.removeAll();
+Jei.hideCategory(<resource:jumbofurnace:jumbo_smelting>);
+Jei.hideCategory(<resource:jumbofurnace:jumbo_furnace_upgrade>);
 
 <recipetype:embers:stamping>.removeAll();
 <recipetype:immersiveengineering:alloy>.removeAll();
 <recipetype:embers:mixing>.removeAll();
 <recipetype:railcraft:blasting>.removeAll();
-<recipetype:jumbofurnace:jumbo_smelting>.removeAll();
 <recipetype:minecraft:campfire_cooking>.removeAll();
+<recipetype:minecraft:smoking>.removeAll();
 <recipetype:immersiveengineering:blast_furnace>.removeAll();
 <recipetype:immersiveengineering:blast_furnace_fuel>.removeAll();
 <recipetype:minecraft:crafting>.remove(<tag:items:forge:dusts>);
@@ -26,6 +31,9 @@ import crafttweaker.api.bracket.BracketHandlers;
 <recipetype:minecraft:smelting>.remove(<tag:items:tfc:colored_glazed_terracotta>);
 <recipetype:create:splashing>.remove(<tag:items:forge:nuggets>);
 <recipetype:create_dd:superheating>.remove(<tag:items:forge:ingots>);
+
+<recipetype:railcraft:coking>.removeAll();
+<recipetype:tfmg:coking>.removeAll();
 
 <recipetype:pneumaticcraft:explosion_crafting>.removeAll();
 
@@ -39,17 +47,19 @@ import crafttweaker.api.bracket.BracketHandlers;
 <recipetype:create:cutting>.remove(<item:tfc:refined_iron_bloom>);
 <recipetype:embers:melting>.removeByName("embers:melting/ingots/iron");
 
+
 craftingTable.removeByName("railcraft:bronze_ingot_crafted_with_ingots");
 craftingTable.removeByName("railcraft:bronze_ingot_from_bronze_nugget");
 craftingTable.removeByName("railcraft:bronze_ingot");
-craftingTable.removeByName("railcraft:bronze_block_from_bronze_ingot");
+//craftingTable.removeByName("railcraft:bronze_block_from_bronze_ingot");
 craftingTable.removeByName("railcraft:brass_ingot_crafted_with_ingots");
 //craftingTable.removeByName("railcraft:brass_ingot_from_brass_nugget");
 craftingTable.removeByName("railcraft:brass_ingot");
-craftingTable.removeByName("railcraft:brass_block_from_brass_ingot");
+//craftingTable.removeByName("railcraft:brass_block_from_brass_ingot");
 //craftingTable.removeByName("railcraft:zinc_ingot_from_zinc_nugget");
 craftingTable.removeByName("railcraft:zinc_ingot");
-craftingTable.removeByName("railcraft:zinc_block_from_zinc_ingot");
+//craftingTable.removeByName("railcraft:zinc_block_from_zinc_ingot");
+
 
 //Ingots
 var tfcMetals = ["bismuth","bismuth_bronze","black_bronze","black_steel","blue_steel","brass","bronze","cast_iron","copper","gold","high_carbon_black_steel","high_carbon_blue_steel","high_carbon_red_steel","high_carbon_steel","nickel","pig_iron","red_steel","rose_gold","silver","steel","sterling_silver","tin","unknown","weak_blue_steel","weak_red_steel","weak_steel","wrought_iron","zinc"];
@@ -452,6 +462,27 @@ function addEmbers2MixingnonTFC(fluidOut as string, qtyU as int, fluidIn1 as str
 
 addEmbers2MixingnonTFC("embers:molten_dawnstone", 10, "tfc:metal/gold", 5,"tfc:metal/copper", 5);
 addEmbersStamping(<fluid:embers:molten_dawnstone>,<item:embers:dawnstone_ingot>,<item:tfc:ceramic/fire_ingot_mold>);
+
+
+
+<recipetype:pneumaticcraft:heat_frame_cooling>.addJsonRecipe("molten_slag_hardening", {
+  "type": "pneumaticcraft:heat_frame_cooling",
+  "bonus_output": {
+    "limit": 0.5,
+    "multiplier": 0.025
+  },
+  "input": {
+    "type": "pneumaticcraft:fluid",
+    "amount": 1000,
+    "fluid": "tfmg:molten_slag"
+  },
+  "max_temp": 273,
+  "result": {
+    "item": "immersiveengineering:slag_glass"
+  }
+});
+
+
 /*
 
 //Liquid Catalyst
