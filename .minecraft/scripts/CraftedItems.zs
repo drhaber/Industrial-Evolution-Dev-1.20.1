@@ -17,6 +17,12 @@ craftingTable.addShaped("handcrafted_create_belt_leather", <item:create:belt_con
 [<tag:items:tfc:chains>,<tag:items:tfc:chains>,<tag:items:tfc:chains>],
 [<item:minecraft:leather>,<item:minecraft:leather>,<item:minecraft:leather>]]);
 
+craftingTable.remove(<item:minecraft:torch>);
+craftingTable.addShaped("handcrafted_everlasting_torch", <item:minecraft:torch>,
+[[<item:embers:ember_crystal>],
+[<tag:items:forge:rods/wooden>]]);
+
+
 <recipetype:createaddition:rolling>.addJsonRecipe("rolled_create_belt_rubber", {
 	"type":"createaddition:rolling",
 	"input": {
