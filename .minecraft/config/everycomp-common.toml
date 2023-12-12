@@ -112,15 +112,6 @@
 			[general.types.leaves_type.ad_astra]
 				glacian = true
 
-		[general.types.cake]
-
-			[general.types.cake.tfc]
-				cake = true
-
-			[general.types.cake.createaddition]
-				chocolate_cake = true
-				honey_cake = true
-
 	[general.entries]
 
 		[general.entries.wood_type]

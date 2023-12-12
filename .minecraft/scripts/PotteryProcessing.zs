@@ -71,12 +71,13 @@ addTFCPotteryFire("embers:caminite_blend","embers:caminite_brick");
 <recipetype:minecraft:smelting>.remove(<item:embers:ingot_stamp>);
 <recipetype:minecraft:smelting>.remove(<item:embers:nugget_stamp>);
 <recipetype:minecraft:smelting>.remove(<item:embers:plate_stamp>);
+<recipetype:minecraft:smelting>.remove(<item:embers:caminite_plate>);
 
 addTFCPotteryFire("embers:raw_flat_stamp","embers:flat_stamp");
 addTFCPotteryFire("embers:raw_ingot_stamp","embers:ingot_stamp");
 addTFCPotteryFire("embers:raw_nugget_stamp","embers:nugget_stamp");
 addTFCPotteryFire("embers:raw_plate_stamp","embers:plate_stamp");
-
+addTFCPotteryFire("embers:raw_caminite_plate","embers:caminite_plate");
 
 //mods.embers.Mixer.add(<liquid:red_alloy>*144, [<liquid:copper>*144,<liquid:redstone>*576]);
 
@@ -205,3 +206,62 @@ addTFCPotteryCompat("tfc:ceramic/unfired_sword_blade_mold","tfc:ceramic/sword_bl
 addTFCPotteryCompat("tfc:ceramic/unfired_vessel","tfc:ceramic/vessel");
 addTFCPotteryCompat("tfc:ceramic/white_unfired_vessel","tfc:ceramic/white_glazed_vessel");
 addTFCPotteryCompat("tfc:ceramic/yellow_unfired_vessel","tfc:ceramic/yellow_glazed_vessel");
+
+
+function addCaminiteKnapping(Row1 as string, Row2 as string, Row3 as string, Row4 as string, Row5 as string, ItemOut as string) as void { 
+craftingTable.remove(<item:${ItemOut}>);
+<recipetype:tfc:knapping>.addJsonRecipe("caminite_knapping_" + ItemOut.replace(":","_"), {
+    "type": "tfc:knapping",
+    "knapping_type": "kubejs:caminite",
+    "pattern": [
+        Row1,
+        Row2,
+        Row3,
+        Row4,
+        Row5,
+      ],
+    "result": {
+        "item": ItemOut
+    }
+});
+}
+addCaminiteKnapping(
+        "     ",
+        " XXX ",
+        " XXX ",
+        " XXX ",
+        "     ",
+"embers:raw_flat_stamp");
+
+addCaminiteKnapping(
+        "XXXXX",
+        "X  XX",
+        "X  XX",
+        "X  XX",
+        "XXXXX",
+"embers:raw_ingot_stamp");
+
+addCaminiteKnapping(
+        "XXX X",
+        "XX  X",
+        "X   X",
+        "XX XX",
+        "XXXXX",
+"embers:raw_nugget_stamp");
+
+addCaminiteKnapping(
+        "XXXXX",
+        "X   X",
+        "X   X",
+        "X   X",
+        "XXXXX",
+"embers:raw_plate_stamp");
+
+addCaminiteKnapping(
+        "  XX ",
+        " XXXX",
+        "XXXXX",
+        "XXXX ",
+        " XX  ",
+"embers:raw_caminite_plate");
+

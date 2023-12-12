@@ -55,7 +55,8 @@
         "tfc:tfc_ie_changes/jute",
         "tfc:tfc_ie_changes/external_heater",
         "tfc:firmaciv/navigation",
-        "tfc:mechanics/aqueducts"
+        "tfc:mechanics/aqueducts",
+        "tfc:firmalife/oven_appliances"
       ],
       "bookmarks": [],
       "completedManualQuests": []
@@ -63,7 +64,42 @@
     "railcraft:guide_book": {
       "viewedEntries": [
         "railcraft:track_type/abandoned",
-        "railcraft:track_type/iron"
+        "railcraft:track_type/iron",
+        "railcraft:tools/charge_meter",
+        "railcraft:tracks/locking_track",
+        "railcraft:tools/signal_block_surveyor",
+        "railcraft:multiblock/steam_turbine",
+        "railcraft:tracks/control_track",
+        "railcraft:track_type/strap_iron",
+        "railcraft:multiblock/blast_furnace",
+        "railcraft:signal_boxes/signal_capacitor_box",
+        "railcraft:multiblock/iron_tank",
+        "railcraft:track_type/high_speed",
+        "railcraft:tracks/coupler_track",
+        "railcraft:multiblock/steam_boiler",
+        "railcraft:tracks/gated_track",
+        "railcraft:tracks/high_speed_booster_track",
+        "railcraft:tools/whistle_tuner",
+        "railcraft:tracks/buffer_stop_track",
+        "railcraft:multiblock/water_tank",
+        "railcraft:tools/goggles",
+        "railcraft:signal_boxes/signal_controller_box",
+        "railcraft:tools/overalls",
+        "railcraft:tools/crowbar",
+        "railcraft:multiblock/coke_oven",
+        "railcraft:tracks/launch_track",
+        "railcraft:track_type/reinforced",
+        "railcraft:signal_boxes/signal_block_relay_box",
+        "railcraft:tracks/turnout_track",
+        "railcraft:signal_boxes/signal_receiver_box",
+        "railcraft:tools/signal_tuner",
+        "railcraft:tracks/high_speed_transition_track",
+        "railcraft:multiblock/steam_oven",
+        "railcraft:tracks/elevator_track",
+        "railcraft:signal_boxes/analog_signal_controller_box",
+        "railcraft:tracks/one_way_track",
+        "railcraft:multiblock/crusher",
+        "railcraft:tracks/wye_track"
       ],
       "bookmarks": [],
       "completedManualQuests": []

@@ -6,7 +6,7 @@
 	ignoreExperimentalWorldGenWarning = true
 	#
 	# Enables a series of additional debugging tooltips, displayed information, and logging.
-	enableDebug = false
+	enableDebug = true
 
 [display]
 	#
