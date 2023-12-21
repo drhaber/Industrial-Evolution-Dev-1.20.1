@@ -112,6 +112,10 @@
 			[general.types.leaves_type.ad_astra]
 				glacian = true
 
+			[general.types.leaves_type.naturesaura]
+				ancient = true
+				golden = true
+
 	[general.entries]
 
 		[general.entries.wood_type]

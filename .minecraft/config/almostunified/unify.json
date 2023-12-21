@@ -1,14 +1,14 @@
 {
   "modPriorities": [
-	"tfc",
+    "tfc",
     "minecraft",
     "kubejs",
     "crafttweaker",
+    "immersiveengineering",    
     "create",
     "thermal",
-    "immersiveengineering",
-	  "JAOPCA",
-	  "create_dd",
+    "JAOPCA",
+    "create_dd",
     "mekanism"
   ],
   "stoneStrata": [
@@ -79,8 +79,7 @@
     "tungsten",
     "uranium",
     "zinc",
-	  "strong_bronze",
-	  "cast_iron"
+    "cast_iron"
   ],
   "priorityOverrides": {},
   "customTags": {},

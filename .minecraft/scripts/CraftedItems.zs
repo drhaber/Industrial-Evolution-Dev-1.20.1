@@ -10,6 +10,8 @@ import crafttweaker.api.tag.manager.ITagManager;
 
 
 craftingTable.remove(<item:productivebees:centrifuge>);
+craftingTable.remove(<item:minecraft:paper>);
+<recipetype:create:pressing>.remove(<item:minecraft:paper>);
 
 craftingTable.remove(<item:create:belt_connector>);
 craftingTable.addShaped("handcrafted_create_belt_leather", <item:create:belt_connector>*8,

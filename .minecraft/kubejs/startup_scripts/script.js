@@ -1,7 +1,5 @@
 // priority: 0
 
-console.info('Hello, World! (You will only see this line once in console, during startup)')
-
 StartupEvents.registry('item', e => {
 
 //iron_chloride
@@ -205,3 +203,17 @@ StartupEvents.registry('fluid', e => {
 		.bucketColor(0x5C2F07)
 		.displayName('Waste')
 })
+/*
+CapabilityEvents.blockEntity((event) => {
+	event.attach("embers:hearth_coil",
+	IHeatBlock.setTemperature(2000))
+});
+
+CapabilityEvents.blockEntity(event => {
+	event.attach("embers:hearth_coil",
+	HeatCapability.BLOCK_CAPABILITY.IHeatBlock.setTemperature(2000))})
+
+CapabilityEvents.blockEntity(event => {
+	event.attach("botania:blaze_block", 
+	HeatCapability.BLOCK_CAPABILITY.IHeatBlock.setTemperature(2000))})	
+*/	

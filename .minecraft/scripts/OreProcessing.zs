@@ -23,6 +23,7 @@ Jei.hideCategory(<resource:jumbofurnace:jumbo_furnace_upgrade>);
 <recipetype:immersiveengineering:blast_furnace>.removeAll();
 <recipetype:immersiveengineering:blast_furnace_fuel>.removeAll();
 <recipetype:minecraft:crafting>.remove(<tag:items:forge:dusts>);
+<recipetype:minecraft:crafting>.remove(<tag:items:forge:plates>);
 <recipetype:minecraft:smelting>.remove(<tag:items:forge:ingots>);
 <recipetype:minecraft:blasting>.remove(<tag:items:forge:ingots>);
 <recipetype:minecraft:smelting>.remove(<tag:items:forge:glass>);
@@ -34,6 +35,7 @@ Jei.hideCategory(<resource:jumbofurnace:jumbo_furnace_upgrade>);
 
 <recipetype:railcraft:coking>.removeAll();
 <recipetype:tfmg:coking>.removeAll();
+<recipetype:createbigcannons:melting>.removeAll();
 
 <recipetype:pneumaticcraft:explosion_crafting>.removeAll();
 
@@ -219,6 +221,24 @@ function addcreatemelting(fluidOut as string, ItemIn as string, Qty0 as int) as 
 }
 );
 }
+function addBigCannonmelting(fluidOut as string, ItemIn as string, Qty0 as int) as void { 
+<recipetype:createbigcannons:melting>.addJsonRecipe("bigcannon_ore_melting_" + ItemIn.replace(":","_") + fluidOut.replace(":","_"), {
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item": ItemIn
+    }
+  ],
+  "processingTime": 180,
+  "results": [
+    {
+      "amount": Qty0,
+      "fluid": fluidOut
+    }
+  ]
+}
+);
+}
 
 function addarcfurnacesmelting(ItemOut as string, ItemIn as string, QtyI as int) as void { 
 <recipetype:immersiveengineering:arc_furnace>.addJsonRecipe("arc_furnace_smelting" + ItemIn.replace(":","_") + ItemOut.replace(":","_"), {
@@ -241,45 +261,16 @@ function addarcfurnacesmelting(ItemOut as string, ItemIn as string, QtyI as int)
 );
 }
 
-/*
-addEmbersmelting("tfc:metal/copper","tfc:ore/small_native_copper");
-addEmbersmelting("tfc:metal/gold","tfc:ore/small_native_gold");
-addEmbersmelting("tfc:metal/cast_iron","tfc:ore/small_hematite");
-addEmbersmelting("tfc:metal/silver","tfc:ore/small_native_silver");
-addEmbersmelting("tfc:metal/tin","tfc:ore/small_cassiterite");
-addEmbersmelting("tfc:metal/bismuth","tfc:ore/small_bismuthinite");
-addEmbersmelting("tfc:metal/nickel","tfc:ore/small_garnierite");
-addEmbersmelting("tfc:metal/copper","tfc:ore/small_malachite");
-addEmbersmelting("tfc:metal/cast_iron","tfc:ore/small_magnetite");
-addEmbersmelting("tfc:metal/cast_iron","tfc:ore/small_limonite");
-addEmbersmelting("tfc:metal/zinc","tfc:ore/small_sphalerite");
-addEmbersmelting("tfc:metal/copper","tfc:ore/small_tetrahedrite");
-*/
-//addEmbersmelting("tfc:metal/cast_iron","create:crushed_raw_iron",5);
-addEmbersmelting("tfc:metal/gold","create:crushed_raw_gold",5);
-addEmbersmelting("tfc:metal/copper","create:crushed_raw_copper",5);
-addEmbersmelting("tfc:metal/zinc","create:crushed_raw_zinc",5);
-addEmbersmelting("tfc:metal/silver","create:crushed_raw_silver",5);
-addEmbersmelting("tfc:metal/tin","create:crushed_raw_tin",5);
-addEmbersmelting("tfc_ie_addon:metal/lead","create:crushed_raw_lead",5);
-addEmbersmelting("tfc_ie_addon:metal/aluminum","create:crushed_raw_aluminum",5);
-addEmbersmelting("tfc_ie_addon:metal/uranium","create:crushed_raw_uranium",5);
-addEmbersmelting("tfc:metal/nickel","create:crushed_raw_nickel",5);
-
-addEmbersmelting("tfc:metal/bismuth","tfc:ore/small_bismuthinite",10);
-
-addcreatemelting("tfc:metal/cast_iron","create:crushed_raw_iron",5);
-addcreatemelting("tfc:metal/gold","create:crushed_raw_gold",5);
-addcreatemelting("tfc:metal/copper","create:crushed_raw_copper",5);
-addcreatemelting("tfc:metal/zinc","create:crushed_raw_zinc",5);
-addcreatemelting("tfc:metal/silver","create:crushed_raw_silver",5);
-addcreatemelting("tfc:metal/tin","create:crushed_raw_tin",5);
-addcreatemelting("tfc_ie_addon:metal/lead","create:crushed_raw_lead",5);
-addcreatemelting("tfc_ie_addon:metal/aluminum","create:crushed_raw_aluminum",5);
-addcreatemelting("tfc_ie_addon:metal/uranium","create:crushed_raw_uranium",5);
-addcreatemelting("tfc:metal/nickel","create:crushed_raw_nickel",5);
-
-//addcreatemelting("tfc:metal/bismuth","tfc:ore/small_bismuthinite",10);
+<item:create:crushed_raw_iron>.addTooltip("Melts into 5 mB Cast Iron");
+<item:create:crushed_raw_gold>.addTooltip("Melts into 5 mB Gold");
+<item:create:crushed_raw_copper>.addTooltip("Melts into 5 mB Copper");
+<item:create:crushed_raw_zinc>.addTooltip("Melts into 5 mB Zinc");
+<item:create:crushed_raw_silver>.addTooltip("Melts into 5 mB Silver");
+<item:create:crushed_raw_tin>.addTooltip("Melts into 5 mB Tin");
+<item:create:crushed_raw_lead>.addTooltip("Melts into 5 mB Lead");
+<item:create:crushed_raw_aluminum>.addTooltip("Melts into 5 mB Aluminum");
+<item:create:crushed_raw_uranium>.addTooltip("Melts into 5 mB Uranium");
+<item:create:crushed_raw_nickel>.addTooltip("Melts into 5 mB Nickel");
 
 addarcfurnacesmelting("tfc:metal/ingot/cast_iron","create:crushed_raw_iron",20);
 addarcfurnacesmelting("tfc:metal/ingot/gold","create:crushed_raw_gold",20);
@@ -293,6 +284,131 @@ addarcfurnacesmelting("immersiveengineering:ingot_uranium","create:crushed_raw_u
 addarcfurnacesmelting("tfc:metal/ingot/nickel","create:crushed_raw_nickel",20);
 
 addarcfurnacesmelting("tfc:metal/ingot/bismuth","tfc:ore/small_bismuthinite",10);
+                      //==================================================
+addBigCannonmelting("tfc:metal/cast_iron","create:crushed_raw_iron",5);
+addBigCannonmelting("tfc:metal/gold","create:crushed_raw_gold",5);
+addBigCannonmelting("tfc:metal/copper","create:crushed_raw_copper",5);
+addBigCannonmelting("tfc:metal/zinc","create:crushed_raw_zinc",5);
+addBigCannonmelting("tfc:metal/silver","create:crushed_raw_silver",5);
+addBigCannonmelting("tfc:metal/tin","create:crushed_raw_tin",5);
+addBigCannonmelting("tfc_ie_addon:metal/lead","create:crushed_raw_lead",5);
+addBigCannonmelting("tfc_ie_addon:metal/aluminum","create:crushed_raw_aluminum",5);
+addBigCannonmelting("tfc_ie_addon:metal/uranium","create:crushed_raw_uranium",5);
+addBigCannonmelting("tfc:metal/nickel","create:crushed_raw_nickel",5);
+
+addBigCannonmelting("tfc:metal/copper","tfc:ore/small_native_copper",10);
+addBigCannonmelting("tfc:metal/gold","tfc:ore/small_native_gold",10);
+addBigCannonmelting("tfc:metal/cast_iron","tfc:ore/small_hematite",10);
+addBigCannonmelting("tfc:metal/silver","tfc:ore/small_native_silver",10);
+addBigCannonmelting("tfc:metal/tin","tfc:ore/small_cassiterite",10);
+addBigCannonmelting("tfc:metal/bismuth","tfc:ore/small_bismuthinite",10);
+addBigCannonmelting("tfc:metal/nickel","tfc:ore/small_garnierite",10);
+addBigCannonmelting("tfc:metal/copper","tfc:ore/small_malachite",10);
+addBigCannonmelting("tfc:metal/cast_iron","tfc:ore/small_magnetite",10);
+addBigCannonmelting("tfc:metal/cast_iron","tfc:ore/small_limonite",10);
+addBigCannonmelting("tfc:metal/zinc","tfc:ore/small_sphalerite",10);
+addBigCannonmelting("tfc:metal/copper","tfc:ore/small_tetrahedrite",10);
+
+addBigCannonmelting("tfc:metal/copper","tfc:ore/poor_native_copper",15);
+addBigCannonmelting("tfc:metal/gold","tfc:ore/poor_native_gold",15);
+addBigCannonmelting("tfc:metal/cast_iron","tfc:ore/poor_hematite",15);
+addBigCannonmelting("tfc:metal/silver","tfc:ore/poor_native_silver",15);
+addBigCannonmelting("tfc:metal/tin","tfc:ore/poor_cassiterite",15);
+addBigCannonmelting("tfc:metal/bismuth","tfc:ore/poor_bismuthinite",15);
+addBigCannonmelting("tfc:metal/nickel","tfc:ore/poor_garnierite",15);
+addBigCannonmelting("tfc:metal/copper","tfc:ore/poor_malachite",15);
+addBigCannonmelting("tfc:metal/cast_iron","tfc:ore/poor_magnetite",15);
+addBigCannonmelting("tfc:metal/cast_iron","tfc:ore/poor_limonite",15);
+addBigCannonmelting("tfc:metal/zinc","tfc:ore/poor_sphalerite",15);
+addBigCannonmelting("tfc:metal/copper","tfc:ore/poor_tetrahedrite",15);
+
+addBigCannonmelting("tfc:metal/copper","tfc:ore/normal_native_copper",25);
+addBigCannonmelting("tfc:metal/gold","tfc:ore/normal_native_gold",25);
+addBigCannonmelting("tfc:metal/cast_iron","tfc:ore/normal_hematite",25);
+addBigCannonmelting("tfc:metal/silver","tfc:ore/normal_native_silver",25);
+addBigCannonmelting("tfc:metal/tin","tfc:ore/normal_cassiterite",25);
+addBigCannonmelting("tfc:metal/bismuth","tfc:ore/normal_bismuthinite",25);
+addBigCannonmelting("tfc:metal/nickel","tfc:ore/normal_garnierite",25);
+addBigCannonmelting("tfc:metal/copper","tfc:ore/normal_malachite",25);
+addBigCannonmelting("tfc:metal/cast_iron","tfc:ore/normal_magnetite",25);
+addBigCannonmelting("tfc:metal/cast_iron","tfc:ore/normal_limonite",25);
+addBigCannonmelting("tfc:metal/zinc","tfc:ore/normal_sphalerite",25);
+addBigCannonmelting("tfc:metal/copper","tfc:ore/normal_tetrahedrite",25);
+
+addBigCannonmelting("tfc:metal/copper","tfc:ore/rich_native_copper",35);
+addBigCannonmelting("tfc:metal/gold","tfc:ore/rich_native_gold",35);
+addBigCannonmelting("tfc:metal/cast_iron","tfc:ore/rich_hematite",35);
+addBigCannonmelting("tfc:metal/silver","tfc:ore/rich_native_silver",35);
+addBigCannonmelting("tfc:metal/tin","tfc:ore/rich_cassiterite",35);
+addBigCannonmelting("tfc:metal/bismuth","tfc:ore/rich_bismuthinite",35);
+addBigCannonmelting("tfc:metal/nickel","tfc:ore/rich_garnierite",35);
+addBigCannonmelting("tfc:metal/copper","tfc:ore/rich_malachite",35);
+addBigCannonmelting("tfc:metal/cast_iron","tfc:ore/rich_magnetite",35);
+addBigCannonmelting("tfc:metal/cast_iron","tfc:ore/rich_limonite",35);
+addBigCannonmelting("tfc:metal/zinc","tfc:ore/rich_sphalerite",35);
+addBigCannonmelting("tfc:metal/copper","tfc:ore/rich_tetrahedrite",35);
+                    //==================================================
+addEmbersmelting("tfc:metal/gold","create:crushed_raw_gold",5);
+addEmbersmelting("tfc:metal/copper","create:crushed_raw_copper",5);
+addEmbersmelting("tfc:metal/zinc","create:crushed_raw_zinc",5);
+addEmbersmelting("tfc:metal/silver","create:crushed_raw_silver",5);
+addEmbersmelting("tfc:metal/tin","create:crushed_raw_tin",5);
+addEmbersmelting("tfc_ie_addon:metal/lead","create:crushed_raw_lead",5);
+addEmbersmelting("tfc_ie_addon:metal/aluminum","create:crushed_raw_aluminum",5);
+addEmbersmelting("tfc_ie_addon:metal/uranium","create:crushed_raw_uranium",5);
+addEmbersmelting("tfc:metal/nickel","create:crushed_raw_nickel",5);
+
+addEmbersmelting("tfc:metal/copper","tfc:ore/small_native_copper",10);
+addEmbersmelting("tfc:metal/gold","tfc:ore/small_native_gold",10);
+addEmbersmelting("tfc:metal/cast_iron","tfc:ore/small_hematite",10);
+addEmbersmelting("tfc:metal/silver","tfc:ore/small_native_silver",10);
+addEmbersmelting("tfc:metal/tin","tfc:ore/small_cassiterite",10);
+addEmbersmelting("tfc:metal/bismuth","tfc:ore/small_bismuthinite",10);
+addEmbersmelting("tfc:metal/nickel","tfc:ore/small_garnierite",10);
+addEmbersmelting("tfc:metal/copper","tfc:ore/small_malachite",10);
+addEmbersmelting("tfc:metal/cast_iron","tfc:ore/small_magnetite",10);
+addEmbersmelting("tfc:metal/cast_iron","tfc:ore/small_limonite",10);
+addEmbersmelting("tfc:metal/zinc","tfc:ore/small_sphalerite",10);
+addEmbersmelting("tfc:metal/copper","tfc:ore/small_tetrahedrite",10);
+
+addEmbersmelting("tfc:metal/copper","tfc:ore/poor_native_copper",15);
+addEmbersmelting("tfc:metal/gold","tfc:ore/poor_native_gold",15);
+addEmbersmelting("tfc:metal/cast_iron","tfc:ore/poor_hematite",15);
+addEmbersmelting("tfc:metal/silver","tfc:ore/poor_native_silver",15);
+addEmbersmelting("tfc:metal/tin","tfc:ore/poor_cassiterite",15);
+addEmbersmelting("tfc:metal/bismuth","tfc:ore/poor_bismuthinite",15);
+addEmbersmelting("tfc:metal/nickel","tfc:ore/poor_garnierite",15);
+addEmbersmelting("tfc:metal/copper","tfc:ore/poor_malachite",15);
+addEmbersmelting("tfc:metal/cast_iron","tfc:ore/poor_magnetite",15);
+addEmbersmelting("tfc:metal/cast_iron","tfc:ore/poor_limonite",15);
+addEmbersmelting("tfc:metal/zinc","tfc:ore/poor_sphalerite",15);
+addEmbersmelting("tfc:metal/copper","tfc:ore/poor_tetrahedrite",15);
+
+addEmbersmelting("tfc:metal/copper","tfc:ore/normal_native_copper",25);
+addEmbersmelting("tfc:metal/gold","tfc:ore/normal_native_gold",25);
+addEmbersmelting("tfc:metal/cast_iron","tfc:ore/normal_hematite",25);
+addEmbersmelting("tfc:metal/silver","tfc:ore/normal_native_silver",25);
+addEmbersmelting("tfc:metal/tin","tfc:ore/normal_cassiterite",25);
+addEmbersmelting("tfc:metal/bismuth","tfc:ore/normal_bismuthinite",25);
+addEmbersmelting("tfc:metal/nickel","tfc:ore/normal_garnierite",25);
+addEmbersmelting("tfc:metal/copper","tfc:ore/normal_malachite",25);
+addEmbersmelting("tfc:metal/cast_iron","tfc:ore/normal_magnetite",25);
+addEmbersmelting("tfc:metal/cast_iron","tfc:ore/normal_limonite",25);
+addEmbersmelting("tfc:metal/zinc","tfc:ore/normal_sphalerite",25);
+addEmbersmelting("tfc:metal/copper","tfc:ore/normal_tetrahedrite",25);
+
+addEmbersmelting("tfc:metal/copper","tfc:ore/rich_native_copper",35);
+addEmbersmelting("tfc:metal/gold","tfc:ore/rich_native_gold",35);
+addEmbersmelting("tfc:metal/cast_iron","tfc:ore/rich_hematite",35);
+addEmbersmelting("tfc:metal/silver","tfc:ore/rich_native_silver",35);
+addEmbersmelting("tfc:metal/tin","tfc:ore/rich_cassiterite",35);
+addEmbersmelting("tfc:metal/bismuth","tfc:ore/rich_bismuthinite",35);
+addEmbersmelting("tfc:metal/nickel","tfc:ore/rich_garnierite",35);
+addEmbersmelting("tfc:metal/copper","tfc:ore/rich_malachite",35);
+addEmbersmelting("tfc:metal/cast_iron","tfc:ore/rich_magnetite",35);
+addEmbersmelting("tfc:metal/cast_iron","tfc:ore/rich_limonite",35);
+addEmbersmelting("tfc:metal/zinc","tfc:ore/rich_sphalerite",35);
+addEmbersmelting("tfc:metal/copper","tfc:ore/rich_tetrahedrite",35);
 
 <recipetype:immersiveengineering:arc_furnace>.addJsonRecipe("arc_furnace_wrought_iron_from_crushed_smelting", {
   "type": "immersiveengineering:arc_furnace",
