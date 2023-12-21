@@ -312,7 +312,15 @@
         "botania:misc/cacophonium",
         "botania:functional_flowers/solegnolia",
         "botania:tools/thorn_chakram",
-        "botania:tools/cobble_rod"
+        "botania:tools/cobble_rod",
+        "botania:alfhomancy/flugel_eye",
+        "botania:alfhomancy/king_key",
+        "botania:alfhomancy/loki_ring",
+        "botania:alfhomancy/relic_info",
+        "botania:alfhomancy/thor_ring",
+        "botania:alfhomancy/gaia_ritual_hardmode",
+        "botania:alfhomancy/infinite_fruit",
+        "botania:alfhomancy/odin_ring"
       ],
       "bookmarks": [],
       "completedManualQuests": []

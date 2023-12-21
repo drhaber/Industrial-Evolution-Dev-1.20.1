@@ -599,6 +599,70 @@ addEmbersStamping(<fluid:embers:molten_dawnstone>,<item:embers:dawnstone_ingot>,
 });
 
 
+<recipetype:tfc:barrel_sealed>.addJsonRecipe("acetaldehyde_barrel_recipe_pneumaticcraft", {
+    "type": "tfc:barrel_sealed",
+    "input_item": {
+        "ingredient": {
+            "item": "tfc:powder/malachite"
+        }
+    },
+    "input_fluid": {
+        "ingredient": "pneumaticcraft:ethanol",
+        "amount": 500
+    },
+    "output_fluid": {
+        "fluid": "immersiveengineering:acetaldehyde",
+        "amount": 300
+    },
+    "duration": 8000
+});
+<recipetype:tfc:barrel_sealed>.addJsonRecipe("acetaldehyde_barrel_recipe_createdieselgenerators", {
+    "type": "tfc:barrel_sealed",
+    "input_item": {
+        "ingredient": {
+            "item": "tfc:powder/malachite"
+        }
+    },
+    "input_fluid": {
+        "ingredient": "createdieselgenerators:ethanol",
+        "amount": 500
+    },
+    "output_fluid": {
+        "fluid": "immersiveengineering:acetaldehyde",
+        "amount": 300
+    },
+    "duration": 8000
+});
+<recipetype:tfc:barrel_sealed>.addJsonRecipe("acetaldehyde_barrel_recipe_immersiveengineering", {
+    "type": "tfc:barrel_sealed",
+    "input_item": {
+        "ingredient": {
+            "item": "tfc:powder/malachite"
+        }
+    },
+    "input_fluid": {
+        "ingredient": "immersiveengineering:ethanol",
+        "amount": 500
+    },
+    "output_fluid": {
+        "fluid": "immersiveengineering:acetaldehyde",
+        "amount": 300
+    },
+    "duration": 8000
+});
+addEmbers2MixingnonTFC("immersiveengineering:phenolic_resin", 3, "immersiveengineering:creosote", 2,"immersiveengineering:acetaldehyde", 3);
+
+<recipetype:embers:stamping>.addJsonRecipe("embers_stamp_plate_duroplast", {
+  "type": "embers:stamping",
+    "fluid": {
+     "amount" : 250,
+     "name": <fluid:immersiveengineering:phenolic_resin>.fluid.registryName as string
+    },
+  "output": (<item:immersiveengineering:plate_duroplast> as IData),
+  "stamp": (<item:embers:plate_stamp> as IData)
+}
+);
+
 /*
 
 //Liquid Catalyst
