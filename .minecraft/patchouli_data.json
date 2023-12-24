@@ -365,7 +365,8 @@
         "tfc:firmaciv/navigation",
         "tfc:mechanics/aqueducts",
         "tfc:firmalife/oven_appliances",
-        "tfc:firmalife/irrigation"
+        "tfc:firmalife/irrigation",
+        "tfc:firmalife/ovens"
       ],
       "bookmarks": [],
       "completedManualQuests": []

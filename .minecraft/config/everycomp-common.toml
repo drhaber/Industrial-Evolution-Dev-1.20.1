@@ -116,6 +116,9 @@
 				ancient = true
 				golden = true
 
+			[general.types.leaves_type.integrateddynamics]
+				menril = true
+
 	[general.entries]
 
 		[general.entries.wood_type]
@@ -343,6 +346,9 @@
 				banister = true
 				hollow_log_horizontal = true
 				hollow_log_vertical = true
+
+			[general.entries.wood_type.farmersdelight]
+				cabinet = true
 
 		[general.entries.leaves_type]
 

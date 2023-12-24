@@ -47,7 +47,7 @@ Jei.hideCategory(<resource:jumbofurnace:jumbo_furnace_upgrade>);
 <recipetype:create:cutting>.remove(<item:create:andesite_alloy>);
 <recipetype:create:cutting>.remove(<item:tfc:metal/ingot/wrought_iron>);
 <recipetype:create:cutting>.remove(<item:tfc:refined_iron_bloom>);
-<recipetype:embers:melting>.removeByName("embers:melting/ingots/iron");
+<recipetype:embers:melting>.removeAll();
 
 
 craftingTable.removeByName("railcraft:bronze_ingot_crafted_with_ingots");
@@ -662,6 +662,8 @@ addEmbers2MixingnonTFC("immersiveengineering:phenolic_resin", 3, "immersiveengin
   "stamp": (<item:embers:plate_stamp> as IData)
 }
 );
+addEmbers2MixingnonTFC("kubejs:moltenredalloy",1,"tfc:metal/copper",1,"immersiveengineering:redstone_acid",4);
+addEmbersStamping(<fluid:kubejs:moltenredalloy>,<item:morered:red_alloy_ingot>,<item:embers:ingot_stamp>);
 
 /*
 
@@ -678,7 +680,7 @@ mods.embers.Melter.add(<liquid:redstone>*1296,<ore:blockRedstone>);
 
 mods.embers.Mixer.add(<liquid:alchemical_redstone>*288, [<liquid:liquidchorus>*125,<liquid:redstone>*144,<liquid:menrilresin>*250]);
 
-mods.embers.Mixer.add(<liquid:red_alloy>*144, [<liquid:copper>*144,<liquid:redstone>*576]);
+
 
 //Bauxite/Aluminium - Bayer Process
     mods.embers.Melter.add(<liquid:alumina>*144, <pyrotech:generated_slag_aluminium_custom>);
