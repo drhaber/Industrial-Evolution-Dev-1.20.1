@@ -160,3 +160,24 @@ craftingTable.addShapeless("map_1", <item:minecraft:map>, [<item:firmaciv:nav_cl
     },
     "duration": 8000
 });
+
+<recipetype:tfc:barrel_sealed>.addJsonRecipe("ash2ash", {
+    "type": "tfc:barrel_sealed",
+    "input_item": {
+        "ingredient": {
+            "item": "tfc:powder/wood_ash"
+        }
+    },
+    "input_fluid": {
+        "ingredient": "minecraft:water",
+        "amount": 500
+    },
+    "output_item": {
+        "item": "embers:ash"
+    },
+    "output_fluid": {
+        "fluid": "tfc:light_gray_dye",
+        "amount": 500
+    },
+    "duration": 8000
+});
