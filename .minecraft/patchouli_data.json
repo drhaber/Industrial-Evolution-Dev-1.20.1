@@ -366,7 +366,8 @@
         "tfc:mechanics/aqueducts",
         "tfc:firmalife/oven_appliances",
         "tfc:firmalife/irrigation",
-        "tfc:firmalife/ovens"
+        "tfc:firmalife/ovens",
+        "tfc:the_world/wild_fruits"
       ],
       "bookmarks": [],
       "completedManualQuests": []

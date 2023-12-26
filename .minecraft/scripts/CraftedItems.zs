@@ -10,6 +10,7 @@ import crafttweaker.api.tag.manager.ITagManager;
 
 
 craftingTable.remove(<item:productivebees:centrifuge>);
+craftingTable.remove(<item:productivebees:heated_centrifuge>);
 craftingTable.remove(<item:minecraft:paper>);
 <recipetype:create:pressing>.remove(<item:minecraft:paper>);
 
@@ -35,6 +36,12 @@ craftingTable.addShaped("handcrafted_everlasting_torch", <item:minecraft:torch>,
 		"count": 3
 	}
 });
+craftingTable.remove(<item:productivebees:powered_centrifuge>);
+craftingTable.addShaped("handcrafted_powered_centrifuge", <item:productivebees:powered_centrifuge>, [
+    [<item:railcraft:charge_motor>],
+    [<item:tfc:quern>],
+    [<item:create:basin>]]);
+
 
 craftingTable.remove(<item:tempad:tempad>);
 craftingTable.addShaped("handcrafted_tempad", <item:tempad:tempad>, [
@@ -118,5 +125,38 @@ craftingTable.remove(<item:sgjourney:reaction_chamber>);
 });  
 
 
+craftingTable.remove(<item:minecraft:map>);
+craftingTable.addShapeless("map_1", <item:minecraft:map>, [<item:firmaciv:nav_clock>.reuse(),<item:firmaciv:sextant>.reuse(),<tag:items:forge:paper>]);
 
+<recipetype:minecraft:crafting>.addJsonRecipe("banana_paperstrip", {
+    "type": "tfc:damage_inputs_shapeless_crafting",
+    "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [{
+            "item": "tfc:food/banana",
+            //"trait": "tfcfood:traits:firmalife:dried"
+        }, {
+            "tag": "tfc:knives"
+        }],
+        "result": {
+            "item": "tfc:soaked_papyrus_strip"
+        }
+    }
+});
 
+<recipetype:tfc:barrel_sealed>.addJsonRecipe("bark_soaked_papyrus_strip", {
+    "type": "tfc:barrel_sealed",
+    "input_item": {
+        "ingredient": {
+            "tag": "forge:bark"
+        }
+    },
+    "input_fluid": {
+        "ingredient": "tfc:limewater",
+        "amount": 500
+    },
+    "output_item": {
+        "item": "tfc:soaked_papyrus_strip"
+    },
+    "duration": 8000
+});
