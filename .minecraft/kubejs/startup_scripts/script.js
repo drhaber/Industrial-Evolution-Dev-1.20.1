@@ -116,8 +116,8 @@ e.create('ironwrenchhead').displayName('Wrought Iron Wrench Head')
 //Glow String
 e.create('glowstring').displayName('Glow String')
 
-//Iron Hook
-e.create('iron_hook').displayName('Metal Hook')
+//Unfinished Candle
+e.create('unfinished_candle').displayName('Unfinished Candle')
 
 //AE2 Inscriber Casts
 //Material Calculation Processor Cast

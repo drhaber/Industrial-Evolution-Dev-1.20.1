@@ -20,12 +20,6 @@ craftingTable.addShaped("handcrafted_create_belt_leather", <item:create:belt_con
 [<tag:items:tfc:chains>,<tag:items:tfc:chains>,<tag:items:tfc:chains>],
 [<item:minecraft:leather>,<item:minecraft:leather>,<item:minecraft:leather>]]);
 
-craftingTable.remove(<item:minecraft:torch>);
-craftingTable.addShaped("handcrafted_everlasting_torch", <item:minecraft:torch>,
-[[<item:embers:ember_crystal>],
-[<tag:items:forge:rods/wooden>]]);
-
-
 <recipetype:createaddition:rolling>.addJsonRecipe("rolled_create_belt_rubber", {
 	"type":"createaddition:rolling",
 	"input": {
@@ -42,6 +36,11 @@ craftingTable.addShaped("handcrafted_powered_centrifuge", <item:productivebees:p
     [<item:tfc:quern>],
     [<item:create:basin>]]);
 
+craftingTable.addShaped("magnetite_block", <item:create_new_age:magnetite_block>, [
+    [<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>],
+    [<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>],
+    [<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>],]);
+craftingTable.addShapeless("rich_magnetite", <item:tfc:ore/rich_magnetite>*9, [<item:create_new_age:magnetite_block>]);
 
 craftingTable.remove(<item:tempad:tempad>);
 craftingTable.addShaped("handcrafted_tempad", <item:tempad:tempad>, [
@@ -181,3 +180,83 @@ craftingTable.addShapeless("map_1", <item:minecraft:map>, [<item:firmaciv:nav_cl
     },
     "duration": 8000
 });
+
+craftingTable.remove(<item:minecraft:torch>);
+craftingTable.addShaped("handcrafted_everlasting_torch", <item:minecraft:torch>,
+[[<item:embers:ember_crystal>],
+[<tag:items:forge:rods/wooden>]]);
+
+craftingTable.remove(<item:minecraft:candle>);
+craftingTable.addShaped("handcrafted_everlasting_candle", <item:minecraft:candle>,
+[[<item:kubejs:glowstring>],
+[<item:kubejs:unfinished_candle>]]);
+
+craftingTable.remove(<item:tfc:candle>);
+craftingTable.addShaped("handcrafted_candle", <item:tfc:candle>,
+[[<tag:items:forge:string>],
+[<item:kubejs:unfinished_candle>]]);
+
+function addWaxKnapping(Row1 as string, Row2 as string, Row3 as string, Row4 as string, Row5 as string, ItemOut as string) as void { 
+craftingTable.remove(<item:${ItemOut}>);
+<recipetype:tfc:knapping>.addJsonRecipe("wax_knapping_" + ItemOut.replace(":","_"), {
+    "type": "tfc:knapping",
+    "knapping_type": "kubejs:wax",
+    "pattern": [
+        Row1,
+        Row2,
+        Row3,
+        Row4,
+        Row5,
+      ],
+    "result": {
+        "item": ItemOut
+    }
+});
+}
+
+addWaxKnapping(
+        "  X  ",
+        " XXX ",
+        " XXX ",
+        " XXX ",
+        " XXX ",
+"kubejs:unfinished_candle");
+
+
+//=====================================================================
+
+//Generators
+craftingTable.remove(<item:create_new_age:carbon_brushes>);
+craftingTable.addShaped("handcrafted_carbon_brushes", <item:create_new_age:carbon_brushes>, [
+    [<tag:items:forge:rods/cast_iron>,<item:railcraft:carbon_electrode>,<tag:items:forge:rods/cast_iron>],
+    [<tag:items:forge:sheets/copper>,<item:create:shaft>,<tag:items:forge:sheets/copper>],
+    [<tag:items:forge:rods/cast_iron>,<item:railcraft:carbon_electrode>,<tag:items:forge:rods/cast_iron>]]);
+
+//Chalk 
+
+
+var Colours = ["white","light_gray","gray","black","brown","red","orange","yellow","lime","green","cyan","light_blue","blue","purple","magenta","pink"];
+for dye in Colours{
+craftingTable.remove(<item:chalk:${dye}_chalk>);
+craftingTable.addShaped("handcrafted_chalk" + dye, <item:chalk:${dye}_chalk>, [
+    [<tagmanager:items>.tag("forge:dyes/" + dye)],
+    [<item:tfc:rock/loose/chalk>],
+    [<item:tfc:rock/loose/chalk>]]);
+}
+craftingTable.addShaped("handcrafted_white_chalk", <item:chalk:white_chalk>, [
+    [<item:tfc:rock/loose/chalk>],
+    [<item:tfc:rock/loose/chalk>]]);
+
+/*
+<recipetype:embers:stamping>.addJsonRecipe("embers_disc_stamp_1", {
+  "type": "embers:stamping",
+    "fluid": {
+     "amount" : 100,
+     "name": 'pneumaticcraft:plastic'
+    },
+  "output": 'tfc:blank_disc',
+  "stamp": 'minecraft:music_discs'
+}
+);*/
+//addEmbersStamping(<fluid:pneumaticcraft:plastic>,<item:tfc:blank_disc>,<tag:items:minecraft:music_discs>);
+//addEmbersStamping(<fluid:tfmg:liquid_plastic>,<item:tfc:blank_disc>,<tag:items:minecraft:music_discs>);

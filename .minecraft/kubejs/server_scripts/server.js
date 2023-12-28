@@ -5,6 +5,7 @@
 
 TFCEvents.data(event => {
     event.knappingType('embers:caminite_blend', 2, 1, 'tfc:item.knapping.clay', false, true, true, 'embers:caminite_blend', 'kubejs:caminite')
+    event.knappingType('productivebees:wax', 2, 1, 'tfc:item.knapping.clay', false, false, true, 'productivebees:wax', 'kubejs:wax')
 })
 
 ServerEvents.tags('item', event => {

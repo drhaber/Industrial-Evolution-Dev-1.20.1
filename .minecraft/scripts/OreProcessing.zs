@@ -62,7 +62,6 @@ craftingTable.removeByName("railcraft:brass_ingot");
 craftingTable.removeByName("railcraft:zinc_ingot");
 //craftingTable.removeByName("railcraft:zinc_block_from_zinc_ingot");
 
-
 //Ingots
 var tfcMetals = ["bismuth","bismuth_bronze","black_bronze","black_steel","blue_steel","brass","bronze","cast_iron","copper","gold","high_carbon_black_steel","high_carbon_blue_steel","high_carbon_red_steel","high_carbon_steel","nickel","pig_iron","red_steel","rose_gold","silver","steel","sterling_silver","tin","unknown","weak_blue_steel","weak_red_steel","weak_steel","wrought_iron","zinc"];
 for metal in tfcMetals{   
@@ -664,6 +663,19 @@ addEmbers2MixingnonTFC("immersiveengineering:phenolic_resin", 3, "immersiveengin
 );
 addEmbers2MixingnonTFC("kubejs:moltenredalloy",1,"tfc:metal/copper",1,"immersiveengineering:redstone_acid",4);
 addEmbersStamping(<fluid:kubejs:moltenredalloy>,<item:morered:red_alloy_ingot>,<item:embers:ingot_stamp>);
+
+<recipetype:botania:mana_infusion>.remove(<item:botania:manasteel_ingot>);
+<recipetype:botania:mana_infusion>.remove(<item:botania:manasteel_block>);
+<recipetype:botania:mana_infusion>.addJsonRecipe("mana_infusion_manasteel_ingot", {
+  "type": "botania:mana_infusion",
+  "input": {
+    "item": "tfc:metal/ingot/high_carbon_steel"
+  },
+  "mana": 3000,
+  "output": {
+    "item": "botania:manasteel_ingot"
+  }
+});
 
 /*
 

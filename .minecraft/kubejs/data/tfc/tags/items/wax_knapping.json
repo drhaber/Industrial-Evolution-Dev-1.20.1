@@ -1,8 +1,6 @@
 {
     "replace": false,
     "values": [
-        "embers:caminite_blend",
-        "kubejs:andesite_alloy_raw",
         "productivebees:wax",
         "firmalife:beeswax"
     ]
