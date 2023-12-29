@@ -7,7 +7,7 @@ import crafttweaker.api.fluid.IFluidStack;
 import crafttweaker.api.tag.manager.ITagManager;
 import crafttweaker.api.bracket.BracketHandlers;
 import crafttweaker.api.tag.manager.ITagManager;
-
+import mods.create.FillingManager;
 
 craftingTable.remove(<item:productivebees:centrifuge>);
 craftingTable.remove(<item:productivebees:heated_centrifuge>);
@@ -196,6 +196,8 @@ craftingTable.addShaped("handcrafted_candle", <item:tfc:candle>,
 [[<tag:items:forge:string>],
 [<item:kubejs:unfinished_candle>]]);
 
+<recipetype:create:filling>.addRecipe("glowstring", <item:kubejs:glowstring>, <tag:items:forge:string>, <fluid:create_dd:glowberry>, 100);
+
 function addWaxKnapping(Row1 as string, Row2 as string, Row3 as string, Row4 as string, Row5 as string, ItemOut as string) as void { 
 craftingTable.remove(<item:${ItemOut}>);
 <recipetype:tfc:knapping>.addJsonRecipe("wax_knapping_" + ItemOut.replace(":","_"), {
@@ -222,6 +224,13 @@ addWaxKnapping(
         " XXX ",
 "kubejs:unfinished_candle");
 
+addWaxKnapping(
+        "     ",
+        "     ",
+        "XXXXX",
+        " XXX ",
+        "XX XX",
+"kubejs:wax_anvil");
 
 //=====================================================================
 
@@ -233,8 +242,6 @@ craftingTable.addShaped("handcrafted_carbon_brushes", <item:create_new_age:carbo
     [<tag:items:forge:rods/cast_iron>,<item:railcraft:carbon_electrode>,<tag:items:forge:rods/cast_iron>]]);
 
 //Chalk 
-
-
 var Colours = ["white","light_gray","gray","black","brown","red","orange","yellow","lime","green","cyan","light_blue","blue","purple","magenta","pink"];
 for dye in Colours{
 craftingTable.remove(<item:chalk:${dye}_chalk>);

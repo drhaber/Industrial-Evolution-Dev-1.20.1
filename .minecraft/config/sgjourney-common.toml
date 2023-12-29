@@ -4,7 +4,7 @@
 	["Stargate Journey Common Config".server]
 		#Stargate Journey General Config
 		#Disable energy requirements for blocks added by Stargate Journey
-		disable_energy_requirements = true
+		disable_energy_requirements = false
 
 	["Stargate Journey Common Config"."ZPM Config"]
 
@@ -51,8 +51,20 @@
 			two_way_wormholes = "CREATIVE_ONLY"
 			#If true, going through the wrong side of the wormhole will result in death
 			reverse_wormhole_kills = true
+			#If true, allow the destruction of Blocks by Kawooshes
+			kawoosh_destroys_blocks = true
+			#If true, allow the disintegration of Entities by Kawooshes
+			kawoosh_disintegrates_entities = true
+			#If true, allow the disintegration of Items by Kawooshes
+			kawoosh_disintegrates_items = true
 			#Enables the use of redstone for manual Stargate dialing
 			enable_redstone_dialing = true
+			#Enables upgrading the Classic Stargate
+			enable_classic_stargate_upgrades = true
+			#Enables creating Stargate Variants
+			enable_stargate_variants = true
+			#If true, Stargate item will always display the 9-Chevron Address of the Stargate in the inventory
+			always_display_stargate_id = true
 			#FAST - Incoming Chevrons take 4 Ticks to lock; MEDIUM - Incoming Chevrons take 8 Ticks to lock; SLOW - Incoming Chevrons take 12 Ticks to lock
 			#Allowed Values: SLOW, MEDIUM, FAST
 			universe_chevron_lock_speed = "SLOW"
@@ -74,13 +86,13 @@
 			can_draw_power_from_both_ends = false
 			#The amount of energy cost of keeping the wormhole open each tick for system-wide connections
 			#Range: 0 ~ 9223372036854775807
-			system_wide_connection_energy_draw = 500
+			system_wide_connection_energy_draw = 5
 			#The amount of energy cost of keeping the wormhole open each tick for interstellar connections
 			#Range: 0 ~ 9223372036854775807
-			interstellar_connection_energy_draw = 1000
+			interstellar_connection_energy_draw = 50
 			#The amount of energy cost of keeping the wormhole open each tick for intergalactic connections
 			#Range: 0 ~ 9223372036854775807
-			intergalactic_connection_energy_draw = 1000000
+			intergalactic_connection_energy_draw = 50000
 			#The amount of energy required to estabilish a connection inside a solar system
 			#Range: 0 ~ 9223372036854775807
 			system_wide_connection_energy_cost = 50000
@@ -90,6 +102,12 @@
 			#The amount of energy required to estabilish a connection outside the galaxy
 			#Range: 0 ~ 9223372036854775807
 			intergalactic_connection_energy_cost = 100000000000
+			#The maximum amount of energy the Stargate can hold
+			#Range: 0 ~ 9223372036854775807
+			stargate_energy_capacity = 1000000000000
+			#The maximum amount of energy the Stargate can reveive at once
+			#Range: 0 ~ 9223372036854775807
+			stargate_energy_max_receive = 1000000000000
 			#The energy required to keep the Stargate open after exceeding the maximum open time is multiplied by this number
 			#Range: > 1
 			energy_bypass_multiplier = 100000
@@ -131,6 +149,8 @@
 			generate_random_solar_systems = true
 			#Stargate Network will randomize addresses based on the world seed
 			random_addresses_from_seed = true
+			#Stargates Network will not consider DHDs when choosing preferred Stargate
+			disable_dhd_preference = false
 			#X chunk center offset of structures that contain a Stargate
 			#Range: -512 ~ 512
 			stargate_generation_center_x_chunk_offset = 0

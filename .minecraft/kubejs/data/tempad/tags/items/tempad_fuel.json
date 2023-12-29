@@ -1,7 +1,6 @@
 {
     "replace": false,
     "values": [
-      "create:blaze_cake",
-      "sgjourney:liquid_naquadah_bottle"
+      "create:blaze_cake"
     ]
 }
