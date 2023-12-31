@@ -79,3 +79,10 @@ craftingTable.addShaped("handcrafted_steel_decor_spool", <item:immersiveengineer
     [<item:minecraft:air>,<tag:items:forge:wires/steel>,<item:minecraft:air>],
     [<tag:items:forge:wires/steel>,<item:kubejs:emptyspool>,<tag:items:forge:wires/steel>],
     [<item:minecraft:air>,<tag:items:forge:wires/steel>,<item:minecraft:air>]]);  
+
+craftingTable.remove(<item:immersiveengineering:watermill>);
+craftingTable.remove(<item:immersiveengineering:waterwheel_segment>);
+craftingTable.addShaped("handcrafted_watermill", <item:immersiveengineering:watermill>,[
+    [<item:tfc_ie_addon:treated_wood_lumber>,<tag:items:forge:treated_wood>,<item:tfc_ie_addon:treated_wood_lumber>],
+    [<tag:items:forge:treated_wood>,<item:immersiveengineering:treated_fence>,<tag:items:forge:treated_wood>],
+    [<item:tfc_ie_addon:treated_wood_lumber>,<tag:items:forge:treated_wood>,<item:tfc_ie_addon:treated_wood_lumber>]]);      
