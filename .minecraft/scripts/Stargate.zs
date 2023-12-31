@@ -10,6 +10,30 @@ import crafttweaker.api.tag.manager.ITagManager;
 import crafttweaker.api.bracket.BracketHandlers;
 import mods.jeitweaker.Jei;
 
+
+
+
+
+
+craftingTable.remove(<item:sgjourney:classic_stargate_ring_block>);
+craftingTable.addShaped("handcrafted_classic_stargate_ring_block", <item:sgjourney:classic_stargate_ring_block>,[
+    [<item:sgjourney:naquadah_alloy>,<item:sgjourney:naquadah_alloy>,<item:sgjourney:naquadah_alloy>],
+    [<item:immersiveengineering:coil_hv>,<item:immersiveengineering:coil_hv>,<item:immersiveengineering:coil_hv>],
+    [<item:sgjourney:naquadah_alloy>,<item:sgjourney:naquadah_alloy>,<item:sgjourney:naquadah_alloy>]]);  
+
+craftingTable.remove(<item:sgjourney:classic_stargate_chevron_block>);
+craftingTable.addShaped("handcrafted_classic_stargate_chevron_block", <item:sgjourney:classic_stargate_chevron_block>,[
+    [<item:create:rose_quartz_lamp>,<item:sgjourney:large_control_crystal>,<item:create:rose_quartz_lamp>],
+    [<item:sgjourney:memory_crystal>,<item:create:rose_quartz_lamp>,<item:sgjourney:communication_crystal>],
+    [<item:minecraft:air>,<item:sgjourney:classic_stargate_ring_block>,<item:minecraft:air>]]);  
+
+craftingTable.remove(<item:sgjourney:classic_stargate_base_block>);
+craftingTable.addShaped("handcrafted_classic_stargate_base_block", <item:sgjourney:classic_stargate_base_block>,[
+    [<item:sgjourney:energy_crystal>,<item:sgjourney:classic_stargate_ring_block>,<item:sgjourney:communication_crystal>],
+    [<item:sgjourney:classic_stargate_ring_block>,<item:sgjourney:transfer_crystal>,<item:sgjourney:classic_stargate_ring_block>],
+    [<item:sgjourney:materialization_crystal>,<item:sgjourney:classic_stargate_ring_block>,<item:sgjourney:memory_crystal>]]);  
+
+
 craftingTable.remove(<item:sgjourney:reaction_chamber>);
 <recipetype:create:mechanical_crafting>.addJsonRecipe("reaction_chamber_mechanical_crafting", {
   "type": "create:mechanical_crafting",

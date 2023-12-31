@@ -1,0 +1,9 @@
+#Destroy item, when it inserted in grinder with wrong recipe speed
+destroyOnWrongGrinderSpeed = false
+#Low speed value for grinder crafts, speed_limits = 1
+#Range: 1 ~ 256
+lowSpeedValue = 16
+#Medium speed value for grinder crafts, speed_limits = 2
+#Range: 1 ~ 256
+mediumSpeedValue = 64
+

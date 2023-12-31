@@ -208,6 +208,18 @@ StartupEvents.registry('fluid', e => {
 		.thinTexture(0x5C2F07)
 		.bucketColor(0x5C2F07)
 		.displayName('Waste')
+
+	//Molten Naquadah
+	e.create('molten_naquadah')
+		.thickTexture(0x5DB76A)
+		.bucketColor(0x5DB76A)
+		.displayName('Molten Naquadah')	
+
+	//Metallic Naquadah
+	e.create('metallic_naquadah')
+		.thickTexture(0xB9BCC3)
+		.bucketColor(0xB9BCC3)
+		.displayName('Metallic Naquadah')	
 })
 /*
 CapabilityEvents.blockEntity((event) => {
