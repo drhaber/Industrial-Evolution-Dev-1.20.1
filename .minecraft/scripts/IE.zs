@@ -85,4 +85,16 @@ craftingTable.remove(<item:immersiveengineering:waterwheel_segment>);
 craftingTable.addShaped("handcrafted_watermill", <item:immersiveengineering:watermill>,[
     [<item:tfc_ie_addon:treated_wood_lumber>,<tag:items:forge:treated_wood>,<item:tfc_ie_addon:treated_wood_lumber>],
     [<tag:items:forge:treated_wood>,<item:immersiveengineering:treated_fence>,<tag:items:forge:treated_wood>],
-    [<item:tfc_ie_addon:treated_wood_lumber>,<tag:items:forge:treated_wood>,<item:tfc_ie_addon:treated_wood_lumber>]]);      
+    [<item:tfc_ie_addon:treated_wood_lumber>,<tag:items:forge:treated_wood>,<item:tfc_ie_addon:treated_wood_lumber>]]); 
+
+craftingTable.remove(<item:immersiveengineering:windmill_blade>);
+craftingTable.addShaped("handcrafted_windmill_blade", <item:immersiveengineering:windmill_blade>,[
+    [<item:immersiveengineering:stick_treated>,<item:immersiveengineering:stick_treated>,<item:immersiveengineering:stick_treated>],
+    [<item:tfc_ie_addon:treated_wood_lumber>,<item:tfc_ie_addon:treated_wood_lumber>,<item:minecraft:air>],
+    [<item:tfc_ie_addon:treated_wood_lumber>,<item:tfc_ie_addon:treated_wood_lumber>,<item:minecraft:air>]]);  
+
+craftingTable.remove(<item:immersiveengineering:windmill>);
+craftingTable.addShaped("handcrafted_windmill", <item:immersiveengineering:windmill>,[
+    [<item:immersiveengineering:windmill_blade>,<item:immersiveengineering:windmill_blade>,<item:immersiveengineering:windmill_blade>],
+    [<item:immersiveengineering:windmill_blade>,<item:immersiveengineering:treated_fence>,<item:immersiveengineering:windmill_blade>],
+    [<item:immersiveengineering:windmill_blade>,<item:immersiveengineering:windmill_blade>,<item:immersiveengineering:windmill_blade>]]);  
