@@ -48,12 +48,6 @@ craftingTable.addShaped("handcrafted_tempad", <item:tempad:tempad>, [
     [<item:tis3d:keypad_module>,<item:sgjourney:reaction_chamber>,<item:railcraft:invar_ingot>],
     [<item:sgjourney:memory_crystal>,<item:ae2:fluix_crystal>,<item:immersiveengineering:ingot_electrum>]]);
 
-<recipetype:immersiveengineering:blueprint>.remove(<item:immersiveengineering:electron_tube>);
-craftingTable.addShaped("handcrafted_electron_tube", <item:immersiveengineering:electron_tube>, [
-    [<item:minecraft:air>,<item:kubejs:casing_electron_tube>,<item:minecraft:air>],
-    [<item:immersiveengineering:stick_aluminum>,<item:tfc:metal/sheet/gold>,<item:railcraft:nickel_electrode>],
-    [<item:immersiveengineering:wire_copper>,<item:kubejs:ceramic_insulator>,<item:immersiveengineering:wire_copper>]]);
-
 craftingTable.remove(<item:sgjourney:reaction_chamber>);
 <recipetype:create:mechanical_crafting>.addJsonRecipe("reaction_chamber_mechanical_crafting", {
   "type": "create:mechanical_crafting",
@@ -232,6 +226,32 @@ addWaxKnapping(
         "XX XX",
 "kubejs:wax_anvil");
 
+
+
+craftingTable.remove(<item:immersiveengineering:wirecoil_redstone>);
+craftingTable.addShaped("handcrafted_redstone_spool", <item:immersiveengineering:wirecoil_redstone>,[
+    [<item:morered:red_alloy_wire>,<item:morered:red_alloy_wire>,<item:morered:red_alloy_wire>],
+    [<item:morered:red_alloy_wire>,<item:kubejs:emptyspool>,<item:morered:red_alloy_wire>],
+    [<item:morered:red_alloy_wire>,<item:morered:red_alloy_wire>,<item:morered:red_alloy_wire>]]);  
+
+craftingTable.remove(<item:morered:redwire_spool>);
+craftingTable.addShaped("handcrafted_redwire_spool", <item:morered:redwire_spool>,[
+    [<item:minecraft:air>,<item:minecraft:air>,<tag:items:forge:rods/wooden>],
+    [<item:minecraft:air>,<item:immersiveengineering:wirecoil_redstone>,<item:minecraft:air>],
+    [<tag:items:forge:rods/wooden>,<item:minecraft:air>,<item:minecraft:air>]]);      
+
+craftingTable.remove(<item:morered:bundled_cable_spool>);
+craftingTable.addShaped("handcrafted_bundled_cable_spool", <item:morered:bundled_cable_spool>,[
+    [<item:morered:bundled_network_cable>,<item:morered:bundled_network_cable>,<item:morered:bundled_network_cable>],
+    [<item:morered:bundled_network_cable>,<item:kubejs:emptyspool>,<item:morered:bundled_network_cable>],
+    [<item:morered:bundled_network_cable>,<item:morered:bundled_network_cable>,<item:morered:bundled_network_cable>]]);  
+
+craftingTable.remove(<item:more_immersive_wires:id_coil>);
+craftingTable.addShaped("handcrafted_logic_cable_spool", <item:more_immersive_wires:id_coil>,[
+    [<item:integrateddynamics:cable>,<item:integrateddynamics:cable>,<item:integrateddynamics:cable>],
+    [<item:integrateddynamics:cable>,<item:kubejs:emptyspool>,<item:integrateddynamics:cable>],
+    [<item:integrateddynamics:cable>,<item:integrateddynamics:cable>,<item:integrateddynamics:cable>]]);  
+
 //=====================================================================
 
 //Generators
@@ -240,6 +260,13 @@ craftingTable.addShaped("handcrafted_carbon_brushes", <item:create_new_age:carbo
     [<tag:items:forge:rods/cast_iron>,<item:railcraft:carbon_electrode>,<tag:items:forge:rods/cast_iron>],
     [<tag:items:forge:sheets/copper>,<item:create:shaft>,<tag:items:forge:sheets/copper>],
     [<tag:items:forge:rods/cast_iron>,<item:railcraft:carbon_electrode>,<tag:items:forge:rods/cast_iron>]]);
+
+craftingTable.remove(<item:create_new_age:generator_coil>);
+craftingTable.addShaped("handcrafted_new_age_generator_coil", <item:create_new_age:generator_coil>, [
+    [<item:immersiveengineering:coil_lv>,<item:immersiveengineering:coil_lv>,<item:immersiveengineering:coil_lv>],
+    [<item:immersiveengineering:coil_lv>,<item:create:shaft>,<item:immersiveengineering:coil_lv>],
+    [<item:immersiveengineering:coil_lv>,<item:immersiveengineering:coil_lv>,<item:immersiveengineering:coil_lv>]]);
+
 
 //Chalk 
 var Colours = ["white","light_gray","gray","black","brown","red","orange","yellow","lime","green","cyan","light_blue","blue","purple","magenta","pink"];

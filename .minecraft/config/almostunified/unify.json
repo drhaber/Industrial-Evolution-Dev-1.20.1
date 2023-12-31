@@ -21,7 +21,6 @@
   ],
   "tags": [
     "forge:nuggets/{material}",
-    "forge:dusts/{material}",
     "forge:gears/{material}",
     "forge:gems/{material}",
     "forge:ingots/{material}",

@@ -119,6 +119,12 @@ e.create('glowstring').displayName('Glow String')
 //Unfinished Candle
 e.create('unfinished_candle').displayName('Unfinished Candle')
 
+//Impregnated Paper
+e.create('impregnated_paper').displayName('Impregnated Paper')
+
+//Blank Blueprint
+e.create('blank_blueprint').displayName('Blank Blueprint')
+
 //AE2 Inscriber Casts
 //Material Calculation Processor Cast
 e.create('unfired_material_calculation_processor_press').displayName('Unfired Calculation Processor Cast')

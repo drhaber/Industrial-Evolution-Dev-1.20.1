@@ -266,3 +266,53 @@ addCaminiteKnapping(
         " XX  ",
 "embers:raw_caminite_plate");
 
+
+function addClayKnapping(Row1 as string, Row2 as string, Row3 as string, Row4 as string, Row5 as string, ItemOut as string) as void { 
+craftingTable.remove(<item:${ItemOut}>);
+<recipetype:tfc:knapping>.addJsonRecipe("clay_knapping_" + ItemOut.replace(":","_"), {
+    "type": "tfc:knapping",
+    "knapping_type": "tfc:clay",
+    "pattern": [
+        Row1,
+        Row2,
+        Row3,
+        Row4,
+        Row5,
+      ],
+    "result": {
+        "item": ItemOut
+    }
+});
+}
+
+addClayKnapping(
+"XX  X", 
+"X X X", 
+"XXXXX", 
+"X X X", 
+"X  XX",
+"kubejs:unfired_material_engineering_processor_press");
+																   
+addClayKnapping(
+"  X X", 
+"  XX ", 
+"XXXXX", 
+" XX  ", 
+"X X  ",
+"kubejs:unfired_material_calculation_processor_press");
+
+addClayKnapping(
+"  X  ", 
+"  XX ", 
+"XXXXX", 
+" XX  ", 
+"  X  ",
+"kubejs:unfired_material_logic_processor_press");
+
+addClayKnapping(
+"X X X", 
+" XXX ", 
+"XX XX", 
+" XXX ", 
+"X X X",
+"kubejs:unfired_material_silicon_press");
