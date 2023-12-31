@@ -6,6 +6,9 @@
 TFCEvents.data(event => {
     event.knappingType('embers:caminite_blend', 2, 1, 'tfc:item.knapping.clay', false, true, true, 'embers:caminite_blend', 'kubejs:caminite')
     event.knappingType('productivebees:wax', 2, 1, 'tfc:item.knapping.clay', false, false, true, 'productivebees:wax', 'kubejs:wax')
+
+    //event.metal('kubejs:metallic_naquadah', 2000, 0.8, 'sgjourney:naquadah_alloy', null, 'kubejs:naquadah_sheet', 5, 'kubejs:naquadah')
+    
 })
 
 ServerEvents.tags('item', event => {
@@ -28,6 +31,9 @@ event.add('forge:ingots/bronze', '#forge:ingots/strong_bronze')
 event.add('forge:nuggets/bronze', '#forge:nuggets/strong_bronze')
 event.add('forge:plates/bronze', '#forge:plates/strong_bronze')
 event.add(`map_atlases:sticky_crafting_items`,`#forge:dough`)
+
+//event.add('tfc:pileable_ingots', 'sgjourney:naquadah_alloy')
+//event.add(`tfc:pileable_ingots`,`#forge:ingots`)
 })
 
 BlockEvents.rightClicked(event => {

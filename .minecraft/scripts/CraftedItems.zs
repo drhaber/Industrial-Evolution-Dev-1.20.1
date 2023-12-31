@@ -14,22 +14,6 @@ craftingTable.remove(<item:productivebees:heated_centrifuge>);
 craftingTable.remove(<item:minecraft:paper>);
 <recipetype:create:pressing>.remove(<item:minecraft:paper>);
 
-craftingTable.remove(<item:create:belt_connector>);
-craftingTable.addShaped("handcrafted_create_belt_leather", <item:create:belt_connector>*8,
-[[<item:minecraft:leather>,<item:minecraft:leather>,<item:minecraft:leather>],
-[<tag:items:tfc:chains>,<tag:items:tfc:chains>,<tag:items:tfc:chains>],
-[<item:minecraft:leather>,<item:minecraft:leather>,<item:minecraft:leather>]]);
-
-<recipetype:createaddition:rolling>.addJsonRecipe("rolled_create_belt_rubber", {
-	"type":"createaddition:rolling",
-	"input": {
-      	"item": "create_dd:rubber"
-	},
-	"result": {
-		"item": "create:belt_connector",
-		"count": 3
-	}
-});
 craftingTable.remove(<item:productivebees:powered_centrifuge>);
 craftingTable.addShaped("handcrafted_powered_centrifuge", <item:productivebees:powered_centrifuge>, [
     [<item:railcraft:charge_motor>],
@@ -47,6 +31,15 @@ craftingTable.addShaped("handcrafted_tempad", <item:tempad:tempad>, [
     [<item:tis3d:display_module>,<item:sgjourney:materialization_crystal>,<item:embers:dawnstone_ingot>],
     [<item:tis3d:keypad_module>,<item:sgjourney:reaction_chamber>,<item:railcraft:invar_ingot>],
     [<item:sgjourney:memory_crystal>,<item:ae2:fluix_crystal>,<item:immersiveengineering:ingot_electrum>]]);
+
+craftingTable.remove(<item:minecraft:hopper>);
+craftingTable.addShaped("handcrafted_hopper", <item:minecraft:hopper>, [
+  [<tag:items:forge:sheets/lead>,<item:minecraft:air>,<tag:items:forge:sheets/lead>],
+  [<item:minecraft:air>,<tag:items:forge:chests>,<item:minecraft:air>]]);
+
+
+
+
 
 <recipetype:create:mechanical_crafting>.addJsonRecipe("he_who_remains_tempad_mechanical_crafting", {
   "type": "create:mechanical_crafting",

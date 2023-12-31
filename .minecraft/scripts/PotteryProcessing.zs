@@ -96,24 +96,6 @@ addTFCPotteryFire("embers:raw_caminite_plate","embers:caminite_plate");
     }
 });
 
-<recipetype:create:item_application>.addJsonRecipe("item_application_shaft", {
-  "type": "create:item_application",
-  "ingredients": [
-    {
-      "tag": "tfc:axles"
-    },
-    {
-      "item": "create:andesite_alloy"
-    }
-  ],
-  "results": [
-    {
-      "item": "create:shaft"
-    }
-  ]
-}
-);
-
 function addTFCPotteryCompat(ItemIn as string, ItemOut as string) as void { 
 <recipetype:create_dd:superheating>.addJsonRecipe("tfc_pottery_compat_superheat" + ItemOut.replace(":","_"),{
   "type": "create_dd:superheating",
