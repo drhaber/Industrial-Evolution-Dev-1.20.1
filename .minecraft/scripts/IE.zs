@@ -98,3 +98,9 @@ craftingTable.addShaped("handcrafted_windmill", <item:immersiveengineering:windm
     [<item:immersiveengineering:windmill_blade>,<item:immersiveengineering:windmill_blade>,<item:immersiveengineering:windmill_blade>],
     [<item:immersiveengineering:windmill_blade>,<item:immersiveengineering:treated_fence>,<item:immersiveengineering:windmill_blade>],
     [<item:immersiveengineering:windmill_blade>,<item:immersiveengineering:windmill_blade>,<item:immersiveengineering:windmill_blade>]]);  
+
+craftingTable.remove(<item:immersiveengineering:dynamo>);
+craftingTable.addShaped("handcrafted_dynamo", <item:immersiveengineering:dynamo>,[
+    [<tag:items:forge:sheets/cast_iron>,<item:create_new_age:magnetite_block>,<tag:items:forge:sheets/cast_iron>],
+    [<item:railcraft:charge_terminal>,<item:create_new_age:generator_coil>,<item:immersiveengineering:treated_fence>],
+    [<tag:items:forge:sheets/cast_iron>,<item:create_new_age:magnetite_block>,<tag:items:forge:sheets/cast_iron>]]);      
