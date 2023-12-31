@@ -40,3 +40,9 @@ craftingTable.addShaped("handcrafted_alternator_dynamo", <item:createaddition:al
     [<tag:items:forge:sheets/steel>,<item:immersiveengineering:dynamo>,<tag:items:forge:sheets/steel>],
     [<item:immersiveengineering:dynamo>,<item:immersiveengineering:capacitor_lv>,<item:immersiveengineering:dynamo>],
     [<tag:items:forge:sheets/steel>,<item:immersiveengineering:dynamo>,<tag:items:forge:sheets/steel>]]);          
+
+craftingTable.remove(<item:createaddition:rolling_mill>);
+craftingTable.addShaped("handcrafted_rolling_mill", <item:createaddition:rolling_mill>,[
+    [<item:create_deco_casing:andesite_casing_slab>,<item:create:shaft>,<item:create_deco_casing:andesite_casing_slab>],
+    [<item:create_deco_casing:andesite_casing_slab>,<item:create:shaft>,<item:create_deco_casing:andesite_casing_slab>],
+    [<item:create:andesite_casing>,<item:create:andesite_casing>,<item:create:andesite_casing>]]);        

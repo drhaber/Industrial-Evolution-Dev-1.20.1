@@ -21,3 +21,116 @@ craftingTable.addShaped("handcrafted_dense_wire_spool", <item:more_immersive_wir
     [<tag:items:ae2:covered_dense_cable>,<tag:items:ae2:covered_dense_cable>,<tag:items:ae2:covered_dense_cable>],
     [<tag:items:ae2:covered_dense_cable>,<item:kubejs:emptyspool>,<tag:items:ae2:covered_dense_cable>],
     [<tag:items:ae2:covered_dense_cable>,<tag:items:ae2:covered_dense_cable>,<tag:items:ae2:covered_dense_cable>]]);      
+
+
+craftingTable.remove(<item:appbot:mana_cell_housing>);
+<recipetype:create:mechanical_crafting>.addJsonRecipe("mana_cell_housing_mechanical_crafting", {
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "G": { 
+      "item": "ae2:quartz_glass"
+    },
+    "S": {
+      "item": "botania:manasteel_ingot"
+    },
+    "W": {
+      "item": "kubejs:fluix_wire"
+    }
+  },
+  "pattern": [
+    " SGS ",
+    "SWWWS",
+    "SW WS",
+    "SWWWS",
+    " SSSW"
+  ],
+  "result": {
+    "count": 1,
+    "item": "appbot:mana_cell_housing"
+  }
+});  
+
+craftingTable.remove(<item:ae2:item_cell_housing>);
+<recipetype:create:mechanical_crafting>.addJsonRecipe("item_cell_housing_mechanical_crafting", {
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "G": { 
+      "item": "ae2:quartz_glass"
+    },
+    "S": {
+      "item": "tfc:metal/sheet/steel"
+    },
+    "W": {
+      "item": "kubejs:fluix_wire"
+    }
+  },
+  "pattern": [
+    " SGS ",
+    "SWWWS",
+    "SW WS",
+    "SWWWS",
+    " SSSW"
+  ],
+  "result": {
+    "count": 1,
+    "item": "ae2:item_cell_housing"
+  }
+});  
+
+craftingTable.remove(<item:ae2:fluid_cell_housing>);
+<recipetype:create:mechanical_crafting>.addJsonRecipe("fluid_cell_housing_mechanical_crafting", {
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "G": { 
+      "item": "ae2:quartz_glass"
+    },
+    "S": {
+      "item": "tfc:metal/sheet/red_steel"
+    },
+    "W": {
+      "item": "kubejs:fluix_wire"
+    }
+  },
+  "pattern": [
+    " SGS ",
+    "SWWWS",
+    "SW WS",
+    "SWWWS",
+    " SSSW"
+  ],
+  "result": {
+    "count": 1,
+    "item": "ae2:fluid_cell_housing"
+  }
+});  
+
+craftingTable.remove(<item:ae2things:disk_housing>);
+<recipetype:create:mechanical_crafting>.addJsonRecipe("ae2things_disk_housing_mechanical_crafting", {
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "G": { 
+      "item": "ae2:quartz_glass"
+    },
+    "S": {
+      "item": "create_dd:shadow_steel_sheet"
+    },
+    "W": {
+      "item": "kubejs:fluix_wire"
+    }
+  },
+  "pattern": [
+    " SGS ",
+    "SWWWS",
+    "SW WS",
+    "SWWWS",
+    " SSSW"
+  ],
+  "result": {
+    "count": 1,
+    "item": "ae2things:disk_housing"
+  }
+}); 

@@ -370,7 +370,8 @@
         "tfc:the_world/wild_fruits",
         "tfc:the_world/ores_and_minerals",
         "tfc:mechanics/pot",
-        "tfc:firmalife/planters"
+        "tfc:firmalife/planters",
+        "tfc:firmalife/drying"
       ],
       "bookmarks": [],
       "completedManualQuests": []
