@@ -254,20 +254,6 @@ craftingTable.addShaped("handcrafted_logic_cable_spool", <item:more_immersive_wi
 
 //=====================================================================
 
-//Generators
-craftingTable.remove(<item:create_new_age:carbon_brushes>);
-craftingTable.addShaped("handcrafted_carbon_brushes", <item:create_new_age:carbon_brushes>, [
-    [<tag:items:forge:rods/cast_iron>,<item:railcraft:carbon_electrode>,<tag:items:forge:rods/cast_iron>],
-    [<tag:items:forge:sheets/copper>,<item:create:shaft>,<tag:items:forge:sheets/copper>],
-    [<tag:items:forge:rods/cast_iron>,<item:railcraft:carbon_electrode>,<tag:items:forge:rods/cast_iron>]]);
-
-craftingTable.remove(<item:create_new_age:generator_coil>);
-craftingTable.addShaped("handcrafted_new_age_generator_coil", <item:create_new_age:generator_coil>, [
-    [<item:immersiveengineering:coil_lv>,<item:immersiveengineering:coil_lv>,<item:immersiveengineering:coil_lv>],
-    [<item:immersiveengineering:coil_lv>,<item:create:shaft>,<item:immersiveengineering:coil_lv>],
-    [<item:immersiveengineering:coil_lv>,<item:immersiveengineering:coil_lv>,<item:immersiveengineering:coil_lv>]]);
-
-
 //Chalk 
 var Colours = ["white","light_gray","gray","black","brown","red","orange","yellow","lime","green","cyan","light_blue","blue","purple","magenta","pink"];
 for dye in Colours{
