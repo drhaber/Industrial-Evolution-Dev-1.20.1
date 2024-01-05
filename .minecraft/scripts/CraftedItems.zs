@@ -186,8 +186,22 @@ addWaxKnapping(
         "XX XX",
 "kubejs:wax_anvil");
 
-
-
+<recipetype:tfc:anvil>.addJsonRecipe("anvil_stainless_steel_mc_bucket", {
+  "type": "tfc:anvil",
+  "input": {
+    "tag": "forge:sheets/stainless_steel"
+  },
+  "result": {
+    "item": "minecraft:bucket"
+  },
+  "tier": 4,
+  "rules": [
+    "bend_last",
+    "bend_second_last",
+    "bend_third_last"
+  ]
+}
+);
 craftingTable.remove(<item:immersiveengineering:wirecoil_redstone>);
 craftingTable.addShaped("handcrafted_redstone_spool", <item:immersiveengineering:wirecoil_redstone>,[
     [<item:morered:red_alloy_wire>,<item:morered:red_alloy_wire>,<item:morered:red_alloy_wire>],

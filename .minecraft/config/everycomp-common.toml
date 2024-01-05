@@ -62,13 +62,6 @@
 				mining = true
 				sorting = true
 
-			[general.types.wood_type.deep_aether]
-				roseroot = true
-				cruderoot = true
-				conberry = true
-				sunroot = true
-				yagroot = true
-
 			[general.types.wood_type.ad_astra]
 				aeronos = true
 				strophar = true
@@ -103,25 +96,20 @@
 				holiday = true
 				decorated_holiday = true
 
-			[general.types.leaves_type.deep_aether]
-				roseroot = true
-				flowering_roseroot = true
-				blue_roseroot = true
-				flowering_blue_roseroot = true
-				yagroot = true
-				cruderoot = true
-				conberry = true
-				sunroot = true
-
 			[general.types.leaves_type.ad_astra]
 				glacian = true
 
-			[general.types.leaves_type.naturesaura]
-				ancient = true
-				golden = true
-
 			[general.types.leaves_type.integrateddynamics]
 				menril = true
+
+		[general.types.cake]
+
+			[general.types.cake.tfc]
+				cake = true
+
+			[general.types.cake.createaddition]
+				chocolate_cake = true
+				honey_cake = true
 
 	[general.entries]
 
@@ -130,42 +118,6 @@
 			[general.entries.wood_type.create]
 				window_pane = true
 				window = true
-
-			[general.entries.wood_type.cfm]
-				stripped_kitchen_sink_light = true
-				table = true
-				coffee_table = true
-				park_bench = true
-				stripped_kitchen_counter = true
-				stripped_bedside_cabinet = true
-				desk_cabinet = true
-				upgraded_fence = true
-				kitchen_counter = true
-				upgraded_gate = true
-				stripped_park_bench = true
-				cabinet = true
-				mail_box = true
-				crate = true
-				chair = true
-				stripped_mail_box = true
-				stripped_blinds = true
-				bedside_cabinet = true
-				stripped_upgraded_fence = true
-				stripped_cabinet = true
-				kitchen_drawer = true
-				desk = true
-				stripped_kitchen_drawer = true
-				kitchen_sink_dark = true
-				stripped_desk_cabinet = true
-				stripped_table = true
-				blinds = true
-				stripped_chair = true
-				stripped_kitchen_sink_dark = true
-				stripped_desk = true
-				kitchen_sink_light = true
-				stripped_coffee_table = true
-				stripped_crate = true
-				stripped_upgraded_gate = true
 
 			[general.entries.wood_type.mcwroofs]
 				planks_upper_steep_roof = true
@@ -326,12 +278,6 @@
 				table = true
 				chair = true
 
-			[general.entries.wood_type.decorative_blocks]
-				seat = true
-				palisade = true
-				beam = true
-				support = true
-
 			[general.entries.wood_type.mcwlights]
 				tiki_torch = true
 				soul_tiki_torch = true
@@ -357,8 +303,5 @@
 		[general.entries.leaves_type]
 
 			[general.entries.leaves_type.mcwfences]
-				hedge = true
-
-			[general.entries.leaves_type.cfm]
 				hedge = true
 

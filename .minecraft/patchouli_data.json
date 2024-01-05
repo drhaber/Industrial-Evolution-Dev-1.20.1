@@ -2,6 +2,11 @@
   "bookGuiScale": 0,
   "clickedVisualize": true,
   "bookData": {
+    "apotheosis:apoth_chronicle": {
+      "viewedEntries": [],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
     "naturesaura:book": {
       "viewedEntries": [
         "naturesaura:practices/aura_plants",
@@ -371,7 +376,8 @@
         "tfc:the_world/ores_and_minerals",
         "tfc:mechanics/pot",
         "tfc:firmalife/planters",
-        "tfc:firmalife/drying"
+        "tfc:firmalife/drying",
+        "tfc:mechanics/wooden_buckets"
       ],
       "bookmarks": [],
       "completedManualQuests": []
