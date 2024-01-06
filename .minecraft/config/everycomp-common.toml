@@ -99,9 +99,6 @@
 			[general.types.leaves_type.ad_astra]
 				glacian = true
 
-			[general.types.leaves_type.integrateddynamics]
-				menril = true
-
 		[general.types.cake]
 
 			[general.types.cake.tfc]

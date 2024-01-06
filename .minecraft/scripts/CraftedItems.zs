@@ -220,12 +220,6 @@ craftingTable.addShaped("handcrafted_bundled_cable_spool", <item:morered:bundled
     [<item:morered:bundled_network_cable>,<item:kubejs:emptyspool>,<item:morered:bundled_network_cable>],
     [<item:morered:bundled_network_cable>,<item:morered:bundled_network_cable>,<item:morered:bundled_network_cable>]]);  
 
-craftingTable.remove(<item:more_immersive_wires:id_coil>);
-craftingTable.addShaped("handcrafted_logic_cable_spool", <item:more_immersive_wires:id_coil>,[
-    [<item:integrateddynamics:cable>,<item:integrateddynamics:cable>,<item:integrateddynamics:cable>],
-    [<item:integrateddynamics:cable>,<item:kubejs:emptyspool>,<item:integrateddynamics:cable>],
-    [<item:integrateddynamics:cable>,<item:integrateddynamics:cable>,<item:integrateddynamics:cable>]]);  
-
 //=====================================================================
 
 //Chalk 

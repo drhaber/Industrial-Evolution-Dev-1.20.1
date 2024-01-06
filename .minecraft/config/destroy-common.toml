@@ -5,7 +5,7 @@
 	#.
 	#.
 	#Prevents Destroy Ores from generating
-	disableWorldGen = false
+	disableWorldGen = true
 
 #.
 #Destroy's drugs and medicines
