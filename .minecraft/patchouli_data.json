@@ -377,7 +377,10 @@
         "tfc:mechanics/pot",
         "tfc:firmalife/planters",
         "tfc:firmalife/drying",
-        "tfc:mechanics/wooden_buckets"
+        "tfc:mechanics/wooden_buckets",
+        "tfc:arborfirmacraft/tree_tapping",
+        "tfc:the_world/geology",
+        "tfc:the_world/flora"
       ],
       "bookmarks": [],
       "completedManualQuests": []

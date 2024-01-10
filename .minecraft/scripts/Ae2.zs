@@ -106,7 +106,7 @@ craftingTable.remove(<item:ae2:fluid_cell_housing>);
     "item": "ae2:fluid_cell_housing"
   }
 });  
-
+/*
 craftingTable.remove(<item:ae2things:disk_housing>);
 <recipetype:create:mechanical_crafting>.addJsonRecipe("ae2things_disk_housing_mechanical_crafting", {
   "type": "create:mechanical_crafting",
@@ -133,4 +133,4 @@ craftingTable.remove(<item:ae2things:disk_housing>);
     "count": 1,
     "item": "ae2things:disk_housing"
   }
-}); 
+}); */

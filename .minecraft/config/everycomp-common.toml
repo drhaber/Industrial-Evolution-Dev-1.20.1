@@ -70,6 +70,18 @@
 			[general.types.wood_type.createdieselgenerators]
 				chip_wood = true
 
+			[general.types.wood_type.afc]
+				baobab = true
+				eucalyptus = true
+				mahogany = true
+				hevea = true
+				tualang = true
+				teak = true
+				cypress = true
+				fig = true
+				ironwood = true
+				ipe = true
+
 		[general.types.leaves_type]
 
 			[general.types.leaves_type.create_dd]

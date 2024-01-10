@@ -130,7 +130,7 @@
 	#Range: > 0
 	Lightning_DistanceToPlayerForEffects = 256
 	#-
-	Lightning_StartsFires = false
+	Lightning_StartsFires = true
 	#-
 	#Range: > 0
 	Storm_Deflector_RadiusOfStormRemoval = 150

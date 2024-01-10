@@ -12,7 +12,8 @@ import mods.create.FillingManager;
 craftingTable.remove(<item:productivebees:centrifuge>);
 craftingTable.remove(<item:productivebees:heated_centrifuge>);
 craftingTable.remove(<item:minecraft:paper>);
-<recipetype:create:pressing>.remove(<item:minecraft:paper>);
+//<recipetype:create:pressing>.remove(<item:minecraft:paper>);
+<recipetype:create:pressing>.removeByName("create:pressing/sugar_cane");
 
 craftingTable.remove(<item:productivebees:powered_centrifuge>);
 craftingTable.addShaped("handcrafted_powered_centrifuge", <item:productivebees:powered_centrifuge>, [
@@ -226,11 +227,25 @@ craftingTable.addShaped("handcrafted_bundled_cable_spool", <item:morered:bundled
 var Colours = ["white","light_gray","gray","black","brown","red","orange","yellow","lime","green","cyan","light_blue","blue","purple","magenta","pink"];
 for dye in Colours{
 craftingTable.remove(<item:chalk:${dye}_chalk>);
-craftingTable.addShaped("handcrafted_chalk" + dye, <item:chalk:${dye}_chalk>, [
-    [<tagmanager:items>.tag("forge:dyes/" + dye)],
-    [<item:tfc:rock/loose/chalk>],
-    [<item:tfc:rock/loose/chalk>]]);
+
+<recipetype:tfc:barrel_sealed>.addJsonRecipe("barrel_chalk" + dye, {
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "item": "chalk:white_chalk"
+    }
+  },
+  "input_fluid": {
+    "ingredient": "tfc:" + dye + "_dye",
+    "amount": 25
+  },
+  "output_item": {
+    "item": "chalk:" + dye + "_chalk"
+  },
+  "duration": 1000
+});    
 }
+
 craftingTable.addShaped("handcrafted_white_chalk", <item:chalk:white_chalk>, [
     [<item:tfc:rock/loose/chalk>],
     [<item:tfc:rock/loose/chalk>]]);
