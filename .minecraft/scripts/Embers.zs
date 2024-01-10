@@ -21,4 +21,5 @@ craftingTable.addShaped("handcrafted_mechanical_core", <item:embers:mechanical_c
   [<item:createdieselgenerators:engine_piston>,<item:create:shaft>,<item:createdieselgenerators:engine_piston>],
   [<tag:items:forge:ingots/lead>,<item:minecraft:air>,<tag:items:forge:ingots/lead>]]);      
 
-    
+craftingTable.remove(<item:embers:ancient_codex>);
+craftingTable.addShapeless("handcrafted_ancient_codex", <item:embers:ancient_codex>, [<item:embers:caminite_plate>,<item:minecraft:book>,<item:tfc:powder/wood_ash>]);
