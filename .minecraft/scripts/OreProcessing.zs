@@ -799,6 +799,7 @@ addEmbersStamping(<fluid:kubejs:moltenredalloy>,<item:morered:red_alloy_ingot>,<
   ]
 });
 //Hall–Héroult_process is above
+
 /*
 
 //Liquid Catalyst
@@ -811,18 +812,6 @@ mods.embers.Melter.remove(<liquid:alchemical_redstone>*1296);
 
 mods.embers.Melter.add(<liquid:redstone>*144,<ore:dustRedstone>); 
 mods.embers.Melter.add(<liquid:redstone>*1296,<ore:blockRedstone>); 
-
-mods.embers.Mixer.add(<liquid:alchemical_redstone>*288, [<liquid:liquidchorus>*125,<liquid:redstone>*144,<liquid:menrilresin>*250]);
-
-
-
-
-    mods.embers.Melter.add(<liquid:alumina>*144, <pyrotech:generated_slag_aluminium_custom>);
-    mods.pyrotech.BrickCrucible.addRecipe(<liquid:alumina>.name,<liquid:alumina>*144,<pyrotech:generated_slag_aluminium_custom>,2400);
-    mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:sodium_hydroxide_solution>*500, <tfc:ore/small/bauxite>*10, 2, 448.0, <liquid:sodium_aluminate>*144);
-    #mods.nuclearcraft.electrolyser.addRecipe(<liquid:sodium_aluminate>*144, <liquid:alumina>*144, <liquid:red_mud>*144, null, null);
-    mods.embers.Melter.add(<liquid:aluminium>*144, <tfctech:metal/aluminium_long_rod>);
-
 
 mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:pig_iron>*288, <tfc:powder/flux>, -0.75, 773.0, <liquid:steel>*144);
 
