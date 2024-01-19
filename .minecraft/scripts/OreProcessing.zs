@@ -61,7 +61,17 @@ craftingTable.removeByName("railcraft:brass_ingot");
 //craftingTable.removeByName("railcraft:zinc_ingot_from_zinc_nugget");
 craftingTable.removeByName("railcraft:zinc_ingot");
 //craftingTable.removeByName("railcraft:zinc_block_from_zinc_ingot");
+
 <recipetype:immersiveengineering:arc_furnace>.removeByName("tfc_ie_addon:arc_furnace/bauxite");
+<recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/raw_block_aluminum");
+<recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/ore_aluminum");
+<recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/raw_ore_aluminum");
+<recipetype:create:crushing>.removeByName("create:crushing/aluminum_ore");
+<recipetype:create:crushing>.removeByName("create:crushing/raw_aluminum_ore");
+<recipetype:create:crushing>.removeByName("create:crushing/raw_aluminum_block");
+<recipetype:immersiveengineering:crusher>.removeByName("immersiveengineering:crusher/raw_block_aluminum");
+<recipetype:immersiveengineering:crusher>.removeByName("immersiveengineering:crusher/raw_ore_aluminum");
+<recipetype:immersiveengineering:crusher>.removeByName("immersiveengineering:crusher/ore_aluminum");
 
 //Ingots
 var tfcMetals = ["bismuth","bismuth_bronze","black_bronze","black_steel","blue_steel","brass","bronze","cast_iron","copper","gold","high_carbon_black_steel","high_carbon_blue_steel","high_carbon_red_steel","high_carbon_steel","nickel","pig_iron","red_steel","rose_gold","silver","steel","sterling_silver","tin","unknown","weak_blue_steel","weak_red_steel","weak_steel","wrought_iron","zinc"];
