@@ -258,6 +258,7 @@
 				mystic_door = true
 				bark_glass_door = true
 				classic_door = true
+				waffle_door = true
 
 			[general.entries.wood_type.mcwfences]
 				highley_gate = true

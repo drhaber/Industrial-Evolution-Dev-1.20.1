@@ -159,6 +159,12 @@ StartupEvents.registry('fluid', e => {
 		.bucketColor(0xC8C7C3)
 		.displayName('Sodium Aluminate Solution')
 
+	//aluminium_hydroxide
+	e.create('aluminium_hydroxide')
+		.thinTexture(0xC8C7C3)
+		.bucketColor(0xC8C7C3)
+		.displayName('Aluminium Hydroxide')
+
 	//chlorine
 	e.create('chlorine')
 		.thinTexture(0x9AA953)

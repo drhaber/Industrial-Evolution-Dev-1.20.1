@@ -1,8 +1,8 @@
 {
-    "item.minecraft.chainmail_helmet": "Wrought Iron Chainmail Coif",
-    "item.minecraft.chainmail_chestplate": "Wrought Iron Chainmail Hauberk",
-    "item.minecraft.chainmail_leggings": "Wrought Iron Chainmail Chausses",
-    "item.minecraft.chainmail_boots": "Wrought Iron Chainmail Sabatons",
+    "item.minecraft.chainmail_helmet": "Wrought Iron Chainmail Helmet",
+    "item.minecraft.chainmail_chestplate": "Wrought Iron Chainmail Chestplate",
+    "item.minecraft.chainmail_leggings": "Wrought Iron Chainmail Leggings",
+    "item.minecraft.chainmail_boots": "Wrought Iron Chainmail Boots",
 
     "block.minecraft.torch": "Everlasting Torch",
     "block.minecraft.candle": "Everlasting Candle",

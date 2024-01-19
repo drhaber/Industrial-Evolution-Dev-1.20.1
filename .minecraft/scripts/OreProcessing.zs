@@ -22,7 +22,7 @@ Jei.hideCategory(<resource:jumbofurnace:jumbo_furnace_upgrade>);
 <recipetype:minecraft:smoking>.removeAll();
 <recipetype:immersiveengineering:blast_furnace>.removeAll();
 <recipetype:immersiveengineering:blast_furnace_fuel>.removeAll();
-<recipetype:minecraft:crafting>.remove(<tag:items:forge:dusts>);
+//<recipetype:minecraft:crafting>.remove(<tag:items:forge:dusts>);
 <recipetype:minecraft:crafting>.remove(<tag:items:forge:plates>);
 <recipetype:minecraft:smelting>.remove(<tag:items:forge:ingots>);
 <recipetype:minecraft:blasting>.remove(<tag:items:forge:ingots>);
@@ -61,6 +61,7 @@ craftingTable.removeByName("railcraft:brass_ingot");
 //craftingTable.removeByName("railcraft:zinc_ingot_from_zinc_nugget");
 craftingTable.removeByName("railcraft:zinc_ingot");
 //craftingTable.removeByName("railcraft:zinc_block_from_zinc_ingot");
+<recipetype:immersiveengineering:arc_furnace>.removeByName("tfc_ie_addon:arc_furnace/bauxite");
 
 //Ingots
 var tfcMetals = ["bismuth","bismuth_bronze","black_bronze","black_steel","blue_steel","brass","bronze","cast_iron","copper","gold","high_carbon_black_steel","high_carbon_blue_steel","high_carbon_red_steel","high_carbon_steel","nickel","pig_iron","red_steel","rose_gold","silver","steel","sterling_silver","tin","unknown","weak_blue_steel","weak_red_steel","weak_steel","wrought_iron","zinc"];
@@ -267,7 +268,7 @@ function addarcfurnacesmelting(ItemOut as string, ItemIn as string, QtyI as int)
 <item:create:crushed_raw_silver>.addTooltip("Melts into 5 mB Silver");
 <item:create:crushed_raw_tin>.addTooltip("Melts into 5 mB Tin");
 <item:create:crushed_raw_lead>.addTooltip("Melts into 5 mB Lead");
-<item:create:crushed_raw_aluminum>.addTooltip("Melts into 5 mB Aluminum");
+//<item:create:crushed_raw_aluminum>.addTooltip("Melts into 5 mB Aluminum");
 <item:create:crushed_raw_uranium>.addTooltip("Melts into 5 mB Uranium");
 <item:create:crushed_raw_nickel>.addTooltip("Melts into 5 mB Nickel");
 
@@ -291,7 +292,7 @@ addBigCannonmelting("tfc:metal/zinc","create:crushed_raw_zinc",5);
 addBigCannonmelting("tfc:metal/silver","create:crushed_raw_silver",5);
 addBigCannonmelting("tfc:metal/tin","create:crushed_raw_tin",5);
 addBigCannonmelting("tfc_ie_addon:metal/lead","create:crushed_raw_lead",5);
-addBigCannonmelting("tfc_ie_addon:metal/aluminum","create:crushed_raw_aluminum",5);
+//addBigCannonmelting("tfc_ie_addon:metal/aluminum","create:crushed_raw_aluminum",5);
 addBigCannonmelting("tfc_ie_addon:metal/uranium","create:crushed_raw_uranium",5);
 addBigCannonmelting("tfc:metal/nickel","create:crushed_raw_nickel",5);
 
@@ -353,7 +354,7 @@ addEmbersmelting("tfc:metal/zinc","create:crushed_raw_zinc",5);
 addEmbersmelting("tfc:metal/silver","create:crushed_raw_silver",5);
 addEmbersmelting("tfc:metal/tin","create:crushed_raw_tin",5);
 addEmbersmelting("tfc_ie_addon:metal/lead","create:crushed_raw_lead",5);
-addEmbersmelting("tfc_ie_addon:metal/aluminum","create:crushed_raw_aluminum",5);
+//addEmbersmelting("tfc_ie_addon:metal/aluminum","create:crushed_raw_aluminum",5);
 addEmbersmelting("tfc_ie_addon:metal/uranium","create:crushed_raw_uranium",5);
 addEmbersmelting("tfc:metal/nickel","create:crushed_raw_nickel",5);
 
@@ -475,7 +476,7 @@ addOrecrushing("tfc:ore/small_sphalerite","create:crushed_raw_zinc");
 addOrecrushing("tfc:ore/small_native_silver","create:crushed_raw_silver");
 addOrecrushing("tfc:ore/small_cassiterite","create:crushed_raw_tin");
 addOrecrushing("tfc_ie_addon:ore/small_galena","create:crushed_raw_lead");
-addOrecrushing("tfc_ie_addon:ore/small_bauxite","create:crushed_raw_aluminum");
+addOrecrushing("tfc_ie_addon:ore/small_bauxite","tfc_ie_addon:powder/bauxite");
 addOrecrushing("tfc_ie_addon:ore/small_uraninite","create:crushed_raw_uranium");
 addOrecrushing("tfc:ore/small_garnierite","create:crushed_raw_nickel");
 
@@ -490,7 +491,7 @@ addIEOrecrushing("tfc:ore/small_sphalerite","create:crushed_raw_zinc",2,0.2);
 addIEOrecrushing("tfc:ore/small_native_silver","create:crushed_raw_silver",2,0.2);
 addIEOrecrushing("tfc:ore/small_cassiterite","create:crushed_raw_tin",2,0.2);
 addIEOrecrushing("tfc_ie_addon:ore/small_galena","create:crushed_raw_lead",2,0.2);
-addIEOrecrushing("tfc_ie_addon:ore/small_bauxite","create:crushed_raw_aluminum",2,0.2);
+addIEOrecrushing("tfc_ie_addon:ore/small_bauxite","tfc_ie_addon:powder/bauxite",2,0.2);
 addIEOrecrushing("tfc_ie_addon:ore/small_uraninite","create:crushed_raw_uranium",2,0.2);
 addIEOrecrushing("tfc:ore/small_garnierite","create:crushed_raw_nickel",2,0.2);
 
@@ -677,6 +678,127 @@ addEmbersStamping(<fluid:kubejs:moltenredalloy>,<item:morered:red_alloy_ingot>,<
   }
 });
 
+
+
+//Bauxite/Aluminium - Bayer Process
+
+<recipetype:pneumaticcraft:thermo_plant>.addJsonRecipe("bayer_process_sodium_aluminate", {
+  "type": "pneumaticcraft:thermo_plant",
+  "exothermic": false,
+  "fluid_input": {
+    "type": "pneumaticcraft:fluid",
+    "amount": 20,
+    "tag": "tfc:lye"
+  },
+  "fluid_output": {
+    "amount": 20,
+    "fluid": "kubejs:sodium_aluminate"
+  },
+  "item_input": {
+    "item": "tfc_ie_addon:powder/bauxite"
+  },
+  "pressure": 10.0,
+  "temperature": {
+    "max_temp": 523,
+    "min_temp": 473
+  }
+});
+<recipetype:destroy:centrifugation>.addJsonRecipe("bayer_process_aluminium_hydroxide", {
+    "type": "destroy:centrifugation",
+    "ingredients": [
+        {
+            "fluid": "kubejs:sodium_aluminate",
+            "amount": 20
+        }
+    ],
+    "results": [
+        {
+            "fluid": "kubejs:aluminium_hydroxide",
+            "amount": 10
+        },
+        {
+            "fluid": "kubejs:red_mud",
+            "amount": 10
+        }
+    ],
+    "processingTime": 500
+});
+
+<recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("bayer_process_crushed_raw_aluminum", {
+  "type": "createdieselgenerators:basin_fermenting",
+  "heatRequirement": "superheated",  
+  "ingredients": [
+    {
+      "fluid": "kubejs:aluminium_hydroxide",
+      "amount": 10
+    }
+  ],
+  "processingTime": 800,
+  "results": [
+    {
+      "item": "create:crushed_raw_aluminum"
+    },
+    {
+      "fluid": "kubejs:red_mud",
+      "amount": 5
+    }
+  ]
+});
+
+<recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("bayer_process_crushed_raw_aluminum_bonus1", {
+  "type": "createdieselgenerators:basin_fermenting",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item": "create:crushed_raw_aluminum"
+    },
+    {
+      "fluid": "kubejs:aluminium_hydroxide",
+      "amount": 10
+    }
+  ],
+  "processingTime": 800,
+  "results": [
+    {
+      "fluid": "kubejs:red_mud",
+      "amount": 2
+    },
+    {
+      "item": "create:crushed_raw_aluminum"
+    },   
+    {
+      "item": "create:crushed_raw_aluminum"
+    },         
+    {
+      "item": "create:crushed_raw_aluminum",
+      "chance": 0.6
+    }
+  ]
+});
+
+<recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("bayer_process_crushed_raw_aluminum_bonus2", {
+  "type": "createdieselgenerators:basin_fermenting",
+  "heatRequirement": "superheated",  
+  "ingredients": [
+    {
+      "item": "embers:aluminum_crystal_seed"
+    },
+    {
+      "fluid": "kubejs:aluminium_hydroxide",
+      "amount": 10
+    }
+  ],
+  "processingTime": 800,
+  "results": [
+    {
+      "item": "create:crushed_raw_aluminum"
+    },
+    {
+      "item": "create:crushed_raw_aluminum"
+    }
+  ]
+});
+//Hall–Héroult_process is above
 /*
 
 //Liquid Catalyst
@@ -694,7 +816,7 @@ mods.embers.Mixer.add(<liquid:alchemical_redstone>*288, [<liquid:liquidchorus>*1
 
 
 
-//Bauxite/Aluminium - Bayer Process
+
     mods.embers.Melter.add(<liquid:alumina>*144, <pyrotech:generated_slag_aluminium_custom>);
     mods.pyrotech.BrickCrucible.addRecipe(<liquid:alumina>.name,<liquid:alumina>*144,<pyrotech:generated_slag_aluminium_custom>,2400);
     mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:sodium_hydroxide_solution>*500, <tfc:ore/small/bauxite>*10, 2, 448.0, <liquid:sodium_aluminate>*144);

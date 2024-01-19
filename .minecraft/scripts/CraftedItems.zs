@@ -12,6 +12,7 @@ import mods.create.FillingManager;
 craftingTable.remove(<item:productivebees:centrifuge>);
 craftingTable.remove(<item:productivebees:heated_centrifuge>);
 craftingTable.remove(<item:minecraft:paper>);
+craftingTable.remove(<item:minecraft:cake>);
 //<recipetype:create:pressing>.remove(<item:minecraft:paper>);
 <recipetype:create:pressing>.removeByName("create:pressing/sugar_cane");
 
