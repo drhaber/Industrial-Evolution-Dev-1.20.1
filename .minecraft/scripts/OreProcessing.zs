@@ -62,6 +62,12 @@ craftingTable.removeByName("railcraft:brass_ingot");
 craftingTable.removeByName("railcraft:zinc_ingot");
 //craftingTable.removeByName("railcraft:zinc_block_from_zinc_ingot");
 
+<recipetype:create:compacting>.removeByName("create_dd:compacting/steel_ingot");
+
+<recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/steel");
+//<recipetype:immersiveengineering:arc_furnace>.removeByName("tfc_ie_addon:arc_furnace/steel");
+<recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/dust_steel");
+
 <recipetype:immersiveengineering:arc_furnace>.removeByName("tfc_ie_addon:arc_furnace/bauxite");
 <recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/raw_block_aluminum");
 <recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/ore_aluminum");
