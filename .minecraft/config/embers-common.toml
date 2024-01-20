@@ -131,7 +131,7 @@
 	#Codex entries need to be completed before the next one unlocks.
 	codexProgression = true
 	#Which domains are preferred for recipes with dynamic outputs.
-	tagPreferences = ["minecraft", "embers"]
+	tagPreferences = ["tfc","minecraft", "embers"]
 	#If true, Embers homing projectiles will go for neutral players.
 	everybodyIsEnemy = false
 	#Which items are preferred as the result of breaking down a tool on an anvil.
