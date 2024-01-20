@@ -33,6 +33,8 @@ Jei.hideCategory(<resource:jumbofurnace:jumbo_furnace_upgrade>);
 <recipetype:create:splashing>.remove(<tag:items:forge:nuggets>);
 <recipetype:create_dd:superheating>.remove(<tag:items:forge:ingots>);
 
+<recipetype:minecraft:blasting>.remove(<item:sgjourney:pure_naquadah>);
+
 <recipetype:railcraft:coking>.removeAll();
 <recipetype:tfmg:coking>.removeAll();
 <recipetype:createbigcannons:melting>.removeAll();
@@ -816,6 +818,143 @@ addEmbersStamping(<fluid:kubejs:moltenredalloy>,<item:morered:red_alloy_ingot>,<
 });
 //Hall–Héroult_process is above
 
+//Naquadah 
+<recipetype:minecraft:crafting>.remove(<item:sgjourney:naquadah_rod>);
+<recipetype:minecraft:crafting>.remove(<item:sgjourney:naquadah_alloy>);
+
+<recipetype:createbigcannons:melting>.addJsonRecipe("bigcannon_ore_melting_naquadah", {
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item": "sgjourney:raw_naquadah"
+    }
+  ],
+  "processingTime": 180,
+  "results": [
+    {
+      "amount": 100,
+      "fluid": "kubejs:molten_naquadah"
+    }
+  ]
+}
+);
+
+<recipetype:destroy:centrifugation>.addJsonRecipe("naquadah_process", {
+    "type": "destroy:centrifugation",
+    "ingredients": [
+        {
+            "fluid": "kubejs:molten_naquadah",
+            "amount": 100
+        }
+    ],
+    "results": [
+        {
+            "fluid": "sgjourney:liquid_naquadah",
+            "amount": 10
+        },
+        {
+            "fluid": "sgjourney:heavy_liquid_naquadah",
+            "amount": 100
+        }
+    ],
+    "processingTime": 500
+});
+
+<recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("naquadah_process_pure_crystal", {
+  "type": "createdieselgenerators:basin_fermenting",
+  "heatRequirement": "cooled",  
+  "ingredients": [
+    {
+      "fluid": "sgjourney:liquid_naquadah",
+      "amount": 100
+    }
+  ],
+  "processingTime": 800,
+  "results": [
+    {
+      "item": "sgjourney:pure_naquadah",
+      "chance": 0.25
+    },
+    {
+      "fluid": "tfmg:molten_slag",
+      "amount": 100
+    }
+  ]
+});
+
+<recipetype:pneumaticcraft:thermo_plant>.addJsonRecipe("naquadah_process_mettalic_liquid", {
+  "type": "pneumaticcraft:thermo_plant",
+  "exothermic": false,
+  "fluid_input": {
+    "type": "pneumaticcraft:fluid",
+    "amount": 100,
+    "fluid": "sgjourney:heavy_liquid_naquadah"
+  },
+  "fluid_output": {
+    "amount": 100,
+    "fluid": "kubejs:metallic_naquadah"
+  },
+  "item_input": {
+    "tag": "minecraft:soul_fire_base_blocks"
+  },
+  "pressure": 10.0,
+  "temperature": {
+    "min_temp": 773
+  }
+});
+
+<recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("naquadah_process_metal", {
+  "type": "createdieselgenerators:basin_fermenting",
+  "heatRequirement": "cooled",  
+  "ingredients": [
+    {
+      "fluid": "kubejs:metallic_naquadah",
+      "amount": 100
+    }
+  ],
+  "processingTime": 800,
+  "results": [
+    {
+      "item": "sgjourney:naquadah_rod"
+    },
+    {
+      "fluid": "embers:soul_crude",
+      "amount": 100
+    }
+  ]
+});
+
+<recipetype:createaddition:rolling>.addJsonRecipe("naquadah_rolled_rod_2_sheet", {
+	"type":"createaddition:rolling",
+	"input": {
+      	"item": "sgjourney:naquadah_rod"
+	},
+	"result": {
+		"item": "kubejs:naquadah_sheet"
+	}
+});  
+
+<recipetype:railcraft:rolling>.addJsonRecipe("naquadah_alloy", {
+  "type": "railcraft:rolling",
+  "key": {
+    "n": {
+      "item": "kubejs:naquadah_sheet"
+    },
+    "o": {
+      "item": "create_dd:overcharge_alloy"
+    }
+  },
+  "pattern": [
+    "nnn",
+    "ooo",
+    "nnn"
+  ],
+  "processTime": 100,
+  "result": {
+    "count": 16,
+    "item": "sgjourney:naquadah_alloy"
+  }
+});
 /*
 
 //Liquid Catalyst
