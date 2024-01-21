@@ -41,6 +41,7 @@ craftingTable.remove(<item:iceandfire:dragonsteel_ice_pickaxe>);
 craftingTable.remove(<item:iceandfire:dragonsteel_lightning_pickaxe>);
 craftingTable.remove(<item:botania:elementium_pickaxe>);
 craftingTable.remove(<item:botania:manasteel_pick>);
+craftingTable.remove(<item:immersiveengineering:ersatz_leather>);
 
 //<recipetype:create:pressing>.remove(<item:minecraft:paper>);
 <recipetype:create:pressing>.removeByName("create:pressing/sugar_cane");
