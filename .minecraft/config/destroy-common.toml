@@ -1,3 +1,5 @@
+#.
+"Players in Creative mode are treated as if they are wearing Engineer's Goggles even if they are not" = true
 
 #.
 #Modify the generation of Ores added by Destroy
@@ -58,8 +60,6 @@
 	#.
 	#Releasing chemicals increases pollution
 	enablePollution = true
-	#.
-	"Players in Creative mode are treated as if they are wearing Engineer's Goggles even if they are not" = true
 
 	#.
 	[pollution."Visual Changes"]

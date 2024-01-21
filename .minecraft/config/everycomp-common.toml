@@ -82,6 +82,9 @@
 				ironwood = true
 				ipe = true
 
+			[general.types.wood_type.iceandfire]
+				dreadwood = true
+
 		[general.types.leaves_type]
 
 			[general.types.leaves_type.create_dd]
