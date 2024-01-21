@@ -81,6 +81,21 @@ craftingTable.removeByName("railcraft:zinc_ingot");
 <recipetype:immersiveengineering:crusher>.removeByName("immersiveengineering:crusher/raw_ore_aluminum");
 <recipetype:immersiveengineering:crusher>.removeByName("immersiveengineering:crusher/ore_aluminum");
 
+/*
+<recipetype:pneumaticcraft:explosion_crafting>.addJsonRecipe("lumber_from_logs", {
+  "type": "pneumaticcraft:explosion_crafting",
+  "input": {
+    "tag": "forge:crops/wheat"
+  },
+  "loss_rate": 50,
+  "results": [
+    {
+      "item": "pneumaticcraft:wheat_flour"
+    }
+  ]
+});
+*/
+
 //Ingots
 var tfcMetals = ["bismuth","bismuth_bronze","black_bronze","black_steel","blue_steel","brass","bronze","cast_iron","copper","gold","high_carbon_black_steel","high_carbon_blue_steel","high_carbon_red_steel","high_carbon_steel","nickel","pig_iron","red_steel","rose_gold","silver","steel","sterling_silver","tin","unknown","weak_blue_steel","weak_red_steel","weak_steel","wrought_iron","zinc"];
 for metal in tfcMetals{   
@@ -517,6 +532,11 @@ addIEOrecrushing("tfc:ore/small_garnierite","create:crushed_raw_nickel",2,0.2);
 addOrecrushing("tfc_ie_addon:ore/poor_galena","tfc_ie_addon:ore/small_galena");
 addOrecrushing("tfc_ie_addon:ore/normal_galena","tfc_ie_addon:ore/poor_galena");
 addOrecrushing("tfc_ie_addon:ore/rich_galena","tfc_ie_addon:ore/normal_galena");
+
+addIEOrecrushing("tfc_ie_addon:ore/poor_galena","tfc_ie_addon:ore/small_galena",2,0);
+addIEOrecrushing("tfc_ie_addon:ore/normal_galena","tfc_ie_addon:ore/small_galena",3,0.1);
+addIEOrecrushing("tfc_ie_addon:ore/rich_galena","tfc_ie_addon:ore/small_galena",4,0.5);
+
 //addEmbersmelting("tfc_ie_addon:metal/lead","tfc_ie_addon:ore/small_galena");
 addEmbersStamping(<fluid:tfc_ie_addon:metal/lead>,<item:immersiveengineering:ingot_lead>,<item:tfc:ceramic/fire_ingot_mold>);
 
@@ -699,6 +719,19 @@ addEmbersStamping(<fluid:kubejs:moltenredalloy>,<item:morered:red_alloy_ingot>,<
 
 
 //Bauxite/Aluminium - Bayer Process
+
+<recipetype:tfc:heating>.removeByName("tfc_ie_addon:heating/ore/poor_bauxite");
+<recipetype:tfc:heating>.removeByName("tfc_ie_addon:heating/ore/small_bauxite");
+<recipetype:tfc:heating>.removeByName("tfc_ie_addon:heating/ore/rich_bauxite");
+
+<recipetype:tfc:heating>.removeByName("tfc_ie_addon:heating/ore/normal_bauxite");
+addOrecrushing("tfc_ie_addon:ore/poor_bauxite","tfc_ie_addon:ore/small_bauxite");
+addOrecrushing("tfc_ie_addon:ore/normal_bauxite","tfc_ie_addon:ore/poor_bauxite");
+addOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/normal_bauxite");
+
+addIEOrecrushing("tfc_ie_addon:ore/poor_bauxite","tfc_ie_addon:ore/small_bauxite",2,0);
+addIEOrecrushing("tfc_ie_addon:ore/normal_bauxite","tfc_ie_addon:ore/small_bauxite",3,0.1);
+addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite",4,0.5);
 
 <recipetype:pneumaticcraft:thermo_plant>.addJsonRecipe("bayer_process_sodium_aluminate", {
   "type": "pneumaticcraft:thermo_plant",

@@ -68,10 +68,6 @@ craftingTable.addShaped("handcrafted_hopper", <item:minecraft:hopper>, [
   [<tag:items:forge:sheets/lead>,<item:minecraft:air>,<tag:items:forge:sheets/lead>],
   [<item:minecraft:air>,<tag:items:forge:chests>,<item:minecraft:air>]]);
 
-
-
-
-
 <recipetype:create:mechanical_crafting>.addJsonRecipe("he_who_remains_tempad_mechanical_crafting", {
   "type": "create:mechanical_crafting",
   "acceptMirrored": false,
