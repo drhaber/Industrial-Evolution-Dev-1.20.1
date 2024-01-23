@@ -10,6 +10,8 @@ import crafttweaker.api.tag.manager.ITagManager;
 import crafttweaker.api.bracket.BracketHandlers;
 import mods.jeitweaker.Jei;
 
+craftingTable.remove(<item:minecraft:string>);
+craftingTable.addShapeless("string_from_jute", <item:minecraft:string>, [<tag:items:forge:fiber_hemp>,<item:tfc:spindle>.anyDamage().transformDamage()]);
 
 <recipetype:tfc:quern>.addJsonRecipe("sawdust_from_sticks", {
     "type": "tfc:quern",
