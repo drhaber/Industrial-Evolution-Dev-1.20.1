@@ -46,16 +46,6 @@ craftingTable.remove(<item:immersiveengineering:ersatz_leather>);
 //<recipetype:create:pressing>.remove(<item:minecraft:paper>);
 <recipetype:create:pressing>.removeByName("create:pressing/sugar_cane");
 
-<recipetype:tfc:quern>.addJsonRecipe("sawdust_from_sticks", {
-    "type": "tfc:quern",
-    "ingredient": {
-        "tag": "forge:rods/wooden"
-    },
-    "result": {
-        "item": "immersiveengineering:dust_wood"
-    }
-});
-
 craftingTable.remove(<item:productivebees:powered_centrifuge>);
 craftingTable.addShaped("handcrafted_powered_centrifuge", <item:productivebees:powered_centrifuge>, [
     [<item:railcraft:charge_motor>],
