@@ -125,6 +125,9 @@ e.create('impregnated_paper').displayName('Impregnated Paper')
 //Blank Blueprint
 e.create('blank_blueprint').displayName('Blank Blueprint')
 
+//Woven Memory
+e.create('woven_memory').displayName('Woven Memory')
+
 //AE2 Inscriber Casts
 //Material Calculation Processor Cast
 e.create('unfired_material_calculation_processor_press').displayName('Unfired Calculation Processor Cast')

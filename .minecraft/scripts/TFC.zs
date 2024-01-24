@@ -55,3 +55,19 @@ craftingTable.addShapeless("string_from_jute", <item:minecraft:string>, [<tag:it
         "count": 4
     }
 });
+
+<recipetype:tfc:loom>.addJsonRecipe("woven_memory", {
+    "type": "tfc:loom",
+    "ingredient": {
+       "ingredient": {
+           "tag": "forge:wires/copper"
+        },
+        "count": 8
+    },
+    "result": {
+        "item": "kubejs:woven_memory",
+        "count": 1
+    },
+    "steps_required": 8,
+    "in_progress_texture": "tfc:block/rooted_dirt/loam"
+});
