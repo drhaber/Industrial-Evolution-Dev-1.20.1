@@ -380,7 +380,8 @@
         "tfc:mechanics/wooden_buckets",
         "tfc:arborfirmacraft/tree_tapping",
         "tfc:the_world/geology",
-        "tfc:the_world/flora"
+        "tfc:the_world/flora",
+        "tfc:tfships/naval_warfare"
       ],
       "bookmarks": [],
       "completedManualQuests": []
