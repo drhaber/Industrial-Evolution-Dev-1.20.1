@@ -42,9 +42,24 @@ event.add("minecraft:dirt",["#tfc:grass","#tfc:dirt"])
 
 ServerEvents.tags("worldgen/biome", (event) => {
     event.add("tfc:overworld", ["tfc:badlands","tfc:canyons","tfc:deep_ocean","tfc:deep_ocean_trench","tfc:highlands","tfc:hills","tfc:inverted_badlands","tfc:lake","tfc:low_canyons","tfc:lowlands","tfc:mountain_lake","tfc:mountains","tfc:ocean","tfc:ocean_reef","tfc:oceanic_mountain_lake","tfc:oceanic_mountains","tfc:old_mountain_lake","tfc:old_mountains","tfc:plains","tfc:plateau","tfc:plateau_lake","tfc:river","tfc:rolling_hills","tfc:salt_marsh","tfc:shore","tfc:tidal_flats","tfc:volcanic_mountain_lake","tfc:volcanic_mountains","tfc:volcanic_oceanic_mountain_lak","tfc:volcanic_oceanic_mountains"])
+    event.add("minecraft:is_overworld", ["#tfc:overworld"])
     event.add("createpickywheels:picky_waterwheels", ["tfc:river"])
-    event.add("createpickywheels:picky_windmills", ["#twilightforest:in_twilight_forest","#tfc:overworld"])
+    event.add("createpickywheels:picky_windmills", ["#twilightforest:in_twilight_forest"])
     event.add("botania:mystical_flower_spawnlist",["#tfc:overworld"])
+    event.add("sgjourney:has_structure/terra_stargate_biomes",["#tfc:overworld"])
+    event.add("sgjourney:has_structure/buried_stargate/buried_stargate_biomes",["#tfc:overworld"])
+    event.add("ftbessentials:ignore_rtp",["tfc:deep_ocean","tfc:deep_ocean_trench"])
+    event.add("creeperoverhaul:where_creepers_spawn",["#tfc:overworld"])
+    event.add("endermanoverhaul:cave_spawns",["#tfc:overworld"])
+    event.add("endermanoverhaul:badlands_spawns",["tfc:badlands","tfc:inverted_badlands"])
+    event.add("endermanoverhaul:coral_spawns",["tfc:ocean_reef"])
+    event.add("endermanoverhaul:dark_oak_spawns",["twilightforest:dark_forest"])
+    event.add("endermanoverhaul:ice_spikes_spawns",["twilightforest:glacier"])
+    event.add("endermanoverhaul:mushroom_fields_spawns",["twilightforest:mushroom_forest"])
+    event.add("endermanoverhaul:savanna_spawns", ["tfc:plains", "tfc:plateau"])
+    event.add("endermanoverhaul:snowy_spawns",["twilightforest:glacier","twilightforest:snowy_forest"])
+    //endermanoverhaul:windswept_hills_spawns
+    //endermanoverhaul:flower_fields_spawns
 })
 BlockEvents.rightClicked(event => {
     let item = event.item
