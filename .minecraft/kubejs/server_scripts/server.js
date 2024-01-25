@@ -36,6 +36,16 @@ event.add(`map_atlases:sticky_crafting_items`,`#forge:dough`)
 //event.add(`tfc:pileable_ingots`,`#forge:ingots`)
 })
 
+ServerEvents.tags('block', event => {
+event.add("minecraft:dirt",["#tfc:grass","#tfc:dirt"])
+})
+
+ServerEvents.tags("worldgen/biome", (event) => {
+    event.add("tfc:overworld", ["tfc:badlands","tfc:canyons","tfc:deep_ocean","tfc:deep_ocean_trench","tfc:highlands","tfc:hills","tfc:inverted_badlands","tfc:lake","tfc:low_canyons","tfc:lowlands","tfc:mountain_lake","tfc:mountains","tfc:ocean","tfc:ocean_reef","tfc:oceanic_mountain_lake","tfc:oceanic_mountains","tfc:old_mountain_lake","tfc:old_mountains","tfc:plains","tfc:plateau","tfc:plateau_lake","tfc:river","tfc:rolling_hills","tfc:salt_marsh","tfc:shore","tfc:tidal_flats","tfc:volcanic_mountain_lake","tfc:volcanic_mountains","tfc:volcanic_oceanic_mountain_lak","tfc:volcanic_oceanic_mountains"])
+    event.add("createpickywheels:picky_waterwheels", ["tfc:river"])
+    event.add("createpickywheels:picky_windmills", ["#twilightforest:in_twilight_forest","#tfc:overworld"])
+    event.add("botania:mystical_flower_spawnlist",["#tfc:overworld"])
+})
 BlockEvents.rightClicked(event => {
     let item = event.item
     let block = event.block

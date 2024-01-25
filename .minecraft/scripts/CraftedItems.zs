@@ -9,8 +9,6 @@ import crafttweaker.api.bracket.BracketHandlers;
 import crafttweaker.api.tag.manager.ITagManager;
 import mods.create.FillingManager;
 
-craftingTable.remove(<item:productivebees:centrifuge>);
-craftingTable.remove(<item:productivebees:heated_centrifuge>);
 craftingTable.remove(<item:minecraft:paper>);
 craftingTable.remove(<item:minecraft:cake>);
 craftingTable.remove(<item:ae2:certus_quartz_pickaxe>);
@@ -46,12 +44,6 @@ craftingTable.removeByName("farmersdelight:cutting_board");
 
 //<recipetype:create:pressing>.remove(<item:minecraft:paper>);
 <recipetype:create:pressing>.removeByName("create:pressing/sugar_cane");
-
-craftingTable.remove(<item:productivebees:powered_centrifuge>);
-craftingTable.addShaped("handcrafted_powered_centrifuge", <item:productivebees:powered_centrifuge>, [
-    [<item:railcraft:charge_motor>],
-    [<item:tfc:quern>],
-    [<item:create:basin>]]);
 
 craftingTable.addShaped("magnetite_block", <item:create_new_age:magnetite_block>, [
     [<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>],
