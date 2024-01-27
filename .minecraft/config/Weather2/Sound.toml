@@ -6,13 +6,13 @@
 	leavesVolume = 0.0
 	#
 	#Range: 0.0 ~ 5.0
-	tornadoWindVolume = 1.0
+	tornadoWindVolume = 0.7
 	#
 	#Range: 0.0 ~ 5.0
-	tornadoDamageVolume = 1.0
+	tornadoDamageVolume = 0.7
 	#
 	#Range: 0.0 ~ 5.0
-	windyStormVolume = 1.0
+	windyStormVolume = 0.7
 	#
 	#Range: 0.0 ~ 5.0
 	sirenVolume = 1.0

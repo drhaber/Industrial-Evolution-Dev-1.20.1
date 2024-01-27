@@ -1,9 +1,15 @@
+#Allows unpacking storage blocks crafts on vibrating table
+allowUnpackingOnVibratingTable = true
 #Belt Grinder
 #Allows sandpaper crafts on belt grinder, when recipes collides belt grinder recipe have priority
 allowSandpaperPolishingOnGrinder = false
 #Value of stress impact for Belt Grinder
 #Range: 0.0 ~ 1024.0
 beltGrinderStressImpact = 4.0
+#Vibration Table
+#Value of stress impact for Vibration Table
+#Range: 0.0 ~ 1024.0
+VibratingTableStressImpact = 2.0
 #Spring Coiling Machine
 #Value of stress impact for Spring Coiling Machine
 #Range: 0.0 ~ 1024.0

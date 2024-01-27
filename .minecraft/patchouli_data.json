@@ -7,6 +7,14 @@
       "bookmarks": [],
       "completedManualQuests": []
     },
+    "productivebees:guide": {
+      "viewedEntries": [
+        "productivebees:hives/nests",
+        "productivebees:items/bee_cage"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
     "naturesaura:book": {
       "viewedEntries": [
         "naturesaura:practices/aura_plants",
@@ -381,7 +389,13 @@
         "tfc:arborfirmacraft/tree_tapping",
         "tfc:the_world/geology",
         "tfc:the_world/flora",
-        "tfc:tfships/naval_warfare"
+        "tfc:tfships/naval_warfare",
+        "tfc:firmaciv/rowboat",
+        "tfc:firmaciv/cannon",
+        "tfc:firmaciv/canoe",
+        "tfc:firmaciv/kayak",
+        "tfc:firmaciv/sloop",
+        "tfc:firmalife/beekeeping"
       ],
       "bookmarks": [],
       "completedManualQuests": []

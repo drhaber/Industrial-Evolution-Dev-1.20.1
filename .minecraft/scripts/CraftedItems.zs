@@ -9,6 +9,8 @@ import crafttweaker.api.bracket.BracketHandlers;
 import crafttweaker.api.tag.manager.ITagManager;
 import mods.create.FillingManager;
 
+craftingTable.remove(<item:productivebees:centrifuge>);
+craftingTable.remove(<item:productivebees:heated_centrifuge>);
 craftingTable.remove(<item:minecraft:paper>);
 craftingTable.remove(<item:minecraft:cake>);
 craftingTable.remove(<item:ae2:certus_quartz_pickaxe>);

@@ -45,7 +45,7 @@ ServerEvents.tags("worldgen/biome", (event) => {
     event.add("minecraft:is_overworld", ["#tfc:overworld"])
     event.add("createpickywheels:picky_waterwheels", ["tfc:river"])
     event.add("createpickywheels:picky_windmills", ["#twilightforest:in_twilight_forest"])
-    event.add("botania:mystical_flower_spawnlist",["#tfc:overworld"])
+    event.add("botania:mystical_flower_spawnlist",["#tfc:overworld","#twilightforest:in_twilight_forest"])
     event.add("sgjourney:has_structure/terra_stargate_biomes",["#tfc:overworld"])
     event.add("sgjourney:has_structure/buried_stargate/buried_stargate_biomes",["#tfc:overworld"])
     event.add("ftbessentials:ignore_rtp",["tfc:deep_ocean","tfc:deep_ocean_trench"])
@@ -68,3 +68,15 @@ BlockEvents.rightClicked(event => {
     block.popItem('farmersdelight:tree_bark')
     }
   })
+
+BlockEvents.rightClicked('block.right_click', event => {
+    const { player, hand, item} = event;
+    if (hand != 'MAIN_HAND') return;
+    if (!item.hasNBT()) return;
+    if ((item.id == 'firmalife:beehive_frame') && item.getNbtString().includes('queen:1')) {
+        item.count--
+        event.player.tell("The frame broke while freeing the queen");
+        let mob = event.block.up.createEntity('minecraft:bee')
+        mob.spawn()
+}
+})
