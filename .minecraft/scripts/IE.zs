@@ -104,3 +104,10 @@ craftingTable.addShaped("handcrafted_dynamo", <item:immersiveengineering:dynamo>
     [<tag:items:forge:sheets/cast_iron>,<item:create_new_age:magnetite_block>,<tag:items:forge:sheets/cast_iron>],
     [<item:railcraft:charge_terminal>,<item:create_new_age:generator_coil>,<item:immersiveengineering:treated_fence>],
     [<tag:items:forge:sheets/cast_iron>,<item:create_new_age:magnetite_block>,<tag:items:forge:sheets/cast_iron>]]);      
+
+ 
+craftingTable.remove(<item:immersiveengineering:hemp_fabric>);
+craftingTable.addShaped("handcrafted_hemp_fabric", <item:immersiveengineering:hemp_fabric>,[
+    [<tag:items:forge:fiber_hemp>,<tag:items:forge:fiber_hemp>,<tag:items:forge:fiber_hemp>],
+    [<tag:items:forge:fiber_hemp>,<item:kubejs:emptyspool>,<tag:items:forge:fiber_hemp>],
+    [<tag:items:forge:fiber_hemp>,<tag:items:forge:fiber_hemp>,<tag:items:forge:fiber_hemp>]]);  
