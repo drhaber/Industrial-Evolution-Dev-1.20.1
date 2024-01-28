@@ -10,7 +10,28 @@
     "productivebees:guide": {
       "viewedEntries": [
         "productivebees:hives/nests",
-        "productivebees:items/bee_cage"
+        "productivebees:items/bee_cage",
+        "productivebees:hives/advanced_hives",
+        "productivebees:guide/start",
+        "productivebees:bees/wild/ender",
+        "productivebees:items/nest_locator",
+        "productivebees:genetics/attributes",
+        "productivebees:genetics/collecting",
+        "productivebees:genetics/transferring",
+        "productivebees:misc/performance",
+        "productivebees:blocks/centrifuge",
+        "productivebees:bees/solitary/digger",
+        "productivebees:bees/solitary/yellow_black_carpenter",
+        "productivebees:bees/wild/crystalline",
+        "productivebees:bees/wild/draconic",
+        "productivebees:bees/wild/ghostly",
+        "productivebees:bees/wild/glowing",
+        "productivebees:bees/wild/sugarbag",
+        "productivebees:bees/wild/slimy",
+        "productivebees:bees/hive/netherite",
+        "productivebees:bees/hive/diamond",
+        "productivebees:bees/hive/lapis",
+        "productivebees:bees/solitary/blue_banded"
       ],
       "bookmarks": [],
       "completedManualQuests": []

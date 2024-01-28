@@ -1,2 +1,4 @@
 minecraft:overworld
 twilightforest:twilight_forest
+aether:the_aether
+minecraft:the_end
