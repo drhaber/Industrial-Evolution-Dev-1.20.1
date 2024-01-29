@@ -44,6 +44,12 @@ craftingTable.remove(<item:botania:manasteel_pick>);
 craftingTable.remove(<item:immersiveengineering:ersatz_leather>);
 craftingTable.removeByName("farmersdelight:cutting_board");
 
+craftingTable.remove(<item:productivebees:powered_centrifuge>);
+craftingTable.addShaped("handcrafted_powered_centrifuge", <item:productivebees:powered_centrifuge>, [
+    [<item:railcraft:charge_motor>],
+    [<item:tfc:quern>],
+    [<item:create:basin>]]);
+
 //<recipetype:create:pressing>.remove(<item:minecraft:paper>);
 <recipetype:create:pressing>.removeByName("create:pressing/sugar_cane");
 
@@ -102,7 +108,8 @@ craftingTable.addShaped("handcrafted_hopper", <item:minecraft:hopper>, [
 
 
 craftingTable.remove(<item:minecraft:map>);
-craftingTable.addShapeless("map_1", <item:minecraft:map>, [<item:firmaciv:nav_clock>.reuse(),<item:firmaciv:sextant>.reuse(),<tag:items:forge:paper>]);
+craftingTable.addShapeless("map_8", <item:minecraft:map>*8, [<item:firmaciv:nav_clock>.reuse(),<item:firmaciv:sextant>.reuse(),<tag:items:forge:paper>]);
+craftingTable.addShapeless("map_1", <item:minecraft:map>, [<tag:items:forge:dyes>,<item:chiselsandbits:quill>.reuse(),<tag:items:forge:paper>]);
 
 <recipetype:minecraft:crafting>.addJsonRecipe("banana_paperstrip", {
     "type": "tfc:damage_inputs_shapeless_crafting",
