@@ -9,26 +9,12 @@
       {
         "type": "BIOME_TAG",
         "negate": false,
-        "value": "forge:is_snowy"
+        "value": "aether:ultracold"
       },
       {
         "type": "BIOME_TAG",
         "negate": true,
         "value": "forge:is_wet/overworld"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:wintry_forest"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "terralith:wintry_lowlands"
       }
     ]
   ]
