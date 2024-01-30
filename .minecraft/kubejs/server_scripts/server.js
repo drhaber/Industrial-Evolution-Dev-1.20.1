@@ -87,7 +87,7 @@ ServerEvents.tags("worldgen/biome", (event) => {
     event.add("betterwitchhuts:has_structure/better_witch_hut",["tfc:lowlands"])
     event.add("betterwitchhuts:has_structure/witch_circle",["tfc:lowlands"])
 
-    event.add("iceandfire:has_structure/graveyard",["tfc:ocean","tfc:ocean_reef","tfc:deep_ocean","tfc:deep_ocean_trench"])
+    event.add("forge:is_water",["tfc:river","tfc:ocean","tfc:ocean_reef","tfc:deep_ocean","tfc:deep_ocean_trench"])
 })
 BlockEvents.rightClicked(event => {
     let item = event.item
