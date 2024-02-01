@@ -73,8 +73,11 @@ ServerEvents.tags("worldgen/biome", (event) => {
     event.add("endermanoverhaul:savanna_spawns", ["tfc:plains", "tfc:plateau"])
     event.add("endermanoverhaul:snowy_spawns",["twilightforest:glacier","twilightforest:snowy_forest"])
     event.add("endermanoverhaul:windswept_hills_spawns",["aether:skyroot_meadow"])
-    //endermanoverhaul:flower_fields_spawns
 
+    //endermanoverhaul:flower_fields_spawns
+    event.add("minecraft:mineshaft_blocking", ["#tfc:overworld"])
+    event.add("minecraft:snow_golem_melts", ["#tfc:is_volcanic"])
+    
     event.add("ad_astra:has_structure/meteor_biomes", ["#twilightforest:in_twilight_forest"])
     event.add("ad_astra:has_structure/oil_well_biomes", ["sgjourney:abydos_desert"])
     event.add("additionalstructures:as_custom",["#tfc:overworld"])
@@ -86,6 +89,7 @@ ServerEvents.tags("worldgen/biome", (event) => {
     event.add("betterstrongholds:has_structure/better_stronghold",["#tfc:overworld"])
     event.add("betterwitchhuts:has_structure/better_witch_hut",["tfc:lowlands"])
     event.add("betterwitchhuts:has_structure/witch_circle",["tfc:lowlands"])
+    event.add("minecraft:has_closer_water_fog",["tfc:lowlands"])
 
     event.add("forge:is_water",["tfc:river","tfc:ocean","tfc:ocean_reef","tfc:deep_ocean","tfc:deep_ocean_trench"])
 })
