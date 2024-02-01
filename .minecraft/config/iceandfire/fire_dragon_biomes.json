@@ -3,8 +3,19 @@
     [
       {
         "type": "BIOME_TAG",
+        "negate": true,
+        "value": "minecraft:is_overworld"
+      }],
+      [
+      {
+        "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "minecraft:is_nether"
+        "value": "sgjourney:abydos_desert"
+      },
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "minecraft:basalt_deltas"
       }
     ]
   ]
