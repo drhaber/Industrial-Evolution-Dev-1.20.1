@@ -24,6 +24,8 @@ vacuumChamberStressImpact = 4.0
 #Low speed value for grinder crafts, speed_limits = 1
 #Range: 1 ~ 256
 lowSpeedValue = 16
+#Allows vibrating leaves on vibrating table to get matching drops
+allowVibratingLeaves = true
 #Works only when "allowSandpaperPolishingOnGrinder" is true. Defines speed limits for sandpaper recipes on belt grinder
 #Range: 0 ~ 3
 speedLimitsForSandpaperPolishingRecipes = 1
