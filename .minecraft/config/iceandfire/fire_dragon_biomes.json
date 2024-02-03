@@ -3,8 +3,8 @@
     [
       {
         "type": "BIOME_TAG",
-        "negate": true,
-        "value": "minecraft:is_overworld"
+        "negate": false,
+        "value": "minecraft:is_nether"
       }],
       [
       {

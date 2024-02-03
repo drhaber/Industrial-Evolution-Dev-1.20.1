@@ -68,7 +68,7 @@ ServerEvents.tags("worldgen/biome", (event) => {
     event.add("endermanoverhaul:badlands_spawns",["tfc:badlands","tfc:inverted_badlands"])
     event.add("endermanoverhaul:coral_spawns",["tfc:ocean_reef"])
     event.add("endermanoverhaul:dark_oak_spawns",["twilightforest:dark_forest"])
-    event.add("endermanoverhaul:ice_spikes_spawns",["twilightforest:glacier"])
+    event.add("endermanoverhaul:ice_spikes_spawns",["twilightforest:glacier","ad_astra:glacio_ice_peaks"])
     event.add("endermanoverhaul:mushroom_fields_spawns",["twilightforest:mushroom_forest"])
     event.add("endermanoverhaul:savanna_spawns", ["tfc:plains", "tfc:plateau"])
     event.add("endermanoverhaul:snowy_spawns",["twilightforest:glacier","twilightforest:snowy_forest"])
