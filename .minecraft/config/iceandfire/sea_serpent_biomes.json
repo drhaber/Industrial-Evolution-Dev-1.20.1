@@ -2,14 +2,14 @@
   "biomes": [
     [
       {
-        "type": "BIOME_TAG",
+        "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "minecraft:is_overworld"
+        "value": "tfc:deep_ocean"
       },
       {
-        "type": "BIOME_TAG",
+        "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "minecraft:is_ocean"
+        "value": "tfc:deep_ocean"
       }
     ]
   ]
