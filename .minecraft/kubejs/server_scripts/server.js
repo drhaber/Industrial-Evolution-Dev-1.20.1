@@ -30,7 +30,9 @@ event.add('forge:storage_blocks/bronze', '#forge:storage_blocks/strong_bronze')
 event.add('forge:ingots/bronze', '#forge:ingots/strong_bronze')
 event.add('forge:nuggets/bronze', '#forge:nuggets/strong_bronze')
 event.add('forge:plates/bronze', '#forge:plates/strong_bronze')
-event.add(`map_atlases:sticky_crafting_items`,`#forge:dough`)
+event.add('map_atlases:sticky_crafting_items`,`#forge:dough')
+
+event.add('botania:seed_apothecary_reagent>', '#tfc:seeds')
 
 event.add(`twilightforest:portal/activator`,`#forge:gems`)
 
@@ -85,7 +87,7 @@ ServerEvents.tags("worldgen/biome", (event) => {
     event.add("aether:no_wheat_seeds",["#tfc:overworld","#twilightforest:in_twilight_forest"])
     event.add("aether:podzol_conversion",["twilightforest:dark_forest"])
     event.add("betterdeserttemples:has_structure/better_desert_temple",["tfc:inverted_badlands"])
-    event.add("betteroceanmonuments:has_structure/better_ocean_monument",["tfc:deep_ocean","tfc:deep_ocean_trench"])
+    event.add("betteroceanmonuments:has_structure/better_ocean_monument",["tfc:deep_ocean","tfc:deep_ocean"])
     event.add("betterstrongholds:has_structure/better_stronghold",["#tfc:overworld"])
     event.add("betterwitchhuts:has_structure/better_witch_hut",["tfc:lowlands"])
     event.add("betterwitchhuts:has_structure/witch_circle",["tfc:lowlands"])
