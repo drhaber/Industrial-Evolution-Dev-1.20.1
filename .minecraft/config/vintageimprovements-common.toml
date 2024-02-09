@@ -10,6 +10,10 @@ beltGrinderStressImpact = 4.0
 #Value of stress impact for Vibration Table
 #Range: 0.0 ~ 1024.0
 VibratingTableStressImpact = 2.0
+#Centrifuge
+#Value of stress impact for Centrifuge
+#Range: 0.0 ~ 1024.0
+CentrifugeStressImpact = 2.0
 #Spring Coiling Machine
 #Value of stress impact for Spring Coiling Machine
 #Range: 0.0 ~ 1024.0

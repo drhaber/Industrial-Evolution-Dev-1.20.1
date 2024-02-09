@@ -30,11 +30,11 @@ event.add('forge:storage_blocks/bronze', '#forge:storage_blocks/strong_bronze')
 event.add('forge:ingots/bronze', '#forge:ingots/strong_bronze')
 event.add('forge:nuggets/bronze', '#forge:nuggets/strong_bronze')
 event.add('forge:plates/bronze', '#forge:plates/strong_bronze')
-event.add('map_atlases:sticky_crafting_items`,`#forge:dough')
+event.add('map_atlases:sticky_crafting_items','#forge:dough')
 
-event.add('botania:seed_apothecary_reagent>', '#tfc:seeds')
+event.add('botania:seed_apothecary_reagent', '#tfc:seeds')
 
-event.add(`twilightforest:portal/activator`,`#forge:gems`)
+event.add('twilightforest:portal/activator','#forge:gems')
 
 //event.add('tfc:pileable_ingots', 'sgjourney:naquadah_alloy')
 //event.add(`tfc:pileable_ingots`,`#forge:ingots`)
