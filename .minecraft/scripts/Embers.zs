@@ -23,3 +23,9 @@ craftingTable.addShaped("handcrafted_mechanical_core", <item:embers:mechanical_c
 
 craftingTable.remove(<item:embers:ancient_codex>);
 craftingTable.addShapeless("handcrafted_ancient_codex", <item:embers:ancient_codex>, [<item:embers:caminite_plate>,<item:minecraft:book>,<item:tfc:powder/wood_ash>]);
+
+craftingTable.remove(<item:embers:superheater>);
+craftingTable.addShaped("handcrafted_superheater", <item:embers:superheater>,[
+  [<item:vintageimprovements:brass_spring>,<item:vintageimprovements:brass_spring>,<tag:items:forge:rods/brass>],
+  [<item:vintageimprovements:brass_spring>,<item:vintageimprovements:brass_spring>,<item:minecraft:air>],
+  [<item:vintageimprovements:brass_spring>,<item:vintageimprovements:brass_spring>,<tag:items:forge:rods/brass>]]);      
