@@ -24,8 +24,8 @@ craftingTable.addShaped("handcrafted_mechanical_core", <item:embers:mechanical_c
 craftingTable.remove(<item:embers:ancient_codex>);
 craftingTable.addShapeless("handcrafted_ancient_codex", <item:embers:ancient_codex>, [<item:embers:caminite_plate>,<item:minecraft:book>,<item:tfc:powder/wood_ash>]);
 
-craftingTable.remove(<item:embers:superheater>);
+craftingTable.remove(<item:embers:superheater>); //Use Brass Springs if an Iron free method is created
 craftingTable.addShaped("handcrafted_superheater", <item:embers:superheater>,[
-  [<item:vintageimprovements:brass_spring>,<item:vintageimprovements:brass_spring>,<tag:items:forge:rods/brass>],
-  [<item:vintageimprovements:brass_spring>,<item:vintageimprovements:brass_spring>,<item:minecraft:air>],
-  [<item:vintageimprovements:brass_spring>,<item:vintageimprovements:brass_spring>,<tag:items:forge:rods/brass>]]);      
+  [<tag:items:forge:wires/brass>,<tag:items:forge:wires/brass>,<tag:items:forge:rods/brass>],
+  [<tag:items:forge:wires/brass>,<tag:items:forge:wires/brass>,<item:minecraft:air>],
+  [<tag:items:forge:wires/brass>,<tag:items:forge:wires/brass>,<tag:items:forge:rods/brass>]]);      
