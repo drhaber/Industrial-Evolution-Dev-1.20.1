@@ -35,6 +35,48 @@ craftingTable.addShaped("handcrafted_new_age_generator_coil", <item:create_new_a
     [<item:immersiveengineering:coil_lv>,<item:create:shaft>,<item:immersiveengineering:coil_lv>],
     [<item:immersiveengineering:coil_lv>,<item:immersiveengineering:coil_lv>,<item:immersiveengineering:coil_lv>]]);
 
+craftingTable.remove(<item:create_new_age:magnetite_block>);
+craftingTable.addShaped("magnetite_block", <item:create_new_age:magnetite_block>, [
+    [<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>],
+    [<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>],
+    [<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>]]);
+craftingTable.addShapeless("rich_magnetite", <item:tfc:ore/rich_magnetite>*9, [<item:create_new_age:magnetite_block>]);
+
+craftingTable.remove(<item:create_new_age:redstone_magnet>);
+craftingTable.addShaped("redstone_magnet_block", <item:create_new_age:redstone_magnet>, [
+    [<item:morered:red_alloy_ingot>,<item:morered:red_alloy_ingot>,<item:morered:red_alloy_ingot>],
+    [<item:morered:red_alloy_ingot>,<item:morered:red_alloy_ingot>,<item:morered:red_alloy_ingot>],
+    [<item:morered:red_alloy_ingot>,<item:morered:red_alloy_ingot>,<item:morered:red_alloy_ingot>]]);
+craftingTable.addShapeless("red_alloy_ingot", <item:morered:red_alloy_ingot>*9, [<item:create_new_age:redstone_magnet>]);
+
+craftingTable.remove(<item:create_new_age:layered_magnet>);
+craftingTable.addShaped("layered_magnet_block", <item:create_new_age:layered_magnet>, [
+    [<tag:items:forge:sheets/electrum>,<tag:items:forge:sheets/electrum>,<tag:items:forge:sheets/electrum>],
+    [<tag:items:forge:sheets/stainless_steel>,<tag:items:forge:sheets/stainless_steel>,<tag:items:forge:sheets/stainless_steel>],
+    [<tag:items:forge:sheets/electrum>,<tag:items:forge:sheets/electrum>,<tag:items:forge:sheets/electrum>]]);
+
+craftingTable.remove(<item:create_new_age:fluxuated_magnetite>);
+<recipetype:iceandfire:dragonforge>.addJsonRecipe("dragonforge_fluxuated_magnetite", {
+  "type": "iceandfire:dragonforge",
+  "dragon_type": "lightning",
+  "cook_time": 1000,
+  "input": {
+    "item": "create_new_age:magnetite_block"
+  },
+  "blood": {
+    "item": "iceandfire:lightning_dragon_blood"
+  },
+  "result": {
+    "item": "create_new_age:fluxuated_magnetite"
+  }
+});
+
+craftingTable.remove(<item:create_new_age:netherite_magnet>);
+craftingTable.addShaped("netherite_magnet", <item:create_new_age:netherite_magnet>, [
+    [<item:create_dd:overcharge_alloy_sheet>,<item:create_dd:overcharge_alloy_sheet>,<item:create_dd:overcharge_alloy_sheet>],
+    [<item:create_dd:overcharge_alloy_sheet>,<item:create_new_age:fluxuated_magnetite>,<item:create_dd:overcharge_alloy_sheet>],
+    [<item:create_dd:overcharge_alloy_sheet>,<item:create_dd:overcharge_alloy_sheet>,<item:create_dd:overcharge_alloy_sheet>]]);
+
 craftingTable.remove(<item:createaddition:alternator>);
 craftingTable.addShaped("handcrafted_alternator_dynamo", <item:createaddition:alternator>,[
     [<tag:items:forge:sheets/steel>,<item:immersiveengineering:dynamo>,<tag:items:forge:sheets/steel>],

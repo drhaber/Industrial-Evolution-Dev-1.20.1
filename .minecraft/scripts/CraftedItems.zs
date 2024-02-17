@@ -72,12 +72,6 @@ craftingTable.addShaped("handcrafted_powered_centrifuge", <item:productivebees:p
 //<recipetype:create:pressing>.remove(<item:minecraft:paper>);
 <recipetype:create:pressing>.removeByName("create:pressing/sugar_cane");
 
-craftingTable.addShaped("magnetite_block", <item:create_new_age:magnetite_block>, [
-    [<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>],
-    [<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>],
-    [<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>],]);
-craftingTable.addShapeless("rich_magnetite", <item:tfc:ore/rich_magnetite>*9, [<item:create_new_age:magnetite_block>]);
-
 craftingTable.remove(<item:tempad:tempad>);
 craftingTable.addShaped("handcrafted_tempad", <item:tempad:tempad>, [
     [<item:tis3d:display_module>,<item:sgjourney:materialization_crystal>,<item:embers:dawnstone_ingot>],
