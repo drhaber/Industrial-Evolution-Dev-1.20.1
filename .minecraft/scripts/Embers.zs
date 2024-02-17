@@ -24,8 +24,14 @@ craftingTable.addShaped("handcrafted_mechanical_core", <item:embers:mechanical_c
 craftingTable.remove(<item:embers:ancient_codex>);
 craftingTable.addShapeless("handcrafted_ancient_codex", <item:embers:ancient_codex>, [<item:embers:caminite_plate>,<item:minecraft:book>,<item:tfc:powder/wood_ash>]);
 
-craftingTable.remove(<item:embers:superheater>); //Use Brass Springs if an Iron free method is created
+craftingTable.remove(<item:embers:superheater>); //Use Brass Springs if an Iron free method is created - coiling machine use sterling silver
 craftingTable.addShaped("handcrafted_superheater", <item:embers:superheater>,[
   [<tag:items:forge:wires/brass>,<tag:items:forge:wires/brass>,<tag:items:forge:rods/brass>],
   [<tag:items:forge:wires/brass>,<tag:items:forge:wires/brass>,<item:minecraft:air>],
-  [<tag:items:forge:wires/brass>,<tag:items:forge:wires/brass>,<tag:items:forge:rods/brass>]]);      
+  [<tag:items:forge:wires/brass>,<tag:items:forge:wires/brass>,<tag:items:forge:rods/brass>]]);    
+
+craftingTable.remove(<item:embers:mini_boiler>);
+craftingTable.addShaped("handcrafted_mini_boiler", <item:embers:mini_boiler>,[
+  [<item:minecraft:air>,<tag:items:forge:plates/lead>,<item:minecraft:air>],
+  [<tag:items:forge:plates/lead>,<item:immersive_aircraft:boiler>,<tag:items:forge:plates/lead>],
+  [<item:minecraft:air>,<tag:items:forge:plates/lead>,<item:minecraft:air>]]);       
