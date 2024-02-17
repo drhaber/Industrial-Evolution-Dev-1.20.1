@@ -28,4 +28,8 @@
 	# Factor that is multiplied to the wind speed applied to the tumbleweed. Higher value results in faster moving tumbleweed, while lower results in slower. If negative, the tumbleweed will move opposite the wind direction. This config only does something, if the Weather 2 mod is present!
 	#Range: 4.9E-324 ~ 1.7976931348623157E308
 	windSpeedFactor = 0.075
+	#
+	# The minimum required wind speed for tumbleweeds to start tumbling about.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	windThreshold = 0.25
 
