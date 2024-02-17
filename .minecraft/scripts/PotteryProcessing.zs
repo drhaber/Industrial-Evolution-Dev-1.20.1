@@ -309,3 +309,11 @@ addClayKnapping(
 " XXX ", 
 "X X X",
 "kubejs:unfired_material_silicon_press");
+
+addClayKnapping(
+" XXX ", 
+" XXX ", 
+"XX XX", 
+" XXX ", 
+"XXXXX",
+"kubejs:clay_insulator");
