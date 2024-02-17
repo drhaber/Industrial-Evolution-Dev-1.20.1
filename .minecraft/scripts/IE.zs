@@ -117,3 +117,14 @@ craftingTable.addShaped("handcrafted_external_heater", <item:immersiveengineerin
     [<tag:items:forge:wires/brass>,<tag:items:forge:wires/brass>,<tag:items:forge:wires/brass>],
     [<item:embers:superheater>,<item:immersiveengineering:coil_lv>,<item:embers:superheater>],
     [<tag:items:forge:ingots/andesite_alloy>,<tag:items:forge:ingots/andesite_alloy>,<tag:items:forge:ingots/andesite_alloy>]]);      
+
+
+craftingTable.remove(<item:immersiveengineering:connector_lv_relay>);
+craftingTable.addShaped("handcrafted_connector_lv_relay", <item:immersiveengineering:connector_lv_relay>, [
+    [<item:firmaciv:copper_bolt>],
+    [<tag:items:minecraft:terracotta>]]);
+
+craftingTable.remove(<item:immersiveengineering:connector_lv>);
+craftingTable.addShaped("handcrafted_connector_lv", <item:immersiveengineering:connector_lv>, [
+    [<item:firmaciv:copper_bolt>],
+    [<item:kubejs:ceramic_insulator>]]);
