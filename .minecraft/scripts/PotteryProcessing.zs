@@ -67,6 +67,17 @@ addTFCPotteryFire("kubejs:unfired_material_silicon_press","kubejs:fired_material
 addTFCPotteryFire("kubejs:unfired_archaic_lump","embers:archaic_brick");
 addTFCPotteryFire("embers:caminite_blend","embers:caminite_brick");
 
+<recipetype:tfc:heating>.addJsonRecipe("pottery_fire_dirty_glass", {
+  "type": "tfc:heating",
+  "ingredient": {
+    "tag": "forge:sand"
+  },
+  "result_item": {
+    "item": "quark:dirty_glass"
+  },
+  "temperature": 1399
+});
+
 <recipetype:minecraft:smelting>.remove(<item:embers:flat_stamp>);
 <recipetype:minecraft:smelting>.remove(<item:embers:ingot_stamp>);
 <recipetype:minecraft:smelting>.remove(<item:embers:nugget_stamp>);
