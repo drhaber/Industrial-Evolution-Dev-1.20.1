@@ -128,3 +128,16 @@ craftingTable.remove(<item:immersiveengineering:connector_lv>);
 craftingTable.addShaped("handcrafted_connector_lv", <item:immersiveengineering:connector_lv>, [
     [<item:firmaciv:copper_bolt>],
     [<item:kubejs:ceramic_insulator>]]);
+
+craftingTable.remove(<item:immersiveengineering:wire_copper>);
+<recipetype:createaddition:rolling>.remove(<item:immersiveengineering:wire_copper>);
+<recipetype:createaddition:rolling>.addJsonRecipe("rolled_create_wire_copper", {
+	"type":"createaddition:rolling",
+	"input": {
+      	"tag": "forge:rods/copper"
+	},
+	"result": {
+		"item": "immersiveengineering:wire_copper",
+		"count": 3
+	}
+});        
