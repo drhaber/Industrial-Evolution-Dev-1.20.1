@@ -141,3 +141,4 @@ craftingTable.remove(<item:immersiveengineering:wire_copper>);
 		"count": 3
 	}
 });        
+

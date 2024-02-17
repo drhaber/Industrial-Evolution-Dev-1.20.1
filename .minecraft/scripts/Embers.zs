@@ -41,3 +41,9 @@ craftingTable.addShaped("handcrafted_ember_battery_copper_cell", <item:embers:co
   [<item:embers:caminite_ring>,<tag:items:forge:wires/lead>,<item:embers:caminite_ring>],
   [<tag:items:forge:wires/lead>,<item:immersiveengineering:coil_lv>,<tag:items:forge:wires/lead>],
   [<item:embers:caminite_ring>,<tag:items:forge:wires/lead>,<item:embers:caminite_ring>]]);      
+
+craftingTable.remove(<item:embers:mixer_centrifuge>);
+craftingTable.addShaped("handcrafted_ember_mixer_centrifuge", <item:embers:mixer_centrifuge>,[
+  [<tag:items:forge:sheets/lead>,<item:minecraft:air>,<tag:items:forge:sheets/lead>],
+  [<tag:items:forge:sheets/lead>,<item:tfc:crucible>,<tag:items:forge:sheets/lead>],
+  [<item:minecraft:air>,<item:embers:mechanical_core>,<item:minecraft:air>]]);      

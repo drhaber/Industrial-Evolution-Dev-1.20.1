@@ -40,6 +40,7 @@ function addElectrode(ItemIn as string, itemOut as string, Tier as int) as void 
 <recipetype:railcraft:rolling>.remove(<item:railcraft:steel_electrode>);
 <recipetype:railcraft:rolling>.remove(<item:railcraft:brass_electrode>);
 <recipetype:railcraft:rolling>.remove(<item:railcraft:bronze_electrode>);
+<recipetype:railcraft:rolling>.remove(<item:railcraft:carbon_electrode>);
 
 addElectrode("tfc:metal/ingot/wrought_iron","railcraft:iron_electrode",3);
 addElectrode("tfc:metal/ingot/copper","railcraft:copper_electrode",1);
@@ -52,3 +53,24 @@ addElectrode("tfc:metal/ingot/zinc","railcraft:zinc_electrode",1);
 addElectrode("tfc:metal/ingot/steel","railcraft:steel_electrode",4);
 addElectrode("tfc:metal/ingot/brass","railcraft:brass_electrode",2);
 addElectrode("tfc:metal/ingot/bronze","railcraft:bronze_electrode",2);
+
+craftingTable.addShaped("handcrafted_carbon_electrode", <item:railcraft:carbon_electrode>,
+[[<item:minecraft:air>,<item:minecraft:air>,<item:tfc:powder/graphite>],
+[<item:minecraft:air>,<item:tfc:powder/native_copper>,<item:immersiveengineering:phenolic_resin_bucket>.transformReplace(<item:minecraft:bucket>)],
+[<item:tfc:powder/graphite>,<item:minecraft:air>,<item:minecraft:air>]]);
+
+craftingTable.addShaped("handcrafted_carbon_electrode_oredict", <item:railcraft:carbon_electrode>,
+[[<item:minecraft:air>,<item:minecraft:air>,<item:tfc:powder/graphite>],
+[<item:minecraft:air>,<tag:items:forge:dusts/copper>,<item:immersiveengineering:phenolic_resin_bucket>.transformReplace(<item:minecraft:bucket>)],
+[<item:tfc:powder/graphite>,<item:minecraft:air>,<item:minecraft:air>]]);
+
+craftingTable.addShaped("handcrafted_carbon_electrode_wooden_bucket", <item:railcraft:carbon_electrode>,
+[[<item:minecraft:air>,<item:minecraft:air>,<item:tfc:powder/graphite>],
+[<item:minecraft:air>,<item:tfc:powder/native_copper>,<item:tfc:wooden_bucket>.withTag({fluid: {FluidName: "immersiveengineering:phenolic_resin", Amount: 1000}}).transformReplace(<item:tfc:wooden_bucket>)],
+[<item:tfc:powder/graphite>,<item:minecraft:air>,<item:minecraft:air>]]);
+
+craftingTable.addShaped("handcrafted_carbon_electrode_oredict_wooden_bucket", <item:railcraft:carbon_electrode>,
+[[<item:minecraft:air>,<item:minecraft:air>,<item:tfc:powder/graphite>],
+[<item:minecraft:air>,<tag:items:forge:dusts/copper>,<item:tfc:wooden_bucket>.withTag({fluid: {FluidName: "immersiveengineering:phenolic_resin", Amount: 1000}}).transformReplace(<item:tfc:wooden_bucket>)],
+[<item:tfc:powder/graphite>,<item:minecraft:air>,<item:minecraft:air>]]);
+
