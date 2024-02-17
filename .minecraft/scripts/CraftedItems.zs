@@ -265,6 +265,16 @@ craftingTable.addShaped("handcrafted_bundled_cable_spool", <item:morered:bundled
 
 //=====================================================================
 
+
+craftingTable.remove(<item:packingtape:tape>);
+craftingTable.addShaped("handcrafted_packingtape", <item:packingtape:tape>,[
+    [<item:minecraft:air>,<item:minecraft:paper>,<item:minecraft:paper>],
+    [<item:minecraft:air>,<tag:items:map_atlases:sticky_crafting_items>,<item:minecraft:paper>],
+    [<item:minecraft:paper>,<item:minecraft:paper>,<item:minecraft:air>]]);  
+
+craftingTable.remove(<item:minecraft:slime_ball>);
+craftingTable.addShapeless("handcrafted_slime_balls", <item:minecraft:slime_ball>, [<item:tfc:ore/borax>,<item:tfc:glue>,<item:tfc:glue>]);    
+
 //Chalk 
 var Colours = ["white","light_gray","gray","black","brown","red","orange","yellow","lime","green","cyan","light_blue","blue","purple","magenta","pink"];
 for dye in Colours{
