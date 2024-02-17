@@ -24,7 +24,7 @@ craftingTable.remove(<item:immersiveengineering:component_electronic_adv>);
 craftingTable.addShaped("handcrafted_component_electronic_adv", <item:immersiveengineering:component_electronic_adv>,[
     [<item:immersiveengineering:electron_tube>,<item:minecraft:air>,<item:immersiveengineering:electron_tube>],
     [<item:immersiveengineering:plate_duroplast>,<item:immersiveengineering:plate_duroplast>,<item:immersiveengineering:plate_duroplast>],
-    [<item:immersiveengineering:wire_electrum>,<item:minecraft:air>,<item:immersiveengineering:wire_aluminum>]]);
+    [<item:immersiveengineering:wire_electrum>,<item:minecraft:air>,<item:immersiveengineering:wire_lead>]]);
 
 craftingTable.remove(<item:immersiveengineering:light_bulb>);
 craftingTable.addShaped("handcrafted_incandescent_light_bulb", <item:immersiveengineering:light_bulb>,[
