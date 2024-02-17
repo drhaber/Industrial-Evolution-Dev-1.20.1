@@ -8,6 +8,7 @@ import crafttweaker.api.tag.manager.ITagManager;
 import crafttweaker.api.bracket.BracketHandlers;
 import crafttweaker.api.tag.manager.ITagManager;
 import mods.create.FillingManager;
+import mods.jeitweaker.Jei;
 
 craftingTable.remove(<item:productivebees:centrifuge>);
 craftingTable.remove(<item:productivebees:heated_centrifuge>);
@@ -42,7 +43,25 @@ craftingTable.remove(<item:iceandfire:dragonsteel_lightning_pickaxe>);
 craftingTable.remove(<item:botania:elementium_pickaxe>);
 craftingTable.remove(<item:botania:manasteel_pick>);
 craftingTable.remove(<item:immersiveengineering:ersatz_leather>);
+craftingTable.remove(<item:railcraft:coke_oven_bricks>);
+
+craftingTable.remove(<item:railcraft:coal_coke>);
+craftingTable.remove(<item:railcraft:coal_coke_block>);
+craftingTable.remove(<item:tfmg:coal_coke_block>);
+craftingTable.remove(<item:tfmg:coal_coke>);
+<recipetype:create:crushing>.remove(<item:tfmg:coal_coke_dust>);
+
+Jei.hideIngredient(<item:railcraft:coal_coke>);
+Jei.hideIngredient(<item:railcraft:coal_coke_block>);
+Jei.hideIngredient(<item:tfmg:coal_coke_block>);
+Jei.hideIngredient(<item:tfmg:coal_coke>);
+Jei.hideIngredient(<item:tfmg:coal_coke_dust>);
+Jei.hideIngredient(<item:railcraft:coke_oven_bricks>);
+Jei.hideIngredient(<item:tfmg:coke_oven>);
+
 craftingTable.removeByName("farmersdelight:cutting_board");
+
+<recipetype:create:item_application>.remove(<item:tfmg:coke_oven>);
 
 craftingTable.remove(<item:productivebees:powered_centrifuge>);
 craftingTable.addShaped("handcrafted_powered_centrifuge", <item:productivebees:powered_centrifuge>, [
