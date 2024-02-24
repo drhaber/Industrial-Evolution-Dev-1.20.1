@@ -263,6 +263,9 @@ craftingTable.addShaped("handcrafted_bundled_cable_spool", <item:morered:bundled
     [<item:morered:bundled_network_cable>,<item:kubejs:emptyspool>,<item:morered:bundled_network_cable>],
     [<item:morered:bundled_network_cable>,<item:morered:bundled_network_cable>,<item:morered:bundled_network_cable>]]);  
 
+craftingTable.addShaped("handcrafted_emptyspool", <item:kubejs:emptyspool>,[
+    [<tag:items:quark:wooden_vertical_slabs>,<tag:items:forge:rods/wooden>,<tag:items:quark:wooden_vertical_slabs>]]);  
+
 //=====================================================================
 
 
