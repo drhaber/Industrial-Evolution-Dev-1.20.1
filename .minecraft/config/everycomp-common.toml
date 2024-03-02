@@ -130,15 +130,6 @@
 				yellow_blossom = true
 				red_blossom = true
 
-		[general.types.cake]
-
-			[general.types.cake.tfc]
-				cake = true
-
-			[general.types.cake.createaddition]
-				chocolate_cake = true
-				honey_cake = true
-
 		[general.types.cut_block_type]
 
 			[general.types.cut_block_type.createdeco]
@@ -1008,6 +999,15 @@
 				tiles = true
 				"metal/block/chromium" = true
 				"metal/block/stainless_steel" = true
+
+		[general.types.cake]
+
+			[general.types.cake.tfc]
+				cake = true
+
+			[general.types.cake.createaddition]
+				chocolate_cake = true
+				honey_cake = true
 
 	#Disables specific entries
 	[general.entries]

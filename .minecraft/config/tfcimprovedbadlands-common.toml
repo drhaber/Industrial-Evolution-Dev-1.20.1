@@ -11,4 +11,8 @@
 	# The center point (rainfall) at which badland biomes will start to turn into their normal terrain. Set to any arbitrary large or low number to disable entirely.
 	#Range: > -2147483648
 	badlandsThreshold = 140
+	#
+	# Maximum rainfall for where sand layers can generate. Set to 500 to enable everywhere.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	sandLayerRainfall = 100.0
 

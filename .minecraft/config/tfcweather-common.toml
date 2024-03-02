@@ -90,4 +90,12 @@
 	# The rate at which barrels will fill up during rain events. Higher value --> slower updates.
 	#Range: > 0
 	barrelFillRate = 25
+	#
+	# The sand layer displacement distance factor during erosion events.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	sandLayerErosionFactor = 5.0
+	#
+	# The chance for sand layers to erode to an adjacent position. Higher value --> lower chance.
+	#Range: > 1
+	sandLayerErosionChance = 25
 
