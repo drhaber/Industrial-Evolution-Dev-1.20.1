@@ -23,6 +23,8 @@
   "useCustomKeybindSystem": true,
   "showHotbarEngineGauge": true,
   "weaponsAreDestructive": false,
+  "dropInventory": true,
+  "dropUpgrades": false,
   "fuelList": {
     "minecraft:blaze_powder": 1200
   },
@@ -42,5 +44,6 @@
   "bombBayAmmunition": {
     "minecraft:tnt": 100
   },
-  "version": 1
+  "version": 1,
+  "name": "default"
 }

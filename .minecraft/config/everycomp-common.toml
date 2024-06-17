@@ -93,6 +93,10 @@
 				ancient = true
 				blossom = true
 
+			[general.types.wood_type.botania]
+				livingwood = true
+				dreamwood = true
+
 		[general.types.leaves_type]
 
 			[general.types.leaves_type.create_dd]
@@ -180,6 +184,14 @@
 				long_verdant_brick = true
 				cracked_verdant_brick = true
 				mossy_verdant_brick = true
+				corner_blue_brick = true
+				corner_red_brick = true
+				corner_verdant_brick = true
+				corner_dusk_brick = true
+				corner_scarlet_brick = true
+				corner_dean_brick = true
+				corner_umber_brick = true
+				corner_pearl_brick = true
 
 			[general.types.cut_block_type.botania]
 				livingrock = true
@@ -364,6 +376,8 @@
 				concrete_leaded = true
 				insulating_glass = true
 				alloybrick = true
+				slag_brick = true
+				clinker_brick = true
 
 			[general.types.cut_block_type.ae2]
 				sky_stone_brick = true
@@ -999,6 +1013,9 @@
 				tiles = true
 				"metal/block/chromium" = true
 				"metal/block/stainless_steel" = true
+
+			[general.types.cut_block_type.firmaciv]
+				thatch_roofing = true
 
 		[general.types.cake]
 

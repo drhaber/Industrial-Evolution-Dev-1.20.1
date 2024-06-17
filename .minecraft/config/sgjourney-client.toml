@@ -32,6 +32,12 @@
 			movie_primary_chevron_opens = false
 			#Decide if Event Horizons should be shinier
 			shiny_event_horizons = true
+			#The distance at which the sounds a Stargate makes can still be heard at full volume
+			#Range: 0 ~ 128
+			stargate_full_sound_distance = 32
+			#The distance at which the sounds a Stargate makes can still be heard
+			#Range: 16 ~ 128
+			stargate_max_sound_distance = 64
 
 	["Stargate Journey Client Config"."Sky Config"]
 
@@ -46,4 +52,12 @@
 			custom_lantea_sky = true
 			#If true you will render a custom Athos sky
 			custom_athos_sky = true
+
+	["Stargate Journey Client Config"."DHD Config"]
+
+		["Stargate Journey Client Config"."DHD Config".client]
+			#If true, Milky Way DHD symbol positions won't be ordered and instead be based on the canon
+			milky_way_dhd_canon_symbol_positions = false
+			#If true, Pegasus DHD symbol positions won't be ordered and instead be based on the canon
+			pegasus_dhd_canon_symbol_positions = false
 

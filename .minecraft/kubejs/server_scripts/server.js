@@ -25,6 +25,7 @@ event.remove('forge:plates/iron','tfc:metal/sheet/wrought_iron')
 event.remove('railways:internal/plates/iron_plates','tfc:metal/sheet/wrought_iron')
 event.remove('ad_astra_platform:iron_plates','tfc:metal/sheet/wrought_iron')
 event.remove('forge:plates/obsidian','tfc:metal/sheet/steel')
+event.remove('forge:dusts/coal_coke','tfmg:coal_coke_dust')
 
 event.add('forge:storage_blocks/bronze', '#forge:storage_blocks/strong_bronze')
 event.add('forge:ingots/bronze', '#forge:ingots/strong_bronze')
