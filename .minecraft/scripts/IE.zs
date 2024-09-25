@@ -146,3 +146,9 @@ craftingTable.addShaped("handcrafted_any_hammer_head", <item:immersiveengineerin
     [<tag:items:tfc_hammer_time:sledgehammer_heads>,<tag:items:bsa:bindings/strong>,<tag:items:tfc_hammer_time:sledgehammer_heads>],
     [<item:minecraft:air>,<tag:items:forge:rods/wooden>,<item:minecraft:air>],
     [<item:minecraft:air>,<tag:items:forge:rods/wooden>,<item:minecraft:air>]]);
+
+craftingTable.remove(<item:immersiveengineering:cokebrick>);
+craftingTable.addShaped("handcrafted_cokebrick",<item:immersiveengineering:cokebrick>, [
+    [<tag:items:forge:clay>,<tag:items:forge:dusts/ash>,<tag:items:forge:clay>],
+    [<tag:items:forge:dusts/ash>,<tag:items:engineersdecor:brick_blocks>,<tag:items:forge:dusts/ash>],
+    [<tag:items:forge:clay>,<tag:items:forge:dusts/ash>,<tag:items:forge:clay>]]);
