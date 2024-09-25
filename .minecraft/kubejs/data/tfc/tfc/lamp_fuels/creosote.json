@@ -1,0 +1,8 @@
+{
+    "fluid": "immersiveengineering:creosote",
+    "valid_lamps": {
+        "type": "tfc:tag",
+        "tag": "tfc:lamps"
+    },
+    "burn_rate": 4000
+}

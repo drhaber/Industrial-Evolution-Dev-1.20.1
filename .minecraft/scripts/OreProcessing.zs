@@ -860,7 +860,7 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
 
 
 //Automated Steel
-
+/*
 <recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("ultra_high_high_carbon_steel_cooling", {
   "type": "createdieselgenerators:basin_fermenting",
   "heatRequirement": "heated",  
@@ -882,7 +882,8 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
     }
   ]
 });
-
+*/
+/*
 <recipetype:vintageimprovements:pressurizing>.addJsonRecipe("ultra_high_carbon_steel_steel", {
 	"type":"vintageimprovements:pressurizing",
 	"secondaryFluidResults": 0,
@@ -913,7 +914,7 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
 	],
 	"processingTime": 400
 });
-
+*/
 <recipetype:vintageimprovements:pressurizing>.addJsonRecipe("high_carbon_steel_steel", {
 	"type":"vintageimprovements:pressurizing",
 	"secondaryFluidResults": 0,
