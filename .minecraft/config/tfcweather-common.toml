@@ -87,10 +87,6 @@
 	#Range: 0.001 ~ 10000.0
 	valueDecember = 0.05
 	#
-	# The rate at which barrels will fill up during rain events. Higher value --> slower updates.
-	#Range: > 0
-	barrelFillRate = 25
-	#
 	# The sand layer displacement distance factor during erosion events.
 	#Range: 4.9E-324 ~ 1.7976931348623157E308
 	sandLayerErosionFactor = 5.0
@@ -98,4 +94,30 @@
 	# The chance for sand layers to erode to an adjacent position. Higher value --> lower chance.
 	#Range: > 1
 	sandLayerErosionChance = 25
+	#
+	# Toggles generation of snow layers in cold enough areas. Disabling this (false) will fasten world generation time.
+	enableSnowLayers = true
+	#
+	# The chance for barrels to fill up during rain events. Higher value --> higher chance but more checks.
+	#Range: > 0
+	barrelFillChance = 2500
+	#
+	# Max layers allowed for sand during a sandstorm. Affects how far the sand dunes spread.
+	#Range: > 0
+	sandstormMaxLayers = 8
+	#
+	# Max layers allowed for snow during a snowstorm. Affects how far the snow dunes spread.
+	#Range: > 0
+	snowstormMaxLayers = 8
+	#
+	# How much snow should be able to precipitate during snowfall? Lower value = less snow.
+	#Range: > 0
+	snowPrecipitationBuildupAmount = 250
+	#
+	# Toggles wether or not firepits can get extinguished during rain or snowfall.
+	enableFirepitExtinguish = true
+	#
+	# Chance of firepits to be extinguished during rain or snowfall. Lower value = lower chance.
+	#Range: > 0
+	firepitExtinguishChance = 1000
 

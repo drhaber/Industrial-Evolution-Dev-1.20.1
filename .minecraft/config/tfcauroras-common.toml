@@ -1,0 +1,30 @@
+
+[general]
+	#Default Z coordinate of the equator.
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	equatorZ = 10000.0
+	#Default block distance from pole to equator.
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	blocks90 = 20000.0
+	#How fast the aurora should wave.
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	auroraSpeed = 0.001
+	#Wave frequency of the aurora.
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	auroraFrequency = 4.0
+	#Wave amplitude of the aurora should wave.
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	auroraAmplitude = 0.9
+	#How wavy the aurora should be.
+	#Range: > 0
+	auroraWaveOctaves = 20
+	#Aurora distance factor.
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	auroraDistanceFactor = 2.5
+	#How frequent the aurora should be visible. Under normal circumstances there can be many continuous days without auroras and vice versa. Lower value = more variable. If -1, then it's visible every night.
+	#Range: > -1
+	auroraVisiblityOctaves = 1
+	#Cloud render distance.
+	#Range: > 0
+	cloudRenderDistance = 192
+

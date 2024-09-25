@@ -2,6 +2,14 @@
   "bookGuiScale": 0,
   "clickedVisualize": true,
   "bookData": {
+    "betterend:guidebook": {
+      "viewedEntries": [
+        "betterend:rituals/eternal_ritual",
+        "betterend:rituals/infusion_ritual"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
     "apotheosis:apoth_chronicle": {
       "viewedEntries": [],
       "bookmarks": [],

@@ -142,3 +142,7 @@ craftingTable.remove(<item:immersiveengineering:wire_copper>);
 	}
 });        
 
+craftingTable.addShaped("handcrafted_any_hammer_head", <item:immersiveengineering:hammer>.withDamage(97), [
+    [<tag:items:tfc_hammer_time:sledgehammer_heads>,<tag:items:bsa:bindings/strong>,<tag:items:tfc_hammer_time:sledgehammer_heads>],
+    [<item:minecraft:air>,<tag:items:forge:rods/wooden>,<item:minecraft:air>],
+    [<item:minecraft:air>,<tag:items:forge:rods/wooden>,<item:minecraft:air>]]);

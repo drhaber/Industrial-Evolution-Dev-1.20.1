@@ -318,3 +318,37 @@ craftingTable.addShaped("handcrafted_white_chalk", <item:chalk:white_chalk>, [
 );*/
 //addEmbersStamping(<fluid:pneumaticcraft:plastic>,<item:tfc:blank_disc>,<tag:items:minecraft:music_discs>);
 //addEmbersStamping(<fluid:tfmg:liquid_plastic>,<item:tfc:blank_disc>,<tag:items:minecraft:music_discs>);
+
+
+//=====================================================================
+
+//MUSKETS
+
+
+craftingTable.remove(<item:musketmod:pistol>);
+craftingTable.addShaped("handcrafted_musket_pistol", <item:musketmod:pistol>,[
+    [<tag:items:forge:rods/iron>,<item:minecraft:flint_and_steel>],
+    [<tag:items:forge:nuggets/iron>,<item:tfc:brass_mechanisms>],
+    [<item:minecraft:air>,<item:immersiveengineering:wooden_grip>]]);  
+
+craftingTable.remove(<item:musketmod:musket>);
+craftingTable.addShaped("handcrafted_musket", <item:musketmod:musket>,[
+    [<tag:items:forge:rods/iron>,<item:minecraft:air>,<item:minecraft:flint_and_steel>],
+    [<item:minecraft:air>,<tag:items:forge:rods/iron>,<item:tfc:brass_mechanisms>],
+    [<item:minecraft:air>,<tag:items:forge:nuggets/iron>,<item:immersiveengineering:wooden_grip>]]);  
+
+craftingTable.remove(<item:musketmod:musket_with_bayonet>);
+craftingTable.addShapeless("handcrafted_musket_with_bayonet",<item:musketmod:musket_with_bayonet>, [<item:tfc:metal/knife_blade/wrought_iron>,<item:musketmod:musket>]);   
+
+craftingTable.remove(<item:musketmod:cartridge>);
+craftingTable.addShaped("handcrafted_cartridge", <item:musketmod:cartridge>*8,[
+    [<tag:items:forge:paper>,<tag:items:forge:nuggets/tin>],
+    [<tag:items:forge:nuggets/coal>,<tag:items:forge:paper>]]);
+
+craftingTable.addShaped("handcrafted_cartridge_2", <item:musketmod:cartridge>*16,[
+    [<tag:items:forge:paper>,<tag:items:forge:nuggets/industrial_iron>],
+    [<tag:items:forge:nuggets/coal>,<tag:items:forge:paper>]]);       
+
+craftingTable.addShaped("handcrafted_cartridge_3", <item:musketmod:cartridge>*32,[
+    [<tag:items:forge:paper>,<tag:items:forge:nuggets/bronze>],
+    [<tag:items:forge:nuggets/coal>,<tag:items:forge:paper>]]);       

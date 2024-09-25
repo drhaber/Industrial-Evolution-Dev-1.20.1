@@ -39,7 +39,7 @@ Jei.hideCategory(<resource:jumbofurnace:jumbo_furnace_upgrade>);
 <recipetype:tfmg:coking>.removeAll();
 <recipetype:tfmg:casting>.removeAll();
 
-<recipetype:pneumaticcraft:explosion_crafting>.removeAll();
+#<recipetype:pneumaticcraft:explosion_crafting>.removeAll();
 
 <recipetype:immersiveengineering:crusher>.removeByModid("tfc_ie_addon");
 <recipetype:minecraft:smelting>.removeByModid("woodencog");
@@ -75,9 +75,9 @@ craftingTable.removeByName("railcraft:zinc_ingot");
 <recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/raw_block_aluminum");
 <recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/ore_aluminum");
 <recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/raw_ore_aluminum");
-<recipetype:create:crushing>.removeByName("create:crushing/aluminum_ore");
-<recipetype:create:crushing>.removeByName("create:crushing/raw_aluminum_ore");
-<recipetype:create:crushing>.removeByName("create:crushing/raw_aluminum_block");
+#<recipetype:create:crushing>.removeByName("create:crushing/aluminum_ore");
+#<recipetype:create:crushing>.removeByName("create:crushing/raw_aluminum_ore");
+#<recipetype:create:crushing>.removeByName("create:crushing/raw_aluminum_block");
 <recipetype:immersiveengineering:crusher>.removeByName("immersiveengineering:crusher/raw_block_aluminum");
 <recipetype:immersiveengineering:crusher>.removeByName("immersiveengineering:crusher/raw_ore_aluminum");
 <recipetype:immersiveengineering:crusher>.removeByName("immersiveengineering:crusher/ore_aluminum");
@@ -621,7 +621,7 @@ addEmbers2MixingnonTFC("embers:molten_dawnstone", 10, "tfc:metal/gold", 5,"tfc:m
 addEmbersStamping(<fluid:embers:molten_dawnstone>,<item:embers:dawnstone_ingot>,<item:tfc:ceramic/fire_ingot_mold>);
 
 
-
+/*
 <recipetype:pneumaticcraft:heat_frame_cooling>.addJsonRecipe("molten_slag_hardening", {
   "type": "pneumaticcraft:heat_frame_cooling",
   "bonus_output": {
@@ -638,8 +638,8 @@ addEmbersStamping(<fluid:embers:molten_dawnstone>,<item:embers:dawnstone_ingot>,
     "item": "immersiveengineering:slag_glass"
   }
 });
-
-
+*/
+/*
 <recipetype:tfc:barrel_sealed>.addJsonRecipe("acetaldehyde_barrel_recipe_pneumaticcraft", {
     "type": "tfc:barrel_sealed",
     "input_item": {
@@ -657,6 +657,7 @@ addEmbersStamping(<fluid:embers:molten_dawnstone>,<item:embers:dawnstone_ingot>,
     },
     "duration": 8000
 });
+*/
 <recipetype:tfc:barrel_sealed>.addJsonRecipe("acetaldehyde_barrel_recipe_createdieselgenerators", {
     "type": "tfc:barrel_sealed",
     "input_item": {
@@ -735,7 +736,7 @@ addOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/normal_bauxite"
 addIEOrecrushing("tfc_ie_addon:ore/poor_bauxite","tfc_ie_addon:ore/small_bauxite",2,0);
 addIEOrecrushing("tfc_ie_addon:ore/normal_bauxite","tfc_ie_addon:ore/small_bauxite",3,0.1);
 addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite",4,0.5);
-
+/*
 <recipetype:pneumaticcraft:thermo_plant>.addJsonRecipe("bayer_process_sodium_aluminate", {
   "type": "pneumaticcraft:thermo_plant",
   "exothermic": false,
@@ -757,6 +758,8 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
     "min_temp": 473
   }
 });
+*/
+/*
 <recipetype:destroy:centrifugation>.addJsonRecipe("bayer_process_aluminium_hydroxide", {
     "type": "destroy:centrifugation",
     "ingredients": [
@@ -777,7 +780,7 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
     ],
     "processingTime": 500
 });
-
+*/
 <recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("bayer_process_crushed_raw_aluminum", {
   "type": "createdieselgenerators:basin_fermenting",
   "heatRequirement": "superheated",  
@@ -860,7 +863,7 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
 
 <recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("ultra_high_high_carbon_steel_cooling", {
   "type": "createdieselgenerators:basin_fermenting",
-  "heatRequirement": "cooled",  
+  "heatRequirement": "heated",  
   "ingredients": [
     {
       "fluid": "tfmg:molten_steel",
@@ -943,7 +946,7 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
 <recipetype:minecraft:crafting>.remove(<item:sgjourney:naquadah_alloy>);
 
 addcreatemetallurgymelting("kubejs:molten_naquadah","sgjourney:raw_naquadah",100);
-
+/*
 <recipetype:destroy:centrifugation>.addJsonRecipe("naquadah_process", {
     "type": "destroy:centrifugation",
     "ingredients": [
@@ -964,10 +967,10 @@ addcreatemetallurgymelting("kubejs:molten_naquadah","sgjourney:raw_naquadah",100
     ],
     "processingTime": 500
 });
-
+*/
 <recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("naquadah_process_pure_crystal", {
   "type": "createdieselgenerators:basin_fermenting",
-  "heatRequirement": "cooled",  
+  "heatRequirement": "heated",  
   "ingredients": [
     {
       "fluid": "sgjourney:liquid_naquadah",
@@ -986,7 +989,7 @@ addcreatemetallurgymelting("kubejs:molten_naquadah","sgjourney:raw_naquadah",100
     }
   ]
 });
-
+/*
 <recipetype:pneumaticcraft:thermo_plant>.addJsonRecipe("naquadah_process_mettalic_liquid", {
   "type": "pneumaticcraft:thermo_plant",
   "exothermic": false,
@@ -1007,10 +1010,10 @@ addcreatemetallurgymelting("kubejs:molten_naquadah","sgjourney:raw_naquadah",100
     "min_temp": 773
   }
 });
-
+*/
 <recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("naquadah_process_metal", {
   "type": "createdieselgenerators:basin_fermenting",
-  "heatRequirement": "cooled",  
+  "heatRequirement": "heated",  
   "ingredients": [
     {
       "fluid": "kubejs:metallic_naquadah",
