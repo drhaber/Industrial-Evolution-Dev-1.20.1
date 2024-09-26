@@ -116,7 +116,7 @@ craftingTable.remove(<item:immersiveengineering:furnace_heater>);
 craftingTable.addShaped("handcrafted_external_heater", <item:immersiveengineering:furnace_heater>,[
     [<tag:items:forge:wires/brass>,<tag:items:forge:wires/brass>,<tag:items:forge:wires/brass>],
     [<item:embers:superheater>,<item:immersiveengineering:coil_lv>,<item:embers:superheater>],
-    [<tag:items:forge:ingots/andesite_alloy>,<tag:items:forge:ingots/andesite_alloy>,<tag:items:forge:ingots/andesite_alloy>]]);      
+    [<item:create:andesite_alloy>,<item:create:andesite_alloy>,<item:create:andesite_alloy>]]);      
 
 
 craftingTable.remove(<item:immersiveengineering:connector_lv_relay>);

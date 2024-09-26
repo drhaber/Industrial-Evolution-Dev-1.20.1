@@ -27,8 +27,8 @@ function addTFCPotteryFire(ItemIn as string, ItemOut as string) as void {
   },
   "temperature": 1399
 });
-<recipetype:create_dd:superheating>.addJsonRecipe("pottery_fire_superheating" + ItemOut.replace(":","_"), {
-  "type": "create_dd:superheating",
+<recipetype:create_dd:seething>.addJsonRecipe("pottery_fire_seething" + ItemOut.replace(":","_"), {
+  "type": "create_dd:seething",
   "ingredients": [
     {
       "item": ItemIn
@@ -108,8 +108,8 @@ addTFCPotteryFire("embers:raw_caminite_plate","embers:caminite_plate");
 });
 
 function addTFCPotteryCompat(ItemIn as string, ItemOut as string) as void { 
-<recipetype:create_dd:superheating>.addJsonRecipe("tfc_pottery_compat_superheat" + ItemOut.replace(":","_"),{
-  "type": "create_dd:superheating",
+<recipetype:create_dd:seething>.addJsonRecipe("tfc_pottery_compat_superheat" + ItemOut.replace(":","_"),{
+  "type": "create_dd:seething",
   "ingredients": [
     {
       "item": ItemIn

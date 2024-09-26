@@ -129,7 +129,7 @@ craftingTable.remove(<item:minecraft:clock>);
 <recipetype:create:sequenced_assembly>.remove(<item:create_things_and_misc:vibration_mechanism>);
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("seq_vibration_mechanism")
   .transitionTo(<item:create_things_and_misc:incomplete_vibration_mechanism>)
-  .require(<item:create_dd:lapis_sheet>)
+  .require(<item:create_dd:lapis_lazuli_shard>)
   .loops(1)
   .addOutput(<item:create_things_and_misc:vibration_mechanism>,1)
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create_things_and_misc:rose_quartz_sheet>))

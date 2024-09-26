@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "tfmg:aluminum_ingot",
+        "tfmg:lead_ingot",
+        "embers:lead_ingot",
+        "createaddition:electrum_ingot",
+        "railcraft:lead_ingot"
+    ]
+}

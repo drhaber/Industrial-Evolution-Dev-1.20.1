@@ -30,11 +30,9 @@ event.add('forge:storage_blocks/bronze', '#forge:storage_blocks/strong_bronze')
 event.add('forge:ingots/bronze', '#forge:ingots/strong_bronze')
 event.add('forge:nuggets/bronze', '#forge:nuggets/strong_bronze')
 event.add('forge:plates/bronze', '#forge:plates/strong_bronze')
-event.add('map_atlases:sticky_crafting_items','#forge:dough')
+//event.add('map_atlases:sticky_crafting_items','#forge:dough')
 
 event.add('botania:seed_apothecary_reagent', '#tfc:seeds')
-
-event.add('twilightforest:portal/activator','#forge:gems')
 
 //event.add('tfc:pileable_ingots', 'sgjourney:naquadah_alloy')
 //event.add(`tfc:pileable_ingots`,`#forge:ingots`)
@@ -57,33 +55,26 @@ ServerEvents.tags("worldgen/biome", (event) => {
     event.add("minecraft:is_lake", ["tfc:volcanic_mountain_lake","tfc:volcanic_oceanic_mountain_lake","tfc:oceanic_mountain_lake","tfc:mountain_lake","tfc:plateau_lake","tfc:lake","tfc:old_mountain_lake"])
     event.add("minecraft:is_savanna", ["tfc:plains", "tfc:plateau"])
     event.add("minecraft:is_lowland", ["tfc:lowlands", "tfc:low_canyons"])
+
 //Tag adds "Stolen" From Below
 //https://github.com/AllTheMods/Gravitas2/blob/main/kubejs/server_scripts/tags/worldgen_biomes.js
     event.add("createpickywheels:picky_waterwheels", ["tfc:river"])
-    event.add("createpickywheels:picky_windmills", ["#twilightforest:in_twilight_forest","#aether:is_aether"])
-    event.add("botania:mystical_flower_spawnlist",["#tfc:overworld","#twilightforest:in_twilight_forest","#aether:is_aether"])
+    event.add("createpickywheels:picky_windmills", ["#aether:is_aether"])
+    event.add("botania:mystical_flower_spawnlist",["#tfc:overworld","#aether:is_aether"])
     event.add("sgjourney:has_structure/terra_stargate_biomes",["#tfc:overworld"])
     event.add("sgjourney:has_structure/buried_stargate/buried_stargate_biomes",["#tfc:overworld"])
     event.add("ftbessentials:ignore_rtp",["tfc:ocean","tfc:ocean_reef","tfc:deep_ocean","tfc:deep_ocean_trench"])
-    event.add("creeperoverhaul:where_creepers_spawn",["#tfc:overworld","#twilightforest:in_twilight_forest"])
+    event.add("creeperoverhaul:where_creepers_spawn",["#tfc:overworld"])
     event.add("endermanoverhaul:cave_spawns",["#tfc:overworld"])
     event.add("endermanoverhaul:badlands_spawns",["tfc:badlands","tfc:inverted_badlands"])
     event.add("endermanoverhaul:coral_spawns",["tfc:ocean_reef"])
-    event.add("endermanoverhaul:dark_oak_spawns",["twilightforest:dark_forest"])
-    event.add("endermanoverhaul:ice_spikes_spawns",["twilightforest:glacier","martian_polar_caps"])
-    event.add("endermanoverhaul:mushroom_fields_spawns",["twilightforest:mushroom_forest"])
     event.add("endermanoverhaul:savanna_spawns", ["tfc:plains", "tfc:plateau"])
-    event.add("endermanoverhaul:snowy_spawns",["twilightforest:glacier","twilightforest:snowy_forest"])
     event.add("endermanoverhaul:windswept_hills_spawns",["aether:skyroot_meadow"])
-
     //endermanoverhaul:flower_fields_spawns
     event.add("minecraft:mineshaft_blocking", ["#tfc:overworld"])
     event.add("minecraft:snow_golem_melts", ["#tfc:is_volcanic"])
     
     event.add("additionalstructures:as_custom",["#tfc:overworld"])
-    event.add("aether:mycelium_conversion",["twilightforest:mushroom_forest"])
-    event.add("aether:no_wheat_seeds",["#tfc:overworld","#twilightforest:in_twilight_forest"])
-    event.add("aether:podzol_conversion",["twilightforest:dark_forest"])
     event.add("betterdeserttemples:has_structure/better_desert_temple",["tfc:inverted_badlands"])
     event.add("betteroceanmonuments:has_structure/better_ocean_monument",["tfc:deep_ocean","tfc:deep_ocean"])
     event.add("betterstrongholds:has_structure/better_stronghold",["#tfc:overworld"])
@@ -92,6 +83,8 @@ ServerEvents.tags("worldgen/biome", (event) => {
     event.add("minecraft:has_closer_water_fog",["tfc:lowlands"])
 
     event.add("forge:is_water",["tfc:river","tfc:ocean","tfc:ocean_reef","tfc:deep_ocean","tfc:deep_ocean_trench"])
+
+    event.add("minecraft:has_structure/ancient_city", ["wilightforest:final_plateau"])
 })
 BlockEvents.rightClicked(event => {
     let item = event.item

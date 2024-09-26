@@ -28,10 +28,6 @@ craftingTable.remove(<item:aether:skyroot_pickaxe>);
 craftingTable.remove(<item:aether:holystone_pickaxe>);
 craftingTable.remove(<item:aether:zanite_pickaxe>);
 craftingTable.remove(<item:aether:gravitite_pickaxe>);
-craftingTable.remove(<item:twilightforest:ironwood_pickaxe>);
-craftingTable.remove(<item:twilightforest:steeleaf_pickaxe>);
-craftingTable.remove(<item:twilightforest:knightmetal_pickaxe>);
-craftingTable.remove(<item:twilightforest:fiery_pickaxe>);
 craftingTable.remove(<item:iceandfire:silver_pickaxe>);
 craftingTable.remove(<item:iceandfire:copper_pickaxe>);
 craftingTable.remove(<item:iceandfire:dragonbone_pickaxe>);
@@ -193,7 +189,7 @@ craftingTable.addShaped("handcrafted_candle", <item:tfc:candle>,
 [[<tag:items:forge:string>],
 [<item:kubejs:unfinished_candle>]]);
 
-<recipetype:create:filling>.addRecipe("glowstring", <item:kubejs:glowstring>, <tag:items:forge:string>, <fluid:create_dd:glowberry>, 100);
+//<recipetype:create:filling>.addRecipe("glowstring", <item:kubejs:glowstring>, <tag:items:forge:string>, <fluid:create_dd:glowberry>, 100);
 
 function addWaxKnapping(Row1 as string, Row2 as string, Row3 as string, Row4 as string, Row5 as string, ItemOut as string) as void { 
 craftingTable.remove(<item:${ItemOut}>);
@@ -344,11 +340,11 @@ craftingTable.remove(<item:musketmod:cartridge>);
 craftingTable.addShaped("handcrafted_cartridge", <item:musketmod:cartridge>*8,[
     [<tag:items:forge:paper>,<tag:items:forge:nuggets/tin>],
     [<tag:items:forge:nuggets/coal>,<tag:items:forge:paper>]]);
-
+/*
 craftingTable.addShaped("handcrafted_cartridge_2", <item:musketmod:cartridge>*16,[
     [<tag:items:forge:paper>,<tag:items:forge:nuggets/industrial_iron>],
     [<tag:items:forge:nuggets/coal>,<tag:items:forge:paper>]]);       
-
+*/
 craftingTable.addShaped("handcrafted_cartridge_3", <item:musketmod:cartridge>*32,[
     [<tag:items:forge:paper>,<tag:items:forge:nuggets/bronze>],
     [<tag:items:forge:nuggets/coal>,<tag:items:forge:paper>]]);       

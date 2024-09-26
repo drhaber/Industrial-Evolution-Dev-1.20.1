@@ -31,7 +31,7 @@ Jei.hideCategory(<resource:jumbofurnace:jumbo_furnace_upgrade>);
 <recipetype:minecraft:blasting>.remove(<tag:items:forge:nuggets>);
 <recipetype:minecraft:smelting>.remove(<tag:items:tfc:colored_glazed_terracotta>);
 <recipetype:create:splashing>.remove(<tag:items:forge:nuggets>);
-<recipetype:create_dd:superheating>.remove(<tag:items:forge:ingots>);
+//<recipetype:create_dd:superheating>.remove(<tag:items:forge:ingots>);
 
 <recipetype:minecraft:blasting>.remove(<item:sgjourney:pure_naquadah>);
 
@@ -65,7 +65,7 @@ craftingTable.removeByName("railcraft:brass_ingot");
 craftingTable.removeByName("railcraft:zinc_ingot");
 //craftingTable.removeByName("railcraft:zinc_block_from_zinc_ingot");
 
-<recipetype:create:compacting>.removeByName("create_dd:compacting/steel_ingot");
+//<recipetype:create:compacting>.removeByName("create_dd:compacting/steel_ingot");
 
 <recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/steel");
 //<recipetype:immersiveengineering:arc_furnace>.removeByName("tfc_ie_addon:arc_furnace/steel");
@@ -915,6 +915,7 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
 	"processingTime": 400
 });
 */
+/*
 <recipetype:vintageimprovements:pressurizing>.addJsonRecipe("high_carbon_steel_steel", {
 	"type":"vintageimprovements:pressurizing",
 	"secondaryFluidResults": 0,
@@ -941,7 +942,7 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
 	],
 	"processingTime": 400
 });
-
+*/
 //Naquadah 
 <recipetype:minecraft:crafting>.remove(<item:sgjourney:naquadah_rod>);
 <recipetype:minecraft:crafting>.remove(<item:sgjourney:naquadah_alloy>);
@@ -1042,7 +1043,7 @@ addcreatemetallurgymelting("kubejs:molten_naquadah","sgjourney:raw_naquadah",100
 		"item": "kubejs:naquadah_sheet"
 	}
 });  
-
+/*
 <recipetype:railcraft:rolling>.addJsonRecipe("naquadah_alloy", {
   "type": "railcraft:rolling",
   "key": {
@@ -1064,6 +1065,7 @@ addcreatemetallurgymelting("kubejs:molten_naquadah","sgjourney:raw_naquadah",100
     "item": "sgjourney:naquadah_alloy"
   }
 });
+*/
 /*
 
 //Liquid Catalyst

@@ -70,13 +70,13 @@ craftingTable.remove(<item:create_new_age:fluxuated_magnetite>);
     "item": "create_new_age:fluxuated_magnetite"
   }
 });
-
+/*
 craftingTable.remove(<item:create_new_age:netherite_magnet>);
 craftingTable.addShaped("netherite_magnet", <item:create_new_age:netherite_magnet>, [
     [<item:create_dd:overcharge_alloy_sheet>,<item:create_dd:overcharge_alloy_sheet>,<item:create_dd:overcharge_alloy_sheet>],
     [<item:create_dd:overcharge_alloy_sheet>,<item:create_new_age:fluxuated_magnetite>,<item:create_dd:overcharge_alloy_sheet>],
     [<item:create_dd:overcharge_alloy_sheet>,<item:create_dd:overcharge_alloy_sheet>,<item:create_dd:overcharge_alloy_sheet>]]);
-
+*/
 craftingTable.remove(<item:createaddition:alternator>);
 craftingTable.addShaped("handcrafted_alternator_dynamo", <item:createaddition:alternator>,[
     [<tag:items:forge:sheets/steel>,<item:immersiveengineering:dynamo>,<tag:items:forge:sheets/steel>],
