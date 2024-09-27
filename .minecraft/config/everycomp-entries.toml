@@ -974,67 +974,10 @@
 
 	[types.leaves_type]
 
-		[types.leaves_type.dynamictrees]
-			spruce = true
-			oak_undergrowth = true
-			oak = true
-			mangrove = true
-			jungle_undergrowth = true
-			jungle = true
-			flowering_azalea = true
-			dark_oak = true
-			cherry = true
-			birch = true
-			azalea = true
-			acacia = true
-
 		[types.leaves_type.hexerei]
 			mahogany = true
 			willow = true
 			witch_hazel = true
-
-		[types.leaves_type.dthexerei]
-			witch_hazel = true
-			willow = true
-			mahogany = true
-
-		[types.leaves_type.dttfc]
-			willow_undergrowth = true
-			willow = true
-			white_cedar_undergrowth = true
-			white_cedar = true
-			sycamore = true
-			spruce_undergrowth = true
-			spruce = true
-			sequoia_undergrowth = true
-			sequoia = true
-			rosewood = true
-			pine_undergrowth = true
-			pine = true
-			palm = true
-			oak_undergrowth = true
-			oak = true
-			maple_undergrowth = true
-			maple = true
-			mangrove = true
-			kapok_undergrowth = true
-			kapok = true
-			hickory_undergrowth = true
-			hickory = true
-			douglas_fir_undergrowth = true
-			douglas_fir = true
-			chestnut_undergrowth = true
-			chestnut = true
-			blackwood_undergrowth = true
-			blackwood = true
-			birch_undergrowth = true
-			birch = true
-			aspen_undergrowth = true
-			aspen = true
-			ash_undergrowth = true
-			ash = true
-			acacia_undergrowth = true
-			acacia = true
 
 		[types.leaves_type.aether]
 			skyroot = true
@@ -1069,33 +1012,6 @@
 			gilded_oak = true
 			blighted_skyroot = true
 
-		[types.leaves_type.dtaether]
-			yagroot = true
-			sunroot = true
-			skyroot_pine = true
-			skyroot_bush = true
-			skyroot = true
-			sakura = true
-			roseroot = true
-			purple_glacia = true
-			holiday = true
-			highsproot = true
-			golden_oak = true
-			glacia = true
-			gilded_oak = true
-			flowering_roseroot = true
-			flowering_blue_roseroot = true
-			fieldsproot = true
-			enchanted_skyroot = true
-			decorated_holiday = true
-			crystal_skyroot = true
-			crystal = true
-			cruderoot = true
-			conberry = true
-			blue_roseroot = true
-			blightwillow = true
-			blighted_skyroot = true
-
 		[types.leaves_type.quark]
 			ancient = true
 			blue_blossom = true
@@ -1103,14 +1019,6 @@
 			orange_blossom = true
 			yellow_blossom = true
 			red_blossom = true
-
-		[types.leaves_type.dtquark]
-			warm_blossom = true
-			sunny_blossom = true
-			serene_blossom = true
-			frosty_blossom = true
-			fiery_blossom = true
-			ancient = true
 
 		[types.leaves_type.northstar]
 			coiler = true
@@ -1124,12 +1032,11 @@
 			tenanea = true
 			lucernia = true
 
-		[types.leaves_type.dtbetterend]
-			tenanea = true
-			pythadendron = true
-			lucernia = true
-			lacugrove = true
-			dragon_tree = true
+		[types.leaves_type.betternether]
+			willow = true
+			rubeus = true
+			anchor_tree = true
+			nether_sakura = true
 
 	[types.cake]
 
@@ -1235,6 +1142,17 @@
 			umbrella_tree = true
 			jellyshroom = true
 			lucernia = true
+
+		[types.wood_type.betternether]
+			nether_reed = true
+			stalagnate = true
+			willow = true
+			wart = true
+			rubeus = true
+			mushroom_fir = true
+			nether_mushroom = true
+			anchor_tree = true
+			nether_sakura = true
 
 #Disables specific entries
 [entries]

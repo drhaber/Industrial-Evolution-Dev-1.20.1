@@ -6,6 +6,7 @@ import crafttweaker.api.util.random.Percentaged;
 import crafttweaker.api.fluid.IFluidStack;
 import crafttweaker.api.tag.manager.ITagManager;
 import crafttweaker.api.bracket.BracketHandlers;
+import crafttweaker.api.recipe.MirrorAxis;
 import mods.jeitweaker.Jei;
 
 <recipetype:immersiveengineering:blueprint>.remove(<item:immersiveengineering:electron_tube>);
@@ -152,3 +153,44 @@ craftingTable.addShaped("handcrafted_cokebrick",<item:immersiveengineering:cokeb
     [<tag:items:forge:clay>,<tag:items:forge:dusts/ash>,<tag:items:forge:clay>],
     [<tag:items:forge:dusts/ash>,<tag:items:engineersdecor:brick_blocks>,<tag:items:forge:dusts/ash>],
     [<tag:items:forge:clay>,<tag:items:forge:dusts/ash>,<tag:items:forge:clay>]]);
+
+
+
+craftingTable.remove(<item:immersiveengineering:capacitor_lv>);
+craftingTable.addShaped("handcrafted_capacitor_lv",<item:immersiveengineering:capacitor_lv>, [
+    [<tag:items:forge:rods/lead>,<item:railcraft:charge_terminal>,<tag:items:forge:rods/lead>],
+    [<item:railcraft:lead_electrode>,<item:tfmg:bottle_of_battery_acid>,<item:railcraft:lead_electrode>],
+    [<item:tfc_ie_addon:treated_wood_lumber>,<item:tfc_ie_addon:treated_wood_lumber>,<item:tfc_ie_addon:treated_wood_lumber>]]);
+
+craftingTable.remove(<item:immersiveengineering:capacitor_mv>);
+craftingTable.addShapedMirrored("handcrafted_capacitor_mv", MirrorAxis.HORIZONTAL,<item:immersiveengineering:capacitor_mv>, [
+    [<tag:items:forge:rods/constantan>,<item:railcraft:charge_terminal>,<tag:items:forge:rods/constantan>],
+    [<item:railcraft:nickel_electrode>,<item:tfmg:bottle_of_battery_acid>,<item:railcraft:iron_electrode>],
+    [<item:tfc_ie_addon:treated_wood_lumber>,<item:tfc_ie_addon:treated_wood_lumber>,<item:tfc_ie_addon:treated_wood_lumber>]]);
+
+craftingTable.remove(<item:immersiveengineering:capacitor_hv>);
+craftingTable.addShapedMirrored("handcrafted_capacitor_hv", MirrorAxis.HORIZONTAL,<item:immersiveengineering:capacitor_hv>, [
+    [<tag:items:forge:rods/electrum>,<item:railcraft:charge_terminal>,<tag:items:forge:rods/electrum>],
+    [<item:railcraft:invar_electrode>,<item:tfmg:lithium_charge>,<item:railcraft:carbon_electrode>],
+    [<item:tfc_ie_addon:treated_wood_lumber>,<item:tfc_ie_addon:treated_wood_lumber>,<item:tfc_ie_addon:treated_wood_lumber>]]);
+
+/*
+//Capaciators
+recipes.remove(<immersiveengineering:metal_device0>); #LV
+recipes.addShaped(<immersiveengineering:metal_device0>,[
+	[<tfctech:metal/wrought_iron_bolt>,<railcraft:charge:1>,<tfctech:metal/wrought_iron_bolt>],
+	[<railcraft:charge:6>,<nuclearcraft:compound:6>,<railcraft:charge:8>],
+	[<contenttweaker:treatedlumber>,<tfctech:metal/copper_long_rod>,<contenttweaker:treatedlumber>]]);
+
+recipes.remove(<immersiveengineering:metal_device0:1>); #MV
+recipes.addShaped(<immersiveengineering:metal_device0:1>,[
+	[<tfctech:metal/constantan_bolt>,<railcraft:charge:1>,<tfctech:metal/constantan_bolt>],
+	[<railcraft:charge:6>,<appliedenergistics2:material:10>,<railcraft:charge:7>],
+	[<contenttweaker:treatedlumber>,<tfctech:metal/electrum_long_rod>,<contenttweaker:treatedlumber>]]);
+
+recipes.remove(<immersiveengineering:metal_device0:2>); #HV
+recipes.addShaped(<immersiveengineering:metal_device0:2>,[
+	[<tfctech:metal/electrum_bolt>,<railcraft:charge:1>,<tfctech:metal/electrum_bolt>],
+	[<nuclearcraft:part:13>,<libvulpes:productgem>,<nuclearcraft:part:13>],
+	[<nuclearcraft:part:4>,<tfctech:metal/steel_long_rod>,<nuclearcraft:part:4>]]);
+*/

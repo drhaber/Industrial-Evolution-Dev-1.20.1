@@ -84,7 +84,6 @@ ServerEvents.tags("worldgen/biome", (event) => {
 
     event.add("forge:is_water",["tfc:river","tfc:ocean","tfc:ocean_reef","tfc:deep_ocean","tfc:deep_ocean_trench"])
 
-    event.add("minecraft:has_structure/ancient_city", ["wilightforest:final_plateau"])
 })
 BlockEvents.rightClicked(event => {
     let item = event.item
