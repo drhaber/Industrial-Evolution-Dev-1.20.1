@@ -10,6 +10,19 @@ import crafttweaker.api.tag.manager.ITagManager;
 import crafttweaker.api.bracket.BracketHandlers;
 import mods.jeitweaker.Jei;
 
+
+craftingTable.remove(<item:railcraft:nickel_zinc_battery>);
+craftingTable.remove(<item:railcraft:nickel_iron_battery>);
+craftingTable.remove(<item:railcraft:zinc_carbon_battery>);
+craftingTable.remove(<item:railcraft:zinc_silver_battery>);
+
+Jei.hideIngredient(<item:railcraft:nickel_zinc_battery>);
+Jei.hideIngredient(<item:railcraft:nickel_iron_battery>);
+Jei.hideIngredient(<item:railcraft:zinc_carbon_battery>);
+Jei.hideIngredient(<item:railcraft:zinc_silver_battery>);
+Jei.hideIngredient(<item:railcraft:zinc_carbon_battery_empty>);
+Jei.hideIngredient(<item:railcraft:zinc_silver_battery_empty>);
+
 function addElectrode(ItemIn as string, itemOut as string, Tier as int) as void { 
 <recipetype:tfc:anvil>.addJsonRecipe("electrode_anvil_" + itemOut.replace(":","_"), {
   "type": "tfc:anvil",
