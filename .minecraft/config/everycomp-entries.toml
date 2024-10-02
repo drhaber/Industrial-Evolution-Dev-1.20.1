@@ -9,6 +9,32 @@
 			willow = true
 			witch_hazel = true
 
+		[types.leaves_type.quark]
+			ancient = true
+			blue_blossom = true
+			lavender_blossom = true
+			orange_blossom = true
+			yellow_blossom = true
+			red_blossom = true
+
+		[types.leaves_type.northstar]
+			coiler = true
+			argyre = true
+			wilter = true
+
+		[types.leaves_type.betternether]
+			willow = true
+			rubeus = true
+			anchor_tree = true
+			nether_sakura = true
+
+		[types.leaves_type.betterend]
+			pythadendron = true
+			lacugrove = true
+			dragon_tree = true
+			tenanea = true
+			lucernia = true
+
 		[types.leaves_type.aether]
 			skyroot = true
 			golden_oak = true
@@ -42,32 +68,6 @@
 			gilded_oak = true
 			blighted_skyroot = true
 
-		[types.leaves_type.quark]
-			ancient = true
-			blue_blossom = true
-			lavender_blossom = true
-			orange_blossom = true
-			yellow_blossom = true
-			red_blossom = true
-
-		[types.leaves_type.northstar]
-			coiler = true
-			argyre = true
-			wilter = true
-
-		[types.leaves_type.betterend]
-			pythadendron = true
-			lacugrove = true
-			dragon_tree = true
-			tenanea = true
-			lucernia = true
-
-		[types.leaves_type.betternether]
-			willow = true
-			rubeus = true
-			anchor_tree = true
-			nether_sakura = true
-
 	[types.cake]
 
 		[types.cake.tfc]
@@ -78,9 +78,6 @@
 			honey_cake = true
 
 	[types.wood_type]
-
-		[types.wood_type.createdieselgenerators]
-			chip_wood = true
 
 		[types.wood_type.quark]
 			azalea = true
@@ -130,6 +127,41 @@
 			ironwood = true
 			ipe = true
 
+		[types.wood_type.iceandfire]
+			dreadwood = true
+
+		[types.wood_type.northstar]
+			coiler = true
+			wilter = true
+			argyre = true
+			calorian = true
+
+		[types.wood_type.betternether]
+			nether_reed = true
+			stalagnate = true
+			willow = true
+			wart = true
+			rubeus = true
+			mushroom_fir = true
+			nether_mushroom = true
+			anchor_tree = true
+			nether_sakura = true
+
+		[types.wood_type.betterend]
+			mossy_glowshroom = true
+			pythadendron = true
+			end_lotus = true
+			lacugrove = true
+			dragon_tree = true
+			tenanea = true
+			helix_tree = true
+			umbrella_tree = true
+			jellyshroom = true
+			lucernia = true
+
+		[types.wood_type.createdieselgenerators]
+			chip_wood = true
+
 		[types.wood_type.aether]
 			skyroot = true
 
@@ -152,96 +184,7 @@
 			crystal = true
 			glacia = true
 
-		[types.wood_type.iceandfire]
-			dreadwood = true
-
-		[types.wood_type.northstar]
-			coiler = true
-			wilter = true
-			argyre = true
-			calorian = true
-
-		[types.wood_type.betterend]
-			mossy_glowshroom = true
-			pythadendron = true
-			end_lotus = true
-			lacugrove = true
-			dragon_tree = true
-			tenanea = true
-			helix_tree = true
-			umbrella_tree = true
-			jellyshroom = true
-			lucernia = true
-
-		[types.wood_type.betternether]
-			nether_reed = true
-			stalagnate = true
-			willow = true
-			wart = true
-			rubeus = true
-			mushroom_fir = true
-			nether_mushroom = true
-			anchor_tree = true
-			nether_sakura = true
-
 	[types.cut_block_type]
-
-		[types.cut_block_type.createdeco]
-			dusk_brick = true
-			short_dusk_brick = true
-			tiled_dusk_brick = true
-			long_dusk_brick = true
-			corner_dusk_brick = true
-			cracked_dusk_brick = true
-			mossy_dusk_brick = true
-			short_red_brick = true
-			tiled_red_brick = true
-			long_red_brick = true
-			corner_red_brick = true
-			cracked_red_brick = true
-			mossy_red_brick = true
-			dean_brick = true
-			short_dean_brick = true
-			tiled_dean_brick = true
-			long_dean_brick = true
-			corner_dean_brick = true
-			cracked_dean_brick = true
-			mossy_dean_brick = true
-			umber_brick = true
-			short_umber_brick = true
-			tiled_umber_brick = true
-			long_umber_brick = true
-			corner_umber_brick = true
-			cracked_umber_brick = true
-			mossy_umber_brick = true
-			pearl_brick = true
-			short_pearl_brick = true
-			tiled_pearl_brick = true
-			long_pearl_brick = true
-			corner_pearl_brick = true
-			cracked_pearl_brick = true
-			mossy_pearl_brick = true
-			verdant_brick = true
-			short_verdant_brick = true
-			tiled_verdant_brick = true
-			long_verdant_brick = true
-			corner_verdant_brick = true
-			cracked_verdant_brick = true
-			mossy_verdant_brick = true
-			scarlet_brick = true
-			short_scarlet_brick = true
-			tiled_scarlet_brick = true
-			long_scarlet_brick = true
-			corner_scarlet_brick = true
-			cracked_scarlet_brick = true
-			mossy_scarlet_brick = true
-			blue_brick = true
-			short_blue_brick = true
-			tiled_blue_brick = true
-			long_blue_brick = true
-			corner_blue_brick = true
-			cracked_blue_brick = true
-			mossy_blue_brick = true
 
 		[types.cut_block_type.botania]
 			livingrock = true
@@ -302,19 +245,6 @@
 			green_marble = true
 			carmin_marble = true
 
-		[types.cut_block_type.mcwroofs]
-			white_roof = true
-			light_gray_roof = true
-			gray_roof = true
-			black_roof = true
-			base_roof = true
-
-		[types.cut_block_type.mcwlights]
-			redstone_lamp = true
-			glowstone = true
-			shroomlight = true
-			sea_lantern = true
-
 		[types.cut_block_type.northstar]
 			martian_steel_sheetmetal = true
 			martian_steel_plating = true
@@ -330,60 +260,6 @@
 			venus_stone_brick = true
 			mercury_stone_brick = true
 			calorian = true
-
-		[types.cut_block_type.mcwpaths]
-			andesite_running_bond = true
-			diorite_running_bond = true
-			granite_running_bond = true
-			sandstone_running_bond = true
-			red_sandstone_running_bond = true
-			brick_running_bond = true
-			stone_running_bond = true
-			mossy_stone_running_bond = true
-			cobbled_deepslate_running_bond = true
-			deepslate_running_bond = true
-			mud_brick_running_bond = true
-			blackstone_running_bond = true
-			dark_prismarine_running_bond = true
-			andesite_windmill_weave = true
-			diorite_windmill_weave = true
-			granite_windmill_weave = true
-			sandstone_windmill_weave = true
-			red_sandstone_windmill_weave = true
-			brick_windmill_weave = true
-			stone_windmill_weave = true
-			mossy_stone_windmill_weave = true
-			cobbled_deepslate_windmill_weave = true
-			deepslate_windmill_weave = true
-			mud_brick_windmill_weave = true
-			blackstone_windmill_weave = true
-			dark_prismarine_windmill_weave = true
-			andesite_flagstone = true
-			diorite_flagstone = true
-			granite_flagstone = true
-			sandstone_flagstone = true
-			red_sandstone_flagstone = true
-			brick_flagstone = true
-			stone_flagstone = true
-			mossy_stone_flagstone = true
-			cobbled_deepslate_flagstone = true
-			deepslate_flagstone = true
-			mud_brick_flagstone = true
-			blackstone_flagstone = true
-			dark_prismarine_flagstone = true
-			andesite_crystal_floor = true
-			diorite_crystal_floor = true
-			granite_crystal_floor = true
-			sandstone_crystal_floor = true
-			red_sandstone_crystal_floor = true
-			brick_crystal_floor = true
-			stone_crystal_floor = true
-			mossy_stone_crystal_floor = true
-			cobbled_deepslate_crystal_floor = true
-			deepslate_crystal_floor = true
-			mud_brick_crystal_floor = true
-			blackstone_crystal_floor = true
-			dark_prismarine_crystal_floor = true
 
 		[types.cut_block_type.ae2]
 			sky_stone_brick = true
@@ -427,10 +303,6 @@
 			polished_willow = true
 			witch_hazel = true
 			polished_witch_hazel = true
-
-		[types.cut_block_type.create_things_and_misc]
-			brass_tiles = true
-			brass_brick = true
 
 		[types.cut_block_type.tfc]
 			"mud_bricks/silt" = true
@@ -686,6 +558,358 @@
 			"wood/planks/ironwood" = true
 			"wood/planks/ipe" = true
 
+		[types.cut_block_type.iceandfire]
+			dread_stone = true
+
+		[types.cut_block_type.create]
+			copper_shingle = true
+			exposed_copper_shingle = true
+			weathered_copper_shingle = true
+			oxidized_copper_shingle = true
+			waxed_copper_shingle = true
+			waxed_exposed_copper_shingle = true
+			waxed_weathered_copper_shingle = true
+			waxed_oxidized_copper_shingle = true
+			copper_tile = true
+			exposed_copper_tile = true
+			weathered_copper_tile = true
+			oxidized_copper_tile = true
+			waxed_copper_tile = true
+			waxed_exposed_copper_tile = true
+			waxed_weathered_copper_tile = true
+			waxed_oxidized_copper_tile = true
+			cut_granite = true
+			polished_cut_granite = true
+			cut_granite_brick = true
+			small_granite_brick = true
+			cut_diorite = true
+			polished_cut_diorite = true
+			cut_diorite_brick = true
+			small_diorite_brick = true
+			cut_andesite = true
+			polished_cut_andesite = true
+			cut_andesite_brick = true
+			small_andesite_brick = true
+			cut_calcite = true
+			polished_cut_calcite = true
+			cut_calcite_brick = true
+			small_calcite_brick = true
+			cut_dripstone = true
+			polished_cut_dripstone = true
+			cut_dripstone_brick = true
+			small_dripstone_brick = true
+			cut_deepslate = true
+			polished_cut_deepslate = true
+			cut_deepslate_brick = true
+			small_deepslate_brick = true
+			cut_tuff = true
+			polished_cut_tuff = true
+			cut_tuff_brick = true
+			small_tuff_brick = true
+			cut_asurine = true
+			polished_cut_asurine = true
+			cut_asurine_brick = true
+			small_asurine_brick = true
+			cut_crimsite = true
+			polished_cut_crimsite = true
+			cut_crimsite_brick = true
+			small_crimsite_brick = true
+			cut_limestone = true
+			polished_cut_limestone = true
+			cut_limestone_brick = true
+			small_limestone_brick = true
+			cut_ochrum = true
+			polished_cut_ochrum = true
+			cut_ochrum_brick = true
+			small_ochrum_brick = true
+			cut_scoria = true
+			polished_cut_scoria = true
+			cut_scoria_brick = true
+			small_scoria_brick = true
+			cut_scorchia = true
+			polished_cut_scorchia = true
+			cut_scorchia_brick = true
+			small_scorchia_brick = true
+			cut_veridium = true
+			polished_cut_veridium = true
+			cut_veridium_brick = true
+			small_veridium_brick = true
+
+		[types.cut_block_type.immersiveengineering]
+			sheetmetal_copper = true
+			sheetmetal_aluminum = true
+			storage_aluminum = true
+			sheetmetal_lead = true
+			storage_lead = true
+			sheetmetal_silver = true
+			storage_silver = true
+			sheetmetal_nickel = true
+			storage_nickel = true
+			sheetmetal_uranium = true
+			storage_uranium = true
+			sheetmetal_constantan = true
+			storage_constantan = true
+			sheetmetal_electrum = true
+			storage_electrum = true
+			sheetmetal_steel = true
+			storage_steel = true
+			sheetmetal_iron = true
+			sheetmetal_gold = true
+			treated_wood_horizontal = true
+			treated_wood_vertical = true
+			treated_wood_packaged = true
+			sheetmetal_colored_white = true
+			sheetmetal_colored_orange = true
+			sheetmetal_colored_magenta = true
+			sheetmetal_colored_light_blue = true
+			sheetmetal_colored_yellow = true
+			sheetmetal_colored_lime = true
+			sheetmetal_colored_pink = true
+			sheetmetal_colored_gray = true
+			sheetmetal_colored_light_gray = true
+			sheetmetal_colored_cyan = true
+			sheetmetal_colored_purple = true
+			sheetmetal_colored_blue = true
+			sheetmetal_colored_brown = true
+			sheetmetal_colored_green = true
+			sheetmetal_colored_red = true
+			sheetmetal_colored_black = true
+			steel_scaffolding_standard = true
+			alu_scaffolding_standard = true
+			steel_scaffolding_grate_top = true
+			alu_scaffolding_grate_top = true
+			steel_scaffolding_wooden_top = true
+			alu_scaffolding_wooden_top = true
+			cokebrick = true
+			blastbrick = true
+			blastbrick_reinforced = true
+			slag_brick = true
+			clinker_brick = true
+			coke = true
+			hempcrete = true
+			hempcrete_brick = true
+			concrete = true
+			concrete_brick = true
+			concrete_tile = true
+			concrete_leaded = true
+			insulating_glass = true
+			alloybrick = true
+
+		[types.cut_block_type.tfc_ie_addon]
+			"metal/block/electrum" = true
+			"metal/block/constantan" = true
+			"metal/block/aluminum" = true
+			"metal/block/lead" = true
+			"metal/block/uranium" = true
+
+		[types.cut_block_type.quark]
+			ancient_planks = true
+			azalea_planks = true
+			blossom_planks = true
+			duskbound_block = true
+			iron_plate = true
+			rusty_iron_plate = true
+			midori_block = true
+			blue_nether_bricks = true
+			sandstone_bricks = true
+			red_sandstone_bricks = true
+			soul_sandstone_bricks = true
+			cobblestone_bricks = true
+			mossy_cobblestone_bricks = true
+			blackstone_bricks = true
+			dirt_bricks = true
+			netherrack_bricks = true
+			limestone = true
+			polished_limestone = true
+			jasper = true
+			polished_jasper = true
+			shale = true
+			polished_shale = true
+			myalite = true
+			polished_myalite = true
+			permafrost = true
+			permafrost_bricks = true
+			raw_iron_bricks = true
+			raw_gold_bricks = true
+			raw_copper_bricks = true
+			shingles = true
+			white_shingles = true
+			orange_shingles = true
+			magenta_shingles = true
+			light_blue_shingles = true
+			yellow_shingles = true
+			lime_shingles = true
+			pink_shingles = true
+			gray_shingles = true
+			light_gray_shingles = true
+			cyan_shingles = true
+			purple_shingles = true
+			blue_shingles = true
+			brown_shingles = true
+			green_shingles = true
+			red_shingles = true
+			black_shingles = true
+			soul_sandstone = true
+			cut_soul_sandstone = true
+			smooth_soul_sandstone = true
+			thatch = true
+			calcite = true
+			polished_calcite = true
+			dripstone_block = true
+			polished_dripstone = true
+			tuff = true
+			polished_tuff = true
+			granite_bricks = true
+			diorite_bricks = true
+			andesite_bricks = true
+			calcite_bricks = true
+			dripstone_bricks = true
+			tuff_bricks = true
+			limestone_bricks = true
+			jasper_bricks = true
+			shale_bricks = true
+			myalite_bricks = true
+
+		[types.cut_block_type.supplementaries]
+			lapis_bricks = true
+			ash_bricks = true
+			stone_tile = true
+			blackstone_tile = true
+
+		[types.cut_block_type.firmalife]
+			rustic_bricks = true
+			tiles = true
+			"metal/block/chromium" = true
+			"metal/block/stainless_steel" = true
+
+		[types.cut_block_type.createdeco]
+			dean_brick = true
+			short_dean_brick = true
+			tiled_dean_brick = true
+			long_dean_brick = true
+			corner_dean_brick = true
+			cracked_dean_brick = true
+			mossy_dean_brick = true
+			short_red_brick = true
+			tiled_red_brick = true
+			long_red_brick = true
+			corner_red_brick = true
+			cracked_red_brick = true
+			mossy_red_brick = true
+			pearl_brick = true
+			short_pearl_brick = true
+			tiled_pearl_brick = true
+			long_pearl_brick = true
+			corner_pearl_brick = true
+			cracked_pearl_brick = true
+			mossy_pearl_brick = true
+			blue_brick = true
+			short_blue_brick = true
+			tiled_blue_brick = true
+			long_blue_brick = true
+			corner_blue_brick = true
+			cracked_blue_brick = true
+			mossy_blue_brick = true
+			umber_brick = true
+			short_umber_brick = true
+			tiled_umber_brick = true
+			long_umber_brick = true
+			corner_umber_brick = true
+			cracked_umber_brick = true
+			mossy_umber_brick = true
+			scarlet_brick = true
+			short_scarlet_brick = true
+			tiled_scarlet_brick = true
+			long_scarlet_brick = true
+			corner_scarlet_brick = true
+			cracked_scarlet_brick = true
+			mossy_scarlet_brick = true
+			verdant_brick = true
+			short_verdant_brick = true
+			tiled_verdant_brick = true
+			long_verdant_brick = true
+			corner_verdant_brick = true
+			cracked_verdant_brick = true
+			mossy_verdant_brick = true
+			dusk_brick = true
+			short_dusk_brick = true
+			tiled_dusk_brick = true
+			long_dusk_brick = true
+			corner_dusk_brick = true
+			cracked_dusk_brick = true
+			mossy_dusk_brick = true
+
+		[types.cut_block_type.mcwroofs]
+			white_roof = true
+			light_gray_roof = true
+			gray_roof = true
+			black_roof = true
+			base_roof = true
+
+		[types.cut_block_type.mcwlights]
+			redstone_lamp = true
+			glowstone = true
+			shroomlight = true
+			sea_lantern = true
+
+		[types.cut_block_type.mcwpaths]
+			andesite_running_bond = true
+			diorite_running_bond = true
+			granite_running_bond = true
+			sandstone_running_bond = true
+			red_sandstone_running_bond = true
+			brick_running_bond = true
+			stone_running_bond = true
+			mossy_stone_running_bond = true
+			cobbled_deepslate_running_bond = true
+			deepslate_running_bond = true
+			mud_brick_running_bond = true
+			blackstone_running_bond = true
+			dark_prismarine_running_bond = true
+			andesite_windmill_weave = true
+			diorite_windmill_weave = true
+			granite_windmill_weave = true
+			sandstone_windmill_weave = true
+			red_sandstone_windmill_weave = true
+			brick_windmill_weave = true
+			stone_windmill_weave = true
+			mossy_stone_windmill_weave = true
+			cobbled_deepslate_windmill_weave = true
+			deepslate_windmill_weave = true
+			mud_brick_windmill_weave = true
+			blackstone_windmill_weave = true
+			dark_prismarine_windmill_weave = true
+			andesite_flagstone = true
+			diorite_flagstone = true
+			granite_flagstone = true
+			sandstone_flagstone = true
+			red_sandstone_flagstone = true
+			brick_flagstone = true
+			stone_flagstone = true
+			mossy_stone_flagstone = true
+			cobbled_deepslate_flagstone = true
+			deepslate_flagstone = true
+			mud_brick_flagstone = true
+			blackstone_flagstone = true
+			dark_prismarine_flagstone = true
+			andesite_crystal_floor = true
+			diorite_crystal_floor = true
+			granite_crystal_floor = true
+			sandstone_crystal_floor = true
+			red_sandstone_crystal_floor = true
+			brick_crystal_floor = true
+			stone_crystal_floor = true
+			mossy_stone_crystal_floor = true
+			cobbled_deepslate_crystal_floor = true
+			deepslate_crystal_floor = true
+			mud_brick_crystal_floor = true
+			blackstone_crystal_floor = true
+			dark_prismarine_crystal_floor = true
+
+		[types.cut_block_type.create_things_and_misc]
+			brass_tiles = true
+			brass_brick = true
+
 		[types.cut_block_type.aether]
 			skyroot = true
 			holystone = true
@@ -739,9 +963,6 @@
 			jellyshroom = true
 			crystal = true
 			glacia = true
-
-		[types.cut_block_type.iceandfire]
-			dread_stone = true
 
 		[types.cut_block_type.absentbydesign]
 			end_stone = true
@@ -838,80 +1059,6 @@
 			temple_brick = true
 			temple_brick_tile = true
 
-		[types.cut_block_type.create]
-			copper_shingle = true
-			exposed_copper_shingle = true
-			weathered_copper_shingle = true
-			oxidized_copper_shingle = true
-			waxed_copper_shingle = true
-			waxed_exposed_copper_shingle = true
-			waxed_weathered_copper_shingle = true
-			waxed_oxidized_copper_shingle = true
-			copper_tile = true
-			exposed_copper_tile = true
-			weathered_copper_tile = true
-			oxidized_copper_tile = true
-			waxed_copper_tile = true
-			waxed_exposed_copper_tile = true
-			waxed_weathered_copper_tile = true
-			waxed_oxidized_copper_tile = true
-			cut_granite = true
-			polished_cut_granite = true
-			cut_granite_brick = true
-			small_granite_brick = true
-			cut_diorite = true
-			polished_cut_diorite = true
-			cut_diorite_brick = true
-			small_diorite_brick = true
-			cut_andesite = true
-			polished_cut_andesite = true
-			cut_andesite_brick = true
-			small_andesite_brick = true
-			cut_calcite = true
-			polished_cut_calcite = true
-			cut_calcite_brick = true
-			small_calcite_brick = true
-			cut_dripstone = true
-			polished_cut_dripstone = true
-			cut_dripstone_brick = true
-			small_dripstone_brick = true
-			cut_deepslate = true
-			polished_cut_deepslate = true
-			cut_deepslate_brick = true
-			small_deepslate_brick = true
-			cut_tuff = true
-			polished_cut_tuff = true
-			cut_tuff_brick = true
-			small_tuff_brick = true
-			cut_asurine = true
-			polished_cut_asurine = true
-			cut_asurine_brick = true
-			small_asurine_brick = true
-			cut_crimsite = true
-			polished_cut_crimsite = true
-			cut_crimsite_brick = true
-			small_crimsite_brick = true
-			cut_limestone = true
-			polished_cut_limestone = true
-			cut_limestone_brick = true
-			small_limestone_brick = true
-			cut_ochrum = true
-			polished_cut_ochrum = true
-			cut_ochrum_brick = true
-			small_ochrum_brick = true
-			cut_scoria = true
-			polished_cut_scoria = true
-			cut_scoria_brick = true
-			small_scoria_brick = true
-			cut_scorchia = true
-			polished_cut_scorchia = true
-			cut_scorchia_brick = true
-			small_scorchia_brick = true
-			cut_veridium = true
-			polished_cut_veridium = true
-			cut_veridium_brick = true
-			small_veridium_brick = true
-
 		[types.cut_block_type.create_dd]
 			dark_metal_block = true
 			dark_metal_brick = true
@@ -1000,159 +1147,12 @@
 			cut_galena_brick = true
 			small_galena_brick = true
 
-		[types.cut_block_type.immersiveengineering]
-			sheetmetal_copper = true
-			sheetmetal_aluminum = true
-			storage_aluminum = true
-			sheetmetal_lead = true
-			storage_lead = true
-			sheetmetal_silver = true
-			storage_silver = true
-			sheetmetal_nickel = true
-			storage_nickel = true
-			sheetmetal_uranium = true
-			storage_uranium = true
-			sheetmetal_constantan = true
-			storage_constantan = true
-			sheetmetal_electrum = true
-			storage_electrum = true
-			sheetmetal_steel = true
-			storage_steel = true
-			sheetmetal_iron = true
-			sheetmetal_gold = true
-			treated_wood_horizontal = true
-			treated_wood_vertical = true
-			treated_wood_packaged = true
-			sheetmetal_colored_white = true
-			sheetmetal_colored_orange = true
-			sheetmetal_colored_magenta = true
-			sheetmetal_colored_light_blue = true
-			sheetmetal_colored_yellow = true
-			sheetmetal_colored_lime = true
-			sheetmetal_colored_pink = true
-			sheetmetal_colored_gray = true
-			sheetmetal_colored_light_gray = true
-			sheetmetal_colored_cyan = true
-			sheetmetal_colored_purple = true
-			sheetmetal_colored_blue = true
-			sheetmetal_colored_brown = true
-			sheetmetal_colored_green = true
-			sheetmetal_colored_red = true
-			sheetmetal_colored_black = true
-			steel_scaffolding_standard = true
-			alu_scaffolding_standard = true
-			steel_scaffolding_grate_top = true
-			alu_scaffolding_grate_top = true
-			steel_scaffolding_wooden_top = true
-			alu_scaffolding_wooden_top = true
-			cokebrick = true
-			blastbrick = true
-			blastbrick_reinforced = true
-			slag_brick = true
-			clinker_brick = true
-			coke = true
-			hempcrete = true
-			hempcrete_brick = true
-			concrete = true
-			concrete_brick = true
-			concrete_tile = true
-			concrete_leaded = true
-			insulating_glass = true
-			alloybrick = true
-
-		[types.cut_block_type.tfc_ie_addon]
-			"metal/block/electrum" = true
-			"metal/block/constantan" = true
-			"metal/block/aluminum" = true
-			"metal/block/lead" = true
-			"metal/block/uranium" = true
-
 		[types.cut_block_type.mcw_tfc_aio]
 			"roofs/base_roofs/base_roof" = true
 			"roofs/white_roofs/white_roof" = true
 			"roofs/light_gray_roofs/light_gray_roof" = true
 			"roofs/gray_roofs/gray_roof" = true
 			"roofs/black_roofs/black_roof" = true
-
-		[types.cut_block_type.quark]
-			ancient_planks = true
-			azalea_planks = true
-			blossom_planks = true
-			duskbound_block = true
-			iron_plate = true
-			rusty_iron_plate = true
-			midori_block = true
-			blue_nether_bricks = true
-			sandstone_bricks = true
-			red_sandstone_bricks = true
-			soul_sandstone_bricks = true
-			cobblestone_bricks = true
-			mossy_cobblestone_bricks = true
-			blackstone_bricks = true
-			dirt_bricks = true
-			netherrack_bricks = true
-			limestone = true
-			polished_limestone = true
-			jasper = true
-			polished_jasper = true
-			shale = true
-			polished_shale = true
-			myalite = true
-			polished_myalite = true
-			permafrost = true
-			permafrost_bricks = true
-			raw_iron_bricks = true
-			raw_gold_bricks = true
-			raw_copper_bricks = true
-			shingles = true
-			white_shingles = true
-			orange_shingles = true
-			magenta_shingles = true
-			light_blue_shingles = true
-			yellow_shingles = true
-			lime_shingles = true
-			pink_shingles = true
-			gray_shingles = true
-			light_gray_shingles = true
-			cyan_shingles = true
-			purple_shingles = true
-			blue_shingles = true
-			brown_shingles = true
-			green_shingles = true
-			red_shingles = true
-			black_shingles = true
-			soul_sandstone = true
-			cut_soul_sandstone = true
-			smooth_soul_sandstone = true
-			thatch = true
-			calcite = true
-			polished_calcite = true
-			dripstone_block = true
-			polished_dripstone = true
-			tuff = true
-			polished_tuff = true
-			granite_bricks = true
-			diorite_bricks = true
-			andesite_bricks = true
-			calcite_bricks = true
-			dripstone_bricks = true
-			tuff_bricks = true
-			limestone_bricks = true
-			jasper_bricks = true
-			shale_bricks = true
-			myalite_bricks = true
-
-		[types.cut_block_type.supplementaries]
-			lapis_bricks = true
-			ash_bricks = true
-			stone_tile = true
-			blackstone_tile = true
-
-		[types.cut_block_type.firmalife]
-			rustic_bricks = true
-			tiles = true
-			"metal/block/chromium" = true
-			"metal/block/stainless_steel" = true
 
 #Disables specific entries
 [entries]
@@ -1167,6 +1167,23 @@
 			hedge = true
 
 	[entries.wood_type]
+
+		[entries.wood_type.quark]
+			vertical_planks = true
+			ladder = true
+			post = true
+			trapped_chest = true
+			chest = true
+			hollow_log = true
+			bookshelf = true
+			stripped_post = true
+
+		[entries.wood_type.farmersdelight]
+			cabinet = true
+
+		[entries.wood_type.create]
+			window_pane = true
+			window = true
 
 		[entries.wood_type.mcwroofs]
 			planks_upper_steep_roof = true
@@ -1183,6 +1200,12 @@
 			planks_top_roof = true
 			planks_steep_roof = true
 			planks_lower_roof = true
+
+		[entries.wood_type.absentbydesign]
+			wall_stripped_log = true
+			wall_log = true
+			fence_log = true
+			wall_planks = true
 
 		[entries.wood_type.mcwfurnitures]
 			stripped_glass_table = true
@@ -1316,33 +1339,10 @@
 			log_bridge_stair = true
 			rail_bridge = true
 
-		[entries.wood_type.quark]
-			vertical_planks = true
-			ladder = true
-			post = true
-			trapped_chest = true
-			chest = true
-			hollow_log = true
-			bookshelf = true
-			stripped_post = true
-
 		[entries.wood_type.mcwpaths]
 			planks_path = true
-
-		[entries.wood_type.farmersdelight]
-			cabinet = true
 
 		[entries.wood_type.mcwlights]
 			tiki_torch = true
 			soul_tiki_torch = true
-
-		[entries.wood_type.create]
-			window_pane = true
-			window = true
-
-		[entries.wood_type.absentbydesign]
-			wall_stripped_log = true
-			wall_log = true
-			fence_log = true
-			wall_planks = true
 

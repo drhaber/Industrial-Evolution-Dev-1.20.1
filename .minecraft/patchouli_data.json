@@ -425,7 +425,8 @@
         "tfc:firmaciv/kayak",
         "tfc:firmaciv/sloop",
         "tfc:firmalife/beekeeping",
-        "tfc:mechanics/weaving"
+        "tfc:mechanics/weaving",
+        "tfc:firmaciv/watercraft"
       ],
       "bookmarks": [],
       "completedManualQuests": []

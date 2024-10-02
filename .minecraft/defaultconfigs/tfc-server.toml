@@ -1,3 +1,7 @@
+#
+# Familiarity value above which familiarity no longer will decay. Default is 0.3, or 30%. Setting it to 0 will cause familiarity to never decay.
+#Range: 0.0 ~ 1.0
+familiarityDecayLimit = 0.3
 
 [general]
 	#
@@ -27,13 +31,17 @@
 	enableInfestations = true
 	#
 	# Enables TFC setting the moon phase based on the progress of the month. The etymology of the English word 'month' is in fact related to the word 'moon'.
-	enableCalendarSensitiveMoonPhases = false
+	enableCalendarSensitiveMoonPhases = true
 	#
 	# If false, vanilla lightning will not strike.
 	enableLightning = true
 	#
 	# If true, lightning has a chance of stripping bark off of trees.
 	enableLightningStrippingLogs = true
+	#
+	# Every time the z coordinate reaches a multiple of this point, the wind over oceans will switch directions.
+	#Range: > 128
+	oceanWindScale = 5000
 
 [blocks]
 
@@ -57,6 +65,11 @@
 		#
 		# If TFC rooted dirt blocks are able to be created into dirt blocks using a hoe.
 		enableRootedDirtToDirtCreation = true
+
+	[blocks.mud]
+		#
+		# If TFC dirt blocks are able to be created into mud blocks using a water-filled fluid container.
+		enableDirtToMudCreation = true
 
 	[blocks.snow]
 		#
@@ -120,6 +133,11 @@
 		#
 		# If true, large vessels will seal and unseal on redstone signal.
 		largeVesselEnableRedstoneSeal = true
+
+	[blocks.quern]
+		#
+		# If true, querns will interact with in-world automation such as hoppers on a side-specific basis.
+		quernEnableAutomation = true
 
 	[blocks.torch]
 		#
@@ -252,7 +270,7 @@
 		#
 		# Inventory capacity (in number of items per level of chimney) of the bloomery.
 		#Range: > 1
-		bloomeryCapacity = 8
+		bloomeryCapacity1 = 16
 		#
 		# The maximum number of levels that can be built in a bloomery multiblock, for added capacity.
 		#Range: > 1
@@ -337,12 +355,19 @@
 		# If true, powder kegs can be lit and exploded.
 		powderKegEnabled = true
 		#
+		# If true, powder kegs will only break stone, ores, gravel, and dirt.
+		powderKegOnlyBreaksNaturalBlocks = false
+		#
 		# If true, powder kegs will interact with in-world automation such as hoppers on a side-specific basis.
 		powderKegEnableAutomation = true
 		#
 		# A modifier to the strength of powderkegs when exploding. A max powderkeg explosion is 64, and all explosions are capped to this size no matter the value of the modifier.
 		#Range: 0.0 ~ 64.0
 		powderKegStrengthModifier = 1.0
+		#
+		# The time in ticks for a powderkeg to defuse. Default is 80 ticks, or 4 seconds.
+		#Range: > 1
+		powderKegFuseTime = 80
 
 	[blocks.hotWater]
 		#
@@ -790,7 +815,7 @@
 	[mechanics.vanillaChanges]
 		#
 		# If vanilla bonemeal's instant-growth effect should be enabled.
-		enableVanillaBonemeal = false
+		enableVanillaBonemeal = true
 		#
 		# If true, vanilla's snow and ice formation mechanics will be used, and none of the TFC mechanics (improved snow and ice placement, snow stacking, icicle formation, passive snow or ice melting) will exist.
 		enableVanillaWeatherEffects = false
@@ -801,7 +826,7 @@
 		# If true, enables the default vanilla behavior of mobs spawning with enchanted weapons sometimes.
 		enableVanillaMobsSpawningWithEnchantments = true
 		#
-		# If true, enables the default behavior of mobs sapwning with vanilla armor and weapons
+		# If true, enables the default behavior of mobs spawning with vanilla armor and weapons
 		enableVanillaMobsSpawningWithVanillaEquipment = false
 		#
 		# If true, golems can be built
@@ -817,7 +842,7 @@
 		enableChickenJockies = true
 		#
 		# If true, eggs can be thrown.
-		enableVanillaEggThrowing = false
+		enableVanillaEggThrowing = true
 		#
 		# If true, drinking milk will clear potion effects and restore no nutrition, as in vanilla.
 		enableVanillaDrinkingMilkClearsPotionEffects = false
@@ -973,6 +998,31 @@
 			# Max number of children born
 			#Range: 0 ~ 100
 			dogChildCount = 2
+
+		[mechanics.animals.rabbit]
+			#
+			# Max familiarity an adult may reach
+			#Range: 0.0 ~ 1.0
+			rabbitFamiliarityCap = 0.35
+			#
+			# Days until animal reaches adulthood
+			#Range: > 0
+			rabbitAdulthoodDays = 80
+			#
+			# Uses before animal becomes old and can no longer be used
+			#Range: > 0
+			rabbitUses = 40
+			#
+			# Does the animal eat rotten food?
+			rabbitEatsRottenFood = true
+			#
+			# Length of pregnancy in days
+			#Range: > 0
+			rabbitGestationDays = 19
+			#
+			# Max number of children born
+			#Range: 0 ~ 100
+			rabbitChildCount = 6
 
 		[mechanics.animals.cow]
 			#
