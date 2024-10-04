@@ -29,3 +29,8 @@ loot.modifiers.register(
     LootConditions.only(LootTableIdLootCondition.create(<resource:minecraft:chests/illager_mansion/smithing_room>)),
     CommonLootModifiers.add(<item:tfc:ceramic/unfired_crucible>)
 );
+
+loot.modifiers.register("bye_stone_pickaxe", 
+    LootConditions.none(), 
+    CommonLootModifiers.replaceStackWith(<item:minecraft:stone_pickaxe>,<item:tfc:metal/pickaxe_head/copper>)
+);
