@@ -1,0 +1,13 @@
+{
+    "name": "tlv:tfc_loam_village/villagers",
+    "fallback": "minecraft:empty",
+    "elements": [{
+        "weight": 1,
+        "element": {
+            "location": "tlv:tfc_loam_village/nitwit_villagers/plains",
+            "processors": "minecraft:empty",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+        }
+    }]
+}

@@ -1,0 +1,20 @@
+{
+    "values": [
+        {
+            "id": "#has_structure/village_plains",
+            "required": false
+        },
+        {
+            "id": "tfc:hills",
+            "required": false
+        },
+        {
+            "id": "tfc:rolling_hills",
+            "required": false
+        },
+        {
+            "id": "tfc:plateau",
+            "required": false
+        }
+    ]
+}

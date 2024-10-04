@@ -1,0 +1,76 @@
+{
+    "name": "tlv:tfc_loam_village/bound_animals",
+    "fallback": "minecraft:empty",
+    "elements": [{
+        "weight": 1,
+        "element": {
+            "location": "tlv:tfc_loam_village/bound_animals/alpakas",
+            "processors": "minecraft:empty",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+        }
+    },
+    {
+        "weight": 2,
+        "element": {
+            "location": "tlv:tfc_loam_village/bound_animals/cows",
+            "processors": "minecraft:empty",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+        }
+    },
+    {
+        "weight": 1,
+        "element": {
+            "location": "tlv:tfc_loam_village/bound_animals/donkeys",
+            "processors": "minecraft:empty",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+        }
+    },
+    {
+        "weight": 2,
+        "element": {
+            "location": "tlv:tfc_loam_village/bound_animals/goats",
+            "processors": "minecraft:empty",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+        }
+    },
+    {
+        "weight": 1,
+        "element": {
+            "location": "tlv:tfc_loam_village/bound_animals/horses",
+            "processors": "minecraft:empty",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+        }
+    },
+    {
+        "weight": 2,
+        "element": {
+            "location": "tlv:tfc_loam_village/bound_animals/pigs",
+            "processors": "minecraft:empty",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+        }
+    },
+    {
+        "weight": 2,
+        "element": {
+            "location": "tlv:tfc_loam_village/bound_animals/sheeps",
+            "processors": "minecraft:empty",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+        }
+    },
+    {
+        "weight": 1,
+        "element": {
+            "location": "tlv:tfc_loam_village/bound_animals/yaks",
+            "processors": "minecraft:empty",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+        }
+    }]
+}
