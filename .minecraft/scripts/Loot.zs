@@ -19,7 +19,13 @@ loot.modifiers.register(
     CommonLootModifiers.addWithChance(<item:tfc:fire_clay> * 5 % 75)
 );
 loot.modifiers.register(
-    "village_toolsmith_fire_clay",
+    "village_weaponsmith_fire_clay",
     LootConditions.only(LootTableIdLootCondition.create(<resource:minecraft:chests/village/village_weaponsmith>)),
     CommonLootModifiers.addWithChance(<item:tfc:fire_clay> * 5 % 75)
+);
+
+loot.modifiers.register(
+    "illager_mansion_smithing_room",
+    LootConditions.only(LootTableIdLootCondition.create(<resource:minecraft:chests/illager_mansion/smithing_room>)),
+    CommonLootModifiers.add(<item:tfc:ceramic/unfired_crucible>)
 );

@@ -104,3 +104,10 @@ BlockEvents.rightClicked('block.right_click', event => {
         mob.spawn()
 }
 })
+
+TFCEvents.limitContainer('minecraft:generic_9x3', event => {
+    event.limit('large', 0, 4)
+})
+TFCEvents.limitContainer('minecraft:generic_9x6', event => {
+    event.limit('large', 0, 4)
+})
