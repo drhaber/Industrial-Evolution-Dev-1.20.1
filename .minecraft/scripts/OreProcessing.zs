@@ -52,6 +52,7 @@ Jei.hideCategory(<resource:jumbofurnace:jumbo_furnace_upgrade>);
 <recipetype:create:cutting>.remove(<item:tfc:refined_iron_bloom>);
 <recipetype:embers:melting>.removeAll();
 
+<recipetype:create:compacting>.remove(<fluid:northstar:hydrocarbon>);
 
 craftingTable.removeByName("railcraft:bronze_ingot_crafted_with_ingots");
 craftingTable.removeByName("railcraft:bronze_ingot_from_bronze_nugget");
@@ -989,6 +990,47 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
         "item": "tfc:powder/coke",
         "count": 1
     }
+});
+
+<recipetype:vintageimprovements:pressurizing>.addJsonRecipe("hydrocarbon", {
+	"type":"vintageimprovements:pressurizing",
+	"secondaryFluidResults": 0,
+	"heatRequirement": "superheated",
+	"ingredients": [ 
+		{
+			"tag": "forge:dusts/coal_coke"
+		},
+		{
+			"fluid": "minecraft:water",
+			"amount": 250
+		},
+	],
+	"results": [
+
+    {
+			"fluid": "northstar:hydrocarbon",
+			"amount": 100
+		}
+	],
+	"processingTime": 400
+});
+
+<recipetype:vintageimprovements:vacuumizing>.addJsonRecipe("hydrocarbon_liquid_carbon_solution", {
+	"type":"vintageimprovements:vacuumizing",
+  "heatRequirement": "superheated",
+	"ingredients": [ 
+    {
+			"fluid": "northstar:hydrocarbon",
+			"amount": 100
+		}
+	],
+	"results": [
+		{
+			"fluid": "kubejs:liquid_carbon_solution",
+			"amount": 10
+		}
+	],
+	"processingTime": 600
 });
 
 //Naquadah 

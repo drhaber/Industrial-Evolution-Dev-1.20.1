@@ -87,7 +87,7 @@
   "blockTagInheritanceMode": "ALLOW",
   "blockTagInheritance": {},
   "ignoredTags": ["forge:dusts/coal_coke"],
-  "ignoredItems": [],
+  "ignoredItems": ["tfmg:coal_coke_dust"],
   "ignoredRecipeTypes": [
     "cucumber:shaped_tag"
   ],
