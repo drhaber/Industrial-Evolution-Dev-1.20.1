@@ -67,6 +67,19 @@ addTFCPotteryFire("kubejs:unfired_material_silicon_press","kubejs:fired_material
 addTFCPotteryFire("kubejs:unfired_archaic_lump","embers:archaic_brick");
 addTFCPotteryFire("embers:caminite_blend","embers:caminite_brick");
 
+addTFCPotteryFire("ae2:sky_dust","tfc:powder/graphite");
+<recipetype:tfc:quern>.addJsonRecipe("sky_dust_from_sky_stone", {
+    "type": "tfc:quern",
+    "ingredient": {
+        "item": "ae2:sky_stone_block"
+    },
+    "result": {
+        "item": "ae2:sky_dust",
+        "count": 1
+    }
+});
+
+
 <recipetype:tfc:heating>.addJsonRecipe("pottery_fire_dirty_glass", {
   "type": "tfc:heating",
   "ingredient": {
