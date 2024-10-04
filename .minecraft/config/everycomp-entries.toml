@@ -1465,6 +1465,10 @@
 			"plaster/smooth/terracotta_red" = true
 			"plaster/smooth/terracotta_black" = true
 
+		[types.cut_block_type.beneath]
+			"wood/planks/crimson" = true
+			"wood/planks/warped" = true
+
 #Disables specific entries
 [entries]
 

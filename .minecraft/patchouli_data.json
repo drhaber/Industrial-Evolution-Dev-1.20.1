@@ -426,7 +426,10 @@
         "tfc:firmaciv/sloop",
         "tfc:firmalife/beekeeping",
         "tfc:mechanics/weaving",
-        "tfc:firmaciv/watercraft"
+        "tfc:firmaciv/watercraft",
+        "tfc:beneath/how_to_go_beneath",
+        "tfc:beneath/curious_blocks",
+        "tfc:beneath/hellforge"
       ],
       "bookmarks": [],
       "completedManualQuests": []
