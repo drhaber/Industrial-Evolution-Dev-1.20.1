@@ -41,6 +41,12 @@ craftingTable.remove(<item:botania:manasteel_pick>);
 craftingTable.remove(<item:immersiveengineering:ersatz_leather>);
 craftingTable.remove(<item:railcraft:coke_oven_bricks>);
 
+craftingTable.remove(<item:minecraft:stone_pickaxe>);
+craftingTable.remove(<item:minecraft:stone_axe>);
+craftingTable.remove(<item:minecraft:stone_shovel>);
+craftingTable.remove(<item:minecraft:stone_hoe>);
+craftingTable.remove(<item:minecraft:stone_sword>);
+
 craftingTable.remove(<item:railcraft:coal_coke>);
 craftingTable.remove(<item:railcraft:coal_coke_block>);
 craftingTable.remove(<item:tfmg:coal_coke_block>);
