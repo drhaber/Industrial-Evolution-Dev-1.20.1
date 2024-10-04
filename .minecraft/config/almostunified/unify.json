@@ -1,14 +1,11 @@
 {
   "modPriorities": [
-    "tfc",
     "minecraft",
     "kubejs",
     "crafttweaker",
-    "immersiveengineering",    
     "create",
     "thermal",
-    "JAOPCA",
-    "create_dd",
+    "immersiveengineering",
     "mekanism"
   ],
   "stoneStrata": [
@@ -21,6 +18,7 @@
   ],
   "tags": [
     "forge:nuggets/{material}",
+    "forge:dusts/{material}",
     "forge:gears/{material}",
     "forge:gems/{material}",
     "forge:ingots/{material}",
@@ -28,7 +26,9 @@
     "forge:ores/{material}",
     "forge:plates/{material}",
     "forge:rods/{material}",
-    "forge:wires/{material}"
+    "forge:wires/{material}",
+    "forge:storage_blocks/{material}",
+    "forge:storage_blocks/raw_{material}"
   ],
   "materials": [
     "aeternium",
@@ -77,8 +77,7 @@
     "tin",
     "tungsten",
     "uranium",
-    "zinc",
-    "cast_iron"
+    "zinc"
   ],
   "priorityOverrides": {},
   "customTags": {},
@@ -87,7 +86,7 @@
   "itemTagInheritance": {},
   "blockTagInheritanceMode": "ALLOW",
   "blockTagInheritance": {},
-  "ignoredTags": [],
+  "ignoredTags": ["forge:dusts/coal_coke"],
   "ignoredItems": [],
   "ignoredRecipeTypes": [
     "cucumber:shaped_tag"

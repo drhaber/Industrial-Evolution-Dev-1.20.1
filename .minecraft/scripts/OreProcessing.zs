@@ -759,28 +759,49 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
   }
 });
 */
-/*
-<recipetype:destroy:centrifugation>.addJsonRecipe("bayer_process_aluminium_hydroxide", {
-    "type": "destroy:centrifugation",
-    "ingredients": [
-        {
+<recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("bayer_process_sodium_aluminate", {
+  "type": "createdieselgenerators:basin_fermenting",
+  "heatRequirement": "superheated",  
+  "ingredients": [
+    {
+      "item": "tfc_ie_addon:powder/bauxite"
+    },
+    {
+      "fluid": "tfc:lye",
+      "amount": 20
+    }
+  ],
+  "processingTime": 800,
+  "results": [
+    {
+      "fluid": "kubejs:sodium_aluminate",
+      "amount": 20
+    }
+  ]
+});
+
+<recipetype:vintageimprovements:centrifugation>.addJsonRecipe("bayer_process_aluminium_hydroxide", {
+	"type":"vintageimprovements:centrifugation",
+	"ingredients": [ 
+		{
             "fluid": "kubejs:sodium_aluminate",
             "amount": 20
-        }
-    ],
-    "results": [
-        {
+		}
+	],
+	"results": [
+		{
             "fluid": "kubejs:aluminium_hydroxide",
             "amount": 10
-        },
-        {
+		},
+		{
             "fluid": "kubejs:red_mud",
             "amount": 10
-        }
-    ],
-    "processingTime": 500
+		}
+	],
+	"processingTime": 1000
 });
-*/
+
+
 <recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("bayer_process_crushed_raw_aluminum", {
   "type": "createdieselgenerators:basin_fermenting",
   "heatRequirement": "superheated",  
@@ -860,7 +881,7 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
 
 
 //Automated Steel
-/*
+
 <recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("ultra_high_high_carbon_steel_cooling", {
   "type": "createdieselgenerators:basin_fermenting",
   "heatRequirement": "heated",  
@@ -882,8 +903,7 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
     }
   ]
 });
-*/
-/*
+
 <recipetype:vintageimprovements:pressurizing>.addJsonRecipe("ultra_high_carbon_steel_steel", {
 	"type":"vintageimprovements:pressurizing",
 	"secondaryFluidResults": 0,
@@ -894,7 +914,7 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
 			"amount": 333
 		},
 		{
-			"fluid": "ad_astra:oxygen",
+			"fluid": "northstar:liquid_oxygen",
 			"amount": 250
 		},
 	],
@@ -914,8 +934,7 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
 	],
 	"processingTime": 400
 });
-*/
-/*
+
 <recipetype:vintageimprovements:pressurizing>.addJsonRecipe("high_carbon_steel_steel", {
 	"type":"vintageimprovements:pressurizing",
 	"secondaryFluidResults": 0,
@@ -926,7 +945,7 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
 			"amount": 100
 		},
 		{
-			"fluid": "ad_astra:oxygen",
+			"fluid": "northstar:liquid_oxygen",
 			"amount": 250
 		},
 	],
@@ -942,22 +961,51 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
 	],
 	"processingTime": 400
 });
-*/
+
+<recipetype:vintageimprovements:vacuumizing>.addJsonRecipe("liquid_carbon_solution_blasting_fuel", {
+	"type":"vintageimprovements:vacuumizing",
+  "heatRequirement": "superheated",
+	"ingredients": [ 
+    {
+			"fluid": "kubejs:liquid_carbon_solution",
+			"amount": 100
+		}
+	],
+	"results": [
+		{
+			"item": "tfmg:coal_coke_dust",
+			"count": 1
+		}
+	],
+	"processingTime": 600
+});
+
+<recipetype:tfc:quern>.addJsonRecipe("coke_dust_to_powder", {
+    "type": "tfc:quern",
+    "ingredient": {
+        "item": "immersiveengineering:dust_coke"
+    },
+    "result": {
+        "item": "tfc:powder/coke",
+        "count": 1
+    }
+});
+
 //Naquadah 
 <recipetype:minecraft:crafting>.remove(<item:sgjourney:naquadah_rod>);
 <recipetype:minecraft:crafting>.remove(<item:sgjourney:naquadah_alloy>);
 
 addcreatemetallurgymelting("kubejs:molten_naquadah","sgjourney:raw_naquadah",100);
-/*
-<recipetype:destroy:centrifugation>.addJsonRecipe("naquadah_process", {
-    "type": "destroy:centrifugation",
-    "ingredients": [
-        {
+
+<recipetype:vintageimprovements:centrifugation>.addJsonRecipe("naquadah_process", {
+	"type":"vintageimprovements:centrifugation",
+	"ingredients": [ 
+		{
             "fluid": "kubejs:molten_naquadah",
             "amount": 100
-        }
-    ],
-    "results": [
+		}
+	],
+	"results": [
         {
             "fluid": "sgjourney:liquid_naquadah",
             "amount": 10
@@ -966,10 +1014,10 @@ addcreatemetallurgymelting("kubejs:molten_naquadah","sgjourney:raw_naquadah",100
             "fluid": "sgjourney:heavy_liquid_naquadah",
             "amount": 100
         }
-    ],
-    "processingTime": 500
+	],
+	"processingTime": 1000
 });
-*/
+
 <recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("naquadah_process_pure_crystal", {
   "type": "createdieselgenerators:basin_fermenting",
   "heatRequirement": "heated",  
@@ -991,28 +1039,27 @@ addcreatemetallurgymelting("kubejs:molten_naquadah","sgjourney:raw_naquadah",100
     }
   ]
 });
-/*
-<recipetype:pneumaticcraft:thermo_plant>.addJsonRecipe("naquadah_process_mettalic_liquid", {
-  "type": "pneumaticcraft:thermo_plant",
-  "exothermic": false,
-  "fluid_input": {
-    "type": "pneumaticcraft:fluid",
-    "amount": 100,
-    "fluid": "sgjourney:heavy_liquid_naquadah"
-  },
-  "fluid_output": {
-    "amount": 100,
-    "fluid": "kubejs:metallic_naquadah"
-  },
-  "item_input": {
-    "tag": "minecraft:soul_fire_base_blocks"
-  },
-  "pressure": 10.0,
-  "temperature": {
-    "min_temp": 773
-  }
+
+<recipetype:vintageimprovements:pressurizing>.addJsonRecipe("naquadah_process_mettalic_liquid", {
+	"type":"vintageimprovements:pressurizing",
+	"ingredients": [ 
+		{
+			"fluid": "sgjourney:heavy_liquid_naquadah",
+			"amount": 100
+		},
+		{
+			"tag": "minecraft:soul_fire_base_blocks",
+		}
+	],
+	"results": [
+		{
+			"fluid": "kubejs:metallic_naquadah",
+			"amount": 100
+		}
+	],
+	"processingTime": 800
 });
-*/
+
 <recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("naquadah_process_metal", {
   "type": "createdieselgenerators:basin_fermenting",
   "heatRequirement": "heated",  
@@ -1043,7 +1090,7 @@ addcreatemetallurgymelting("kubejs:molten_naquadah","sgjourney:raw_naquadah",100
 		"item": "kubejs:naquadah_sheet"
 	}
 });  
-/*
+
 <recipetype:railcraft:rolling>.addJsonRecipe("naquadah_alloy", {
   "type": "railcraft:rolling",
   "key": {
@@ -1051,7 +1098,7 @@ addcreatemetallurgymelting("kubejs:molten_naquadah","sgjourney:raw_naquadah",100
       "item": "kubejs:naquadah_sheet"
     },
     "o": {
-      "item": "create_dd:overcharge_alloy"
+      "item": "northstar:tungsten_sheet"
     }
   },
   "pattern": [
@@ -1065,7 +1112,7 @@ addcreatemetallurgymelting("kubejs:molten_naquadah","sgjourney:raw_naquadah",100
     "item": "sgjourney:naquadah_alloy"
   }
 });
-*/
+
 /*
 
 //Liquid Catalyst
