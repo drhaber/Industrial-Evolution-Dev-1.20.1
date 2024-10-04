@@ -10,6 +10,13 @@ import crafttweaker.api.predicate.EntityPredicate;
 import crafttweaker.api.predicate.EntityEquipmentPredicate;
 import crafttweaker.api.predicate.ItemPredicate;
 import crafttweaker.api.loot.condition.LootTableIdLootCondition;
+import crafttweaker.api.ingredient.IIngredient;
+import crafttweaker.api.data.IData;
+import crafttweaker.api.fluid.FluidIngredient;
+import crafttweaker.api.util.random.Percentaged;
+import crafttweaker.api.fluid.IFluidStack;
+import crafttweaker.api.tag.manager.ITagManager;
+import crafttweaker.api.bracket.BracketHandlers;
 
 import stdlib.List;
 
@@ -30,7 +37,21 @@ loot.modifiers.register(
     CommonLootModifiers.add(<item:tfc:ceramic/unfired_crucible>)
 );
 
-loot.modifiers.register("bye_stone_pickaxe", 
+function replaceLootItems(ItemWas as IItemStack, ItemIs as IItemStack) as void { 
+loot.modifiers.register("bye_" + ItemWas.descriptionId + ItemIs.descriptionId,
     LootConditions.none(), 
-    CommonLootModifiers.replaceStackWith(<item:minecraft:stone_pickaxe>,<item:tfc:metal/pickaxe_head/copper>)
+    CommonLootModifiers.replaceStackWith(ItemWas,ItemIs)
 );
+}
+
+replaceLootItems(<item:minecraft:stone_shovel>,<item:tfc:ceramic/shovel_head_mold>);
+replaceLootItems(<item:minecraft:stone_pickaxe>,<item:tfc:ceramic/pickaxe_head_mold>);
+replaceLootItems(<item:minecraft:stone_axe>,<item:tfc:ceramic/axe_head_mold>);
+replaceLootItems(<item:minecraft:stone_hoe>,<item:tfc:ceramic/hoe_head_mold>);
+replaceLootItems(<item:minecraft:stone_sword>,<item:tfc:ceramic/knife_blade_mold>);
+
+replaceLootItems(<item:minecraft:iron_shovel>,<item:tfc:metal/shovel_head/wrought_iron>);
+replaceLootItems(<item:minecraft:iron_pickaxe>,<item:tfc:metal/pickaxe_head/wrought_iron>);
+replaceLootItems(<item:minecraft:iron_axe>,<item:tfc:metal/axe_head/wrought_iron>);
+replaceLootItems(<item:minecraft:iron_hoe>,<item:tfc:metal/hoe_head/wrought_iron>);
+replaceLootItems(<item:minecraft:iron_sword>,<item:tfc:metal/knife_blade/wrought_iron>);
