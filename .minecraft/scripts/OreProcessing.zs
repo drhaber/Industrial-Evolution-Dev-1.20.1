@@ -60,10 +60,10 @@ craftingTable.removeByName("railcraft:bronze_ingot");
 //craftingTable.removeByName("railcraft:bronze_block_from_bronze_ingot");
 craftingTable.removeByName("railcraft:brass_ingot_crafted_with_ingots");
 //craftingTable.removeByName("railcraft:brass_ingot_from_brass_nugget");
-craftingTable.removeByName("railcraft:brass_ingot");
+//craftingTable.removeByName("railcraft:brass_ingot");
 //craftingTable.removeByName("railcraft:brass_block_from_brass_ingot");
 //craftingTable.removeByName("railcraft:zinc_ingot_from_zinc_nugget");
-craftingTable.removeByName("railcraft:zinc_ingot");
+//craftingTable.removeByName("railcraft:zinc_ingot");
 //craftingTable.removeByName("railcraft:zinc_block_from_zinc_ingot");
 
 //<recipetype:create:compacting>.removeByName("create_dd:compacting/steel_ingot");
