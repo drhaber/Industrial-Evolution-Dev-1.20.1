@@ -50,11 +50,11 @@ replaceLootItems(<item:minecraft:stone_axe>,<item:tfc:ceramic/axe_head_mold>);
 replaceLootItems(<item:minecraft:stone_hoe>,<item:tfc:ceramic/hoe_head_mold>);
 replaceLootItems(<item:minecraft:stone_sword>,<item:tfc:ceramic/knife_blade_mold>);
 
-replaceLootItems(<item:minecraft:iron_shovel>,<item:tfc:metal/shovel_head/wrought_iron>);
-replaceLootItems(<item:minecraft:iron_pickaxe>,<item:tfc:metal/pickaxe_head/wrought_iron>);
-replaceLootItems(<item:minecraft:iron_axe>,<item:tfc:metal/axe_head/wrought_iron>);
-replaceLootItems(<item:minecraft:iron_hoe>,<item:tfc:metal/hoe_head/wrought_iron>);
-replaceLootItems(<item:minecraft:iron_sword>,<item:tfc:metal/knife_blade/wrought_iron>);
+replaceLootItems(<item:minecraft:iron_shovel>,<item:tfc:metal/shovel_head/copper>);
+replaceLootItems(<item:minecraft:iron_pickaxe>,<item:tfc:metal/pickaxe_head/copper>);
+replaceLootItems(<item:minecraft:iron_axe>,<item:tfc:metal/axe_head/copper>);
+replaceLootItems(<item:minecraft:iron_hoe>,<item:tfc:metal/hoe_head/copper>);
+replaceLootItems(<item:minecraft:iron_sword>,<item:tfc:metal/knife_blade/copper>);
 
 replaceLootItems(<item:iceandfire:silver_ingot>,<item:tfc:metal/ingot/silver>);
 replaceLootItems(<item:minecraft:gold_ingot>,<item:tfc:metal/ingot/gold>);
