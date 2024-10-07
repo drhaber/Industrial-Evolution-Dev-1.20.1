@@ -65,6 +65,9 @@ craftingTable.remove(<item:tfmg:coal_coke_block>);
 craftingTable.remove(<item:tfmg:coal_coke>);
 <recipetype:create:crushing>.remove(<item:tfmg:coal_coke_dust>);
 
+craftingTable.remove(<item:minecraft:bucket>);
+<recipetype:vintageimprovements:curving>.remove(<item:minecraft:bucket>);
+
 Jei.hideIngredient(<item:railcraft:coal_coke>);
 Jei.hideIngredient(<item:railcraft:coal_coke_block>);
 Jei.hideIngredient(<item:tfmg:coal_coke_block>);
