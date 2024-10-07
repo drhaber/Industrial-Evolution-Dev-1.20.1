@@ -32,6 +32,8 @@ event.add('forge:nuggets/bronze', '#forge:nuggets/strong_bronze')
 event.add('forge:plates/bronze', '#forge:plates/strong_bronze')
 //event.add('map_atlases:sticky_crafting_items','#forge:dough')
 
+event.add('tfc:usable_on_tool_rack', '#minecraft:tools')
+
 event.add('botania:seed_apothecary_reagent', '#tfc:seeds')
 
 event.add('tfc:saws','aether:obsidian_gloves')
