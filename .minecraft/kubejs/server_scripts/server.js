@@ -109,8 +109,8 @@ BlockEvents.rightClicked('block.right_click', event => {
 })
 
 TFCEvents.limitContainer('minecraft:generic_9x3', event => {
-    event.limit('large', 0, 4)
+    event.limit('normal', 0, 4)
 })
 TFCEvents.limitContainer('minecraft:generic_9x6', event => {
-    event.limit('large', 0, 4)
+    event.limit('normal', 0, 4)
 })
