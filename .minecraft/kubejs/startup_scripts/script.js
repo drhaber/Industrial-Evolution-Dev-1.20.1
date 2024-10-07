@@ -128,6 +128,14 @@ e.create('blank_blueprint').displayName('Blank Blueprint')
 //Woven Memory
 e.create('woven_memory').displayName('Woven Memory')
 
+//Manasteel Heads
+e.create('manasteel_axe').displayName('Manasteel Axe Head')
+e.create('manasteel_hoe').displayName('Manasteel Hoe Head')
+e.create('manasteel_knife').displayName('Manasteel Knife Blade')
+e.create('manasteel_pick').displayName('Manasteel Pick Head')
+e.create('manasteel_shovel').displayName('Manasteel Shovel Head')
+e.create('manasteel_sword').displayName('Manasteel Sword Blade')
+
 //AE2 Inscriber Casts
 //Material Calculation Processor Cast
 e.create('unfired_material_calculation_processor_press').displayName('Unfired Calculation Processor Cast')

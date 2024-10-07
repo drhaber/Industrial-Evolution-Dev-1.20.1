@@ -1,0 +1,8 @@
+{
+  "ingredient": {
+    "item": "kubejs:manasteel_pick"
+  },
+  "heat_capacity": 2.857,
+  "forging_temperature": 924,
+  "welding_temperature": 1232
+}

@@ -47,6 +47,18 @@ craftingTable.remove(<item:minecraft:stone_shovel>);
 craftingTable.remove(<item:minecraft:stone_hoe>);
 craftingTable.remove(<item:minecraft:stone_sword>);
 
+craftingTable.remove(<item:minecraft:golden_pickaxe>);
+craftingTable.remove(<item:minecraft:golden_axe>);
+craftingTable.remove(<item:minecraft:golden_shovel>);
+craftingTable.remove(<item:minecraft:golden_hoe>);
+craftingTable.remove(<item:minecraft:golden_sword>);
+
+craftingTable.remove(<item:minecraft:iron_pickaxe>);
+craftingTable.remove(<item:minecraft:iron_axe>);
+craftingTable.remove(<item:minecraft:iron_shovel>);
+craftingTable.remove(<item:minecraft:iron_hoe>);
+craftingTable.remove(<item:minecraft:iron_sword>);
+
 craftingTable.remove(<item:railcraft:coal_coke>);
 craftingTable.remove(<item:railcraft:coal_coke_block>);
 craftingTable.remove(<item:tfmg:coal_coke_block>);
