@@ -37,7 +37,6 @@ craftingTable.remove(<item:iceandfire:dragonsteel_fire_pickaxe>);
 craftingTable.remove(<item:iceandfire:dragonsteel_ice_pickaxe>);
 craftingTable.remove(<item:iceandfire:dragonsteel_lightning_pickaxe>);
 craftingTable.remove(<item:botania:elementium_pickaxe>);
-craftingTable.remove(<item:botania:manasteel_pick>);
 craftingTable.remove(<item:immersiveengineering:ersatz_leather>);
 craftingTable.remove(<item:railcraft:coke_oven_bricks>);
 

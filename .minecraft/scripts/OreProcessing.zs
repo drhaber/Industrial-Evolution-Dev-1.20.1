@@ -708,21 +708,6 @@ addEmbers2MixingnonTFC("immersiveengineering:phenolic_resin", 3, "immersiveengin
 addEmbers2MixingnonTFC("kubejs:moltenredalloy",1,"tfc:metal/copper",1,"immersiveengineering:redstone_acid",4);
 addEmbersStamping(<fluid:kubejs:moltenredalloy>,<item:morered:red_alloy_ingot>,<item:embers:ingot_stamp>);
 
-<recipetype:botania:mana_infusion>.remove(<item:botania:manasteel_ingot>);
-<recipetype:botania:mana_infusion>.remove(<item:botania:manasteel_block>);
-<recipetype:botania:mana_infusion>.addJsonRecipe("mana_infusion_manasteel_ingot", {
-  "type": "botania:mana_infusion",
-  "input": {
-    "item": "tfc:metal/ingot/high_carbon_steel"
-  },
-  "mana": 3000,
-  "output": {
-    "item": "botania:manasteel_ingot"
-  }
-});
-
-
-
 //Bauxite/Aluminium - Bayer Process
 
 <recipetype:tfc:heating>.removeByName("tfc_ie_addon:heating/ore/poor_bauxite");
