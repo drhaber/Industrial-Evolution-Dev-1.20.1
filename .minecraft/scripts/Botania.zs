@@ -33,7 +33,7 @@ craftingTable.addShaped("handcrafted_mana_spreader", <item:botania:mana_spreader
 <recipetype:botania:mana_infusion>.addJsonRecipe("mana_infusion_manasteel_ingot", {
   "type": "botania:mana_infusion",
   "input": {
-    "item": "tfc:metal/ingot/high_carbon_steel"
+    "tag": "forge:ingots/cast_iron"
   },
   "mana": 3000,
   "output": {

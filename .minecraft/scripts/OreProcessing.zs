@@ -39,12 +39,10 @@ Jei.hideCategory(<resource:jumbofurnace:jumbo_furnace_upgrade>);
 <recipetype:tfmg:coking>.removeAll();
 <recipetype:tfmg:casting>.removeAll();
 
-#<recipetype:pneumaticcraft:explosion_crafting>.removeAll();
-
 <recipetype:immersiveengineering:crusher>.removeByModid("tfc_ie_addon");
 <recipetype:minecraft:smelting>.removeByModid("woodencog");
 <recipetype:create:crushing>.removeByModid("woodencog");
-//<recipetype:tfc:knapping>.removeByModid("woodencog");
+<recipetype:tfc:knapping>.removeByModid("woodencog");
 <recipetype:create:mixing>.removeByModid("woodencog");
 
 <recipetype:create:cutting>.remove(<item:create:andesite_alloy>);
@@ -257,8 +255,8 @@ function addcreatemelting(fluidOut as string, ItemIn as string, Qty0 as int) as 
 );
 }*/
 function addcreatemetallurgymelting(fluidOut as string, ItemIn as string, Qty0 as int) as void { 
-<recipetype:createmetallurgy:melting>.addJsonRecipe("create_metallurgy_melting_" + ItemIn.replace(":","_") + fluidOut.replace(":","_"),{
-  "type": "createmetallurgy:melting",
+<recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("create_metallurgy_melting_" + ItemIn.replace(":","_") + fluidOut.replace(":","_"),{
+  "type": "createdieselgenerators:basin_fermenting",
   "heatRequirement": "superheated",  
   "ingredients": [
     {
@@ -274,8 +272,6 @@ function addcreatemetallurgymelting(fluidOut as string, ItemIn as string, Qty0 a
   ]
 });
 }
-
-
 
 function addarcfurnacesmelting(ItemOut as string, ItemIn as string, QtyI as int) as void { 
 <recipetype:immersiveengineering:arc_furnace>.addJsonRecipe("arc_furnace_smelting" + ItemIn.replace(":","_") + ItemOut.replace(":","_"), {
@@ -563,8 +559,47 @@ function addEmbers2Mixing(fluidOut as string, fluidIn1 as string, qty1 as int, f
   }
 }
 );
+<recipetype:create:mixing>.addJsonRecipe("create_mix2"+ fluidOut.replace(":","_"), {
+    "type": "create:mixing",
+    "ingredients": [
+    {
+      "amount": qty1,
+      "fluid": ("tfc:metal/"+ fluidIn1 ) as string
+    },
+    {
+      "amount": qty2,
+      "fluid": ("tfc:metal/"+ fluidIn2 ) as string
+    }
+    ],
+    "results": [
+      {
+    "amount": 10,
+    "fluid": ("tfc:metal/"+ fluidOut ) as string
+      }
+    ],
+    "heatRequirement": "superheated"
 }
-
+);
+}
+/*
+function addcreatemelting(fluidOut as string, ItemIn as string, Qty0 as int) as void { 
+<recipetype:create:mixing>.addJsonRecipe("create_ore_melting_" + ItemIn.replace(":","_") + fluidOut.replace(":","_"), {
+    "type": "create:mixing",
+    "ingredients": [
+        {
+            "item": ItemIn
+        }
+    ],
+    "results": [
+        {
+            "fluid": fluidOut,
+            "amount": Qty0
+        }
+    ],
+    "heatRequirement": "heated"
+}
+);
+}*/
 function addEmbers3Mixing(fluidOut as string, fluidIn1 as string, qty1 as int, fluidIn2 as string, qty2 as int, fluidIn3 as string, qty3 as int) as void { 
 <recipetype:embers:mixing>.addJsonRecipe("embers_mix3"+ fluidOut.replace(":","_"), {
   "type": "embers:mixing",
@@ -586,6 +621,31 @@ function addEmbers3Mixing(fluidOut as string, fluidIn1 as string, qty1 as int, f
     "amount": 10,
     "fluid": ("tfc:metal/"+ fluidOut ) as string
   }
+}
+);
+<recipetype:create:mixing>.addJsonRecipe("create_mix3"+ fluidOut.replace(":","_"), {
+    "type": "create:mixing",
+    "ingredients": [
+    {
+      "amount": qty1,
+      "fluid": ("tfc:metal/"+ fluidIn1 ) as string
+    },
+    {
+      "amount": qty2,
+      "fluid": ("tfc:metal/"+ fluidIn2 ) as string
+    },
+    {
+      "amount": qty3,
+      "fluid": ("tfc:metal/"+ fluidIn3 ) as string
+    }
+    ],
+    "results": [
+      {
+    "amount": 10,
+    "fluid": ("tfc:metal/"+ fluidOut ) as string
+      }
+    ],
+    "heatRequirement": "superheated"
 }
 );
 }

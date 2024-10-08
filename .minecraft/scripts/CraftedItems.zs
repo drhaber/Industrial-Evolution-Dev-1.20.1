@@ -81,6 +81,13 @@ craftingTable.removeByName("farmersdelight:cutting_board");
 
 <recipetype:create:item_application>.remove(<item:tfmg:coke_oven>);
 
+
+craftingTable.remove(<item:quark:stick_block>);
+craftingTable.addShaped("handcrafted_quark_stick_block", <item:quark:stick_block>*9, [
+    [<item:tfc:stick_bunch>,<item:tfc:stick_bunch>,<item:tfc:stick_bunch>],
+    [<item:tfc:stick_bunch>,<item:tfc:stick_bunch>,<item:tfc:stick_bunch>],
+    [<item:tfc:stick_bunch>,<item:tfc:stick_bunch>,<item:tfc:stick_bunch>]]);
+
 craftingTable.remove(<item:productivebees:powered_centrifuge>);
 craftingTable.addShaped("handcrafted_powered_centrifuge", <item:productivebees:powered_centrifuge>, [
     [<item:railcraft:charge_motor>],
