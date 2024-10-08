@@ -75,7 +75,7 @@ ServerEvents.tags("worldgen/biome", (event) => {
     event.add("endermanoverhaul:coral_spawns",["tfc:ocean_reef"])
     event.add("endermanoverhaul:savanna_spawns", ["tfc:plains", "tfc:plateau"])
     event.add("endermanoverhaul:windswept_hills_spawns",["aether:skyroot_meadow"])
-    //endermanoverhaul:flower_fields_spawns
+
     event.add("minecraft:mineshaft_blocking", ["#tfc:overworld"])
     event.add("minecraft:snow_golem_melts", ["#tfc:is_volcanic"])
     

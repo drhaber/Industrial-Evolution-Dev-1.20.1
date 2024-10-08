@@ -10,6 +10,24 @@ import crafttweaker.api.tag.manager.ITagManager;
 import crafttweaker.api.bracket.BracketHandlers;
 import mods.jeitweaker.Jei;
 
+craftingTable.remove(<item:embers:lead_sword>);
+craftingTable.remove(<item:embers:lead_shovel>);
+craftingTable.remove(<item:embers:lead_pickaxe>);
+craftingTable.remove(<item:embers:lead_axe>);
+craftingTable.remove(<item:embers:lead_hoe>);
+craftingTable.remove(<item:embers:silver_sword>);
+craftingTable.remove(<item:embers:silver_shovel>);
+craftingTable.remove(<item:embers:silver_pickaxe>);
+craftingTable.remove(<item:embers:silver_axe>);
+craftingTable.remove(<item:embers:silver_hoe>);
+craftingTable.remove(<item:embers:dawnstone_sword>);
+craftingTable.remove(<item:embers:dawnstone_shovel>);
+craftingTable.remove(<item:embers:dawnstone_pickaxe>);
+craftingTable.remove(<item:embers:dawnstone_axe>);
+craftingTable.remove(<item:embers:dawnstone_hoe>);
+
+
+
 craftingTable.remove(<item:embers:ember_bore>);
 craftingTable.addShaped("handcrafted_ember_bore", <item:embers:ember_bore>,[
   [<item:embers:caminite_bricks>,<item:embers:mechanical_core>,<item:embers:caminite_bricks>],
@@ -47,3 +65,8 @@ craftingTable.addShaped("handcrafted_ember_mixer_centrifuge", <item:embers:mixer
   [<tag:items:forge:sheets/lead>,<item:minecraft:air>,<tag:items:forge:sheets/lead>],
   [<tag:items:forge:sheets/lead>,<item:tfc:crucible>,<tag:items:forge:sheets/lead>],
   [<item:minecraft:air>,<item:embers:mechanical_core>,<item:minecraft:air>]]);      
+
+craftingTable.remove(<item:embers:tinker_hammer>);
+craftingTable.addShaped("handcrafted_tinker_hammer", <item:embers:tinker_hammer>,[
+    [<tag:items:forge:double_ingots/lead>],
+    [<tag:items:forge:rods/treated_wood>]]);  
