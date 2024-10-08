@@ -9,6 +9,8 @@ import crafttweaker.api.bracket.BracketHandlers;
 import crafttweaker.api.recipe.MirrorAxis;
 import mods.jeitweaker.Jei;
 
+craftingTable.removeByInput(<item:immersiveengineering:hammer>);
+
 <recipetype:immersiveengineering:blueprint>.remove(<item:immersiveengineering:electron_tube>);
 craftingTable.addShaped("handcrafted_electron_tube", <item:immersiveengineering:electron_tube>, [
     [<item:minecraft:air>,<item:kubejs:casing_electron_tube>,<item:minecraft:air>],
@@ -143,10 +145,28 @@ craftingTable.remove(<item:immersiveengineering:wire_copper>);
 	}
 });        
 
+/*
 craftingTable.addShaped("handcrafted_any_hammer_head", <item:immersiveengineering:hammer>.withDamage(97), [
     [<tag:items:tfc_hammer_time:sledgehammer_heads>,<tag:items:bsa:bindings/strong>,<tag:items:tfc_hammer_time:sledgehammer_heads>],
     [<item:minecraft:air>,<tag:items:forge:rods/wooden>,<item:minecraft:air>],
     [<item:minecraft:air>,<tag:items:forge:rods/wooden>,<item:minecraft:air>]]);
+*/
+<recipetype:tfc:anvil>.remove(<item:tfc_ie_addon:tool_head/ie_hammer>);
+<recipetype:tfc:anvil>.addJsonRecipe("anvil_tool_head_ie_hammer", {
+  "type": "tfc:anvil",
+  "input": {
+    "item": "tfc_ie_addon:metal/double_ingot/lead"
+  },
+  "result": {
+    "item": "tfc_ie_addon:tool_head/ie_hammer"
+  },
+  "tier": 2,
+  "rules": [
+    "upset_any",
+    "hit_not_last",
+    "draw_second_last"
+  ]
+});
 
 craftingTable.remove(<item:immersiveengineering:cokebrick>);
 craftingTable.addShaped("handcrafted_cokebrick",<item:immersiveengineering:cokebrick>, [

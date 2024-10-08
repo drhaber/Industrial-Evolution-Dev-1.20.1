@@ -10,6 +10,8 @@ import crafttweaker.api.tag.manager.ITagManager;
 import crafttweaker.api.bracket.BracketHandlers;
 import mods.jeitweaker.Jei;
 
+craftingTable.removeByName("create:crafting/kinetics/basin");
+
 craftingTable.remove(<item:create:large_water_wheel>);
 craftingTable.addShaped("handcrafted_create_large_watermill", <item:create:large_water_wheel>,[
     [<tag:items:tfc:lumber>,<tag:items:minecraft:planks>,<tag:items:tfc:lumber>],
@@ -124,3 +126,12 @@ craftingTable.remove(<item:create:shaft>);
   ]
 }
 );
+
+
+craftingTable.remove(<item:create_things_and_misc:glue_packaging>);
+craftingTable.addShaped("handcrafted_glue_packaging", <item:create_things_and_misc:glue_packaging>,[
+    [<item:minecraft:air>,<tag:items:forge:shiny_foil>],
+    [<tag:items:minecraft:wooden_buttons>,<item:minecraft:air>]]);
+
+craftingTable.remove(<item:create:super_glue>);
+craftingTable.addShapeless("handcrafted_super_glue", <item:create:super_glue>, [<tag:items:forge:slimeballs>,<item:create_things_and_misc:glue_packaging>]);

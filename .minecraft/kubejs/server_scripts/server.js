@@ -38,6 +38,7 @@ event.add('botania:seed_apothecary_reagent', '#tfc:seeds')
 
 event.add('tfc:saws','aether:obsidian_gloves')
 event.add('tfc:axes_that_log','aether:obsidian_gloves')
+event.add('forge:slimeballs','tfc:glue')
 
 //event.add('tfc:pileable_ingots', 'sgjourney:naquadah_alloy')
 //event.add(`tfc:pileable_ingots`,`#forge:ingots`)
