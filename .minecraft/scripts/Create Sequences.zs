@@ -60,6 +60,7 @@ craftingTable.remove(<item:minecraft:clock>);
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:railcraft:brass_gear>))
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:immersive_aircraft:industrial_gears>)));    
 
+/*
 <recipetype:create:sequenced_assembly>.remove(<item:create_dd:integrated_mechanism>);
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("seq_integrated_mechanism")
   .transitionTo(<item:create_dd:incomplete_integrated_mechanism>)
@@ -112,7 +113,7 @@ craftingTable.remove(<item:minecraft:clock>);
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create_sa:medium_filling_tank>))
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:analog_lever>))  
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:immersive_aircraft:industrial_gears>)));      
-
+*/
 <recipetype:create:sequenced_assembly>.remove(<item:tfmg:steel_mechanism>);
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("seq_steel_mechanism")
   .transitionTo(<item:tfmg:unfinished_steel_mechanism>)
@@ -125,7 +126,7 @@ craftingTable.remove(<item:minecraft:clock>);
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:railcraft:steel_gear>))
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:immersive_aircraft:industrial_gears>))     
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:firmalife:reinforced_glass>)));            
-
+/*
 <recipetype:create:sequenced_assembly>.remove(<item:create_things_and_misc:vibration_mechanism>);
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("seq_vibration_mechanism")
   .transitionTo(<item:create_things_and_misc:incomplete_vibration_mechanism>)
@@ -138,3 +139,4 @@ craftingTable.remove(<item:minecraft:clock>);
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:electron_tube>))  
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:embers:resonating_bell>))
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:electron_tube>)));       
+*/

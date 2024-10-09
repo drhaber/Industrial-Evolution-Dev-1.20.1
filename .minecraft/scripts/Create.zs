@@ -98,7 +98,7 @@ craftingTable.addShaped("handcrafted_create_belt_leather", <item:create:belt_con
 [[<item:minecraft:leather>,<item:minecraft:leather>,<item:minecraft:leather>],
 [<tag:items:tfc:chains>,<tag:items:tfc:chains>,<tag:items:tfc:chains>],
 [<item:minecraft:leather>,<item:minecraft:leather>,<item:minecraft:leather>]]);
-
+/*
 <recipetype:createaddition:rolling>.addJsonRecipe("rolled_create_belt_rubber", {
 	"type":"createaddition:rolling",
 	"input": {
@@ -109,7 +109,7 @@ craftingTable.addShaped("handcrafted_create_belt_leather", <item:create:belt_con
 		"count": 3
 	}
 });    
-
+*/
 craftingTable.remove(<item:create:shaft>);
 <recipetype:create:item_application>.addJsonRecipe("item_application_shaft", {
   "type": "create:item_application",
@@ -130,10 +130,7 @@ craftingTable.remove(<item:create:shaft>);
 );
 
 
-craftingTable.remove(<item:create_things_and_misc:glue_packaging>);
-craftingTable.addShaped("handcrafted_glue_packaging", <item:create_things_and_misc:glue_packaging>,[
-    [<item:minecraft:air>,<tag:items:forge:shiny_foil>],
-    [<tag:items:minecraft:wooden_buttons>,<item:minecraft:air>]]);
-
 craftingTable.remove(<item:create:super_glue>);
-craftingTable.addShapeless("handcrafted_super_glue", <item:create:super_glue>, [<tag:items:forge:slimeballs>,<item:create_things_and_misc:glue_packaging>]);
+craftingTable.addShaped("handcrafted_glue_packaging", <item:create:super_glue>,[
+    [<tag:items:forge:slimeballs>,<tag:items:forge:shiny_foil>],
+    [<tag:items:minecraft:wooden_buttons>,<tag:items:forge:slimeballs>]]);

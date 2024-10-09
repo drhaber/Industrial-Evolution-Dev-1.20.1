@@ -30,6 +30,7 @@ function addTFCPotteryFire(ItemIn as string, ItemOut as string) as void {
   },
   "temperature": 1399
 });
+/*
 <recipetype:create_dd:seething>.addJsonRecipe("pottery_fire_seething" + ItemOut.replace(":","_"), {
   "type": "create_dd:seething",
   "ingredients": [
@@ -43,6 +44,7 @@ function addTFCPotteryFire(ItemIn as string, ItemOut as string) as void {
     }
   ]
 });
+*/
 <recipetype:immersiveengineering:alloy>.addJsonRecipe("pottery_fire_alloy" + ItemOut.replace(":","_"), {
   "type": "immersiveengineering:alloy",
   "input0": {
@@ -125,6 +127,7 @@ addTFCPotteryFire("tfmg:fireclay_ball","tfmg:fireproof_brick");
 });
 
 function addTFCPotteryCompat(ItemIn as string, ItemOut as string) as void { 
+/*
 <recipetype:create_dd:seething>.addJsonRecipe("tfc_pottery_compat_superheat" + ItemOut.replace(":","_"),{
   "type": "create_dd:seething",
   "ingredients": [
@@ -138,6 +141,7 @@ function addTFCPotteryCompat(ItemIn as string, ItemOut as string) as void {
     }
   ]
 });
+*/
 <recipetype:immersiveengineering:alloy>.addJsonRecipe("tfc_pottery_compat_alloy" + ItemOut.replace(":","_"), {
   "type": "immersiveengineering:alloy",
   "input0": {

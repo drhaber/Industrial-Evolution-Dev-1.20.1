@@ -888,10 +888,6 @@
 			blackstone_crystal_floor = true
 			dark_prismarine_crystal_floor = true
 
-		[types.cut_block_type.create_things_and_misc]
-			brass_tiles = true
-			brass_brick = true
-
 		[types.cut_block_type.aether]
 			skyroot = true
 			holystone = true
@@ -1040,64 +1036,6 @@
 		[types.cut_block_type.underground_jungle]
 			temple_brick = true
 			temple_brick_tile = true
-
-		[types.cut_block_type.create_dd]
-			dark_metal_block = true
-			dark_metal_brick = true
-			padded_rubber = true
-			raw_padded_rubber = true
-			black_padded_rubber = true
-			white_padded_rubber = true
-			blue_padded_rubber = true
-			light_blue_padded_rubber = true
-			red_padded_rubber = true
-			green_padded_rubber = true
-			lime_padded_rubber = true
-			pink_padded_rubber = true
-			magenta_padded_rubber = true
-			yellow_padded_rubber = true
-			gray_padded_rubber = true
-			light_gray_padded_rubber = true
-			brown_padded_rubber = true
-			cyan_padded_rubber = true
-			purple_padded_rubber = true
-			orange_padded_rubber = true
-			cut_stone = true
-			polished_cut_stone = true
-			cut_stone_brick = true
-			small_stone_brick = true
-			cut_packed_mud = true
-			polished_cut_packed_mud = true
-			cut_packed_mud_brick = true
-			small_packed_mud_brick = true
-			cut_amethyst_block = true
-			polished_cut_amethyst_block = true
-			cut_amethyst_block_brick = true
-			small_amethyst_block_brick = true
-			cut_netherrack = true
-			polished_cut_netherrack = true
-			cut_netherrack_brick = true
-			small_netherrack_brick = true
-			cut_basalt = true
-			polished_cut_basalt = true
-			cut_basalt_brick = true
-			small_basalt_brick = true
-			cut_blackstone = true
-			polished_cut_blackstone = true
-			cut_blackstone_brick = true
-			small_blackstone_brick = true
-			cut_weathered_limestone = true
-			polished_cut_weathered_limestone = true
-			cut_weathered_limestone_brick = true
-			small_weathered_limestone_brick = true
-			cut_gabbro = true
-			polished_cut_gabbro = true
-			cut_gabbro_brick = true
-			small_gabbro_brick = true
-			cut_dolomite = true
-			polished_cut_dolomite = true
-			cut_dolomite_brick = true
-			small_dolomite_brick = true
 
 		[types.cut_block_type.tfmg]
 			hardened_planks = true

@@ -922,6 +922,9 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
   "processingTime": 800,
   "results": [
     {
+      "item": "embers:aluminum_crystal_seed"
+    },
+    {
       "item": "create:crushed_raw_aluminum"
     },
     {
