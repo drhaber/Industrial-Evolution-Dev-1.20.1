@@ -174,3 +174,493 @@ craftingTable.addShaped("handcrafted_mana_sword", <item:botania:manasteel_sword>
     "item": "botania:manasteel_shears"
   }
 });
+
+<recipetype:botania:runic_altar>.removeAll();
+
+<recipetype:botania:runic_altar>.addJsonRecipe("runic_altar_rune_air", {
+  "type": "botania:runic_altar",
+  "ingredients": [
+    {
+      "tag": "botania:mana_dusts"
+    },
+    {
+      "item": "tfc:wool"
+    },
+    {
+      "tag": "forge:feathers"
+    },
+    {
+      "tag": "tfc:fluid_item_ingredient_empty_containers"
+    }
+  ],
+  "mana": 5200,
+  "output": {
+    "count": 2,
+    "item": "botania:rune_air"
+  }
+});
+
+<recipetype:botania:runic_altar>.addJsonRecipe("runic_altar_rune_autumn", {
+  "type": "botania:runic_altar",
+  "ingredients": [
+    {
+      "item": "botania:rune_fire"
+    },
+    {
+      "item": "botania:rune_air"
+    },
+    {
+      "tag": "tfc:fallen_leaves"
+    },
+    {
+      "tag": "tfc:fallen_leaves"
+    },
+    {
+      "tag": "tfc:fallen_leaves"
+    },
+    {
+      "item": "tfc:pumpkin"
+    }
+  ],
+  "mana": 8000,
+  "output": {
+    "item": "botania:rune_autumn"
+  }
+});
+
+<recipetype:botania:runic_altar>.addJsonRecipe("runic_altar_rune_earth", {
+  "type": "botania:runic_altar",
+  "ingredients": [
+    {
+      "tag": "botania:mana_dusts"
+    },
+    {
+      "tag": "botania:manasteel_ingots"
+    },
+    {
+      "tag": "tfc:rock/raw"
+    },
+    {
+      "tag": "bsa:rock/loose"
+    },
+    {
+      "tag": "bsa:rock/loose"
+    },
+    {
+      "tag": "forge:mushrooms"
+    }
+  ],
+  "mana": 5200,
+  "output": {
+    "count": 2,
+    "item": "botania:rune_earth"
+  }
+});
+
+<recipetype:botania:runic_altar>.addJsonRecipe("runic_altar_rune_envy", {
+  "type": "botania:runic_altar",
+  "ingredients": [
+    {
+      "tag": "botania:mana_diamond_gems"
+    },
+    {
+      "item": "botania:rune_winter"
+    },
+    {
+      "item": "botania:rune_water"
+    },
+    {
+      "item": "minecraft:weathered_copper"
+    }    
+  ],
+  "mana": 12000,
+  "output": {
+    "item": "botania:rune_envy"
+  }
+});
+
+<recipetype:botania:runic_altar>.addJsonRecipe("runic_altar_rune_fire", {
+  "type": "botania:runic_altar",
+  "ingredients": [
+    {
+      "tag": "botania:mana_dusts"
+    },
+    {
+      "tag": "botania:manasteel_ingots"
+    },
+    {
+      "tag": "forge:netherrack"
+    },
+    {
+      "tag": "forge:gunpowder"
+    },
+    {
+      "item": "minecraft:fire_charge"
+    }
+  ],
+  "mana": 5200,
+  "output": {
+    "count": 2,
+    "item": "botania:rune_fire"
+  }
+});
+
+<recipetype:botania:runic_altar>.addJsonRecipe("runic_altar_rune_gluttony", {
+  "type": "botania:runic_altar",
+  "ingredients": [
+    {
+      "tag": "botania:mana_diamond_gems"
+    },
+    {
+      "tag": "botania:mana_diamond_gems"
+    },
+    {
+      "tag": "tfc:foods"
+    },
+    {
+      "tag": "tfc:foods"
+    },    
+    {
+      "tag": "tfc:foods"
+    },                
+    {
+      "item": "botania:rune_winter"
+    },
+    {
+      "item": "botania:rune_fire"
+    }
+  ],
+  "mana": 12000,
+  "output": {
+    "item": "botania:rune_gluttony"
+  }
+});
+
+<recipetype:botania:runic_altar>.addJsonRecipe("runic_altar_rune_greed", {
+  "type": "botania:runic_altar",
+  "ingredients": [
+    {
+      "tag": "botania:mana_diamond_gems"
+    },
+    {
+      "tag": "botania:mana_diamond_gems"
+    },
+    {
+      "item": "botania:rune_spring"
+    },
+    {
+      "item": "botania:rune_water"
+    },
+    {
+      "tag": "forge:ingots/gold"
+    },
+    {
+      "tag": "forge:gems/emerald"
+    }
+  ],
+  "mana": 12000,
+  "output": {
+    "item": "botania:rune_greed"
+  }
+});
+
+<recipetype:botania:runic_altar>.addJsonRecipe("runic_altar_rune_head", {
+  "type": "botania:runic_altar_head",
+  "ingredients": [
+    {
+      "item": "minecraft:skeleton_skull"
+    },
+    {
+      "item": "tombstone:grave_dust"
+    },
+    {
+      "item": "minecraft:name_tag"
+    },
+    {
+      "item": "sgjourney:golden_idol"
+    }
+  ],
+  "mana": 22500,
+  "output": {
+    "item": "minecraft:player_head"
+  }
+});
+
+<recipetype:botania:runic_altar>.addJsonRecipe("runic_altar_rune_lust", {
+  "type": "botania:runic_altar",
+  "ingredients": [
+    {
+      "tag": "botania:mana_diamond_gems"
+    },
+    {
+      "tag": "botania:mana_diamond_gems"
+    },
+    {
+      "item": "botania:rune_summer"
+    },
+    {
+      "item": "botania:rune_air"
+    },
+    {
+      "item": "minecraft:lead"
+    },   
+    {
+      "item": "iceandfire:blindfold"
+    }
+  ],
+  "mana": 12000,
+  "output": {
+    "item": "botania:rune_lust"
+  }
+});
+
+<recipetype:botania:runic_altar>.addJsonRecipe("runic_altar_rune_mana", {
+  "type": "botania:runic_altar",
+  "ingredients": [
+    {
+      "tag": "botania:manasteel_ingots"
+    },
+    {
+      "tag": "botania:manasteel_ingots"
+    },
+    {
+      "item": "botania:quartz_mana"
+    },
+    {
+      "tag": "botania:manasteel_ingots"
+    },
+    {
+      "tag": "botania:manasteel_ingots"
+    },
+    {
+      "item": "botania:mana_pearl"
+    },
+    {
+      "item": "botania:mana_bottle"
+    }
+  ],
+  "mana": 8000,
+  "output": {
+    "item": "botania:rune_mana"
+  }
+});
+
+<recipetype:botania:runic_altar>.addJsonRecipe("runic_altar_rune_pride", {
+  "type": "botania:runic_altar",
+  "ingredients": [
+    {
+      "tag": "botania:mana_diamond_gems"
+    },
+    {
+      "item": "botania:rune_summer"
+    },
+    {
+      "item": "botania:rune_fire"
+    },
+    {
+      "tag": "forge:dyes/red"
+    },
+    {
+      "tag": "forge:dyes/orange"
+    },   
+    {
+      "tag": "forge:dyes/yellow"
+    },
+    {
+      "tag": "forge:dyes/green"
+    },
+    {
+      "tag": "forge:dyes/blue"
+    },
+    {
+      "tag": "forge:dyes/purple"
+    },
+    {
+      "tag": "forge:dyes/pink"
+    }
+  ],
+  "mana": 12000,
+  "output": {
+    "item": "botania:rune_pride"
+  }
+});
+
+<recipetype:botania:runic_altar>.addJsonRecipe("runic_altar_rune_sloth", {
+  "type": "botania:runic_altar",
+  "ingredients": [
+    {
+      "tag": "botania:mana_diamond_gems"
+    },
+    {
+      "tag": "botania:mana_diamond_gems"
+    },
+    {
+      "item": "botania:rune_autumn"
+    },
+    {
+      "item": "botania:rune_air"
+    },
+    {
+      "tag": "minecraft:beds"
+    }
+  ],
+  "mana": 12000,
+  "output": {
+    "item": "botania:rune_sloth"
+  }
+});
+
+<recipetype:botania:runic_altar>.addJsonRecipe("runic_altar_rune_spring", {
+  "type": "botania:runic_altar",
+  "ingredients": [
+    {
+      "item": "botania:rune_water"
+    },
+    {
+      "item": "botania:rune_fire"
+    },
+    {
+      "tag": "minecraft:saplings"
+    },
+    {
+      "tag": "minecraft:saplings"
+    },
+    {
+      "tag": "items:forge:eggs"
+    },
+    {
+      "tag": "minecraft:flowers"
+    }
+  ],
+  "mana": 8000,
+  "output": {
+    "item": "botania:rune_spring"
+  }
+});
+
+<recipetype:botania:runic_altar>.addJsonRecipe("runic_altar_rune_summer", {
+  "type": "botania:runic_altar",
+  "ingredients": [
+    {
+      "item": "botania:rune_earth"
+    },
+    {
+      "item": "botania:rune_air"
+    },
+    {
+      "tag": "minecraft:sand"
+    },
+    {
+      "tag": "minecraft:sand"
+    },
+    {
+      "tag": "tfc:foods/usable_in_salad"
+    },
+    {
+      "tag": "items:tfc:foods/fruits"
+    }
+  ],
+  "mana": 8000,
+  "output": {
+    "item": "botania:rune_summer"
+  }
+});
+
+<recipetype:botania:runic_altar>.addJsonRecipe("runic_altar_rune_water", {
+  "type": "botania:runic_altar",
+  "ingredients": [
+    {
+      "tag": "botania:mana_dusts"
+    },
+    {
+      "tag": "botania:manasteel_ingots"
+    },
+    {
+      "item": "firmalife:watering_can"
+    },
+        [
+      {
+        "item": "minecraft:dried_kelp"
+      },
+      {
+        "item": "minecraft:kelp"
+      },
+      {
+        "item": "tfc:plant/leafy_kelp"
+      },
+      {
+        "item": "tfc:plant/winged_kelp"
+      },
+      {
+        "item": "tfc:plant/giant_kelp_flower"
+      }
+    ]
+  ],
+  "mana": 5200,
+  "output": {
+    "count": 2,
+    "item": "botania:rune_water"
+  }
+});
+
+<recipetype:botania:runic_altar>.addJsonRecipe("runic_altar_rune_winter", {
+  "type": "botania:runic_altar",
+  "ingredients": [
+    {
+      "item": "botania:rune_water"
+    },
+    {
+      "item": "botania:rune_earth"
+    },
+    {
+      "item": "minecraft:snow_block"
+    },
+    {
+      "item": "minecraft:snow_block"
+    },
+    {
+      "tag": "minecraft:wool"
+    },
+    {
+      "tag": "minecraft:wool"
+    },
+    {
+      "tag": "supplementaries:presents"
+    }   
+  ],
+  "mana": 8000,
+  "output": {
+    "item": "botania:rune_winter"
+  }
+});
+
+<recipetype:botania:runic_altar>.addJsonRecipe("runic_altar_rune_wrath", {
+  "type": "botania:runic_altar",
+  "ingredients": [
+    {
+      "tag": "botania:mana_diamond_gems"
+    },
+    {
+      "tag": "botania:mana_diamond_gems"
+    },
+    {
+      "item": "botania:rune_winter"
+    },
+    {
+      "item": "botania:rune_earth"
+    },
+    {
+      "tag": "tfc:javelins"
+    },
+    {
+      "tag": "tfc:swords"
+    },
+    {
+      "item": "botania:cosmetic_eyepatch"
+    }
+  ],
+  "mana": 12000,
+  "output": {
+    "item": "botania:rune_wrath"
+  }
+});

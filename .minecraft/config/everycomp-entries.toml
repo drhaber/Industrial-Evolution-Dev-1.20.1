@@ -4,11 +4,6 @@
 
 	[types.leaves_type]
 
-		[types.leaves_type.hexerei]
-			mahogany = true
-			willow = true
-			witch_hazel = true
-
 		[types.leaves_type.quark]
 			ancient = true
 			blue_blossom = true
@@ -87,11 +82,6 @@
 		[types.wood_type.botania]
 			livingwood = true
 			dreamwood = true
-
-		[types.wood_type.hexerei]
-			mahogany = true
-			willow = true
-			witch_hazel = true
 
 		[types.wood_type.tfc]
 			acacia = true
@@ -295,14 +285,6 @@
 			suevite_small_bricks = true
 			suevite_big_tile = true
 			suevite_small_tile = true
-
-		[types.cut_block_type.hexerei]
-			mahogany = true
-			polished_mahogany = true
-			willow = true
-			polished_willow = true
-			witch_hazel = true
-			polished_witch_hazel = true
 
 		[types.cut_block_type.tfc]
 			"mud_bricks/silt" = true
