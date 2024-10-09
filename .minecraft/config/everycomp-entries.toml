@@ -1033,10 +1033,6 @@
 			packed_ice = true
 			blue_ice = true
 
-		[types.cut_block_type.underground_jungle]
-			temple_brick = true
-			temple_brick_tile = true
-
 		[types.cut_block_type.tfmg]
 			hardened_planks = true
 			factory_floor = true
