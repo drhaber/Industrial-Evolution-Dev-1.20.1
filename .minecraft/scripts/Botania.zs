@@ -526,7 +526,7 @@ craftingTable.addShaped("handcrafted_mana_sword", <item:botania:manasteel_sword>
       "tag": "minecraft:saplings"
     },
     {
-      "tag": "items:forge:eggs"
+      "tag": "forge:eggs"
     },
     {
       "tag": "minecraft:flowers"
@@ -557,7 +557,7 @@ craftingTable.addShaped("handcrafted_mana_sword", <item:botania:manasteel_sword>
       "tag": "tfc:foods/usable_in_salad"
     },
     {
-      "tag": "items:tfc:foods/fruits"
+      "tag": "tfc:foods/fruits"
     }
   ],
   "mana": 8000,
@@ -578,23 +578,9 @@ craftingTable.addShaped("handcrafted_mana_sword", <item:botania:manasteel_sword>
     {
       "item": "firmalife:watering_can"
     },
-        [
-      {
-        "item": "minecraft:dried_kelp"
-      },
-      {
-        "item": "minecraft:kelp"
-      },
-      {
-        "item": "tfc:plant/leafy_kelp"
-      },
-      {
-        "item": "tfc:plant/winged_kelp"
-      },
-      {
-        "item": "tfc:plant/giant_kelp_flower"
-      }
-    ]
+    {
+      "tag": "minecarft:kelp"
+    }
   ],
   "mana": 5200,
   "output": {
