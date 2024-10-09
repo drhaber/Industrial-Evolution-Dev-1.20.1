@@ -2,5 +2,14 @@
 	"fluid.tfmg.molten_steel": "Molten Ultra High Carbon Steel",
     "block.tfmg.molten_steel": "Molten Ultra High Carbon Steel",
     "item.tfmg.molten_steel_bucket": "Molten Ultra High Carbon Steel Bucket",
-    "item.tfmg.coal_coke_dust": "High Carbon Fuel"
+    "item.tfmg.coal_coke_dust": "High Carbon Fuel",
+    "item.tfmg.fireclay_ball": "Fire Infused Clay Ball",
+    "item.tfmg.fireclay": "Fire Infused Clay",
+    "item.tfmg.fireproof_brick_reinforcement": "Fire Infused Brick Reinforcement",
+    "item.tfmg.fireproof_brick": "Fire Infused Brick",
+    "item.tfmg.fireproof_bricks": "Fire Infused Bricks",
+    "block.tfmg.fireclay": "Fire Infused Clay",
+    "block.tfmg.fireproof_brick_reinforcement": "Fire Infused Brick Reinforcement",
+    "block.tfmg.fireproof_brick": "Fire Infused Brick",
+    "block.tfmg.fireproof_bricks": "Fire Infused Bricks"
 }

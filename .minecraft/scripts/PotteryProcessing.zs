@@ -16,6 +16,9 @@ craftingTable.remove(<item:create:andesite_alloy>);
 
 craftingTable.addShapeless("archaic_lump", <item:kubejs:unfired_archaic_lump> * 4, [<item:tfc:fire_clay_block>,<item:minecraft:soul_sand>,<item:tfc:powder/graphite>]);
 
+<recipetype:minecraft:smelting>.remove(<item:tfmg:fireclay_ball>);
+craftingTable.addShapeless("fire_infused_clay", <item:tfmg:fireclay_ball> * 4, [<item:tfc:fire_clay_block>,<item:minecraft:soul_sand>,<item:create:cinder_flour>]);
+
 function addTFCPotteryFire(ItemIn as string, ItemOut as string) as void { 
 <recipetype:tfc:heating>.addJsonRecipe("pottery_fire_kiln" + ItemOut.replace(":","_"), {
   "type": "tfc:heating",
@@ -102,6 +105,7 @@ addTFCPotteryFire("embers:raw_ingot_stamp","embers:ingot_stamp");
 addTFCPotteryFire("embers:raw_nugget_stamp","embers:nugget_stamp");
 addTFCPotteryFire("embers:raw_plate_stamp","embers:plate_stamp");
 addTFCPotteryFire("embers:raw_caminite_plate","embers:caminite_plate");
+addTFCPotteryFire("tfmg:fireclay_ball","tfmg:fireproof_brick");
 
 //mods.embers.Mixer.add(<liquid:red_alloy>*144, [<liquid:copper>*144,<liquid:redstone>*576]);
 
