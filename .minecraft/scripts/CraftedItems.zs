@@ -73,7 +73,6 @@ Jei.hideIngredient(<item:railcraft:coal_coke>);
 Jei.hideIngredient(<item:railcraft:coal_coke_block>);
 Jei.hideIngredient(<item:tfmg:coal_coke_block>);
 Jei.hideIngredient(<item:tfmg:coal_coke>);
-Jei.hideIngredient(<item:tfmg:coal_coke_dust>);
 Jei.hideIngredient(<item:railcraft:coke_oven_bricks>);
 Jei.hideIngredient(<item:tfmg:coke_oven>);
 

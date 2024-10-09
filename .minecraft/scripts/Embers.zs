@@ -31,7 +31,7 @@ craftingTable.remove(<item:embers:dawnstone_hoe>);
 craftingTable.remove(<item:embers:ember_bore>);
 craftingTable.addShaped("handcrafted_ember_bore", <item:embers:ember_bore>,[
   [<item:embers:caminite_bricks>,<item:embers:mechanical_core>,<item:embers:caminite_bricks>],
-  [<tag:items:forge:plates/lead>,<tag:items:forge:plates/lead>,<tag:items:forge:plates/lead>]]);      
+  [<tag:items:forge:sheets/lead>,<tag:items:forge:sheets/lead>,<tag:items:forge:sheets/lead>]]);      
 
 craftingTable.remove(<item:embers:mechanical_core>);
 craftingTable.addShaped("handcrafted_mechanical_core", <item:embers:mechanical_core>,[
@@ -50,9 +50,9 @@ craftingTable.addShaped("handcrafted_superheater", <item:embers:superheater>,[
 
 craftingTable.remove(<item:embers:mini_boiler>);
 craftingTable.addShaped("handcrafted_mini_boiler", <item:embers:mini_boiler>,[
-  [<item:minecraft:air>,<tag:items:forge:plates/lead>,<item:minecraft:air>],
-  [<tag:items:forge:plates/lead>,<item:immersive_aircraft:boiler>,<tag:items:forge:plates/lead>],
-  [<item:minecraft:air>,<tag:items:forge:plates/lead>,<item:minecraft:air>]]);       
+  [<item:minecraft:air>,<tag:items:forge:sheets/lead>,<item:minecraft:air>],
+  [<tag:items:forge:sheets/lead>,<item:immersive_aircraft:boiler>,<tag:items:forge:sheets/lead>],
+  [<item:minecraft:air>,<tag:items:forge:sheets/lead>,<item:minecraft:air>]]);       
 
 craftingTable.remove(<item:embers:copper_cell>);
 craftingTable.addShaped("handcrafted_ember_battery_copper_cell", <item:embers:copper_cell>,[

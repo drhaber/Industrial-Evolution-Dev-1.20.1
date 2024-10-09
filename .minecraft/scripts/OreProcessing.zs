@@ -35,6 +35,7 @@ Jei.hideCategory(<resource:jumbofurnace:jumbo_furnace_upgrade>);
 <recipetype:minecraft:blasting>.remove(<tag:items:forge:nuggets>);
 <recipetype:minecraft:smelting>.remove(<tag:items:tfc:colored_glazed_terracotta>);
 <recipetype:create:splashing>.remove(<tag:items:forge:nuggets>);
+craftingTable.remove(<tag:items:forge:wires>);
 //<recipetype:create_dd:superheating>.remove(<tag:items:forge:ingots>);
 
 <recipetype:minecraft:blasting>.remove(<item:sgjourney:pure_naquadah>);
@@ -1203,6 +1204,48 @@ addcreatemetallurgymelting("kubejs:molten_naquadah","sgjourney:raw_naquadah",100
     "item": "sgjourney:naquadah_alloy"
   }
 });
+
+//Plates
+
+/*
+<item:aetherworks:plate_aether>
+<item:create:sturdy_sheet>
+<item:create:brass_sheet>
+<item:embers:dawnstone_plate>
+<item:immersiveengineering:plate_duroplast>
+<item:immersiveengineering:plate_copper>
+<item:immersiveengineering:plate_aluminum>
+<item:immersiveengineering:plate_lead>
+<item:immersiveengineering:plate_silver>
+<item:immersiveengineering:plate_nickel>
+<item:immersiveengineering:plate_uranium>
+<item:immersiveengineering:plate_constantan>
+<item:immersiveengineering:plate_electrum>
+<item:immersiveengineering:plate_steel>
+<item:immersiveengineering:plate_iron>
+<item:immersiveengineering:plate_gold>
+<item:railcraft:tin_plate>
+<item:railcraft:zinc_plate>
+<item:railcraft:bronze_plate>
+<item:railcraft:invar_plate>
+<item:createaddition:zinc_sheet>
+<item:createdeco:andesite_sheet>
+<item:createdeco:zinc_sheet>
+<item:createdeco:netherite_sheet>
+<item:createdeco:industrial_iron_sheet>
+<item:vintageimprovements:andesite_sheet>
+<item:vintageimprovements:bronze_sheet>
+<item:vintageimprovements:cast_iron_sheet>
+<item:vintageimprovements:invar_sheet>
+<item:vintageimprovements:netherite_sheet>
+<item:vintageimprovements:pig_iron_sheet>
+<item:vintageimprovements:rose_gold_sheet>
+<item:vintageimprovements:tin_sheet>
+<item:vintageimprovements:vanadium_sheet>
+<item:vintageimprovements:zinc_sheet>
+*/
+
+
 
 /*
 

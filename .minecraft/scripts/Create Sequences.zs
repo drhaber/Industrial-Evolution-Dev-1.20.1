@@ -79,7 +79,7 @@ craftingTable.remove(<item:minecraft:clock>);
   .addOutput(<item:create_dd:calculation_mechanism>,1)
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:ae2:printed_calculation_processor>))
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:electron_tube>))
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:extendedgears:shaftless_cogwheel>))  
+  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:cogwheel>))  
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:precision_mechanism>)));      
 
 <recipetype:create:sequenced_assembly>.remove(<item:create_dd:inductive_mechanism>);
@@ -88,7 +88,7 @@ craftingTable.remove(<item:minecraft:clock>);
   .require(<item:createdeco:andesite_sheet>)
   .loops(2)
   .addOutput(<item:create_dd:inductive_mechanism>,1)
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:extendedgears:shaftless_cogwheel>))
+  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:cogwheel>))
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:lever>)));  
 
 <recipetype:create:sequenced_assembly>.remove(<item:create_dd:infernal_mechanism>);

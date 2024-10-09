@@ -4,13 +4,11 @@
     "minecraft",
     "kubejs",
     "crafttweaker",
-    "tfmg",
     "create",
     "immersiveengineering",    
     "thermal",
     "JAOPCA",
     "create_dd",
-    "railcraft",
     "mekanism"
   ],
   "stoneStrata": [
@@ -91,11 +89,11 @@
   "itemTagInheritance": {},
   "blockTagInheritanceMode": "ALLOW",
   "blockTagInheritance": {},
-  "ignoredTags": ["forge:dusts/coal_coke"],
-  "ignoredItems": ["tfmg:coal_coke_dust"],
+  "ignoredTags": [],
+  "ignoredItems": [],
   "ignoredRecipeTypes": [
     "cucumber:shaped_tag"
   ],
   "ignoredRecipes": [],
-  "itemsHidingJeiRei": false
+  "itemsHidingJeiRei": true
 }
