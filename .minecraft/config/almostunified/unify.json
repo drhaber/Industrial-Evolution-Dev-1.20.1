@@ -4,11 +4,13 @@
     "minecraft",
     "kubejs",
     "crafttweaker",
-    "immersiveengineering",    
+    "tfmg",
     "create",
+    "immersiveengineering",    
     "thermal",
     "JAOPCA",
     "create_dd",
+    "railcraft",
     "mekanism"
   ],
   "stoneStrata": [
@@ -95,5 +97,5 @@
     "cucumber:shaped_tag"
   ],
   "ignoredRecipes": [],
-  "itemsHidingJeiRei": true
+  "itemsHidingJeiRei": false
 }

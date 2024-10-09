@@ -14,6 +14,10 @@ import mods.jeitweaker.Jei;
 Jei.hideCategory(<resource:jumbofurnace:jumbo_smelting>);
 Jei.hideCategory(<resource:jumbofurnace:jumbo_furnace_upgrade>);
 
+<recipetype:railcraft:rolling>.remove(<tag:items:forge:plates>);
+<recipetype:create:pressing>.remove(<tag:items:forge:plates>);
+<recipetype:create:pressing>.remove(<item:createdeco:zinc_sheet>);
+
 <recipetype:embers:stamping>.removeAll();
 <recipetype:immersiveengineering:alloy>.removeAll();
 <recipetype:embers:mixing>.removeAll();
