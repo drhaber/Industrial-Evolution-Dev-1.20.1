@@ -145,12 +145,6 @@ craftingTable.remove(<item:immersiveengineering:wire_copper>);
 	}
 });        
 
-/*
-craftingTable.addShaped("handcrafted_any_hammer_head", <item:immersiveengineering:hammer>.withDamage(97), [
-    [<tag:items:tfc_hammer_time:sledgehammer_heads>,<tag:items:bsa:bindings/strong>,<tag:items:tfc_hammer_time:sledgehammer_heads>],
-    [<item:minecraft:air>,<tag:items:forge:rods/wooden>,<item:minecraft:air>],
-    [<item:minecraft:air>,<tag:items:forge:rods/wooden>,<item:minecraft:air>]]);
-*/
 <recipetype:tfc:anvil>.remove(<item:tfc_ie_addon:tool_head/ie_hammer>);
 <recipetype:tfc:anvil>.addJsonRecipe("anvil_tool_head_ie_hammer", {
   "type": "tfc:anvil",
@@ -193,24 +187,3 @@ craftingTable.addShapedMirrored("handcrafted_capacitor_hv", MirrorAxis.HORIZONTA
     [<tag:items:forge:rods/electrum>,<item:railcraft:charge_terminal>,<tag:items:forge:rods/electrum>],
     [<item:railcraft:invar_electrode>,<item:tfmg:lithium_charge>,<item:railcraft:carbon_electrode>],
     [<item:tfc_ie_addon:treated_wood_lumber>,<item:tfc_ie_addon:treated_wood_lumber>,<item:tfc_ie_addon:treated_wood_lumber>]]);
-
-/*
-//Capaciators
-recipes.remove(<immersiveengineering:metal_device0>); #LV
-recipes.addShaped(<immersiveengineering:metal_device0>,[
-	[<tfctech:metal/wrought_iron_bolt>,<railcraft:charge:1>,<tfctech:metal/wrought_iron_bolt>],
-	[<railcraft:charge:6>,<nuclearcraft:compound:6>,<railcraft:charge:8>],
-	[<contenttweaker:treatedlumber>,<tfctech:metal/copper_long_rod>,<contenttweaker:treatedlumber>]]);
-
-recipes.remove(<immersiveengineering:metal_device0:1>); #MV
-recipes.addShaped(<immersiveengineering:metal_device0:1>,[
-	[<tfctech:metal/constantan_bolt>,<railcraft:charge:1>,<tfctech:metal/constantan_bolt>],
-	[<railcraft:charge:6>,<appliedenergistics2:material:10>,<railcraft:charge:7>],
-	[<contenttweaker:treatedlumber>,<tfctech:metal/electrum_long_rod>,<contenttweaker:treatedlumber>]]);
-
-recipes.remove(<immersiveengineering:metal_device0:2>); #HV
-recipes.addShaped(<immersiveengineering:metal_device0:2>,[
-	[<tfctech:metal/electrum_bolt>,<railcraft:charge:1>,<tfctech:metal/electrum_bolt>],
-	[<nuclearcraft:part:13>,<libvulpes:productgem>,<nuclearcraft:part:13>],
-	[<nuclearcraft:part:4>,<tfctech:metal/steel_long_rod>,<nuclearcraft:part:4>]]);
-*/

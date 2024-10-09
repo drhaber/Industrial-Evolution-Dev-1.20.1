@@ -11,7 +11,6 @@ import crafttweaker.api.bracket.BracketHandlers;
 import mods.jeitweaker.Jei;
 
 craftingTable.remove(<item:botania:redstone_root>);
-//craftingTable.addShapeless("handcrafted_redstone_root", <item:botania:redstone_root>, [<item:botania:livingwood_twig>,<item:minecraft:redstone>]);
 <recipetype:tfc:barrel_sealed>.addJsonRecipe("barrel_redstone_root", {
     "type": "tfc:barrel_sealed",
     "input_item": {

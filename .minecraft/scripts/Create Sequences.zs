@@ -60,60 +60,6 @@ craftingTable.remove(<item:minecraft:clock>);
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:railcraft:brass_gear>))
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:immersive_aircraft:industrial_gears>)));    
 
-/*
-<recipetype:create:sequenced_assembly>.remove(<item:create_dd:integrated_mechanism>);
-<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("seq_integrated_mechanism")
-  .transitionTo(<item:create_dd:incomplete_integrated_mechanism>)
-  .require(<item:tfc:brass_mechanisms>)
-  .loops(1)
-  .addOutput(<item:create_dd:integrated_mechanism>,1)
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create_dd:integrated_circuit>))
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:immersive_aircraft:industrial_gears>))
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:electron_tube>))  
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:precision_mechanism>)));    
-
-<recipetype:create:sequenced_assembly>.remove(<item:create_dd:calculation_mechanism>);
-<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("seq_calculation_mechanism")
-  .transitionTo(<item:create_dd:incomplete_calculation_mechanism>)
-  .require(<item:createdeco:andesite_sheet>)
-  .loops(1)
-  .addOutput(<item:create_dd:calculation_mechanism>,1)
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:ae2:printed_calculation_processor>))
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:electron_tube>))
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:cogwheel>))  
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:precision_mechanism>)));      
-
-<recipetype:create:sequenced_assembly>.remove(<item:create_dd:inductive_mechanism>);
-<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("seq_logistics_mechanism")
-  .transitionTo(<item:create_dd:incomplete_inductive_mechanism>)
-  .require(<item:createdeco:andesite_sheet>)
-  .loops(2)
-  .addOutput(<item:create_dd:inductive_mechanism>,1)
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:cogwheel>))
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:lever>)));  
-
-<recipetype:create:sequenced_assembly>.remove(<item:create_dd:infernal_mechanism>);
-<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("seq_infernal_mechanism")
-  .transitionTo(<item:create_dd:incomplete_infernal_mechanism>)
-  .require(<item:tfc:metal/sheet/cast_iron>)
-  .loops(1)
-  .addOutput(<item:create_dd:infernal_mechanism>,1)
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:embers:archaic_brick>))
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:embers:winding_gears>))
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:embers:ancient_motive_core>))  
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:embers:winding_gears>)));      
-
-<recipetype:create:sequenced_assembly>.remove(<item:create_dd:sealed_mechanism>);
-<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("seq_sealed_mechanism")
-  .transitionTo(<item:create_dd:incomplete_sealed_mechanism>)
-  .require(<item:create_dd:rubber>)
-  .loops(1)
-  .addOutput(<item:create_dd:sealed_mechanism>,1)
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:firmaciv:copper_bolt>))
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create_sa:medium_filling_tank>))
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:analog_lever>))  
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:immersive_aircraft:industrial_gears>)));      
-*/
 <recipetype:create:sequenced_assembly>.remove(<item:tfmg:steel_mechanism>);
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("seq_steel_mechanism")
   .transitionTo(<item:tfmg:unfinished_steel_mechanism>)
@@ -126,17 +72,3 @@ craftingTable.remove(<item:minecraft:clock>);
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:railcraft:steel_gear>))
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:immersive_aircraft:industrial_gears>))     
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:firmalife:reinforced_glass>)));            
-/*
-<recipetype:create:sequenced_assembly>.remove(<item:create_things_and_misc:vibration_mechanism>);
-<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("seq_vibration_mechanism")
-  .transitionTo(<item:create_things_and_misc:incomplete_vibration_mechanism>)
-  .require(<item:create_dd:lapis_lazuli_shard>)
-  .loops(1)
-  .addOutput(<item:create_things_and_misc:vibration_mechanism>,1)
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create_things_and_misc:rose_quartz_sheet>))
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create_dd:infernal_mechanism>))  
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:embers:resonating_bell>))
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:electron_tube>))  
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:embers:resonating_bell>))
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:create:electron_tube>)));       
-*/

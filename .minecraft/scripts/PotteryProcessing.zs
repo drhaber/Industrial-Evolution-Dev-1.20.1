@@ -8,6 +8,7 @@ import crafttweaker.api.util.random.Percentaged;
 import crafttweaker.api.fluid.IFluidStack;
 import crafttweaker.api.tag.manager.ITagManager;
 import crafttweaker.api.bracket.BracketHandlers;
+import mods.jeitweaker.Jei;
 
 craftingTable.addShapeless("andesite_alloy_lump_tin", <item:kubejs:andesite_alloy_raw> * 4, [<item:minecraft:clay>,<item:tfc:rock/gravel/andesite>,<item:tfc:powder/cassiterite>]);
 craftingTable.addShapeless("andesite_alloy_lump_zinc", <item:kubejs:andesite_alloy_raw> * 4, [<item:minecraft:clay>,<item:tfc:rock/gravel/andesite>,<item:tfc:powder/sphalerite>]);
@@ -30,21 +31,6 @@ function addTFCPotteryFire(ItemIn as string, ItemOut as string) as void {
   },
   "temperature": 1399
 });
-/*
-<recipetype:create_dd:seething>.addJsonRecipe("pottery_fire_seething" + ItemOut.replace(":","_"), {
-  "type": "create_dd:seething",
-  "ingredients": [
-    {
-      "item": ItemIn
-    }
-  ],
-  "results": [
-    {
-      "item": ItemOut
-    }
-  ]
-});
-*/
 <recipetype:immersiveengineering:alloy>.addJsonRecipe("pottery_fire_alloy" + ItemOut.replace(":","_"), {
   "type": "immersiveengineering:alloy",
   "input0": {
@@ -127,21 +113,6 @@ addTFCPotteryFire("tfmg:fireclay_ball","tfmg:fireproof_brick");
 });
 
 function addTFCPotteryCompat(ItemIn as string, ItemOut as string) as void { 
-/*
-<recipetype:create_dd:seething>.addJsonRecipe("tfc_pottery_compat_superheat" + ItemOut.replace(":","_"),{
-  "type": "create_dd:seething",
-  "ingredients": [
-    {
-      "item": ItemIn
-    }
-  ],
-  "results": [
-    {
-      "item": ItemOut
-    }
-  ]
-});
-*/
 <recipetype:immersiveengineering:alloy>.addJsonRecipe("tfc_pottery_compat_alloy" + ItemOut.replace(":","_"), {
   "type": "immersiveengineering:alloy",
   "input0": {

@@ -368,11 +368,7 @@ craftingTable.remove(<item:musketmod:cartridge>);
 craftingTable.addShaped("handcrafted_cartridge", <item:musketmod:cartridge>*8,[
     [<tag:items:forge:paper>,<tag:items:forge:nuggets/tin>],
     [<tag:items:forge:coal>,<tag:items:forge:paper>]]);
-/*
-craftingTable.addShaped("handcrafted_cartridge_2", <item:musketmod:cartridge>*16,[
-    [<tag:items:forge:paper>,<tag:items:forge:nuggets/industrial_iron>],
-    [<tag:items:forge:nuggets/coal>,<tag:items:forge:paper>]]);       
-*/
+
 craftingTable.addShaped("handcrafted_cartridge_3", <item:musketmod:cartridge>*32,[
     [<tag:items:forge:paper>,<tag:items:forge:nuggets/bronze>],
     [<tag:items:forge:coal>,<tag:items:forge:paper>]]);       
