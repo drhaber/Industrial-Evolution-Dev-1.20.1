@@ -10,6 +10,25 @@ import crafttweaker.api.tag.manager.ITagManager;
 import crafttweaker.api.bracket.BracketHandlers;
 import mods.jeitweaker.Jei;
 
+craftingTable.remove(<item:botania:redstone_root>);
+//craftingTable.addShapeless("handcrafted_redstone_root", <item:botania:redstone_root>, [<item:botania:livingwood_twig>,<item:minecraft:redstone>]);
+<recipetype:tfc:barrel_sealed>.addJsonRecipe("barrel_redstone_root", {
+    "type": "tfc:barrel_sealed",
+    "input_item": {
+        "ingredient": {
+            "item": "botania:livingwood_twig"
+        }
+    },
+    "input_fluid": {
+        "ingredient": "immersiveengineering:redstone_acid",
+        "amount": 250
+    },
+    "output_item": {
+        "item": "botania:redstone_root"
+    },
+    "duration": 8000
+});
+
 craftingTable.remove(<item:botania:apothecary_default>);
 craftingTable.addShaped("handcrafted_apothecary_default", <item:botania:apothecary_default>,[
     [<tag:items:tfc:rock/bricks>,<tag:items:botania:petals>,<tag:items:tfc:rock/bricks>],
