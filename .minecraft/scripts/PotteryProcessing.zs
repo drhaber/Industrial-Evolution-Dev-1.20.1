@@ -216,7 +216,7 @@ addTFCPotteryCompat("tfc:ceramic/unfired_sword_blade_mold","tfc:ceramic/sword_bl
 addTFCPotteryCompat("tfc:ceramic/unfired_vessel","tfc:ceramic/vessel");
 addTFCPotteryCompat("tfc:ceramic/white_unfired_vessel","tfc:ceramic/white_glazed_vessel");
 addTFCPotteryCompat("tfc:ceramic/yellow_unfired_vessel","tfc:ceramic/yellow_glazed_vessel");
-
+addTFCPotteryCompat("tfc:kaolin_clay","tfc:powder/kaolinite");
 
 function addCaminiteKnapping(Row1 as string, Row2 as string, Row3 as string, Row4 as string, Row5 as string, ItemOut as string) as void { 
 craftingTable.remove(<item:${ItemOut}>);

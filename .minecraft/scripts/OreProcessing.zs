@@ -36,6 +36,8 @@ Jei.hideCategory(<resource:jumbofurnace:jumbo_furnace_upgrade>);
 <recipetype:minecraft:smelting>.remove(<tag:items:tfc:colored_glazed_terracotta>);
 <recipetype:create:splashing>.remove(<tag:items:forge:nuggets>);
 craftingTable.remove(<tag:items:forge:wires>);
+<recipetype:create:mixing>.remove(<tag:items:forge:ingots>);
+
 //<recipetype:create_dd:superheating>.remove(<tag:items:forge:ingots>);
 
 <recipetype:minecraft:blasting>.remove(<item:sgjourney:pure_naquadah>);
