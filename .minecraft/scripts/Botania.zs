@@ -579,7 +579,7 @@ craftingTable.addShaped("handcrafted_mana_sword", <item:botania:manasteel_sword>
       "item": "firmalife:watering_can"
     },
     {
-      "tag": "minecarft:kelp"
+      "tag": "minecraft:kelp"
     }
   ],
   "mana": 5200,
