@@ -1222,6 +1222,39 @@ craftingTable.addShapeless("handcrafted_plate_from_sheet_uranium",<item:immersiv
 craftingTable.addShapeless("handcrafted_plate_from_sheet_constantan",<item:immersiveengineering:plate_constantan>, [<tag:items:forge:sheets/constantan>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
 craftingTable.addShapeless("handcrafted_plate_from_sheet_electrum",<item:immersiveengineering:plate_electrum>, [<tag:items:forge:sheets/electrum>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
 craftingTable.addShapeless("handcrafted_plate_from_sheet_steel",<item:immersiveengineering:plate_steel>, [<tag:items:forge:sheets/steel>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
+/*
+{
+	"type":"createaddition:rolling",
+	"input": {
+      	"tag": "forge:plates/aluminum"
+	},
+	"result": {
+		"item": "immersiveengineering:wire_aluminum",
+		"count": 2
+	},
+	"conditions": [ {
+		"type": "forge:mod_loaded",
+		"modid": "immersiveengineering"
+    } ]
+}
+function addCaminiteKnapping(Row1 as string, Row2 as string, Row3 as string, Row4 as string, Row5 as string, ItemOut as string) as void { 
+craftingTable.remove(<item:${ItemOut}>);
+<recipetype:tfc:knapping>.addJsonRecipe("caminite_knapping_" + ItemOut.replace(":","_"), {
+    "type": "tfc:knapping",
+    "knapping_type": "kubejs:caminite",
+    "pattern": [
+        Row1,
+        Row2,
+        Row3,
+        Row4,
+        Row5,
+      ],
+    "result": {
+        "item": ItemOut
+    }
+});
+}
+*/
 
 /*
 <item:aetherworks:plate_aether>
