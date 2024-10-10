@@ -193,6 +193,24 @@ addTFCPotteryCompat("tfc:ceramic/white_unfired_vessel","tfc:ceramic/white_glazed
 addTFCPotteryCompat("tfc:ceramic/yellow_unfired_vessel","tfc:ceramic/yellow_glazed_vessel");
 addTFCPotteryCompat("tfc:kaolin_clay","tfc:powder/kaolinite");
 
+<recipetype:vintageimprovements:vacuumizing>.addJsonRecipe("red_mud_red_kaolin_clay", {
+	"type":"vintageimprovements:vacuumizing",
+  "heatRequirement": "heated",
+	"ingredients": [ 
+    {
+			"fluid": "kubejs:red_mud",
+			"amount": 100
+		}
+	],
+	"results": [
+		{
+			"item": "tfc:red_kaolin_clay",
+			"count": 1
+		}
+	],
+	"processingTime": 600
+});
+
 function addCaminiteKnapping(Row1 as string, Row2 as string, Row3 as string, Row4 as string, Row5 as string, ItemOut as string) as void { 
 craftingTable.remove(<item:${ItemOut}>);
 <recipetype:tfc:knapping>.addJsonRecipe("caminite_knapping_" + ItemOut.replace(":","_"), {
