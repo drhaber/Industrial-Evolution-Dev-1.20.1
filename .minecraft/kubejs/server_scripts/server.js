@@ -83,8 +83,8 @@ event.add('tfc:usable_on_tool_rack', '#minecraft:tools')
 
 event.add('botania:seed_apothecary_reagent', '#tfc:seeds')
 
-event.add('tfc:saws','aether:obsidian_gloves')
-event.add('tfc:axes_that_log','aether:obsidian_gloves')
+//event.add('tfc:saws','aether:obsidian_gloves')
+//event.add('tfc:axes_that_log','aether:obsidian_gloves')
 event.add('forge:slimeballs','tfc:glue')
 
 event.add('forge:plates','railcraft:tin_plate')
@@ -164,8 +164,8 @@ BlockEvents.rightClicked('block.right_click', event => {
 })
 
 TFCEvents.limitContainer('minecraft:generic_9x3', event => {
-    event.limit('normal', 0, 4)
+    event.limit('normal', 0, 1)
 })
 TFCEvents.limitContainer('minecraft:generic_9x6', event => {
-    event.limit('normal', 0, 4)
+    event.limit('normal', 0, 1)
 })

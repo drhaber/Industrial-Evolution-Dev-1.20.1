@@ -15,6 +15,7 @@ craftingTable.remove(<item:railcraft:nickel_zinc_battery>);
 craftingTable.remove(<item:railcraft:nickel_iron_battery>);
 craftingTable.remove(<item:railcraft:zinc_carbon_battery>);
 craftingTable.remove(<item:railcraft:zinc_silver_battery>);
+//craftingTable.remove(<item:minecraft:rail>);
 
 Jei.hideIngredient(<item:railcraft:nickel_zinc_battery>);
 Jei.hideIngredient(<item:railcraft:nickel_iron_battery>);

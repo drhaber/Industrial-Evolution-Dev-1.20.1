@@ -174,6 +174,85 @@
 			crystal = true
 			glacia = true
 
+	[types.stone_type]
+
+		[types.stone_type.betternether]
+			blue_obsidian = true
+
+		[types.stone_type.betterend]
+			flavolite = true
+			violecite = true
+			sulphuric_rock = true
+			virid_jadestone = true
+			azure_jadestone = true
+			sandy_jadestone = true
+			umbralith = true
+			smaragdant_crystal = true
+
+		[types.stone_type.botania]
+			livingrock = true
+
+		[types.stone_type.northstar]
+			mars_stone = true
+			moon_stone = true
+			venus_stone = true
+			mercury_stone = true
+
+		[types.stone_type.aetherworks]
+			suevite = true
+
+		[types.stone_type.aether]
+			holystone = true
+
+		[types.stone_type.deep_aether]
+			aseterite = true
+			aether_mud = true
+
+		[types.stone_type.aether_redux]
+			sentrite = true
+
+		[types.stone_type.iceandfire]
+			dread_stone = true
+
+		[types.stone_type.absentbydesign]
+			wall_quartz = true
+			gate_stone = true
+			gate_blackstone = true
+			trapdoor_stone = true
+			trapdoor_blackstone = true
+			trapdoor_quartz = true
+
+		[types.stone_type.create]
+			cut_granite = true
+			cut_diorite = true
+			cut_andesite = true
+			cut_calcite = true
+			cut_dripstone = true
+			cut_deepslate = true
+			cut_tuff = true
+			cut_asurine = true
+			cut_crimsite = true
+			cut_limestone = true
+			cut_ochrum = true
+			cut_scoria = true
+			cut_scorchia = true
+			cut_veridium = true
+
+		[types.stone_type.tfmg]
+			cut_bauxite = true
+			cut_galena = true
+
+		[types.stone_type.quark]
+			soul_sandstone = true
+			permafrost = true
+			limestone = true
+			jasper = true
+			shale = true
+			myalite = true
+
+		[types.stone_type.supplementaries]
+			ash = true
+
 #Disables specific entries
 [entries]
 
@@ -365,4 +444,9 @@
 		[entries.wood_type.mcwlights]
 			tiki_torch = true
 			soul_tiki_torch = true
+
+		[entries.wood_type.functionalstorage]
+			1 = true
+			4 = true
+			2 = true
 

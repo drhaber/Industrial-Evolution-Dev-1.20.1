@@ -1,0 +1,35 @@
+{
+  "favorites": [],
+  "lookup_history": [
+    "item:minecraft:crafting_table",
+    "item:createaddition:rolling_mill",
+    "item:immersiveengineering:wire_lead",
+    "item:immersiveengineering:wire_aluminum",
+    "item:immersiveengineering:wire_copper",
+    "#item:forge:wires/copper",
+    {
+      "type": "item",
+      "id": "immersiveengineering:wirecoil_copper",
+      "amount": 64
+    },
+    "item:immersiveengineering:wirecoil_electrum",
+    {
+      "type": "item",
+      "id": "immersiveengineering:wirecutter",
+      "remainder": "item:immersiveengineering:wirecutter{Damage:1}"
+    },
+    "item:immersiveengineering:plate_electrum",
+    "item:kubejs:emptyspool",
+    "#item:forge:wires/electrum",
+    "item:aether:obsidian_gloves{Damage:0}",
+    "item:minecraft:coal"
+  ],
+  "craft_history": [],
+  "recipe_defaults": {
+    "added": [],
+    "tags": {},
+    "resolutions": {},
+    "disabled": []
+  },
+  "hidden_stacks": []
+}

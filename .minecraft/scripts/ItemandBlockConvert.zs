@@ -26,3 +26,4 @@ function addDaisyPurify(BlockIn as string, BlockOut as string) as void {
 addDaisyPurify("tfc:sand","minecraft:sand");
 addDaisyPurify("tfc:cobblestone","minecraft:cobblestone");
 addDaisyPurify("tfc:rock/raw","minecraft:stone");
+addDaisyPurify("tfc:rock/gravel","minecraft:gravel");

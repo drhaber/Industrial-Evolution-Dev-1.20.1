@@ -1211,17 +1211,17 @@ addcreatemetallurgymelting("kubejs:molten_naquadah","sgjourney:raw_naquadah",100
 });
 
 //Plates
-craftingTable.addShapeless("handcrafted_plate_from_sheet_gold",<item:immersiveengineering:plate_gold>, [<tag:items:forge:sheets/gold>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
-craftingTable.addShapeless("handcrafted_plate_from_sheet_wrought_iron",<item:immersiveengineering:plate_iron>, [<tag:items:forge:sheets/wrought_iron>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
-craftingTable.addShapeless("handcrafted_plate_from_sheet_copper",<item:immersiveengineering:plate_copper>, [<tag:items:forge:sheets/copper>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
-craftingTable.addShapeless("handcrafted_plate_from_sheet_aluminum",<item:immersiveengineering:plate_aluminum>, [<tag:items:forge:sheets/aluminum>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
-craftingTable.addShapeless("handcrafted_plate_from_sheet_lead",<item:immersiveengineering:plate_lead>, [<tag:items:forge:sheets/lead>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
-craftingTable.addShapeless("handcrafted_plate_from_sheet_silver",<item:immersiveengineering:plate_silver>, [<tag:items:forge:sheets/silver>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
-craftingTable.addShapeless("handcrafted_plate_from_sheet_nickel",<item:immersiveengineering:plate_nickel>, [<tag:items:forge:sheets/nickel>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
-craftingTable.addShapeless("handcrafted_plate_from_sheet_uranium",<item:immersiveengineering:plate_uranium>, [<tag:items:forge:sheets/uranium>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
-craftingTable.addShapeless("handcrafted_plate_from_sheet_constantan",<item:immersiveengineering:plate_constantan>, [<tag:items:forge:sheets/constantan>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
-craftingTable.addShapeless("handcrafted_plate_from_sheet_electrum",<item:immersiveengineering:plate_electrum>, [<tag:items:forge:sheets/electrum>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
-craftingTable.addShapeless("handcrafted_plate_from_sheet_steel",<item:immersiveengineering:plate_steel>, [<tag:items:forge:sheets/steel>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
+craftingTable.addShapeless("handcrafted_plate_from_sheet_gold",<item:immersiveengineering:plate_gold>*2, [<tag:items:forge:sheets/gold>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
+craftingTable.addShapeless("handcrafted_plate_from_sheet_wrought_iron",<item:immersiveengineering:plate_iron>*2, [<tag:items:forge:sheets/wrought_iron>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
+craftingTable.addShapeless("handcrafted_plate_from_sheet_copper",<item:immersiveengineering:plate_copper>*2, [<tag:items:forge:sheets/copper>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
+craftingTable.addShapeless("handcrafted_plate_from_sheet_aluminum",<item:immersiveengineering:plate_aluminum>*2, [<tag:items:forge:sheets/aluminum>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
+craftingTable.addShapeless("handcrafted_plate_from_sheet_lead",<item:immersiveengineering:plate_lead>*2, [<tag:items:forge:sheets/lead>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
+craftingTable.addShapeless("handcrafted_plate_from_sheet_silver",<item:immersiveengineering:plate_silver>*2, [<tag:items:forge:sheets/silver>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
+craftingTable.addShapeless("handcrafted_plate_from_sheet_nickel",<item:immersiveengineering:plate_nickel>*2, [<tag:items:forge:sheets/nickel>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
+craftingTable.addShapeless("handcrafted_plate_from_sheet_uranium",<item:immersiveengineering:plate_uranium>*2, [<tag:items:forge:sheets/uranium>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
+craftingTable.addShapeless("handcrafted_plate_from_sheet_constantan",<item:immersiveengineering:plate_constantan>*2, [<tag:items:forge:sheets/constantan>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
+craftingTable.addShapeless("handcrafted_plate_from_sheet_electrum",<item:immersiveengineering:plate_electrum>*2, [<tag:items:forge:sheets/electrum>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
+craftingTable.addShapeless("handcrafted_plate_from_sheet_steel",<item:immersiveengineering:plate_steel>*2, [<tag:items:forge:sheets/steel>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
 /*
 {
 	"type":"createaddition:rolling",
