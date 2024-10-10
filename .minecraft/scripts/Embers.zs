@@ -189,6 +189,29 @@ craftingTable.addShaped("handcrafted_basin_bin", <item:embers:bin>,[
   [<tag:items:forge:sheets/lead>,<item:minecraft:air>,<tag:items:forge:sheets/lead>],
   [<tag:items:forge:sheets/lead>,<tag:items:forge:sheets/lead>,<tag:items:forge:sheets/lead>]]);  
 
+craftingTable.remove(<item:embers:ember_activator>);
+craftingTable.addShaped("handcrafted_ember_activator", <item:embers:ember_activator>,[
+  [<item:minecraft:air>,<item:tfc:metal/bars/copper>,<item:minecraft:air>],
+  [<tag:items:forge:sheets/lead>,<item:embers:caminite_plate>,<tag:items:forge:sheets/lead>],
+  [<item:embers:item_pipe>,<item:embers:caminite_ring>,<item:embers:item_pipe>]]);    
+
+craftingTable.remove(<item:embers:ember_emitter>);
+craftingTable.addShaped("handcrafted_ember_emitter", <item:embers:ember_emitter>,[
+  [<item:minecraft:air>,<item:firmaciv:copper_bolt>,<item:minecraft:air>],
+  [<item:embers:caminite_plate>,<tag:items:forge:sheets/lead>,<item:embers:caminite_plate>],
+  [<item:embers:caminite_plate>,<item:tfc:metal/sheet/copper>,<item:embers:caminite_plate>]]);  
+
+craftingTable.remove(<item:embers:ember_receiver>);
+craftingTable.addShaped("handcrafted_ember_receiver", <item:embers:ember_receiver>,[
+  [<tag:items:forge:rods/lead>,<item:firmaciv:copper_bolt>,<tag:items:forge:rods/lead>],
+  [<item:embers:caminite_plate>,<tag:items:forge:sheets/lead>,<item:embers:caminite_plate>]]);  
+
+craftingTable.remove(<item:embers:pressure_refinery>);
+craftingTable.addShaped("handcrafted_pressure_refinery", <item:embers:pressure_refinery>,[
+  [<tag:items:forge:ingots/caminite_brick>,<item:tfc:metal/bars/copper>,<tag:items:forge:ingots/caminite_brick>],
+  [<tag:items:forge:sheets/lead>,<item:minecraft:air>,<tag:items:forge:sheets/lead>],
+  [<item:embers:item_pipe>,<tag:items:forge:storage_blocks/copper>,<item:embers:item_pipe>]]);  
+
 craftingTable.addShapeless("handcrafted_ashen_string", <item:kubejs:ashen_string>, [<tag:items:forge:string>,<tag:items:forge:dusts/ash>]);    
 
 <recipetype:embers:alchemy>.remove(<item:embers:ashen_fabric>);

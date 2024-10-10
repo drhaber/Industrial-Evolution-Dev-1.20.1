@@ -186,4 +186,5 @@ craftingTable.remove(<item:immersiveengineering:capacitor_hv>);
 craftingTable.addShapedMirrored("handcrafted_capacitor_hv", MirrorAxis.HORIZONTAL,<item:immersiveengineering:capacitor_hv>, [
     [<tag:items:forge:rods/electrum>,<item:railcraft:charge_terminal>,<tag:items:forge:rods/electrum>],
     [<item:railcraft:invar_electrode>,<item:tfmg:lithium_charge>,<item:railcraft:carbon_electrode>],
-    [<item:tfc_ie_addon:treated_wood_lumber>,<item:tfc_ie_addon:treated_wood_lumber>,<item:tfc_ie_addon:treated_wood_lumber>]]);
+    [<item:tfc_ie_addon:treated_wood_lumber>,<item:tfc_ie_addon:treated_wood_lumber>,<item:tfc_ie_addon:treated_wood_lumber>]]); 
+    
