@@ -176,7 +176,7 @@ craftingTable.addShapeless("map_1", <item:minecraft:map>, [<tag:items:forge:dyes
     },
     "duration": 8000
 });
-
+/*
 <recipetype:tfc:barrel_sealed>.addJsonRecipe("ash2ash", {
     "type": "tfc:barrel_sealed",
     "input_item": {
@@ -197,7 +197,7 @@ craftingTable.addShapeless("map_1", <item:minecraft:map>, [<tag:items:forge:dyes
     },
     "duration": 8000
 });
-
+*/
 craftingTable.remove(<item:minecraft:torch>);
 craftingTable.addShaped("handcrafted_everlasting_torch", <item:minecraft:torch>,
 [[<item:embers:ember_crystal>],

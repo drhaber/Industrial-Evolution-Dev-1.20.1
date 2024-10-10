@@ -70,3 +70,140 @@ craftingTable.remove(<item:embers:tinker_hammer>);
 craftingTable.addShaped("handcrafted_tinker_hammer", <item:embers:tinker_hammer>,[
     [<tag:items:forge:double_ingots/lead>],
     [<tag:items:forge:rods/treated_wood>]]);  
+
+craftingTable.remove(<item:embers:field_chart>);
+craftingTable.addShaped("handcrafted_field_chart", <item:embers:field_chart>,[
+  [<item:embers:archaic_edge>,<item:tfc:lens>,<item:embers:archaic_edge>],
+  [<item:embers:archaic_edge>,<item:embers:ancient_motive_core>,<item:embers:archaic_edge>],
+  [<item:embers:archaic_edge>,<item:embers:resonating_bell>,<item:embers:archaic_edge>]]);      
+
+craftingTable.remove(<item:embers:resonating_bell>);
+<recipetype:vintageimprovements:vibrating>.addJsonRecipe("vibrating_resonating_bell", {
+	"type":"vintageimprovements:vibrating",
+	"ingredients": [ 
+		{
+			"tag": "tfc:bells"
+		}
+	],
+	"results": [
+		{
+			"item": "embers:resonating_bell",
+			"count": 1
+		}
+	],
+	"processingTime": 800
+});
+
+craftingTable.remove(<item:embers:ember_dial>);
+craftingTable.addShaped("handcrafted_ember_dial", <item:embers:ember_dial>,[
+  [<item:ae2:crank>],
+  [<item:embers:caminite_plate>],
+  [<tag:items:forge:sheets/copper>]]);    
+
+craftingTable.remove(<item:embers:item_dial>);
+craftingTable.addShaped("handcrafted_item_dial", <item:embers:item_dial>,[
+  [<item:ae2:crank>],
+  [<item:embers:caminite_plate>],
+  [<tag:items:forge:sheets/lead>]]);  
+
+craftingTable.remove(<item:embers:fluid_dial>);
+craftingTable.addShaped("handcrafted_fluid_dial", <item:embers:fluid_dial>,[
+  [<item:ae2:crank>],
+  [<item:embers:caminite_plate>],
+  [<tag:items:forge:sheets/cast_iron>]]);        
+
+craftingTable.remove(<item:aetherworks:heat_dial>);
+craftingTable.addShaped("handcrafted_heat_dial", <item:aetherworks:heat_dial>,[
+  [<item:ae2:crank>],
+  [<item:embers:caminite_plate>],
+  [<tag:items:forge:sheets/bronze>]]);        
+
+craftingTable.remove(<item:embers:clockwork_attenuator>);
+craftingTable.addShaped("handcrafted_clockwork_attenuator", <item:embers:clockwork_attenuator>,[
+  [<item:ae2:crank>],
+  [<item:embers:caminite_plate>],
+  [<tag:items:forge:sheets/chromium>]]);     
+
+craftingTable.remove(<item:embers:atmospheric_gauge>);
+craftingTable.addShaped("handcrafted_atmospheric_gauge", <item:embers:atmospheric_gauge>,[
+  [<item:minecraft:air>,<item:ae2:crank>,<item:minecraft:air>],
+  [<item:firmaciv:copper_bolt>,<item:embers:archaic_circuit>,<item:firmaciv:copper_bolt>],
+  [<tag:items:forge:ingots/archaic_brick>,<tag:items:forge:ingots/archaic_brick>,<tag:items:forge:ingots/archaic_brick>]]);      
+
+craftingTable.remove(<item:embers:archaic_circuit>);
+craftingTable.addShaped("handcrafted_archaic_circuit", <item:embers:archaic_circuit>,[
+  [<tag:items:forge:ingots/archaic_brick>,<tag:items:forge:wires/lead>,<tag:items:forge:ingots/archaic_brick>],
+  [<tag:items:forge:wires/lead>,<item:embers:ancient_motive_core>,<tag:items:forge:wires/lead>],
+  [<tag:items:forge:ingots/archaic_brick>,<tag:items:forge:wires/lead>,<tag:items:forge:ingots/archaic_brick>]]);       
+
+craftingTable.remove(<item:embers:ashen_goggles>);
+craftingTable.addShaped("handcrafted_ashen_goggles", <item:embers:ashen_goggles>,[
+  [<item:kubejs:ashen_string>,<item:kubejs:ashen_string>,<item:kubejs:ashen_string>],
+  [<tag:items:forge:plates/dawnstone>,<item:minecraft:air>,<tag:items:forge:plates/dawnstone>],
+  [<item:tfc:lens>,<item:embers:archaic_circuit>,<item:tfc:lens>]]);       
+
+
+craftingTable.remove(<item:embers:fluid_pipe>);
+craftingTable.addShaped("handcrafted_fluid_pipe", <item:embers:fluid_pipe>,[
+  [<item:minecraft:air>,<tag:items:forge:sheets/lead>,<item:minecraft:air>],
+  [<tag:items:forge:sheets/lead>,<item:minecraft:air>,<tag:items:forge:sheets/lead>],
+  [<item:minecraft:air>,<tag:items:forge:sheets/lead>,<item:minecraft:air>]]);    
+
+craftingTable.remove(<item:embers:item_pipe>);
+craftingTable.addShaped("handcrafted_item_pipe", <item:embers:item_pipe>,[
+  [<item:minecraft:air>,<tag:items:forge:sheets/cast_iron>,<item:minecraft:air>],
+  [<tag:items:forge:sheets/cast_iron>,<item:minecraft:air>,<tag:items:forge:sheets/cast_iron>],
+  [<item:minecraft:air>,<tag:items:forge:sheets/cast_iron>,<item:minecraft:air>]]);    
+
+craftingTable.remove(<item:embers:melter>);
+craftingTable.addShaped("handcrafted_embers_melter", <item:embers:melter>,[
+  [<item:minecraft:air>,<item:embers:caminite_valve>,<item:minecraft:air>],
+  [<item:minecraft:air>,<item:embers:caminite_ring>,<item:minecraft:air>],
+  [<tag:items:forge:sheets/cast_iron>,<item:embers:superheater>,<tag:items:forge:sheets/cast_iron>]]);    
+
+craftingTable.remove(<item:embers:geologic_separator>);
+craftingTable.addShaped("handcrafted_geologic_separator", <item:embers:geologic_separator>,[
+  [<item:embers:fluid_pipe>,<item:tfc:metal/double_sheet/cast_iron>,<item:minecraft:air>],
+  [<item:minecraft:air>,<item:embers:caminite_ring>,<item:minecraft:air>]]);    
+
+craftingTable.remove(<item:embers:stamper>);
+craftingTable.addShaped("handcrafted_embers_stamper", <item:embers:stamper>,[
+  [<tag:items:forge:storage_blocks/copper>],
+  [<item:embers:caminite_ring>],
+  [<tag:items:forge:double_ingots/lead>]]);  
+
+craftingTable.remove(<item:embers:stamp_base>);
+craftingTable.addShaped("handcrafted_embers_stamp_base", <item:embers:stamp_base>,[
+  [<tag:items:forge:double_sheets/cast_iron>],
+  [<item:embers:caminite_ring>],
+  [<tag:items:forge:double_ingots/lead>]]);  
+
+craftingTable.remove(<item:embers:fluid_vessel>);
+craftingTable.addShaped("handcrafted_embers_fluid_vessel", <item:embers:fluid_vessel>,[
+  [<tag:items:forge:double_sheets/cast_iron>],
+  [<item:aetherworks:prism_support>],
+  [<item:embers:caminite_valve>]]); 
+
+craftingTable.remove(<item:embers:bin>);
+craftingTable.addShaped("handcrafted_basin_bin", <item:embers:bin>,[
+  [<tag:items:forge:sheets/lead>,<item:minecraft:air>,<tag:items:forge:sheets/lead>],
+  [<tag:items:forge:sheets/lead>,<tag:items:forge:sheets/lead>,<tag:items:forge:sheets/lead>]]);  
+
+craftingTable.addShapeless("handcrafted_ashen_string", <item:kubejs:ashen_string>, [<tag:items:forge:string>,<tag:items:forge:dusts/ash>]);    
+
+<recipetype:embers:alchemy>.remove(<item:embers:ashen_fabric>);
+<recipetype:tfc:loom>.addJsonRecipe("ashen_string", {
+    "type": "tfc:loom",
+    "ingredient": {
+       "ingredient": {
+           "item": "kubejs:ashen_string"
+        },
+        "count": 8
+    },
+    "result": {
+        "item": "embers:ashen_fabric",
+        "count": 1
+    },
+    "steps_required": 8,
+    "in_progress_texture": "embers:block/ashen_stone"
+});
