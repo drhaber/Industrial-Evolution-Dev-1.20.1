@@ -71,8 +71,8 @@ craftingTable.removeByName("railcraft:brass_ingot_crafted_with_ingots");
 
 <recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/steel");
 //<recipetype:immersiveengineering:arc_furnace>.removeByName("tfc_ie_addon:arc_furnace/steel");
+<recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/dust_iron");
 <recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/dust_steel");
-
 <recipetype:immersiveengineering:arc_furnace>.removeByName("tfc_ie_addon:arc_furnace/bauxite");
 <recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/raw_block_aluminum");
 <recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/ore_aluminum");
@@ -351,7 +351,7 @@ addcreatemetallurgymelting("tfc:metal/silver","create:crushed_raw_silver",5);
 addcreatemetallurgymelting("tfc:metal/tin","create:crushed_raw_tin",5);
 addcreatemetallurgymelting("tfc_ie_addon:metal/lead","create:crushed_raw_lead",5);
 //addcreatemetallurgymelting("tfc_ie_addon:metal/aluminum","create:crushed_raw_aluminum",5);
-addcreatemetallurgymelting("tfc_ie_addon:metal/uranium","create:crushed_raw_uranium",5);
+//addcreatemetallurgymelting("tfc_ie_addon:metal/uranium","create:crushed_raw_uranium",5);
 addcreatemetallurgymelting("tfc:metal/nickel","create:crushed_raw_nickel",5);
 
 addcreatemetallurgymelting("tfc:metal/copper","tfc:ore/small_native_copper",10);
@@ -413,7 +413,7 @@ addEmbersmelting("tfc:metal/silver","create:crushed_raw_silver",5);
 addEmbersmelting("tfc:metal/tin","create:crushed_raw_tin",5);
 addEmbersmelting("tfc_ie_addon:metal/lead","create:crushed_raw_lead",5);
 //addEmbersmelting("tfc_ie_addon:metal/aluminum","create:crushed_raw_aluminum",5);
-addEmbersmelting("tfc_ie_addon:metal/uranium","create:crushed_raw_uranium",5);
+//addEmbersmelting("tfc_ie_addon:metal/uranium","create:crushed_raw_uranium",5);
 addEmbersmelting("tfc:metal/nickel","create:crushed_raw_nickel",5);
 
 addEmbersmelting("tfc:metal/copper","tfc:ore/small_native_copper",10);
@@ -552,6 +552,27 @@ addIEOrecrushing("tfc_ie_addon:ore/small_galena","create:crushed_raw_lead",2,0.2
 addIEOrecrushing("tfc_ie_addon:ore/small_bauxite","tfc_ie_addon:powder/bauxite",2,0.2);
 addIEOrecrushing("tfc_ie_addon:ore/small_uraninite","create:crushed_raw_uranium",2,0.2);
 addIEOrecrushing("tfc:ore/small_garnierite","create:crushed_raw_nickel",2,0.2);
+
+
+addOrecrushing("create:crushed_raw_iron","immersiveengineering:dust_iron");
+addOrecrushing("create:crushed_raw_gold","tfc:powder/native_gold");
+addOrecrushing("create:crushed_raw_copper","tfc:powder/native_copper");
+addOrecrushing("create:crushed_raw_zinc","tfc:powder/sphalerite");
+addOrecrushing("create:crushed_raw_silver","tfc:powder/native_silver");
+addOrecrushing("create:crushed_raw_tin","tfc:powder/cassiterite");
+addOrecrushing("create:crushed_raw_lead","tfc_ie_addon:powder/galena");
+addOrecrushing("create:crushed_raw_uranium","tfc_ie_addon:powder/uraninite");
+addOrecrushing("create:crushed_raw_nickel","tfc:powder/garnierite");
+
+addIEOrecrushing("create:crushed_raw_iron","immersiveengineering:dust_iron",2,0);
+addIEOrecrushing("create:crushed_raw_gold","tfc:powder/native_gold",2,0);
+addIEOrecrushing("create:crushed_raw_copper","tfc:powder/native_copper",2,0);
+addIEOrecrushing("create:crushed_raw_zinc","tfc:powder/sphalerite",2,0);
+addIEOrecrushing("create:crushed_raw_silver","tfc:powder/native_silver",2,0);
+addIEOrecrushing("create:crushed_raw_tin","tfc:powder/cassiterite",2,0);
+addIEOrecrushing("create:crushed_raw_lead","tfc_ie_addon:powder/galena",2,0);
+addIEOrecrushing("create:crushed_raw_uranium","tfc_ie_addon:powder/uraninite",2,0);
+addIEOrecrushing("create:crushed_raw_nickel","tfc:powder/garnierite",2,0);
 
 //lead
 addOrecrushing("tfc_ie_addon:ore/poor_galena","tfc_ie_addon:ore/small_galena");
