@@ -26,6 +26,30 @@ craftingTable.addShaped("handcrafted_create_watermill", <item:create:water_wheel
     [<tag:items:tfc:lumber>,<item:create:shaft>,<tag:items:tfc:lumber>],
     [<tag:items:tfc:lumber>,<tag:items:tfc:lumber>,<tag:items:tfc:lumber>]]);    
 
+craftingTable.remove(<item:create:deployer>);
+craftingTable.addShaped("handcrafted_create_deployer", <item:create:deployer>,[
+    [<item:immersiveengineering:electron_tube>],
+    [<item:create:andesite_casing>],
+    [<item:create:brass_hand>]]); 
+
+craftingTable.remove(<item:create:brass_hand>);
+<recipetype:tfc:anvil>.addJsonRecipe("anvil_create_brass_hand", {
+  "type": "tfc:anvil",
+  "input": {
+    "tag": "forge:double_ingots/brass"
+  },
+  "result": {
+    "item": "create:brass_hand"
+  },
+  "tier": 2,
+  "rules": [
+    "bend_last",
+    "bend_second_last",
+    "bend_third_last"
+  ]
+}
+);
+
 //Generators
 craftingTable.remove(<item:create_new_age:carbon_brushes>);
 craftingTable.addShaped("handcrafted_carbon_brushes", <item:create_new_age:carbon_brushes>, [

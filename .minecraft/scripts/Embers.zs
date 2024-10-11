@@ -212,10 +212,27 @@ craftingTable.addShaped("handcrafted_pressure_refinery", <item:embers:pressure_r
   [<tag:items:forge:sheets/lead>,<item:minecraft:air>,<tag:items:forge:sheets/lead>],
   [<item:embers:item_pipe>,<tag:items:forge:storage_blocks/copper>,<item:embers:item_pipe>]]);  
 
+craftingTable.remove(<item:embers:ember_ejector>);
+craftingTable.addShaped("handcrafted_ember_ejector", <item:embers:ember_ejector>,[
+  [<item:minecraft:air>,<item:embers:ember_emitter>,<item:minecraft:air>],
+  [<tag:items:forge:rods/lead>,<item:embers:dawnstone_ingot>,<tag:items:forge:rods/lead>],
+  [<item:minecraft:air>,<item:embers:caminite_ring>,<item:minecraft:air>]]);    
+
+craftingTable.remove(<item:embers:heat_exchanger>);
+craftingTable.addShaped("handcrafted_heat_exchanger", <item:embers:heat_exchanger>,[
+  [<tag:items:forge:rods/brass>,<item:vintageimprovements:brass_spring>,<item:embers:superheater>],
+  [<item:minecraft:air>,<tag:items:forge:sheets/lead>,<item:embers:superheater>],
+  [<tag:items:forge:rods/brass>,<item:vintageimprovements:brass_spring>,<item:embers:superheater>]]);    
+
+craftingTable.remove(<item:embers:mechanical_pump>);
+craftingTable.addShaped("handcrafted_mechanical_pump", <item:embers:mechanical_pump>,[
+  [<item:minecraft:air>,<item:kubejs:magic_motion_apparatus>,<item:minecraft:air>],
+  [<item:minecraft:air>,<item:embers:mechanical_core>,<item:minecraft:air>],
+  [<item:embers:fluid_pipe>,<item:createdieselgenerators:engine_piston>,<item:embers:fluid_pipe>]]);    
+
 craftingTable.addShapeless("handcrafted_ashen_string", <item:kubejs:ashen_string>, [<tag:items:forge:string>,<tag:items:forge:dusts/ash>]);    
 
 craftingTable.remove(<item:embers:glimmer_lamp>);
-//craftingTable.addShapeless("handcrafted_glimmer_lamp", <item:embers:glimmer_lamp>, [<item:tfc:metal/lamp/wrought_iron>,<item:embers:glimmer_crystal>]);    
 
 craftingTable.addShapeless("iron_sword_repair", <item:embers:glimmer_lamp>, 
 [<item:embers:glimmer_crystal>.anyDamage(),<item:tfc:metal/lamp/wrought_iron>],
