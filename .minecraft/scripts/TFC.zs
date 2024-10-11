@@ -13,48 +13,38 @@ import mods.jeitweaker.Jei;
 craftingTable.remove(<item:minecraft:string>);
 craftingTable.addShapeless("string_from_jute", <item:minecraft:string>, [<tag:items:forge:fiber_hemp>,<item:tfc:spindle>.anyDamage().transformDamage()]);
 
-<recipetype:tfc:quern>.addJsonRecipe("sawdust_from_sticks", {
+function addGrinding(ItemIn as string, ItemOut as string, QtyO as int) as void { 
+<recipetype:tfc:quern>.addJsonRecipe("quern_grind_" + ItemIn.replace(":","_") + ItemOut.replace(":","_"), {
     "type": "tfc:quern",
     "ingredient": {
-        "tag": "forge:rods/wooden"
+        "tag": ItemIn
     },
     "result": {
-        "item": "immersiveengineering:dust_wood"
+        "item": ItemOut,
+        "count": QtyO
     }
 });
+<recipetype:create:milling>.addJsonRecipe("milling_grind_" + ItemIn.replace(":","_") + ItemOut.replace(":","_"), {
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "tag": ItemIn
+    }
+  ],
+  "processingTime": 50,
+  "results": [
+    {
+      "count": QtyO,
+      "item": ItemOut
+    }
+  ]
+});
+}
 
-<recipetype:tfc:quern>.addJsonRecipe("sawdust_from_logs", {
-    "type": "tfc:quern",
-    "ingredient": {
-        "tag": "minecraft:logs"
-    },
-    "result": {
-        "item": "immersiveengineering:dust_wood",
-        "count": 3
-    }
-});
-
-<recipetype:tfc:quern>.addJsonRecipe("sawdust_from_lumber", {
-    "type": "tfc:quern",
-    "ingredient": {
-        "tag": "tfc:lumber"
-    },
-    "result": {
-        "item": "immersiveengineering:dust_wood",
-        "count": 2
-    }
-});
-
-<recipetype:tfc:quern>.addJsonRecipe("sawdust_from_planks", {
-    "type": "tfc:quern",
-    "ingredient": {
-        "tag": "minecraft:planks"
-    },
-    "result": {
-        "item": "immersiveengineering:dust_wood",
-        "count": 4
-    }
-});
+addGrinding("forge:rods/wooden","immersiveengineering:dust_wood",1);
+addGrinding("minecraft:logs","immersiveengineering:dust_wood",3);
+addGrinding("tfc:lumber","immersiveengineering:dust_wood",2);
+addGrinding("minecraft:planks","immersiveengineering:dust_wood",4);
 
 <recipetype:tfc:loom>.addJsonRecipe("woven_memory", {
     "type": "tfc:loom",
