@@ -23,12 +23,12 @@ import stdlib.List;
 loot.modifiers.register(
     "village_toolsmith_fire_clay",
     LootConditions.only(LootTableIdLootCondition.create(<resource:minecraft:chests/village/village_toolsmith>)),
-    CommonLootModifiers.addWithChance(<item:tfc:fire_clay> * 5 % 75)
+    CommonLootModifiers.addWithRandomAmount(<item:tfc:fire_clay>, 1, 5)
 );
 loot.modifiers.register(
     "village_weaponsmith_fire_clay",
     LootConditions.only(LootTableIdLootCondition.create(<resource:minecraft:chests/village/village_weaponsmith>)),
-    CommonLootModifiers.addWithChance(<item:tfc:fire_clay> * 5 % 75)
+    CommonLootModifiers.addWithRandomAmount(<item:tfc:fire_clay>, 1, 7)
 );
 
 loot.modifiers.register(

@@ -10,10 +10,6 @@ import crafttweaker.api.tag.manager.ITagManager;
 import crafttweaker.api.bracket.BracketHandlers;
 import mods.jeitweaker.Jei;
 
-<recipetype:jumbofurnace:jumbo_smelting>.removeAll();
-Jei.hideCategory(<resource:jumbofurnace:jumbo_smelting>);
-Jei.hideCategory(<resource:jumbofurnace:jumbo_furnace_upgrade>);
-
 <recipetype:railcraft:rolling>.remove(<tag:items:forge:plates>);
 <recipetype:create:pressing>.remove(<tag:items:forge:plates>);
 <recipetype:create:pressing>.remove(<item:createdeco:zinc_sheet>);

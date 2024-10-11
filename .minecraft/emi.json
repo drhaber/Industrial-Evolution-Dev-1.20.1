@@ -1,6 +1,16 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:tfc:wood/log/willow",
+    "item:tfc:fire_clay",
+    "item:minecraft:torch",
+    "item:quark:cobblestone_bricks_stairs",
+    "item:minecraft:stripped_spruce_log",
+    "item:tfc:metal/pickaxe_head/copper",
+    "item:minecraft:netherite_scrap",
+    "item:minecraft:stone",
+    "item:minecraft:bamboo_slab",
+    "item:quark:blossom_pressure_plate",
     "item:minecraft:crafting_table",
     "item:createaddition:rolling_mill",
     "item:immersiveengineering:wire_lead",
@@ -29,7 +39,9 @@
     "added": [],
     "tags": {},
     "resolutions": {},
-    "disabled": []
+    "disabled": [
+      "minecraft:netherite_scrap"
+    ]
   },
   "hidden_stacks": []
 }

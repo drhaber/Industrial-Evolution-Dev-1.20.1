@@ -33,6 +33,6 @@ gameplay = true
 archaeology = true
 
 [logUnstranslatedTables]
-chest = false
+chest = true
 gameplay = false
 archaeology = false
