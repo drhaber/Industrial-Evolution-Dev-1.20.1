@@ -145,13 +145,13 @@ craftingTable.addShaped("handcrafted_ashen_goggles", <item:embers:ashen_goggles>
 
 
 craftingTable.remove(<item:embers:item_pipe>);
-craftingTable.addShaped("handcrafted_item_pipe", <item:embers:item_pipe>,[
+craftingTable.addShaped("handcrafted_item_pipe", <item:embers:item_pipe>*16,[
   [<item:minecraft:air>,<tag:items:forge:sheets/lead>,<item:minecraft:air>],
   [<tag:items:forge:sheets/lead>,<item:minecraft:air>,<tag:items:forge:sheets/lead>],
   [<item:minecraft:air>,<tag:items:forge:sheets/lead>,<item:minecraft:air>]]);    
 
 craftingTable.remove(<item:embers:fluid_pipe>);
-craftingTable.addShaped("handcrafted_fluid_pipe", <item:embers:fluid_pipe>,[
+craftingTable.addShaped("handcrafted_fluid_pipe", <item:embers:fluid_pipe>*16,[
   [<item:minecraft:air>,<tag:items:forge:sheets/cast_iron>,<item:minecraft:air>],
   [<tag:items:forge:sheets/cast_iron>,<item:minecraft:air>,<tag:items:forge:sheets/cast_iron>],
   [<item:minecraft:air>,<tag:items:forge:sheets/cast_iron>,<item:minecraft:air>]]);    

@@ -296,17 +296,39 @@ function addarcfurnacesmelting(ItemOut as string, ItemIn as string, QtyI as int)
 }
 );
 }
+function addTFCoresmelting(FluidOut as string, ItemIn as string, AmountO as int, Temp as int) as void { 
+<recipetype:tfc:heating>.addJsonRecipe("tfc_smelting" + ItemIn.replace(":","_") + FluidOut.replace(":","_"), {
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": ItemIn
+  },
+  "result_fluid": {
+    "fluid": FluidOut,
+    "amount": AmountO
+  },
+  "temperature": Temp
+});}
 
-<item:create:crushed_raw_iron>.addTooltip("Melts into 5 mB Cast Iron");
-<item:create:crushed_raw_gold>.addTooltip("Melts into 5 mB Gold");
-<item:create:crushed_raw_copper>.addTooltip("Melts into 5 mB Copper");
-<item:create:crushed_raw_zinc>.addTooltip("Melts into 5 mB Zinc");
-<item:create:crushed_raw_silver>.addTooltip("Melts into 5 mB Silver");
-<item:create:crushed_raw_tin>.addTooltip("Melts into 5 mB Tin");
-<item:create:crushed_raw_lead>.addTooltip("Melts into 5 mB Lead");
+addTFCoresmelting("tfc:metal/cast_iron","create:crushed_raw_iron",5,1535);
+addTFCoresmelting("tfc:metal/gold","create:crushed_raw_gold",5,1060);
+addTFCoresmelting("tfc:metal/copper","create:crushed_raw_copper",5,1080);
+addTFCoresmelting("tfc:metal/zinc","create:crushed_raw_zinc",5,420);
+addTFCoresmelting("tfc:metal/silver","create:crushed_raw_silver",5,961);
+addTFCoresmelting("tfc:metal/tin","create:crushed_raw_tin",5,230);
+addTFCoresmelting("tfc_ie_addon:metal/lead","create:crushed_raw_lead",5,500);
+addTFCoresmelting("tfc:metal/nickel","create:crushed_raw_nickel",5,1453);
+
+//<item:create:crushed_raw_iron>.addTooltip("Melts into 5 mB Cast Iron");
+//<item:create:crushed_raw_gold>.addTooltip("Melts into 5 mB Gold");
+//<item:create:crushed_raw_copper>.addTooltip("Melts into 5 mB Copper");
+//<item:create:crushed_raw_zinc>.addTooltip("Melts into 5 mB Zinc");
+//<item:create:crushed_raw_silver>.addTooltip("Melts into 5 mB Silver");
+//<item:create:crushed_raw_tin>.addTooltip("Melts into 5 mB Tin");
+//<item:create:crushed_raw_lead>.addTooltip("Melts into 5 mB Lead");
 //<item:create:crushed_raw_aluminum>.addTooltip("Melts into 5 mB Aluminum");
-<item:create:crushed_raw_uranium>.addTooltip("Melts into 5 mB Uranium");
-<item:create:crushed_raw_nickel>.addTooltip("Melts into 5 mB Nickel");
+//<item:create:crushed_raw_uranium>.addTooltip("Melts into 5 mB Uranium");
+//<item:create:crushed_raw_nickel>.addTooltip("Melts into 5 mB Nickel");
 
 addarcfurnacesmelting("tfc:metal/ingot/cast_iron","create:crushed_raw_iron",20);
 addarcfurnacesmelting("tfc:metal/ingot/gold","create:crushed_raw_gold",20);
