@@ -214,6 +214,16 @@ craftingTable.addShaped("handcrafted_pressure_refinery", <item:embers:pressure_r
 
 craftingTable.addShapeless("handcrafted_ashen_string", <item:kubejs:ashen_string>, [<tag:items:forge:string>,<tag:items:forge:dusts/ash>]);    
 
+craftingTable.remove(<item:embers:glimmer_lamp>);
+//craftingTable.addShapeless("handcrafted_glimmer_lamp", <item:embers:glimmer_lamp>, [<item:tfc:metal/lamp/wrought_iron>,<item:embers:glimmer_crystal>]);    
+
+craftingTable.addShapeless("iron_sword_repair", <item:embers:glimmer_lamp>, 
+[<item:embers:glimmer_crystal>.anyDamage(),<item:tfc:metal/lamp/wrought_iron>],
+(usualOut as IItemStack, inputs as IItemStack[]) => {
+	var newDamage = inputs[0].damage;
+    	return usualOut.withDamage(newDamage);
+});
+
 <recipetype:embers:alchemy>.remove(<item:embers:ashen_fabric>);
 <recipetype:tfc:loom>.addJsonRecipe("ashen_string", {
     "type": "tfc:loom",
