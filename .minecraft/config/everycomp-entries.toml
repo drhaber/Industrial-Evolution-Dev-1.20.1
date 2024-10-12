@@ -17,19 +17,6 @@
 			argyre = true
 			wilter = true
 
-		[types.leaves_type.betternether]
-			willow = true
-			rubeus = true
-			anchor_tree = true
-			nether_sakura = true
-
-		[types.leaves_type.betterend]
-			pythadendron = true
-			lacugrove = true
-			dragon_tree = true
-			tenanea = true
-			lucernia = true
-
 		[types.leaves_type.aether]
 			skyroot = true
 			golden_oak = true
@@ -62,6 +49,19 @@
 			purple_glacia = true
 			gilded_oak = true
 			blighted_skyroot = true
+
+		[types.leaves_type.betternether]
+			willow = true
+			rubeus = true
+			anchor_tree = true
+			nether_sakura = true
+
+		[types.leaves_type.betterend]
+			pythadendron = true
+			lacugrove = true
+			dragon_tree = true
+			tenanea = true
+			lucernia = true
 
 	[types.cake]
 
@@ -126,29 +126,6 @@
 			argyre = true
 			calorian = true
 
-		[types.wood_type.betternether]
-			nether_reed = true
-			stalagnate = true
-			willow = true
-			wart = true
-			rubeus = true
-			mushroom_fir = true
-			nether_mushroom = true
-			anchor_tree = true
-			nether_sakura = true
-
-		[types.wood_type.betterend]
-			mossy_glowshroom = true
-			pythadendron = true
-			end_lotus = true
-			lacugrove = true
-			dragon_tree = true
-			tenanea = true
-			helix_tree = true
-			umbrella_tree = true
-			jellyshroom = true
-			lucernia = true
-
 		[types.wood_type.createdieselgenerators]
 			chip_wood = true
 
@@ -174,20 +151,30 @@
 			crystal = true
 			glacia = true
 
+		[types.wood_type.betternether]
+			nether_reed = true
+			stalagnate = true
+			willow = true
+			wart = true
+			rubeus = true
+			mushroom_fir = true
+			nether_mushroom = true
+			anchor_tree = true
+			nether_sakura = true
+
+		[types.wood_type.betterend]
+			mossy_glowshroom = true
+			pythadendron = true
+			end_lotus = true
+			lacugrove = true
+			dragon_tree = true
+			tenanea = true
+			helix_tree = true
+			umbrella_tree = true
+			jellyshroom = true
+			lucernia = true
+
 	[types.stone_type]
-
-		[types.stone_type.betternether]
-			blue_obsidian = true
-
-		[types.stone_type.betterend]
-			flavolite = true
-			violecite = true
-			sulphuric_rock = true
-			virid_jadestone = true
-			azure_jadestone = true
-			sandy_jadestone = true
-			umbralith = true
-			smaragdant_crystal = true
 
 		[types.stone_type.botania]
 			livingrock = true
@@ -252,6 +239,19 @@
 
 		[types.stone_type.supplementaries]
 			ash = true
+
+		[types.stone_type.betternether]
+			blue_obsidian = true
+
+		[types.stone_type.betterend]
+			flavolite = true
+			violecite = true
+			sulphuric_rock = true
+			virid_jadestone = true
+			azure_jadestone = true
+			sandy_jadestone = true
+			umbralith = true
+			smaragdant_crystal = true
 
 #Disables specific entries
 [entries]
