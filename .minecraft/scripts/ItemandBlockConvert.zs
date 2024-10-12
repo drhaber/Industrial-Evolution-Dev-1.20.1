@@ -27,3 +27,4 @@ addDaisyPurify("tfc:sand","minecraft:sand");
 addDaisyPurify("tfc:cobblestone","minecraft:cobblestone");
 addDaisyPurify("tfc:rock/raw","minecraft:stone");
 addDaisyPurify("tfc:rock/gravel","minecraft:gravel");
+addDaisyPurify("tfc:dirt","minecraft:dirt");
