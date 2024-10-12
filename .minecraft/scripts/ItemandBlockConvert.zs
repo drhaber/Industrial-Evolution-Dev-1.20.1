@@ -11,7 +11,7 @@ import crafttweaker.api.bracket.BracketHandlers;
 import crafttweaker.api.tag.manager.ITagManager;
 
 function addDaisyPurify(BlockIn as string, BlockOut as string) as void { 
-<recipetype:botania:pure_daisy>.addJsonRecipe("daisy_purify" + BlockIn.replace(":","_") + BlockOut.replace(":","_"), {
+<recipetype:botania:pure_daisy>.addJsonRecipe("daisy_purify_convert" + BlockIn.replace(":","_") + BlockOut.replace(":","_"), {
   "type": "botania:pure_daisy",
   "input": {
     "type": "tag",
