@@ -77,6 +77,11 @@ craftingTable.removeByName("farmersdelight:cutting_board");
 <recipetype:create:item_application>.remove(<item:tfmg:coke_oven>);
 
 
+craftingTable.remove(<item:productivebees:honey_treat>);
+craftingTable.addShapeless("handcrafted_honey_treat_3", <item:productivebees:honey_treat>*4, [<item:minecraft:honey_block>,<tag:items:forge:honeycombs>,<tag:items:forge:honeycombs>,<tag:items:forge:honeycombs>,<tag:items:forge:honeycombs>]);
+craftingTable.addShapeless("handcrafted_honey_treat", <item:productivebees:honey_treat>, [<tag:items:forge:honeycombs>,<item:minecraft:honey_bottle>.transformReplace(<item:minecraft:glass_bottle>)]);
+
+
 craftingTable.remove(<item:quark:stick_block>);
 craftingTable.addShaped("handcrafted_quark_stick_block", <item:quark:stick_block>*9, [
     [<item:tfc:stick_bunch>,<item:tfc:stick_bunch>,<item:tfc:stick_bunch>],

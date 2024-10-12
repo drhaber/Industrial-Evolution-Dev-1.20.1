@@ -92,6 +92,8 @@ event.add('forge:plates','railcraft:zinc_plate')
 event.add('forge:plates','railcraft:bronze_plate')
 event.add('forge:plates','railcraft:invar_plate')
 
+event.add('forge:honeycombs','firmalife:beeswax')
+
 //event.add('tfc:pileable_ingots', 'sgjourney:naquadah_alloy')
 //event.add(`tfc:pileable_ingots`,`#forge:ingots`)
 })
