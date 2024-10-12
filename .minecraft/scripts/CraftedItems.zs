@@ -80,7 +80,9 @@ craftingTable.removeByName("farmersdelight:cutting_board");
 craftingTable.remove(<item:productivebees:honey_treat>);
 craftingTable.addShapeless("handcrafted_honey_treat_3", <item:productivebees:honey_treat>*4, [<item:minecraft:honey_block>,<tag:items:forge:honeycombs>,<tag:items:forge:honeycombs>,<tag:items:forge:honeycombs>,<tag:items:forge:honeycombs>]);
 craftingTable.addShapeless("handcrafted_honey_treat", <item:productivebees:honey_treat>, [<tag:items:forge:honeycombs>,<item:minecraft:honey_bottle>.transformReplace(<item:minecraft:glass_bottle>)]);
-
+craftingTable.addShaped("handcrafted_honey_block",<item:minecraft:honey_block>, [
+    [<item:firmalife:raw_honey>,<item:firmalife:raw_honey>],
+    [<item:firmalife:raw_honey>,<item:firmalife:raw_honey>]]);
 
 craftingTable.remove(<item:quark:stick_block>);
 craftingTable.addShaped("handcrafted_quark_stick_block", <item:quark:stick_block>*9, [
@@ -93,6 +95,28 @@ craftingTable.addShaped("handcrafted_powered_centrifuge", <item:productivebees:p
     [<item:railcraft:charge_motor>],
     [<item:tfc:quern>],
     [<item:create:basin>]]);
+
+<recipetype:create:emptying>.addJsonRecipe("drain_firmalife_honey_jar", {
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "firmalife:jar/honey"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:empty_jar"
+    },
+    {
+      "amount": 250,
+      "fluid": "create:honey"
+    }
+  ]
+});
+
+craftingTable.remove(<item:minecraft:glass_bottle>);
+craftingTable.addShapeless("handcrafted_glass_bottle", <item:minecraft:glass_bottle>, [<tag:items:tfc:glass_bottles>,<item:firmalife:cork>]);
+
 
 //<recipetype:create:pressing>.remove(<item:minecraft:paper>);
 <recipetype:create:pressing>.removeByName("create:pressing/sugar_cane");
