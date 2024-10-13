@@ -179,3 +179,8 @@ TFCEvents.data(event => {
 ServerEvents.tags('item', event => {
 event.add('tfc:forge_fuel',['embers:ember_crystal_cluster','embers:ember_grit'])
 })
+
+ServerEvents.tags('block', event => {
+    event.add("tfc:forge_insulation",["#minecraft:stone_bricks"])
+    event.add("tfc:forge_insulation",["embers:caminite_bricks","embers:caminite_large_bricks","embers:caminite_large_tile","embers:caminite_tiles","embers:archaic_bricks","embers:archaic_edge","embers:archaic_tile","embers:archaic_large_bricks","embers:ashen_stone","embers:ashen_brick","embers:ashen_tile"])
+    })
