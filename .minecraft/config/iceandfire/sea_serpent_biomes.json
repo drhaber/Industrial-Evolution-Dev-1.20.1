@@ -2,9 +2,9 @@
   "biomes": [
     [
       {
-        "type": "REGISTRY_NAME",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "tfc:deep_ocean_trench"
+        "value": "minecraft:is_deep_ocean"
       }
     ]
   ]
