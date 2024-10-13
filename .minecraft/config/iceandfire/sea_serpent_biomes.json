@@ -4,12 +4,7 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "tfc:deep_ocean"
-      },
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "tfc:deep_ocean"
+        "value": "tfc:deep_ocean_trench"
       }
     ]
   ]
