@@ -12,7 +12,7 @@ import mods.jeitweaker.Jei;
 craftingTable.removeByInput(<item:immersiveengineering:hammer>);
 
 <recipetype:immersiveengineering:blueprint>.remove(<item:immersiveengineering:electron_tube>);
-craftingTable.addShaped("handcrafted_electron_tube", <item:immersiveengineering:electron_tube>, [
+craftingTable.addShaped("handcrafted_electron_tube", <item:immersiveengineering:electron_tube>*4, [
     [<item:minecraft:air>,<item:kubejs:casing_electron_tube>,<item:minecraft:air>],
     [<item:railcraft:zinc_electrode>,<item:tfc:metal/sheet/gold>,<item:railcraft:nickel_electrode>],
     [<item:immersiveengineering:wire_copper>,<item:kubejs:ceramic_insulator>,<item:immersiveengineering:wire_copper>]]);
