@@ -171,3 +171,11 @@ TFCEvents.limitContainer('minecraft:generic_9x3', event => {
 TFCEvents.limitContainer('minecraft:generic_9x6', event => {
     event.limit('large')
 })
+
+TFCEvents.data(event => {
+    event.fuel('embers:ember_crystal_cluster', 1600, 16000, 1)
+    event.fuel('embers:ember_grit', 1200, 300, 1)
+})
+ServerEvents.tags('item', event => {
+event.add('tfc:forge_fuel',['embers:ember_crystal_cluster','embers:ember_grit'])
+})
