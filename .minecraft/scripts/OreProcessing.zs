@@ -521,6 +521,25 @@ addEmbersmelting("tfc:metal/copper","tfc:ore/rich_tetrahedrite",35);
     "fluid": "tfmg:molten_slag"
   }
 });
+
+<recipetype:tfc:bloomery>.addJsonRecipe("wrought_iron_coke_bonus_smelting", {
+  "type": "tfc:bloomery",
+  "result": {
+    "item": "tfc:raw_iron_bloom"
+  },
+  "fluid": {
+    "ingredient": "tfc:metal/cast_iron",
+    "amount": 50
+  },
+  "catalyst": {
+    "ingredient": {
+      "tag": "forge:coal_coke"
+    }
+  },
+  "duration": 11250
+});
+
+
 addEmbersmelting("tfc:metal/wrought_iron","tfc:refined_iron_bloom",100);
 
 addOrecrushing("tfc:ore/small_hematite","create:crushed_raw_iron");

@@ -178,6 +178,9 @@ TFCEvents.data(event => {
 })
 ServerEvents.tags('item', event => {
 event.add('tfc:forge_fuel',['embers:ember_crystal_cluster','embers:ember_grit'])
+event.add('tfc:blast_furnace_fuel',['embers:ember_crystal_cluster','embers:ember_grit'])
+event.add('tfc:blast_furnace_fuel','embers:ember_crystal_cluster')
+event.add('tfc:blast_furnace_fuel','#forge:coal_coke')
 })
 
 ServerEvents.tags('block', event => {
