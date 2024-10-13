@@ -183,4 +183,6 @@ event.add('tfc:forge_fuel',['embers:ember_crystal_cluster','embers:ember_grit'])
 ServerEvents.tags('block', event => {
     event.add("tfc:forge_insulation",["#minecraft:stone_bricks"])
     event.add("tfc:forge_insulation",["embers:caminite_bricks","embers:caminite_large_bricks","embers:caminite_large_tile","embers:caminite_tiles","embers:archaic_bricks","embers:archaic_edge","embers:archaic_tile","embers:archaic_large_bricks","embers:ashen_stone","embers:ashen_brick","embers:ashen_tile"])
-    })
+    event.add("tfc:forge_invisible_whitelist",["#quark:hollow_logs"])    
+    event.add("tfc:forge_invisible_whitelist",["sootychimneys:brick_chimney","sootychimneys:dirty_brick_chimney","sootychimneys:cobblestone_chimney","sootychimneys:dirty_cobblestone_chimney","sootychimneys:stone_brick_chimney","sootychimneys:dirty_stone_brick_chimney","sootychimneys:mud_brick_chimney","sootychimneys:dirty_mud_brick_chimney","sootychimneys:iron_chimney","sootychimneys:dirty_iron_chimney","sootychimneys:copper_chimney","sootychimneys:dirty_copper_chimney","sootychimneys:terracotta_chimney","sootychimneys:dirty_terracotta_chimney","quark:chute","minecraft:hopper","create:chute","immersiveengineering:chute_iron","immersiveengineering:chute_steel","immersiveengineering:chute_aluminum","immersiveengineering:chute_copper"])
+})
