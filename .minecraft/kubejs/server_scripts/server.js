@@ -136,7 +136,7 @@ ServerEvents.tags("worldgen/biome", (event) => {
     
     event.add("additionalstructures:as_custom",["#tfc:overworld"])
     event.add("betterdeserttemples:has_structure/better_desert_temple",["tfc:inverted_badlands"])
-    event.add("betteroceanmonuments:has_structure/better_ocean_monument",["tfc:deep_ocean","tfc:deep_ocean"])
+    event.add("betteroceanmonuments:has_structure/better_ocean_monument",["tfc:deep_ocean_trench"])
     event.add("betterstrongholds:has_structure/better_stronghold",["#tfc:overworld"])
     event.add("betterwitchhuts:has_structure/better_witch_hut",["tfc:lowlands"])
     event.add("betterwitchhuts:has_structure/witch_circle",["tfc:lowlands"])
