@@ -38,7 +38,7 @@ craftingTable.addShaped("handcrafted_incandescent_light_bulb", <item:immersiveen
 craftingTable.remove(<item:immersiveengineering:coil_lv>);
 craftingTable.addShaped("handcrafted_coil_copper", <item:immersiveengineering:coil_lv>*4,[
     [<item:immersiveengineering:wirecoil_copper>.transformReplace(<item:kubejs:emptyspool>),<item:immersiveengineering:wirecoil_copper>.transformReplace(<item:kubejs:emptyspool>),<item:immersiveengineering:wirecoil_copper>.transformReplace(<item:kubejs:emptyspool>)],
-    [<item:immersiveengineering:wirecoil_copper>.transformReplace(<item:kubejs:emptyspool>),<tag:items:tfc:magnetic_rocks>,<item:immersiveengineering:wirecoil_copper>.transformReplace(<item:kubejs:emptyspool>)],
+    [<item:immersiveengineering:wirecoil_copper>.transformReplace(<item:kubejs:emptyspool>),<item:tfmg:magnetic_ingot>,<item:immersiveengineering:wirecoil_copper>.transformReplace(<item:kubejs:emptyspool>)],
     [<item:immersiveengineering:wirecoil_copper>.transformReplace(<item:kubejs:emptyspool>),<item:immersiveengineering:wirecoil_copper>.transformReplace(<item:kubejs:emptyspool>),<item:immersiveengineering:wirecoil_copper>.transformReplace(<item:kubejs:emptyspool>)]]);
 
 craftingTable.removeByName("immersiveengineering:crafting/wirecoil_copper");

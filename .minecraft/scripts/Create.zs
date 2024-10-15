@@ -20,6 +20,8 @@ craftingTable.remove(<item:steampowered:cast_iron_burner>);
 craftingTable.remove(<item:steampowered:steel_boiler>);
 craftingTable.remove(<item:steampowered:steel_burner>);
 
+<recipetype:tfmg:polarizing>.remove(<item:tfmg:magnetic_ingot>);
+
 craftingTable.remove(<item:create:large_water_wheel>);
 craftingTable.addShaped("handcrafted_create_large_watermill", <item:create:large_water_wheel>,[
     [<tag:items:tfc:lumber>,<tag:items:minecraft:planks>,<tag:items:tfc:lumber>],
@@ -71,10 +73,82 @@ craftingTable.addShaped("handcrafted_new_age_generator_coil", <item:create_new_a
 
 craftingTable.remove(<item:create_new_age:magnetite_block>);
 craftingTable.addShaped("magnetite_block", <item:create_new_age:magnetite_block>, [
-    [<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>],
-    [<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>],
-    [<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>,<item:tfc:ore/rich_magnetite>]]);
-craftingTable.addShapeless("rich_magnetite", <item:tfc:ore/rich_magnetite>*9, [<item:create_new_age:magnetite_block>]);
+    [<item:tfmg:magnetic_ingot>,<item:tfmg:magnetic_ingot>,<item:tfmg:magnetic_ingot>],
+    [<item:tfmg:magnetic_ingot>,<item:tfmg:magnetic_ingot>,<item:tfmg:magnetic_ingot>],
+    [<item:tfmg:magnetic_ingot>,<item:tfmg:magnetic_ingot>,<item:tfmg:magnetic_ingot>]]);
+craftingTable.addShapeless("rich_magnetite", <item:tfmg:magnetic_ingot>*9, [<item:create_new_age:magnetite_block>]);
+//craftingTable.addShapeless("magnetite_ingot", <item:tfmg:magnetic_ingot>, [<item:tfc:powder/magnetite>*20,<item:tfc:paddle>.reuse(),<item:tfc:ceramic/ingot_mold>.reuse()]);
+
+<recipetype:create:compacting>.addJsonRecipe("magnetic_ingot", {
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "tfc:powder/magnetite"
+    },
+    {
+      "item": "tfc:powder/magnetite"
+    },    
+    {
+      "item": "tfc:powder/magnetite"
+    },
+    {
+      "item": "tfc:powder/magnetite"
+    },
+    {
+      "item": "tfc:powder/magnetite"
+    },    
+    {
+      "item": "tfc:powder/magnetite"
+    },
+    {
+      "item": "tfc:powder/magnetite"
+    },    
+    {
+      "item": "tfc:powder/magnetite"
+    },
+    {
+      "item": "tfc:powder/magnetite"
+    },
+    {
+      "item": "tfc:powder/magnetite"
+    }, 
+    {
+      "item": "tfc:powder/magnetite"
+    },
+    {
+      "item": "tfc:powder/magnetite"
+    },    
+    {
+      "item": "tfc:powder/magnetite"
+    },
+    {
+      "item": "tfc:powder/magnetite"
+    },
+    {
+      "item": "tfc:powder/magnetite"
+    },    
+    {
+      "item": "tfc:powder/magnetite"
+    },
+    {
+      "item": "tfc:powder/magnetite"
+    },    
+    {
+      "item": "tfc:powder/magnetite"
+    },
+    {
+      "item": "tfc:powder/magnetite"
+    },
+    {
+      "item": "tfc:powder/magnetite"
+    }             
+  ],
+  "results": [
+    {
+      "item": "tfmg:magnetic_ingot"
+    }
+  ]
+});
 
 craftingTable.remove(<item:create_new_age:redstone_magnet>);
 craftingTable.addShaped("redstone_magnet_block", <item:create_new_age:redstone_magnet>, [
