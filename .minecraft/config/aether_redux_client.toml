@@ -16,7 +16,7 @@
 		"Sentry Model Upgrade" = false
 		#Whether or not to use the upgraded Mimic model. Note that unless you use sync_with_server, there may be hitbox differences.
 		#Allowed Values: sync_with_server, modern_override, classic_override
-		"Mimic Model Upgrade" = "sync_with_server"
+		"Mimic Model Upgrade" = "classic_override"
 		#Gives the Sheepuff's model some touchups and improvements
 		"Sheepuff Model Upgrade" = false
 		#Gives the Phyg's model some touchups and improvements
