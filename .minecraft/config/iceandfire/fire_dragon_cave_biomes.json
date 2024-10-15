@@ -2,14 +2,9 @@
   "biomes": [
     [
       {
-        "type": "REGISTRY_NAME",
+        "type": "BIOME_TAG",
         "negate": false,
-        "value": "sgjourney:abydos_desert"
-      },
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "minecraft:basalt_deltas"
+        "value": "the_afterdark:afterdark_biomes"
       }
     ]
   ]

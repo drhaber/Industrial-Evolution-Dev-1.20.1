@@ -4,14 +4,7 @@
       {
         "type": "BIOME_TAG",
         "negate": false,
-        "value": "minecraft:is_end"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "nullscape:void_barrens"
+        "value": "the_afterdark:afterdark_biomes"
       }
     ]
   ]
