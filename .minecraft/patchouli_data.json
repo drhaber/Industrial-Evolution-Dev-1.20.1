@@ -430,7 +430,11 @@
         "tfc:beneath/how_to_go_beneath",
         "tfc:beneath/curious_blocks",
         "tfc:beneath/hellforge",
-        "tfc:artisanal/magnifying_glass"
+        "tfc:artisanal/magnifying_glass",
+        "tfc:waterflasks/bladders",
+        "tfc:mechanics/decay",
+        "tfc:artisanal/soap",
+        "tfc:bsa/sinew_processing"
       ],
       "bookmarks": [],
       "completedManualQuests": []

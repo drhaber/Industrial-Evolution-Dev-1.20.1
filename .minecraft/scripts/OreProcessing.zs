@@ -18,6 +18,7 @@ import mods.jeitweaker.Jei;
 <recipetype:immersiveengineering:alloy>.removeAll();
 <recipetype:embers:mixing>.removeAll();
 <recipetype:railcraft:blasting>.removeAll();
+<recipetype:railcraft:crushing>.removeAll();
 <recipetype:minecraft:campfire_cooking>.removeAll();
 <recipetype:minecraft:smoking>.removeAll();
 <recipetype:immersiveengineering:blast_furnace>.removeAll();
@@ -54,6 +55,145 @@ craftingTable.remove(<tag:items:forge:wires>);
 <recipetype:embers:melting>.removeAll();
 
 <recipetype:create:compacting>.remove(<fluid:northstar:hydrocarbon>);
+
+<recipetype:tfc:quern>.remove(<item:minecraft:redstone>);
+<recipetype:create:milling>.remove(<item:minecraft:redstone>);
+<recipetype:create:crushing>.remove(<item:minecraft:redstone>);
+<recipetype:minecraft:blasting>.remove(<item:minecraft:redstone>);
+<recipetype:minecraft:smelting>.remove(<item:minecraft:redstone>);
+craftingTable.remove(<item:immersiveengineering:redstone_acid_bucket>);
+<recipetype:tfc:barrel_instant>.removeByName("tfc_ie_addon:barrel/redstone_acid");
+<recipetype:immersiveengineering:mixer>.removeByName("immersiveengineering:mixer/redstone_acid");
+
+<recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("basin_cinnabar_redstone_sulfur_dioxide", {
+  "type": "createdieselgenerators:basin_fermenting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+		"item": "tfc:ore/cinnabar"
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 250
+    }
+  ],
+  "processingTime": 800,
+  "results": [
+    {
+      "fluid": "vintageimprovements:sulfur_dioxide",
+      "amount": 250
+    },
+    {
+    "item": "minecraft:redstone",
+    "count": 4
+    }
+  ]
+});
+
+<recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("basin_cryolite_redstone_acid", {
+  "type": "createdieselgenerators:basin_fermenting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+		"item": "tfc:ore/cryolite"
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 250
+    }
+  ],
+  "processingTime": 800,
+  "results": [
+    {
+      "fluid": "immersiveengineering:redstone_acid",
+      "amount": 250
+    }
+  ]
+});
+
+<recipetype:vintageimprovements:vacuumizing>.addJsonRecipe("redstone_acid_redstone", {
+	"type":"vintageimprovements:vacuumizing",
+  "heatRequirement": "superheated",
+	"ingredients": [ 
+    {
+			"fluid": "immersiveengineering:redstone_acid",
+			"amount": 100
+		}
+	],
+	"results": [
+		{
+    "item": "minecraft:redstone",
+    "count": 16
+		}
+	],
+	"processingTime": 600
+});
+
+<recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("basin_redstone_sulfuric_acid", {
+  "type": "createdieselgenerators:basin_fermenting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+		"tag": "tfc:redstone_ore"
+    },
+    {
+      "fluid": "tfmg:sulfuric_acid",
+      "amount": 250
+    }
+  ],
+  "processingTime": 800,
+  "results": [
+    {
+    "item": "minecraft:redstone",
+    "count": 16
+    }
+  ]
+});
+
+<recipetype:tfc:pot>.addJsonRecipe("redstone_acid_pot_redstone", {
+  "type": "tfc:pot",
+  "ingredients": [],
+  "fluid_ingredient": {
+    "ingredient": "immersiveengineering:redstone_acid",
+    "amount": 1000
+  },
+  "duration": 3000,
+  "temperature": 600,
+  "item_output": [
+    {
+      "item": "minecraft:redstone",
+      "count": 10
+    }
+  ]
+});
+
+<recipetype:tfc:pot>.addJsonRecipe("cinnabar_pot_redstone_acid", {
+  "type": "tfc:pot",
+  "duration": 3000,
+  "temperature": 600,
+  "ingredients": [    
+    {
+      "item": "tfc:ore/cinnabar"
+    },
+    {
+      "item": "tfc:ore/cinnabar"
+    },
+    {
+      "item": "tfc:ore/cinnabar"
+    },
+    {
+      "item": "tfc:ore/cinnabar"
+    }
+  ],
+  "fluid_ingredient": {
+    "ingredient": "minecraft:water",
+    "amount": 1000
+  },
+  "fluid_output": {
+    "fluid": "immersiveengineering:redstone_acid",
+    "amount": 1000
+  }
+});
 
 craftingTable.removeByName("railcraft:bronze_ingot_crafted_with_ingots");
 craftingTable.removeByName("railcraft:bronze_ingot_from_bronze_nugget");
@@ -970,23 +1110,29 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
   "heatRequirement": "superheated",  
   "ingredients": [
     {
-      "item": "embers:aluminum_crystal_seed"
+      "item": "tfc:ore/cryolite"
     },
     {
       "fluid": "kubejs:aluminium_hydroxide",
-      "amount": 10
+      "amount": 250
     }
   ],
-  "processingTime": 800,
+  "processingTime": 1600,
   "results": [
     {
-      "item": "embers:aluminum_crystal_seed"
+      "fluid": "kubejs:red_mud",
+      "amount": 50
     },
     {
-      "item": "create:crushed_raw_aluminum"
+      "item": "immersiveengineering:dust_aluminum"
+    },         
+    {
+      "item": "immersiveengineering:dust_aluminum",
+      "chance": 0.75
     },
     {
-      "item": "create:crushed_raw_aluminum"
+      "item": "minecraft:redstone",
+      "chance": 0.1
     }
   ]
 });

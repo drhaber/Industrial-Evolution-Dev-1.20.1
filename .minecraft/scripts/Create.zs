@@ -40,6 +40,12 @@ craftingTable.addShaped("handcrafted_create_deployer", <item:create:deployer>,[
     [<item:create:andesite_casing>],
     [<item:create:brass_hand>]]); 
 
+craftingTable.remove(<item:createdieselgenerators:basin_lid>);
+craftingTable.addShaped("handcrafted_create_watermill", <item:createdieselgenerators:basin_lid>,[
+    [<item:minecraft:air>,<tag:items:forge:double_ingots/lead>,<item:minecraft:air>],
+    [<item:createdeco:andesite_sheet>,<item:createdeco:andesite_sheet>,<item:createdeco:andesite_sheet>]]);    
+
+
 craftingTable.remove(<item:create:brass_hand>);
 <recipetype:tfc:anvil>.addJsonRecipe("anvil_create_brass_hand", {
   "type": "tfc:anvil",
