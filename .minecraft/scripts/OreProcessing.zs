@@ -56,6 +56,7 @@ craftingTable.remove(<tag:items:forge:wires>);
 
 <recipetype:create:compacting>.remove(<fluid:northstar:hydrocarbon>);
 
+//redstone
 <recipetype:tfc:quern>.remove(<item:minecraft:redstone>);
 <recipetype:create:milling>.remove(<item:minecraft:redstone>);
 <recipetype:create:crushing>.remove(<item:minecraft:redstone>);

@@ -120,6 +120,7 @@ ServerEvents.tags("worldgen/biome", (event) => {
     event.add("minecraft:is_lake", ["tfc:volcanic_mountain_lake","tfc:volcanic_oceanic_mountain_lake","tfc:oceanic_mountain_lake","tfc:mountain_lake","tfc:plateau_lake","tfc:lake","tfc:old_mountain_lake"])
     event.add("minecraft:is_savanna", ["tfc:plains", "tfc:plateau"])
     event.add("minecraft:is_lowland", ["tfc:lowlands", "tfc:low_canyons"])
+    event.add("the_afterdark:has_structure/teleport_altar", ["northstar:lunar_asurine_caves"])
 
 //Tag adds "Stolen" From Below
 //https://github.com/AllTheMods/Gravitas2/blob/main/kubejs/server_scripts/tags/worldgen_biomes.js
