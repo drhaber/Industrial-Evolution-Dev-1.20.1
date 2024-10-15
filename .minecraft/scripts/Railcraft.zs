@@ -88,3 +88,26 @@ craftingTable.addShaped("handcrafted_carbon_electrode_oredict_wooden_bucket", <i
 [<item:minecraft:air>,<tag:items:forge:dusts/copper>,<item:tfc:wooden_bucket>.withTag({fluid: {FluidName: "immersiveengineering:phenolic_resin", Amount: 1000}}).transformReplace(<item:tfc:wooden_bucket>)],
 [<item:tfc:powder/graphite>,<item:minecraft:air>,<item:minecraft:air>]]);
 
+craftingTable.remove(<item:railcraft:low_pressure_steam_boiler_tank>);
+craftingTable.addShaped("handcrafted_low_pressure_steam_boiler_tank", <item:railcraft:low_pressure_steam_boiler_tank>,[
+    [<tag:items:forge:sheets/wrought_iron>,<tag:items:forge:sheets/wrought_iron>,<tag:items:forge:sheets/wrought_iron>],
+    [<tag:items:forge:sheets/wrought_iron>,<item:embers:mini_boiler>,<tag:items:forge:sheets/wrought_iron>],
+    [<tag:items:forge:sheets/wrought_iron>,<tag:items:forge:sheets/wrought_iron>,<tag:items:forge:sheets/wrought_iron>]]);    
+
+craftingTable.remove(<item:railcraft:high_pressure_steam_boiler_tank>);
+craftingTable.addShaped("handcrafted_high_pressure_steam_boiler_tank", <item:railcraft:high_pressure_steam_boiler_tank>,[
+    [<tag:items:forge:sheets/steel>,<tag:items:forge:sheets/steel>,<tag:items:forge:sheets/steel>],
+    [<tag:items:forge:sheets/steel>,<item:embers:mini_boiler>,<tag:items:forge:sheets/steel>],
+    [<tag:items:forge:sheets/steel>,<tag:items:forge:sheets/steel>,<tag:items:forge:sheets/steel>]]);  
+
+craftingTable.remove(<item:railcraft:solid_fueled_firebox>);
+craftingTable.addShaped("handcrafted_solid_fueled_firebox", <item:railcraft:solid_fueled_firebox>,[
+    [<item:immersiveengineering:slab_cokebrick>,<item:embers:superheater>,<item:immersiveengineering:slab_cokebrick>],
+    [<item:immersiveengineering:slab_cokebrick>,<item:minecraft:air>,<item:immersiveengineering:slab_cokebrick>],
+    [<item:immersiveengineering:slab_cokebrick>,<item:minecraft:fire_charge>,<item:immersiveengineering:slab_cokebrick>]]);      
+
+craftingTable.remove(<item:railcraft:fluid_fueled_firebox>);
+craftingTable.addShaped("handcrafted_fluid_fueled_firebox", <item:railcraft:fluid_fueled_firebox>,[
+    [<tag:items:forge:sheets/steel>,<item:embers:superheater>,<tag:items:forge:sheets/steel>],
+    [<tag:items:forge:sheets/steel>,<item:create:fluid_tank>,<tag:items:forge:sheets/steel>],
+    [<tag:items:forge:sheets/steel>,<item:minecraft:fire_charge>,<tag:items:forge:sheets/steel>]]);          

@@ -165,7 +165,7 @@ craftingTable.remove(<item:immersiveengineering:wire_copper>);
 craftingTable.remove(<item:immersiveengineering:cokebrick>);
 craftingTable.addShaped("handcrafted_cokebrick",<item:immersiveengineering:cokebrick>, [
     [<tag:items:forge:clay>,<tag:items:forge:dusts/ash>,<tag:items:forge:clay>],
-    [<tag:items:forge:dusts/ash>,<tag:items:engineersdecor:brick_blocks>,<tag:items:forge:dusts/ash>],
+    [<tag:items:forge:dusts/ash>,<item:tfc:fire_bricks>,<tag:items:forge:dusts/ash>],
     [<tag:items:forge:clay>,<tag:items:forge:dusts/ash>,<tag:items:forge:clay>]]);
 
 

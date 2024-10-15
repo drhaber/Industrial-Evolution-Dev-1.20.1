@@ -50,9 +50,9 @@ craftingTable.addShaped("handcrafted_superheater", <item:embers:superheater>,[
 
 craftingTable.remove(<item:embers:mini_boiler>);
 craftingTable.addShaped("handcrafted_mini_boiler", <item:embers:mini_boiler>,[
-  [<item:minecraft:air>,<tag:items:forge:sheets/lead>,<item:minecraft:air>],
-  [<tag:items:forge:sheets/lead>,<tag:items:forge:sheets/cast_iron>,<tag:items:forge:sheets/lead>],
-  [<item:minecraft:air>,<tag:items:forge:sheets/lead>,<item:minecraft:air>]]);       
+  [<item:minecraft:air>,<tag:items:forge:double_ingots/cast_iron>,<item:minecraft:air>],
+  [<tag:items:forge:double_sheets/cast_iron>,<item:minecraft:air>,<tag:items:forge:double_sheets/cast_iron>],
+  [<item:minecraft:air>,<tag:items:forge:double_ingots/cast_iron>,<item:minecraft:air>]]);       
 
 craftingTable.remove(<item:embers:copper_cell>);
 craftingTable.addShaped("handcrafted_ember_battery_copper_cell", <item:embers:copper_cell>,[
