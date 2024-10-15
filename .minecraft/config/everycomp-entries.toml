@@ -444,6 +444,7 @@
 		[entries.wood_type.mcwlights]
 			tiki_torch = true
 			soul_tiki_torch = true
+			ceiling_fan_light = true
 
 		[entries.wood_type.functionalstorage]
 			1 = false

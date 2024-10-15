@@ -20,6 +20,8 @@ import crafttweaker.api.bracket.BracketHandlers;
 
 import stdlib.List;
 
+<entitytype:aether:aerbunny>.addLootModifier("drop_rabbit_foot", CommonLootModifiers.addWithChance(<item:minecraft:rabbit_foot> % 25));
+
 loot.modifiers.register(
     "village_toolsmith_fire_clay",
     LootConditions.only(LootTableIdLootCondition.create(<resource:minecraft:chests/village/village_toolsmith>)),

@@ -13,6 +13,12 @@ import mods.jeitweaker.Jei;
 craftingTable.removeByName("create:crafting/kinetics/basin");
 craftingTable.removeByRegex("createcasing:crafting/shafts*");
 
+craftingTable.remove(<item:steampowered:bronze_boiler>);
+craftingTable.remove(<item:steampowered:bronze_burner>);
+craftingTable.remove(<item:steampowered:cast_iron_boiler>);
+craftingTable.remove(<item:steampowered:cast_iron_burner>);
+craftingTable.remove(<item:steampowered:steel_boiler>);
+craftingTable.remove(<item:steampowered:steel_burner>);
 
 craftingTable.remove(<item:create:large_water_wheel>);
 craftingTable.addShaped("handcrafted_create_large_watermill", <item:create:large_water_wheel>,[

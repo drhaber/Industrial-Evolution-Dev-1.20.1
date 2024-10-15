@@ -11,22 +11,13 @@ import crafttweaker.api.bracket.BracketHandlers;
 import mods.jeitweaker.Jei;
 import mods.create.SequencedAssemblyManager;
 
-craftingTable.remove(<item:immersive_aircraft:industrial_gears>);
-<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("seq_industrial_gears")
-  .transitionTo(<item:tfc:brass_mechanisms>)
-  .require(<item:tfc:brass_mechanisms>)
-  .loops(1)
-  .addOutput(<item:immersive_aircraft:industrial_gears>,1)
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:railcraft:copper_gear>))
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:railcraft:tin_gear>)));
-
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("seq_winding_gears")
   .transitionTo(<item:tfc:brass_mechanisms>)
   .require(<item:tfc:brass_mechanisms>)
   .loops(1)
   .addOutput(<item:embers:winding_gears>,1)
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:immersive_aircraft:industrial_gears>))
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:immersive_aircraft:industrial_gears>))
+  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:railcraft:copper_gear>))
+  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:railcraft:copper_gear>))
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:kubejs:magic_motion_apparatus>)));
 
 craftingTable.remove(<item:minecraft:clock>);
@@ -58,7 +49,7 @@ craftingTable.remove(<item:minecraft:clock>);
   .addOutput(<item:create:precision_mechanism>,1)
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:supplementaries:crank>))
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:railcraft:brass_gear>))
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:immersive_aircraft:industrial_gears>)));    
+  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:railcraft:iron_gear>)));    
 
 <recipetype:create:sequenced_assembly>.remove(<item:tfmg:steel_mechanism>);
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("seq_steel_mechanism")
@@ -68,7 +59,7 @@ craftingTable.remove(<item:minecraft:clock>);
   .addOutput(<item:tfmg:steel_mechanism>,1)
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:firmalife:metal/rod/stainless_steel>))
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:railcraft:steel_gear>))
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:immersive_aircraft:industrial_gears>)) 
+  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:railcraft:iron_gear>)) 
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:railcraft:steel_gear>))
-  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:immersive_aircraft:industrial_gears>))     
+  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:railcraft:iron_gear>))     
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:firmalife:reinforced_glass>)));            

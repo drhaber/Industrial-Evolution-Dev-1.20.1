@@ -10,6 +10,7 @@ import crafttweaker.api.tag.manager.ITagManager;
 import mods.create.FillingManager;
 import mods.jeitweaker.Jei;
 
+craftingTable.remove(<item:minecraft:saddle>);
 craftingTable.remove(<item:productivebees:centrifuge>);
 craftingTable.remove(<item:productivebees:heated_centrifuge>);
 craftingTable.remove(<item:minecraft:paper>);
