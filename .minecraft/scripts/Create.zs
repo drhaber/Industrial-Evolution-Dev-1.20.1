@@ -41,7 +41,7 @@ craftingTable.addShaped("handcrafted_create_deployer", <item:create:deployer>,[
     [<item:create:brass_hand>]]); 
 
 craftingTable.remove(<item:createdieselgenerators:basin_lid>);
-craftingTable.addShaped("handcrafted_create_watermill", <item:createdieselgenerators:basin_lid>,[
+craftingTable.addShaped("handcrafted_basin_lid", <item:createdieselgenerators:basin_lid>,[
     [<item:minecraft:air>,<tag:items:forge:double_ingots/lead>,<item:minecraft:air>],
     [<item:createdeco:andesite_sheet>,<item:createdeco:andesite_sheet>,<item:createdeco:andesite_sheet>]]);    
 
