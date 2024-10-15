@@ -97,6 +97,10 @@ event.add('forge:honeycombs','firmalife:beeswax')
 event.add('tfc:pileable_ingots', 'sgjourney:naquadah_alloy')
 event.add('tfc:pileable_ingots', 'botania:manasteel_ingot')
 //event.add(`tfc:pileable_ingots`,`#forge:ingots`)
+
+event.add('iceandfire:heal_hippocampus', '#minecraft:kelp')
+event.add('iceandfire:tempt_hippocampus', '#minecraft:kelp')
+
 })
 
 ServerEvents.tags('block', event => {
