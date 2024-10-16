@@ -23,8 +23,10 @@ import mods.jeitweaker.Jei;
 <recipetype:minecraft:smoking>.removeAll();
 <recipetype:immersiveengineering:blast_furnace>.removeAll();
 <recipetype:immersiveengineering:blast_furnace_fuel>.removeAll();
-//<recipetype:minecraft:crafting>.remove(<tag:items:forge:dusts>);
+
 <recipetype:minecraft:crafting>.remove(<tag:items:forge:plates>);
+//<recipetype:minecraft:crafting>.remove(<tag:items:forge:ingots>);
+
 <recipetype:minecraft:smelting>.remove(<tag:items:forge:ingots>);
 <recipetype:minecraft:blasting>.remove(<tag:items:forge:ingots>);
 <recipetype:minecraft:smelting>.remove(<tag:items:forge:glass>);
@@ -55,6 +57,79 @@ craftingTable.remove(<tag:items:forge:wires>);
 <recipetype:embers:melting>.removeAll();
 
 <recipetype:create:compacting>.remove(<fluid:northstar:hydrocarbon>);
+
+//craftingTable.remove(<item:minecraft:iron_nugget>);
+craftingTable.removeByName("minecraft:iron_ingot_from_nuggets");
+craftingTable.removeByName("minecraft:iron_nugget");
+
+craftingTable.removeByName("betterend:thallasium_ingot_from_nuggets");
+
+craftingTable.removeByName("railcraft:bronze_ingot_crafted_with_ingots");
+craftingTable.removeByName("railcraft:bronze_ingot_from_bronze_nugget");
+craftingTable.removeByName("railcraft:bronze_ingot");
+//craftingTable.removeByName("railcraft:bronze_block_from_bronze_ingot");
+craftingTable.removeByName("railcraft:brass_ingot_crafted_with_ingots");
+//craftingTable.removeByName("railcraft:brass_ingot_from_brass_nugget");
+//craftingTable.removeByName("railcraft:brass_ingot");
+//craftingTable.removeByName("railcraft:brass_block_from_brass_ingot");
+//craftingTable.removeByName("railcraft:zinc_ingot_from_zinc_nugget");
+//craftingTable.removeByName("railcraft:zinc_ingot");
+//craftingTable.removeByName("railcraft:zinc_block_from_zinc_ingot");
+
+//<recipetype:create:compacting>.removeByName("create_dd:compacting/steel_ingot");
+
+<recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/steel");
+//<recipetype:immersiveengineering:arc_furnace>.removeByName("tfc_ie_addon:arc_furnace/steel");
+<recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/dust_iron");
+<recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/dust_steel");
+<recipetype:immersiveengineering:arc_furnace>.removeByName("tfc_ie_addon:arc_furnace/bauxite");
+<recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/raw_block_aluminum");
+<recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/ore_aluminum");
+<recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/raw_ore_aluminum");
+#<recipetype:create:crushing>.removeByName("create:crushing/aluminum_ore");
+#<recipetype:create:crushing>.removeByName("create:crushing/raw_aluminum_ore");
+#<recipetype:create:crushing>.removeByName("create:crushing/raw_aluminum_block");
+<recipetype:immersiveengineering:crusher>.removeByName("immersiveengineering:crusher/raw_block_aluminum");
+<recipetype:immersiveengineering:crusher>.removeByName("immersiveengineering:crusher/raw_ore_aluminum");
+<recipetype:immersiveengineering:crusher>.removeByName("immersiveengineering:crusher/ore_aluminum");
+
+craftingTable.addShapeless("handcrafted_wrought_iron_ingot_iron_nugget", <item:minecraft:iron_nugget>*9, [<item:tfc:metal/ingot/wrought_iron>]);
+craftingTable.addShaped("handcrafted_iron_nugget_wrought_iron_ingot", <item:tfc:metal/ingot/wrought_iron>,[
+    [<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>],
+    [<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>],
+    [<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>]]);  
+
+/*
+<item:minecraft:iron_nugget>
+<item:minecraft:gold_nugget>
+<item:botania:manasteel_nugget>
+<item:botania:terrasteel_nugget>
+<item:botania:elementium_nugget>
+<item:create:zinc_nugget>
+<item:create:brass_nugget>
+<item:embers:dawnstone_nugget>
+<item:immersiveengineering:nugget_copper>
+<item:immersiveengineering:nugget_aluminum>
+<item:immersiveengineering:nugget_lead>
+<item:immersiveengineering:nugget_silver>
+<item:immersiveengineering:nugget_nickel>
+<item:immersiveengineering:nugget_uranium>
+<item:immersiveengineering:nugget_constantan>
+<item:immersiveengineering:nugget_electrum>
+<item:immersiveengineering:nugget_steel>
+<item:railcraft:tin_nugget>
+<item:railcraft:bronze_nugget>
+<item:railcraft:invar_nugget>
+<item:sgjourney:naquadah_alloy_nugget>
+<item:createdeco:netherite_nugget>
+<item:createdeco:industrial_iron_nugget>
+<item:vintageimprovements:vanadium_nugget>
+<item:aether_redux:veridium_nugget>
+<item:northstar:tungsten_nugget>
+<item:betterend:thallasium_nugget>
+<item:betterend:terminite_nugget>
+<item:create:experience_nugget>
+*/
 
 //redstone
 <recipetype:tfc:quern>.remove(<item:minecraft:redstone>);
@@ -196,34 +271,6 @@ craftingTable.remove(<item:immersiveengineering:redstone_acid_bucket>);
   }
 });
 
-craftingTable.removeByName("railcraft:bronze_ingot_crafted_with_ingots");
-craftingTable.removeByName("railcraft:bronze_ingot_from_bronze_nugget");
-craftingTable.removeByName("railcraft:bronze_ingot");
-//craftingTable.removeByName("railcraft:bronze_block_from_bronze_ingot");
-craftingTable.removeByName("railcraft:brass_ingot_crafted_with_ingots");
-//craftingTable.removeByName("railcraft:brass_ingot_from_brass_nugget");
-//craftingTable.removeByName("railcraft:brass_ingot");
-//craftingTable.removeByName("railcraft:brass_block_from_brass_ingot");
-//craftingTable.removeByName("railcraft:zinc_ingot_from_zinc_nugget");
-//craftingTable.removeByName("railcraft:zinc_ingot");
-//craftingTable.removeByName("railcraft:zinc_block_from_zinc_ingot");
-
-//<recipetype:create:compacting>.removeByName("create_dd:compacting/steel_ingot");
-
-<recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/steel");
-//<recipetype:immersiveengineering:arc_furnace>.removeByName("tfc_ie_addon:arc_furnace/steel");
-<recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/dust_iron");
-<recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/dust_steel");
-<recipetype:immersiveengineering:arc_furnace>.removeByName("tfc_ie_addon:arc_furnace/bauxite");
-<recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/raw_block_aluminum");
-<recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/ore_aluminum");
-<recipetype:immersiveengineering:arc_furnace>.removeByName("immersiveengineering:arcfurnace/raw_ore_aluminum");
-#<recipetype:create:crushing>.removeByName("create:crushing/aluminum_ore");
-#<recipetype:create:crushing>.removeByName("create:crushing/raw_aluminum_ore");
-#<recipetype:create:crushing>.removeByName("create:crushing/raw_aluminum_block");
-<recipetype:immersiveengineering:crusher>.removeByName("immersiveengineering:crusher/raw_block_aluminum");
-<recipetype:immersiveengineering:crusher>.removeByName("immersiveengineering:crusher/raw_ore_aluminum");
-<recipetype:immersiveengineering:crusher>.removeByName("immersiveengineering:crusher/ore_aluminum");
 
 /*
 <recipetype:pneumaticcraft:explosion_crafting>.addJsonRecipe("lumber_from_logs", {
