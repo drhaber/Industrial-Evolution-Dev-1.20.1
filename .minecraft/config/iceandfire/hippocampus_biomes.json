@@ -11,6 +11,13 @@
         "negate": false,
         "value": "minecraft:is_ocean"
       }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "sgjourney:lantean_deep_ocean"
+      }
     ]
   ]
 }
