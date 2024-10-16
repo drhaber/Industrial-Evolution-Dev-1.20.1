@@ -202,3 +202,14 @@ ServerEvents.tags('fluid', event => {
     event.add("tfc:usable_in_wooden_bucket",["immersiveengineering:redstone_acid"])
     event.add("tfc:usable_in_pot",["immersiveengineering:redstone_acid"])
 })
+
+let mobReplacementMap = ['cow', 'cat', 'chicken', 'salmon', 'cod', 'tropical_fish', 'pufferfish', 'dolphin', 'squid', 'turtle', 'frog', 'polar_bear', 'wolf', 'pig', 'goat', 'sheep', 'rabbit', 'fox', 'panda', 'ocelot', 'donkey', 'mule', 'horse' ]
+mobReplacementMap.forEach(mob => {
+EntityEvents.spawned(event => {
+    if (event.entity.type == 'minecraft:'+ mob) {
+      let newMob = event.entity.block.createEntity('tfc:'+ mob)
+      newMob.spawn()
+      event.entity.discard()
+      event.cancel()
+    }
+  })})
