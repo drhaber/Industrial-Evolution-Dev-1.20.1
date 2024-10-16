@@ -112,10 +112,10 @@ ServerEvents.tags("worldgen/biome", (event) => {
     event.add("minecraft:is_overworld", ["#tfc:overworld"])
     event.add("minecraft:is_badlands", ["tfc:inverted_badlands", "tfc:badlands"])
     event.add("minecraft:is_beach", ["tfc:shore", "tfc:tidal_flats"])
-    event.add("minecraft:is_deep_ocean", ["tfc:deep_ocean_trench", "tfc:deep_ocean"])
+    event.add("minecraft:is_deep_ocean", ["tfc:deep_ocean_trench", "tfc:deep_ocean","sgjourney:lantean_deep_ocean"])
     event.add("minecraft:is_hill", ["tfc:rolling_hills", "tfc:hills"])
     event.add("minecraft:is_mountain", ["tfc:volcanic_oceanic_mountains","tfc:old_mountains","tfc:volcanic_mountains","tfc:mountains","tfc:oceanic_mountains","tfc:highlands"])
-    event.add("minecraft:is_ocean", ["tfc:ocean", "tfc:ocean_reef"])
+    event.add("minecraft:is_ocean", ["tfc:ocean", "tfc:ocean_reef","sgjourney:lantean_deep_ocean","tfc:deep_ocean_trench", "tfc:deep_ocean"])
     event.add("minecraft:is_river", ["tfc:river"])
     event.add("minecraft:is_lake", ["tfc:volcanic_mountain_lake","tfc:volcanic_oceanic_mountain_lake","tfc:oceanic_mountain_lake","tfc:mountain_lake","tfc:plateau_lake","tfc:lake","tfc:old_mountain_lake"])
     event.add("minecraft:is_savanna", ["tfc:plains", "tfc:plateau"])
@@ -148,7 +148,7 @@ ServerEvents.tags("worldgen/biome", (event) => {
     event.add("betterwitchhuts:has_structure/witch_circle",["tfc:lowlands"])
     event.add("minecraft:has_closer_water_fog",["tfc:lowlands"])
 
-    event.add("forge:is_water",["tfc:river","tfc:ocean","tfc:ocean_reef","tfc:deep_ocean","tfc:deep_ocean_trench"])
+    event.add("forge:is_water",["tfc:river","tfc:ocean","tfc:ocean_reef","tfc:deep_ocean","tfc:deep_ocean_trench","sgjourney:lantean_deep_ocean"])
 
 })
 BlockEvents.rightClicked(event => {
