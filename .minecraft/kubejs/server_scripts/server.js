@@ -148,6 +148,67 @@ ServerEvents.tags("worldgen/biome", (event) => {
     event.add("betterwitchhuts:has_structure/witch_circle",["tfc:lowlands"])
     event.add("minecraft:has_closer_water_fog",["tfc:lowlands"])
 
+//    <tag:worldgen/biome:towns_and_towers:has_structure/exclusives/pillager_outpost_classic>
+//    <tag:worldgen/biome:towns_and_towers:has_structure/exclusives/pillager_outpost_iberian>
+//    <tag:worldgen/biome:towns_and_towers:has_structure/exclusives/pillager_outpost_oriental>
+//    <tag:worldgen/biome:towns_and_towers:has_structure/exclusives/pillager_outpost_rustic>
+//    <tag:worldgen/biome:towns_and_towers:has_structure/exclusives/pillager_outpost_swedish>
+//    <tag:worldgen/biome:towns_and_towers:has_structure/exclusives/pillager_outpost_tudor>
+//    <tag:worldgen/biome:towns_and_towers:has_structure/exclusives/village_classic>
+//    <tag:worldgen/biome:towns_and_towers:has_structure/exclusives/village_iberian>
+//    <tag:worldgen/biome:towns_and_towers:has_structure/exclusives/village_mediterranean>
+//    <tag:worldgen/biome:towns_and_towers:has_structure/exclusives/village_nilotic>
+//    <tag:worldgen/biome:towns_and_towers:has_structure/exclusives/village_oriental>
+//    <tag:worldgen/biome:towns_and_towers:has_structure/exclusives/village_piglin>
+//    <tag:worldgen/biome:towns_and_towers:has_structure/exclusives/village_rustic>
+//    <tag:worldgen/biome:towns_and_towers:has_structure/exclusives/village_swedish>
+//    <tag:worldgen/biome:towns_and_towers:has_structure/exclusives/village_tudor>
+
+event.add("towns_and_towers:has_structure/pillager_outpost_badlands",["minecraft:is_badlands"])
+event.add("towns_and_towers:has_structure/pillager_outpost_beach",["minecraft:is_beach"])
+//event.add("towns_and_towers:has_structure/pillager_outpost_birch_forest",["minecraft:is_birch_fores","minecraft:is_old_growth_birch_forest"])
+event.add("towns_and_towers:has_structure/pillager_outpost_deep_oceans",["minecraft:is_deep_ocean"])
+//event.add("towns_and_towers:has_structure/pillager_outpost_desert",["minecraft:is_desert"])
+//event.add("towns_and_towers:has_structure/pillager_outpost_flower_forest",["minecraft:is_cherry_grov","minecraft:is_flower_forest"])
+//event.add("towns_and_towers:has_structure/pillager_outpost_forest",["minecraft:is_forest"])
+//event.add("towns_and_towers:has_structure/pillager_outpost_grove",["minecraft:is_grove"])
+//event.add("towns_and_towers:has_structure/pillager_outpost_jungle",["minecraft:is_jungle"])
+//event.add("towns_and_towers:has_structure/pillager_outpost_meadow",["minecraft:is_meadow"])
+//event.add("towns_and_towers:has_structure/pillager_outpost_mushroom_fields",["minecraft:is_mushroom_fields"])
+//event.add("towns_and_towers:has_structure/pillager_outpost_old_growth_taiga",["minecraft:is_old_growth_pine_taig","minecraft:is_old_growth_spruce_taiga"])
+event.add("towns_and_towers:has_structure/pillager_outpost_savanna",["minecraft:is_savanna"])
+//event.add("towns_and_towers:has_structure/pillager_outpost_savanna_plateau",["minecraft:is_savanna_plateau"])
+//event.add("towns_and_towers:has_structure/pillager_outpost_snowy_beach",["minecraft:is_snowy_beach"])
+//event.add("towns_and_towers:has_structure/pillager_outpost_snowy_plains",["minecraft:is_snowy_plains"])
+//event.add("towns_and_towers:has_structure/pillager_outpost_snowy_slopes",["minecraft:is_snowy_slopes"])
+//event.add("towns_and_towers:has_structure/pillager_outpost_snowy_taiga",["minecraft:is_snowy_taiga"])
+//event.add("towns_and_towers:has_structure/pillager_outpost_sparse_jungle",["minecraft:is_sparse_jungle"])
+//event.add("towns_and_towers:has_structure/pillager_outpost_sunflower_plains",["minecraft:is_sunflower_plains"])
+event.add("towns_and_towers:has_structure/pillager_outpost_swamp",["minecraft:is_lowland"])
+//event.add("towns_and_towers:has_structure/pillager_outpost_taiga",["minecraft:is_taiga"])
+//event.add("towns_and_towers:has_structure/pillager_outpost_wooded_badlands",["minecraft:is_wooded_badlands"])
+event.add("towns_and_towers:has_structure/shallow_oceans_wreckage",["minecraft:is_ocean"])
+event.add("towns_and_towers:has_structure/village_badlands_pueblo",["minecraft:is_badlands"])
+event.add("towns_and_towers:has_structure/village_beach_lighthouse",["minecraft:is_beach"])
+//event.add("towns_and_towers:has_structure/village_birch_forest_romanian",["minecraft:is_birch_fores","minecraft:is_old_growth_birch_forest"])
+event.add("towns_and_towers:has_structure/village_deep_oceans_ships",["minecraft:is_deep_ocean"])
+//event.add("towns_and_towers:has_structure/village_flower_forest_japanese",["minecraft:is_cherry_grov","minecraft:is_flower_forest"])
+//event.add("towns_and_towers:has_structure/village_forest_ruins",["minecraft:is_forest"])
+//event.add("towns_and_towers:has_structure/village_grove_villager_outpost",["minecraft:is_grove"])
+//event.add("towns_and_towers:has_structure/village_jungle_tribal",["minecraft:is_jungle"])
+//event.add("towns_and_towers:has_structure/village_meadow_swiss",["minecraft:is_meadow"])
+//event.add("towns_and_towers:has_structure/village_mushroom_fields_fantasy",["minecraft:is_mushroom_fields"])
+//event.add("towns_and_towers:has_structure/village_old_growth_taiga_polish",["minecraft:is_old_growth_pine_taig","minecraft:is_old_growth_spruce_taiga"])
+//event.add("towns_and_towers:has_structure/village_savanna_plateau_ramshackled",["minecraft:is_savanna_plateau"])
+//event.add("towns_and_towers:has_structure/village_snowy_slopes_inn",["minecraft:is_snowy_slopes"])
+//event.add("towns_and_towers:has_structure/village_snowy_taiga_viking",["minecraft:is_snowy_taiga"])
+//event.add("towns_and_towers:has_structure/village_sparse_jungle_polynesian",["minecraft:is_sparse_jungle"])
+//event.add("towns_and_towers:has_structure/village_sunflower_plains_farm",["minecraft:is_sunflower_plains"])
+event.add("towns_and_towers:has_structure/village_swamp_boat",["minecraft:is_lowland"])
+//event.add("towns_and_towers:has_structure/village_wooded_badlands_tipi",["minecraft:is_wooded_badlands"])
+
+
+
     event.add("forge:is_water",["tfc:river","tfc:ocean","tfc:ocean_reef","tfc:deep_ocean","tfc:deep_ocean_trench","sgjourney:lantean_deep_ocean"])
 
 })
