@@ -541,6 +541,7 @@ let MINECRAFT_TO_TFC_MAPS = {
     "minecraft:tuff": "tfc:rock/raw/schist",
     "minecraft:yellow_candle": "tfc:candle/yellow_candle"
 };
+//Code Curtosey of arguz on the TFC Discord
   MoreJSEvents.structureLoad((event) => {
     event.forEachPalettes((palette) => {
         palette.forEach((blockData) => {
