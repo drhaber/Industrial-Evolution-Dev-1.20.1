@@ -62,7 +62,9 @@ craftingTable.remove(<tag:items:forge:wires>);
 craftingTable.removeByName("minecraft:iron_ingot_from_nuggets");
 craftingTable.removeByName("minecraft:iron_nugget");
 
-craftingTable.removeByName("betterend:thallasium_ingot_from_nuggets");
+//craftingTable.removeByName("betterend:thallasium_ingot_from_nuggets");
+//craftingTable.removeByName("betternether:cincinnasite_ingot");
+
 
 craftingTable.removeByName("railcraft:bronze_ingot_crafted_with_ingots");
 craftingTable.removeByName("railcraft:bronze_ingot_from_bronze_nugget");

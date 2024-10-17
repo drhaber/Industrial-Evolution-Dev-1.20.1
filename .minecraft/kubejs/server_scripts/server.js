@@ -73,6 +73,8 @@ event.remove('railways:internal/plates/iron_plates','tfc:metal/sheet/wrought_iro
 event.remove('forge:plates/obsidian','tfc:metal/sheet/steel')
 event.remove('forge:dusts/coal_coke','tfmg:coal_coke_dust')
 
+event.remove('forge:ingots/iron',['betterend:thallasium_ingot','betternether:cincinnasite_ingot'])
+
 event.add('forge:storage_blocks/bronze', '#forge:storage_blocks/strong_bronze')
 event.add('forge:ingots/bronze', '#forge:ingots/strong_bronze')
 event.add('forge:nuggets/bronze', '#forge:nuggets/strong_bronze')
