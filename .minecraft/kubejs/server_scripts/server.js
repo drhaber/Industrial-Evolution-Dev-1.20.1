@@ -211,7 +211,7 @@ event.add("towns_and_towers:has_structure/village_swamp_boat",["minecraft:is_low
 
 
 
-    event.add("forge:is_water",["tfc:river","tfc:ocean","tfc:ocean_reef","tfc:deep_ocean","tfc:deep_ocean_trench","sgjourney:lantean_deep_ocean"])
+event.add("forge:is_water",["tfc:river","tfc:ocean","tfc:ocean_reef","tfc:deep_ocean","tfc:deep_ocean_trench","sgjourney:lantean_deep_ocean"])
 
 })
 BlockEvents.rightClicked(event => {
