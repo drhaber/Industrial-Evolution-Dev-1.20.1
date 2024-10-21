@@ -107,6 +107,8 @@ event.add('iceandfire:tempt_hippocampus', '#minecraft:kelp')
 
 ServerEvents.tags('block', event => {
 event.add("minecraft:dirt",["#tfc:grass","#tfc:dirt"])
+event.add('supplementaries:soap_dye_clean_blacklist', '#forge:glass')
+event.add('supplementaries:soap_dye_clean_blacklist', '#forge:panes/glass')
 })
 
 ServerEvents.tags("worldgen/biome", (event) => {

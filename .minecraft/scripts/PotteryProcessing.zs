@@ -87,9 +87,6 @@ addTFCPotteryFire("ae2:sky_dust","tfc:powder/graphite");
   "temperature": 1399
 });
 */
-//craftingTable.removeByName("supplementaries:soap_dirty_glass");
-//craftingTable.removeByName("supplementaries:soap_dirty_glass_pane");
-craftingTable.removeByRegex("supplementaries:soap_clean_*_glass");
 
 <recipetype:immersiveengineering:arc_furnace>.addJsonRecipe("arc_furnace_dirty_glass", {
   "type": "immersiveengineering:arc_furnace",
@@ -140,7 +137,7 @@ for dye in Dyes{
     }
   ],
   "processingTime": 50,
-  "required_beam_type": 2,
+  "required_beam_type": 3,
   "results": [
     {
       "item": ("minecraft:" + dye + "_stained_glass")
