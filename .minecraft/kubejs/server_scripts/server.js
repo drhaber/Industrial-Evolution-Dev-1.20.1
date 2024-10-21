@@ -103,6 +103,8 @@ event.add('tfc:pileable_ingots', 'botania:manasteel_ingot')
 event.add('iceandfire:heal_hippocampus', '#minecraft:kelp')
 event.add('iceandfire:tempt_hippocampus', '#minecraft:kelp')
 
+event.add('supplementaries:soap_dye_clean_blacklist', '#forge:glass')
+event.add('supplementaries:soap_dye_clean_blacklist', '#forge:panes/glass')
 })
 
 ServerEvents.tags('block', event => {
