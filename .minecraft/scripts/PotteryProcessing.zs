@@ -87,7 +87,10 @@ addTFCPotteryFire("ae2:sky_dust","tfc:powder/graphite");
   "temperature": 1399
 });
 */
-craftingTable.removeByName("supplementaries:soap/dirty_glass");
+//craftingTable.removeByName("supplementaries:soap_dirty_glass");
+//craftingTable.removeByName("supplementaries:soap_dirty_glass_pane");
+craftingTable.removeByRegex("supplementaries:soap_clean_*_glass");
+
 <recipetype:immersiveengineering:arc_furnace>.addJsonRecipe("arc_furnace_dirty_glass", {
   "type": "immersiveengineering:arc_furnace",
   "results": [
@@ -123,6 +126,27 @@ craftingTable.removeByName("supplementaries:soap/dirty_glass");
     }
   ]
 });
+
+var Dyes = ["white","red","orange","pink","yellow","lime","green","light_blue","cyan","blue","magenta","brown","gray","light_gray","black"];
+for dye in Dyes{
+<recipetype:create_optical:focusing>.addJsonRecipe("focusing_dyed_glass_"+ dye, {
+  "type": "create_optical:focusing",
+  "ingredients": [
+    {
+      "item": "minecraft:glass"
+    },
+    {
+      "tag": ("forge:dyes/" + dye)
+    }
+  ],
+  "processingTime": 50,
+  "required_beam_type": 2,
+  "results": [
+    {
+      "item": ("minecraft:" + dye + "_stained_glass")
+    }
+  ]
+});}
 
 <recipetype:minecraft:smelting>.remove(<item:embers:flat_stamp>);
 <recipetype:minecraft:smelting>.remove(<item:embers:ingot_stamp>);
