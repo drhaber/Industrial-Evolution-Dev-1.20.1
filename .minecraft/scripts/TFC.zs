@@ -13,6 +13,24 @@ import mods.jeitweaker.Jei;
 craftingTable.remove(<item:minecraft:string>);
 craftingTable.addShapeless("string_from_jute", <item:minecraft:string>, [<tag:items:forge:fiber_hemp>,<item:tfc:spindle>.anyDamage().transformDamage()]);
 
+craftingTable.removeByName("supplementaries:soap");
+<recipetype:tfc:barrel_sealed>.addJsonRecipe("soap_to_soap", {
+    "type": "tfc:barrel_sealed",
+    "input_item": {
+        "ingredient": {
+            "item": "tfc:powder/flux"
+        }
+    },
+    "input_fluid": {
+        "ingredient": "artisanal:soap",
+        "amount": 100
+    },
+    "output_item": {
+        "item": "supplementaries:soap"
+    },
+    "duration": 8000
+});
+
 function addGrinding(ItemIn as string, ItemOut as string, QtyO as int) as void { 
 <recipetype:tfc:quern>.addJsonRecipe("quern_grind_" + ItemIn.replace(":","_") + ItemOut.replace(":","_"), {
     "type": "tfc:quern",

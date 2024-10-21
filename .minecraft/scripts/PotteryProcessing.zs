@@ -74,7 +74,8 @@ addTFCPotteryFire("ae2:sky_dust","tfc:powder/graphite");
     }
 });
 
-
+//Glass
+/*
 <recipetype:tfc:heating>.addJsonRecipe("pottery_fire_dirty_glass", {
   "type": "tfc:heating",
   "ingredient": {
@@ -84,6 +85,43 @@ addTFCPotteryFire("ae2:sky_dust","tfc:powder/graphite");
     "item": "quark:dirty_glass"
   },
   "temperature": 1399
+});
+*/
+craftingTable.removeByName("supplementaries:soap/dirty_glass");
+<recipetype:immersiveengineering:arc_furnace>.addJsonRecipe("arc_furnace_dirty_glass", {
+  "type": "immersiveengineering:arc_furnace",
+  "results": [
+    {
+      "item": "quark:dirty_glass"
+    }
+  ],
+  "additives": [],
+  "input": {
+    "base_ingredient": {
+      "tag": "forge:sand"
+    }
+  },
+  "time": 400,
+  "energy": 2048
+});
+
+<recipetype:create_optical:focusing>.addJsonRecipe("focusing_dirty_glass", {
+  "type": "create_optical:focusing",
+  "ingredients": [
+    {
+      "tag": "forge:glass"
+    },
+    {
+      "item": "supplementaries:soap"
+    }
+  ],
+  "processingTime": 50,
+  "required_beam_type": 2,
+  "results": [
+    {
+      "item": "minecraft:glass"
+    }
+  ]
 });
 
 <recipetype:minecraft:smelting>.remove(<item:embers:flat_stamp>);
