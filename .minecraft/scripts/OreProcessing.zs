@@ -1215,6 +1215,7 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
 //Automated Steel
 
 <recipetype:create:mixing>.remove(<item:tfmg:blasting_mixture>);
+craftingTable.addShapeless("handcrafted_blasting_mixture", <item:tfmg:blasting_mixture>, [<tag:items:forge:dusts/iron>,<tfc:powder/flux>]);
 
 <recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("ultra_high_high_carbon_steel_cooling", {
   "type": "createdieselgenerators:basin_fermenting",
