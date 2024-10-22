@@ -58,6 +58,8 @@ craftingTable.remove(<tag:items:forge:wires>);
 
 <recipetype:create:compacting>.remove(<fluid:northstar:hydrocarbon>);
 
+<recipetype:create:sequenced_assembly>.remove(<item:vintageimprovements:pig_iron_sheet>);
+
 //craftingTable.remove(<item:minecraft:iron_nugget>);
 craftingTable.removeByName("minecraft:iron_ingot_from_nuggets");
 craftingTable.removeByName("minecraft:iron_nugget");
@@ -1215,7 +1217,7 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
 //Automated Steel
 
 <recipetype:create:mixing>.remove(<item:tfmg:blasting_mixture>);
-craftingTable.addShapeless("handcrafted_blasting_mixture", <item:tfmg:blasting_mixture>, [<tag:items:forge:dusts/iron>,<tfc:powder/flux>]);
+craftingTable.addShapeless("handcrafted_blasting_mixture", <item:tfmg:blasting_mixture>, [<tag:items:forge:dusts/iron>,<item:tfc:powder/flux>]);
 
 <recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("ultra_high_high_carbon_steel_cooling", {
   "type": "createdieselgenerators:basin_fermenting",
@@ -1276,8 +1278,8 @@ craftingTable.addShapeless("handcrafted_blasting_mixture", <item:tfmg:blasting_m
 	"heatRequirement": "superheated",
 	"ingredients": [ 
 		{
-			"fluid": "tfc:metal/high_carbon_steel",
-			"amount": 100
+			"fluid": "tfc:metal/pig_iron",
+			"amount": 200
 		},
 		{
 			"fluid": "northstar:liquid_oxygen",
@@ -1291,7 +1293,11 @@ craftingTable.addShapeless("handcrafted_blasting_mixture", <item:tfmg:blasting_m
 		},
     {
 			"fluid": "kubejs:liquid_carbon_solution",
-			"amount": 50
+			"amount": 100
+		},
+    {
+			"fluid": "kubejs:waste",
+			"amount": 250
 		}
 	],
 	"processingTime": 400
