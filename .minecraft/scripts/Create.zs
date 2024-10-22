@@ -66,6 +66,21 @@ craftingTable.remove(<item:create:brass_hand>);
 }
 );
 
+<recipetype:vintageimprovements:curving>.addJsonRecipe("curving_create_brass_hand", {
+	"type": "vintageimprovements:curving",
+	"mode": 3,
+	"ingredients": [
+		{
+		  "tag": "forge:double_ingots/brass"
+		}
+	],
+	"results": [
+		{
+		  "item": "create:brass_hand"
+		}
+	]
+});
+
 //Generators
 craftingTable.remove(<item:create_new_age:carbon_brushes>);
 craftingTable.addShaped("handcrafted_carbon_brushes", <item:create_new_age:carbon_brushes>, [
@@ -90,66 +105,26 @@ craftingTable.addShapeless("rich_magnetite", <item:tfmg:magnetic_ingot>*9, [<ite
 <recipetype:create:compacting>.addJsonRecipe("magnetic_ingot", {
   "type": "create:compacting",
   "ingredients": [
-    {
-      "item": "tfc:powder/magnetite"
-    },
-    {
-      "item": "tfc:powder/magnetite"
-    },    
-    {
-      "item": "tfc:powder/magnetite"
-    },
-    {
-      "item": "tfc:powder/magnetite"
-    },
-    {
-      "item": "tfc:powder/magnetite"
-    },    
-    {
-      "item": "tfc:powder/magnetite"
-    },
-    {
-      "item": "tfc:powder/magnetite"
-    },    
-    {
-      "item": "tfc:powder/magnetite"
-    },
-    {
-      "item": "tfc:powder/magnetite"
-    },
-    {
-      "item": "tfc:powder/magnetite"
-    }, 
-    {
-      "item": "tfc:powder/magnetite"
-    },
-    {
-      "item": "tfc:powder/magnetite"
-    },    
-    {
-      "item": "tfc:powder/magnetite"
-    },
-    {
-      "item": "tfc:powder/magnetite"
-    },
-    {
-      "item": "tfc:powder/magnetite"
-    },    
-    {
-      "item": "tfc:powder/magnetite"
-    },
-    {
-      "item": "tfc:powder/magnetite"
-    },    
-    {
-      "item": "tfc:powder/magnetite"
-    },
-    {
-      "item": "tfc:powder/magnetite"
-    },
-    {
-      "item": "tfc:powder/magnetite"
-    }             
+    {"item": "tfc:powder/magnetite"},
+    {"item": "tfc:powder/magnetite"},    
+    {"item": "tfc:powder/magnetite"},
+    {"item": "tfc:powder/magnetite"},
+    {"item": "tfc:powder/magnetite"},    
+    {"item": "tfc:powder/magnetite"},
+    {"item": "tfc:powder/magnetite"},    
+    {"item": "tfc:powder/magnetite"},
+    {"item": "tfc:powder/magnetite"},
+    {"item": "tfc:powder/magnetite"}, 
+    {"item": "tfc:powder/magnetite"},
+    {"item": "tfc:powder/magnetite"},    
+    {"item": "tfc:powder/magnetite"},
+    {"item": "tfc:powder/magnetite"},
+    {"item": "tfc:powder/magnetite"},    
+    {"item": "tfc:powder/magnetite"},
+    {"item": "tfc:powder/magnetite"},    
+    {"item": "tfc:powder/magnetite"},
+    {"item": "tfc:powder/magnetite"},
+    {"item": "tfc:powder/magnetite"}             
   ],
   "results": [
     {

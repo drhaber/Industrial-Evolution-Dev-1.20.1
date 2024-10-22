@@ -13,6 +13,21 @@ import mods.jeitweaker.Jei;
 craftingTable.remove(<item:minecraft:string>);
 craftingTable.addShapeless("string_from_jute", <item:minecraft:string>, [<tag:items:forge:fiber_hemp>,<item:tfc:spindle>.anyDamage().transformDamage()]);
 
+<recipetype:vintageimprovements:turning>.addJsonRecipe("lathe_brass-mechanism", {
+	"type":"vintageimprovements:turning",
+	"ingredients": [
+		{
+			"tag": "forge:rods/brass"
+		}
+	],
+	"results": [
+		{
+			"item": "tfc:brass_mechanisms",
+			"count": 1
+		}
+	]
+});
+
 craftingTable.removeByName("supplementaries:soap");
 <recipetype:tfc:barrel_sealed>.addJsonRecipe("soap_to_soap", {
     "type": "tfc:barrel_sealed",
