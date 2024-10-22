@@ -63,3 +63,11 @@ craftingTable.remove(<item:minecraft:clock>);
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:railcraft:steel_gear>))
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:railcraft:iron_gear>))     
   .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:firmalife:reinforced_glass>)));            
+
+<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("seq_glass_bottle")
+  .transitionTo(<item:quark:clear_shard>)
+  .require(<item:firmalife:wine_glass>)
+  .loops(1)
+  .addOutput(<item:tfc:silica_glass_bottle>,1)
+  .addStep<mods.createtweaker.CuttingRecipe>((rb) => rb.duration(50))
+  .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:tfc:powder/flux>)));

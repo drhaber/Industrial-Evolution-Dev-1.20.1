@@ -94,3 +94,18 @@ addGrinding("minecraft:planks","immersiveengineering:dust_wood",4);
     "steps_required": 8,
     "in_progress_texture": "tfc:block/rooted_dirt/loam"
 });
+
+<recipetype:vintageimprovements:turning>.addJsonRecipe("lathe_wine_glass", {
+	"type":"vintageimprovements:turning",
+	"ingredients": [
+		{
+			"tag": "forge:glass/colorless"
+		}
+	],
+	"results": [
+		{
+			"item": "firmalife:wine_glass",
+			"count": 1
+		}
+	]
+});

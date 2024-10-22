@@ -181,10 +181,6 @@ craftingTable.addShaped("handcrafted_rolling_mill", <item:createaddition:rolling
     [<item:create:andesite_casing>,<item:create:andesite_casing>,<item:create:andesite_casing>]]);        
 
 craftingTable.remove(<item:create:belt_connector>);
-craftingTable.addShaped("handcrafted_create_belt_leather", <item:create:belt_connector>*8,
-[[<item:minecraft:leather>,<item:minecraft:leather>,<item:minecraft:leather>],
-[<tag:items:tfc:chains>,<tag:items:tfc:chains>,<tag:items:tfc:chains>],
-[<item:minecraft:leather>,<item:minecraft:leather>,<item:minecraft:leather>]]);
 
 <recipetype:createaddition:rolling>.addJsonRecipe("rolled_create_belt_rubber", {
 	"type":"createaddition:rolling",
@@ -193,9 +189,25 @@ craftingTable.addShaped("handcrafted_create_belt_leather", <item:create:belt_con
 	},
 	"result": {
 		"item": "create:belt_connector",
-		"count": 3
+		"count": 4
 	}
 });    
+
+<recipetype:tfc:knapping>.addJsonRecipe("knapped_create_belt_leather", {
+  "type": "tfc:knapping",
+  "knapping_type": "tfc:leather",
+    "pattern": [
+        "     ",
+        "XXXXX",
+        "X   X",
+        "XXXXX",
+        "     "
+      ],
+    "result": {
+        "item": "create:belt_connector",
+        "count": 2
+    }
+});
 
 craftingTable.remove(<item:create:shaft>);
 <recipetype:create:item_application>.addJsonRecipe("item_application_shaft", {
