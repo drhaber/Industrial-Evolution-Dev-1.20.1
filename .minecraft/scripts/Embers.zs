@@ -158,7 +158,7 @@ craftingTable.addShaped("handcrafted_fluid_pipe", <item:embers:fluid_pipe>*16,[
 
 craftingTable.remove(<item:embers:melter>);
 craftingTable.addShaped("handcrafted_embers_melter", <item:embers:melter>,[
-  [<item:minecraft:air>,<item:embers:caminite_valve>,<item:minecraft:air>],
+  [<item:minecraft:air>,<item:tfc:crucible>,<item:minecraft:air>],
   [<item:minecraft:air>,<item:embers:caminite_ring>,<item:minecraft:air>],
   [<tag:items:forge:sheets/cast_iron>,<item:embers:superheater>,<tag:items:forge:sheets/cast_iron>]]);    
 
@@ -175,7 +175,7 @@ craftingTable.addShaped("handcrafted_embers_stamper", <item:embers:stamper>,[
 
 craftingTable.remove(<item:embers:stamp_base>);
 craftingTable.addShaped("handcrafted_embers_stamp_base", <item:embers:stamp_base>,[
-  [<tag:items:forge:double_sheets/cast_iron>],
+  [<item:tfcchannelcasting:mold_table>,
   [<item:embers:caminite_ring>],
   [<tag:items:forge:double_ingots/lead>]]);  
 

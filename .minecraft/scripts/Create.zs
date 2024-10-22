@@ -19,6 +19,8 @@ craftingTable.remove(<item:steampowered:cast_iron_boiler>);
 craftingTable.remove(<item:steampowered:cast_iron_burner>);
 craftingTable.remove(<item:steampowered:steel_boiler>);
 craftingTable.remove(<item:steampowered:steel_burner>);
+<recipetype:minecraft:smelting>.remove(<item:tfmg:fireproof_brick>);
+
 
 <recipetype:tfmg:polarizing>.remove(<item:tfmg:magnetic_ingot>);
 
