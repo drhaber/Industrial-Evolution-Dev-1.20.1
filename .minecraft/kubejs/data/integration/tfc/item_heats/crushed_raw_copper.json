@@ -1,0 +1,14 @@
+{
+    "ingredient":[
+      {
+        "item": "create:crushed_raw_copper"
+      },
+      {
+        "item": "immersiveengineering:dust_copper"
+      }
+    ],
+      "heat_capacity": 1.143,
+      "forging_temperature": 648,
+      "welding_temperature": 864
+}
+

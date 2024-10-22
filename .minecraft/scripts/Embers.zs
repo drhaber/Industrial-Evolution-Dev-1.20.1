@@ -175,7 +175,7 @@ craftingTable.addShaped("handcrafted_embers_stamper", <item:embers:stamper>,[
 
 craftingTable.remove(<item:embers:stamp_base>);
 craftingTable.addShaped("handcrafted_embers_stamp_base", <item:embers:stamp_base>,[
-  [<item:tfcchannelcasting:mold_table>,
+  [<item:tfcchannelcasting:mold_table>],
   [<item:embers:caminite_ring>],
   [<tag:items:forge:double_ingots/lead>]]);  
 

@@ -224,7 +224,7 @@ craftingTable.remove(<item:immersiveengineering:redstone_acid_bucket>);
 		"tag": "tfc:redstone_ore"
     },
     {
-      "fluid": "tfmg:sulfuric_acid",
+      "fluid": "northstar:sulfuric_acid",
       "amount": 250
     }
   ],
@@ -771,26 +771,39 @@ addIEOrecrushing("tfc_ie_addon:ore/small_bauxite","tfc_ie_addon:powder/bauxite",
 addIEOrecrushing("tfc_ie_addon:ore/small_uraninite","create:crushed_raw_uranium",2,0.2);
 addIEOrecrushing("tfc:ore/small_garnierite","create:crushed_raw_nickel",2,0.2);
 
+function addDustCleaning(ItemIn as string, ItemOut as string) as void { 
+<recipetype:vintageimprovements:vacuumizing>.addJsonRecipe("dust_cleaning_" + ItemIn.replace(":","_") + "_from_" + ItemOut.replace(":","_"), {
+	"type":"vintageimprovements:vacuumizing",
+  "heatRequirement": "superheated",
+	"ingredients": [ 
+    {
+			"fluid": "northstar:sulfuric_acid",
+			"amount": 100
+		},
+    {"item": ItemIn,},{"item": ItemIn,},{"item": ItemIn,},{"item": ItemIn,},{"item": ItemIn,},{"item": ItemIn,},{"item": ItemIn,},{"item": ItemIn,},{"item": ItemIn,},{"item": ItemIn,},{"item": ItemIn,},{"item": ItemIn,},{"item": ItemIn,},{"item": ItemIn,},{"item": ItemIn,},{"item": ItemIn,},{"item": ItemIn,},{"item": ItemIn,},{"item": ItemIn,},{"item": ItemIn,}
+	],
+	"results": [
+		{
+			"item": ItemOut,
+			"count": 1
+		}
+	],
+	"processingTime": 600
+});}
 
-addOrecrushing("create:crushed_raw_iron","immersiveengineering:dust_iron");
-addOrecrushing("create:crushed_raw_gold","tfc:powder/native_gold");
-addOrecrushing("create:crushed_raw_copper","tfc:powder/native_copper");
-addOrecrushing("create:crushed_raw_zinc","tfc:powder/sphalerite");
-addOrecrushing("create:crushed_raw_silver","tfc:powder/native_silver");
-addOrecrushing("create:crushed_raw_tin","tfc:powder/cassiterite");
-addOrecrushing("create:crushed_raw_lead","tfc_ie_addon:powder/galena");
-addOrecrushing("create:crushed_raw_uranium","tfc_ie_addon:powder/uraninite");
-addOrecrushing("create:crushed_raw_nickel","tfc:powder/garnierite");
+addDustCleaning("create:crushed_raw_iron","immersiveengineering:dust_iron");
+addDustCleaning("create:crushed_raw_gold","immersiveengineering:dust_gold");
+addDustCleaning("create:crushed_raw_copper","immersiveengineering:dust_copper");
+addDustCleaning("create:crushed_raw_silver","immersiveengineering:dust_silver");
+addDustCleaning("create:crushed_raw_lead","immersiveengineering:dust_lead");
+addDustCleaning("create:crushed_raw_nickel","immersiveengineering:dust_nickel");
 
-addIEOrecrushing("create:crushed_raw_iron","immersiveengineering:dust_iron",2,0);
-addIEOrecrushing("create:crushed_raw_gold","tfc:powder/native_gold",2,0);
-addIEOrecrushing("create:crushed_raw_copper","tfc:powder/native_copper",2,0);
-addIEOrecrushing("create:crushed_raw_zinc","tfc:powder/sphalerite",2,0);
-addIEOrecrushing("create:crushed_raw_silver","tfc:powder/native_silver",2,0);
-addIEOrecrushing("create:crushed_raw_tin","tfc:powder/cassiterite",2,0);
-addIEOrecrushing("create:crushed_raw_lead","tfc_ie_addon:powder/galena",2,0);
-addIEOrecrushing("create:crushed_raw_uranium","tfc_ie_addon:powder/uraninite",2,0);
-addIEOrecrushing("create:crushed_raw_nickel","tfc:powder/garnierite",2,0);
+addTFCoresmelting("tfc:metal/cast_iron","immersiveengineering:dust_iron",100,1535);
+addTFCoresmelting("tfc:metal/gold","immersiveengineering:dust_gold",100,1060);
+addTFCoresmelting("tfc:metal/copper","immersiveengineering:dust_copper",100,1080);
+addTFCoresmelting("tfc:metal/silver","immersiveengineering:dust_silver",100,961);
+addTFCoresmelting("tfc_ie_addon:metal/lead","immersiveengineering:dust_lead",100,500);
+addTFCoresmelting("tfc:metal/nickel","immersiveengineering:dust_nickel",100,1453);
 
 //lead
 addOrecrushing("tfc_ie_addon:ore/poor_galena","tfc_ie_addon:ore/small_galena");
@@ -1201,6 +1214,8 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
 
 //Automated Steel
 
+<recipetype:create:mixing>.remove(<item:tfmg:blasting_mixture>);
+
 <recipetype:createdieselgenerators:basin_fermenting>.addJsonRecipe("ultra_high_high_carbon_steel_cooling", {
   "type": "createdieselgenerators:basin_fermenting",
   "heatRequirement": "heated",  
@@ -1223,14 +1238,14 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
   ]
 });
 
-<recipetype:vintageimprovements:pressurizing>.addJsonRecipe("ultra_high_carbon_steel_steel", {
-	"type":"vintageimprovements:pressurizing",
+<recipetype:vintageimprovements:vacuumizing>.addJsonRecipe("ultra_high_carbon_steel_steel", {
+	"type":"vintageimprovements:vacuumizing",
 	"secondaryFluidResults": 0,
 	"heatRequirement": "superheated",
 	"ingredients": [ 
 		{
 			"fluid": "tfmg:molten_steel",
-			"amount": 333
+			"amount": 111
 		},
 		{
 			"fluid": "northstar:liquid_oxygen",
@@ -1244,18 +1259,18 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
 		},
     {
 			"fluid": "kubejs:liquid_carbon_solution",
-			"amount": 100
+			"amount": 50
 		},
     {
 			"fluid": "kubejs:waste",
-			"amount": 200
+			"amount": 100
 		}
 	],
 	"processingTime": 400
 });
 
-<recipetype:vintageimprovements:pressurizing>.addJsonRecipe("high_carbon_steel_steel", {
-	"type":"vintageimprovements:pressurizing",
+<recipetype:vintageimprovements:vacuumizing>.addJsonRecipe("high_carbon_steel_steel", {
+	"type":"vintageimprovements:vacuumizing",
 	"secondaryFluidResults": 0,
 	"heatRequirement": "superheated",
 	"ingredients": [ 

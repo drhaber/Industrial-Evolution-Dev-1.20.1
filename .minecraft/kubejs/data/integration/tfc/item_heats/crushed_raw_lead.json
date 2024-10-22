@@ -1,0 +1,13 @@
+{
+    "ingredient": [
+      {
+        "item": "create:crushed_raw_lead"
+      },
+      {
+        "item": "immersiveengineering:dust_lead"
+      }
+    ],
+      "heat_capacity": 1.143,
+      "forging_temperature": 300,
+      "welding_temperature": 400
+}

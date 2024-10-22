@@ -434,7 +434,8 @@
         "tfc:waterflasks/bladders",
         "tfc:mechanics/decay",
         "tfc:artisanal/soap",
-        "tfc:bsa/sinew_processing"
+        "tfc:bsa/sinew_processing",
+        "tfc:mechanics/blast_furnace"
       ],
       "bookmarks": [],
       "completedManualQuests": []

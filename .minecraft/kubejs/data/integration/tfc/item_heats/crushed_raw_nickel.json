@@ -1,0 +1,13 @@
+{
+    "ingredient": [
+      {
+        "item": "create:crushed_raw_nickel"
+      },
+      {
+        "item": "immersiveengineering:dust_nickel"
+      }
+    ],
+      "heat_capacity": 0.833,
+      "forging_temperature": 872,
+      "welding_temperature": 1162
+}

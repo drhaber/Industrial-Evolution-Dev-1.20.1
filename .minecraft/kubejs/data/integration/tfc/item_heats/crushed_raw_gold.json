@@ -1,0 +1,13 @@
+{
+    "ingredient": [
+      {
+        "item": "create:crushed_raw_gold"
+      },
+      {
+        "item": "immersiveengineering:dust_gold"
+      }
+    ],
+      "heat_capacity": 0.667,
+      "forging_temperature": 636,
+      "welding_temperature": 848
+}

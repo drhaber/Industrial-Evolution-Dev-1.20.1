@@ -1,0 +1,13 @@
+{
+    "ingredient": [
+      {
+        "item": "create:crushed_raw_silver"
+      },
+      {
+        "item": "immersiveengineering:dust_silvver"
+      }
+    ],
+      "heat_capacity": 0.833,
+      "forging_temperature": 577,
+      "welding_temperature": 769
+}
