@@ -685,6 +685,9 @@ function addTFCIngotCasting(fluidIn as string, itemOut as string) as void {
   "break_chance": 0.1
 });
 }
+
+craftingTableremoveByName("minecraft:netherite_ingot");
+
 <recipetype:tfc:heating>.removeByName("tfc:heating/metal/netherite_ingot");
 addTFCIngotCasting("kubejs:molten_red_alloy","morered:red_alloy_ingot");
 addTFCIngotCasting("kubejs:molten_netherite","minecraft:netherite_ingot");

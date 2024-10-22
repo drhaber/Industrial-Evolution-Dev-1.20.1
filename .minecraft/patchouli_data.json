@@ -435,7 +435,8 @@
         "tfc:mechanics/decay",
         "tfc:artisanal/soap",
         "tfc:bsa/sinew_processing",
-        "tfc:mechanics/blast_furnace"
+        "tfc:mechanics/blast_furnace",
+        "tfc:mechanics/fire_clay"
       ],
       "bookmarks": [],
       "completedManualQuests": []
