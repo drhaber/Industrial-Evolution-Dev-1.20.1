@@ -61,6 +61,21 @@ craftingTable.remove(<tag:items:forge:wires>);
 //craftingTable.remove(<item:minecraft:iron_nugget>);
 craftingTable.removeByName("minecraft:iron_ingot_from_nuggets");
 craftingTable.removeByName("minecraft:iron_nugget");
+craftingTable.removeByName("minecraft:iron_block");
+craftingTable.removeByName("minecraft:iron_ingot_from_iron_block");
+
+craftingTable.addShapeless("handcrafted_wrought_iron_ingot_iron_nugget", <item:minecraft:iron_nugget>*9, [<item:tfc:metal/ingot/wrought_iron>]);
+craftingTable.addShaped("handcrafted_iron_nugget_wrought_iron_ingot", <item:tfc:metal/ingot/wrought_iron>,[
+    [<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>],
+    [<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>],
+    [<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>]]);  
+
+craftingTable.addShapeless("handcrafted_wrought_iron_ingot_iron_block", <item:tfc:metal/ingot/wrought_iron>*9, [<item:minecraft:iron_block>]);
+craftingTable.addShaped("handcrafted_iron_block_wrought_iron_ingot", <item:minecraft:iron_block>,[
+    [<item:tfc:metal/ingot/wrought_iron>,<item:tfc:metal/ingot/wrought_iron>,<item:tfc:metal/ingot/wrought_iron>],
+    [<item:tfc:metal/ingot/wrought_iron>,<item:tfc:metal/ingot/wrought_iron>,<item:tfc:metal/ingot/wrought_iron>],
+    [<item:tfc:metal/ingot/wrought_iron>,<item:tfc:metal/ingot/wrought_iron>,<item:tfc:metal/ingot/wrought_iron>]]);  
+
 
 //craftingTable.removeByName("betterend:thallasium_ingot_from_nuggets");
 //craftingTable.removeByName("betternether:cincinnasite_ingot");
@@ -94,12 +109,6 @@ craftingTable.removeByName("railcraft:brass_ingot_crafted_with_ingots");
 <recipetype:immersiveengineering:crusher>.removeByName("immersiveengineering:crusher/raw_block_aluminum");
 <recipetype:immersiveengineering:crusher>.removeByName("immersiveengineering:crusher/raw_ore_aluminum");
 <recipetype:immersiveengineering:crusher>.removeByName("immersiveengineering:crusher/ore_aluminum");
-
-craftingTable.addShapeless("handcrafted_wrought_iron_ingot_iron_nugget", <item:minecraft:iron_nugget>*9, [<item:tfc:metal/ingot/wrought_iron>]);
-craftingTable.addShaped("handcrafted_iron_nugget_wrought_iron_ingot", <item:tfc:metal/ingot/wrought_iron>,[
-    [<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>],
-    [<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>],
-    [<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:iron_nugget>]]);  
 
 /*
 <item:minecraft:iron_nugget>
