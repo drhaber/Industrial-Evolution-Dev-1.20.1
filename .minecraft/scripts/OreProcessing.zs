@@ -669,6 +669,32 @@ addEmbersmelting("tfc:metal/cast_iron","tfc:ore/rich_limonite",35);
 addEmbersmelting("tfc:metal/zinc","tfc:ore/rich_sphalerite",35);
 addEmbersmelting("tfc:metal/copper","tfc:ore/rich_tetrahedrite",35);
 
+function addTFCIngotCasting(fluidIn as string, itemOut as string) as void { 
+<recipetype:tfc:casting>.addJsonRecipe("tfc_ingot_casting_" + itemOut.replace(":","_") + "_" + fluidIn.replace(":","_"), {
+  "type": "tfc:casting",
+  "mold": {
+    "item": "tfc:ceramic/ingot_mold"
+  },
+  "fluid": {
+    "ingredient": fluidIn,
+    "amount": 100
+  },
+  "result": {
+    "item": itemOut
+  },
+  "break_chance": 0.1
+});
+}
+<recipetype:tfc:heating>.removeByName("tfc:heating/metal/netherite_ingot");
+addTFCIngotCasting("kubejs:molten_red_alloy","morered:red_alloy_ingot");
+addTFCIngotCasting("kubejs:molten_netherite","minecraft:netherite_ingot");
+addTFCoresmelting("kubejs:molten_red_alloy","morered:red_alloy_ingot",100,950);
+addTFCoresmelting("kubejs:molten_netherite","minecraft:netherite_ingot",100,1540);
+
+addEmbers2MixingnonTFC("kubejs:molten_red_alloy",1,"tfc:metal/copper",1,"immersiveengineering:redstone_acid",4);
+addEmbersStamping(<fluid:kubejs:molten_red_alloy>,<item:morered:red_alloy_ingot>,<item:embers:ingot_stamp>);
+
+
 <recipetype:immersiveengineering:arc_furnace>.addJsonRecipe("arc_furnace_wrought_iron_from_crushed_smelting", {
   "type": "immersiveengineering:arc_furnace",
   "results": [
@@ -730,7 +756,7 @@ addEmbersmelting("tfc:metal/copper","tfc:ore/rich_tetrahedrite",35);
   },
   "fluid": {
     "ingredient": "tfc:metal/cast_iron",
-    "amount": 50
+    "amount": 100
   },
   "catalyst": {
     "ingredient": {
@@ -1044,8 +1070,6 @@ addEmbers2MixingnonTFC("immersiveengineering:phenolic_resin", 3, "immersiveengin
   "stamp": (<item:embers:plate_stamp> as IData)
 }
 );
-addEmbers2MixingnonTFC("kubejs:moltenredalloy",1,"tfc:metal/copper",1,"immersiveengineering:redstone_acid",4);
-addEmbersStamping(<fluid:kubejs:moltenredalloy>,<item:morered:red_alloy_ingot>,<item:embers:ingot_stamp>);
 
 //Bauxite/Aluminium - Bayer Process
 
@@ -1212,7 +1236,21 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
 });
 //Hall–Héroult_process is above
 
-
+//Netherite
+<recipetype:tfc:blast_furnace>.addJsonRecipe("blast_furnace_netherite", {
+  "type": "tfc:blast_furnace",
+  "fluid": {
+    "ingredient": "tfc:metal/gold",
+    "amount": 100
+  },
+  "result": {
+    "fluid": "kubejs:molten_netherite",
+    "amount": 100
+  },
+  "catalyst": {
+    "item": "minecraft:netherite_scrap"
+  }
+});
 
 //Automated Steel
 
@@ -1507,6 +1545,8 @@ craftingTable.addShapeless("handcrafted_plate_from_sheet_uranium",<item:immersiv
 craftingTable.addShapeless("handcrafted_plate_from_sheet_constantan",<item:immersiveengineering:plate_constantan>*2, [<tag:items:forge:sheets/constantan>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
 craftingTable.addShapeless("handcrafted_plate_from_sheet_electrum",<item:immersiveengineering:plate_electrum>*2, [<tag:items:forge:sheets/electrum>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
 craftingTable.addShapeless("handcrafted_plate_from_sheet_steel",<item:immersiveengineering:plate_steel>*2, [<tag:items:forge:sheets/steel>,<item:immersiveengineering:wirecutter>.anyDamage().transformDamage(1)]);    
+
+
 /*
 {
 	"type":"createaddition:rolling",

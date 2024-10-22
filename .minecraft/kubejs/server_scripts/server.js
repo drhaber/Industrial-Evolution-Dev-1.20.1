@@ -270,6 +270,7 @@ ServerEvents.tags('block', event => {
 ServerEvents.tags('fluid', event => {
     event.add("tfc:usable_in_wooden_bucket",["immersiveengineering:redstone_acid"])
     event.add("tfc:usable_in_pot",["immersiveengineering:redstone_acid"])
+    event.add("tfc:usable_in_ingot_mold",["kubejs:molten_netherite","kubejs:molten_red_alloy"])
 })
 
 let mobReplacementMap = ['cow', 'cat', 'chicken', 'salmon', 'cod', 'tropical_fish', 'pufferfish', 'dolphin', 'squid', 'turtle', 'frog', 'polar_bear', 'wolf', 'pig', 'goat', 'sheep', 'rabbit', 'fox', 'panda', 'ocelot', 'donkey', 'mule', 'horse' ]

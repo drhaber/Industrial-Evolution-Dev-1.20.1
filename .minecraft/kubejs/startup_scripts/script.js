@@ -203,7 +203,7 @@ StartupEvents.registry('fluid', e => {
 		.displayName('Liquid Catalyst')
 
 	//MoltenRedAlloy
-	e.create('moltenredalloy')
+	e.create('molten_red_alloy')
 		.thickTexture(0xEB8F80)
 		.bucketColor(0xEB8F80)
 		.displayName('Molten Red Alloy')
@@ -237,6 +237,12 @@ StartupEvents.registry('fluid', e => {
 		.thickTexture(0xB9BCC3)
 		.bucketColor(0xB9BCC3)
 		.displayName('Metallic Naquadah')	
+
+	//Molten Netherite
+	e.create('molten_netherite')
+		.thickTexture(0x4B4042)
+		.bucketColor(0x4B4042)
+		.displayName('Molten Netherite')			
 })
 /*
 CapabilityEvents.blockEntity((event) => {
