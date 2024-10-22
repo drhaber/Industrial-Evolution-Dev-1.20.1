@@ -116,8 +116,10 @@ craftingTable.addShaped("handcrafted_powered_centrifuge", <item:productivebees:p
 });
 
 craftingTable.remove(<item:minecraft:glass_bottle>);
-craftingTable.addShapeless("handcrafted_glass_bottle", <item:minecraft:glass_bottle>, [<tag:items:tfc:glass_bottles>,<item:firmalife:cork>]);
-
+craftingTable.addShaped("handcrafted_glass_bottle", <item:minecraft:glass_bottle>*8,[
+ [<tag:items:tfc:glass_bottles>,<tag:items:tfc:glass_bottles>,<tag:items:tfc:glass_bottles>],
+ [<tag:items:tfc:glass_bottles>,<tag:items:forge:bottle_stopper>,<tag:items:tfc:glass_bottles>],
+ [<tag:items:tfc:glass_bottles>,<tag:items:tfc:glass_bottles>,<tag:items:tfc:glass_bottles>]]);
 
 //<recipetype:create:pressing>.remove(<item:minecraft:paper>);
 <recipetype:create:pressing>.removeByName("create:pressing/sugar_cane");

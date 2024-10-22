@@ -38,7 +38,7 @@ craftingTable.addShaped("handcrafted_create_watermill", <item:create:water_wheel
 
 craftingTable.remove(<item:create:deployer>);
 craftingTable.addShaped("handcrafted_create_deployer", <item:create:deployer>,[
-    [<item:immersiveengineering:electron_tube>],
+    [<item:tfc:brass_mechanisms>],
     [<item:create:andesite_casing>],
     [<item:create:brass_hand>]]); 
 
@@ -210,18 +210,18 @@ craftingTable.addShaped("handcrafted_create_belt_leather", <item:create:belt_con
 [[<item:minecraft:leather>,<item:minecraft:leather>,<item:minecraft:leather>],
 [<tag:items:tfc:chains>,<tag:items:tfc:chains>,<tag:items:tfc:chains>],
 [<item:minecraft:leather>,<item:minecraft:leather>,<item:minecraft:leather>]]);
-/*
+
 <recipetype:createaddition:rolling>.addJsonRecipe("rolled_create_belt_rubber", {
 	"type":"createaddition:rolling",
 	"input": {
-      	"item": "create_dd:rubber"
+      	"tag": "forge:rubber"
 	},
 	"result": {
 		"item": "create:belt_connector",
 		"count": 3
 	}
 });    
-*/
+
 craftingTable.remove(<item:create:shaft>);
 <recipetype:create:item_application>.addJsonRecipe("item_application_shaft", {
   "type": "create:item_application",

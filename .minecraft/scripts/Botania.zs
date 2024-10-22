@@ -256,16 +256,16 @@ craftingTable.addShaped("handcrafted_mana_sword", <item:botania:manasteel_sword>
       "tag": "botania:manasteel_ingots"
     },
     {
-      "tag": "tfc:rock/raw"
+      "tag": "tfc:igneous_intrusive_rock"
     },
     {
-      "tag": "bsa:rock/loose"
+      "tag": "tfc:sedimentary_rock"
     },
     {
-      "tag": "bsa:rock/loose"
+      "tag": "tfc:igneous_extrusive_rock"
     },
     {
-      "tag": "forge:mushrooms"
+      "tag": "tfc:metamorphic_rock"
     }
   ],
   "mana": 5200,

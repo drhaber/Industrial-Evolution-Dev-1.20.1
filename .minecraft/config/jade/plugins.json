@@ -176,6 +176,7 @@
     "candle": true,
     "jack_o_lantern": true,
     "firepit": true,
+    "wet_concrete": true,
     "ingot_pile": true
   },
   "firmaciv": {

@@ -11,7 +11,7 @@ familiarityDecayLimit = 0.3
 	# Forces a number of game rules to specific values.
 	#   naturalRegeneration = false (Health regen is much slower and not tied to extra saturation)
 	#   doInsomnia = false (No phantoms)
-	#   doTraderSpawning = false (No wandering traders)
+	#   doTraderSpawning = true (No wandering traders)
 	#   doPatrolSpawning = false (No pillager patrols)
 	enableForcedTFCGameRules = true
 	#
