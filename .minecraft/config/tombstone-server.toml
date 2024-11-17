@@ -4,14 +4,12 @@
 	#The time in minutes before a grave is unlocked to anyone [-1..MAX|default:-1|disabled:-1]
 	#Range: > -1
 	decay_time = -1
-
-#Miscellaneous options
-[general]
+	#Experience lost on death [0..100|default:95]
+	#Range: 0 ~ 100
+	xp_loss_on_death = 95
 	#The duration of the Ghostly Shape effect in seconds [0..MAX|default:120]
 	#Range: > 0
 	ghostly_shape_duration = 120
-	#Always Keep xp on death [false/true|default:false]
-	always_keep_xp_on_death = false
 
 #Allows to customize or disable the enchantments
 [enchantments]
@@ -221,4 +219,19 @@
 	#Defines the level max of the perk Gladiator [1..5|default:5]
 	#Range: 1 ~ 5
 	level_max_gladiator = 5
+
+#Allows to customize or disable the potions
+[potions]
+	#Allows Earthly Garden [false/true|default:true]
+	allow_earthly_garden = true
+	#Allows Bait [false/true|default:true]
+	allow_bait = true
+	#Allows Frostbite [false/true|default:true]
+	allow_frostbite = true
+	#Allows Darkness [false/true|default:true]
+	allow_darkness = true
+	#Allows Discretion [false/true|default:true]
+	allow_discretion = true
+	#Allows Restoration [false/true|default:true]
+	allow_restoration = true
 

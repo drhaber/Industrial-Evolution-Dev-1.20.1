@@ -50,18 +50,18 @@
 			gilded_oak = true
 			blighted_skyroot = true
 
-		[types.leaves_type.betternether]
-			willow = true
-			rubeus = true
-			anchor_tree = true
-			nether_sakura = true
-
 		[types.leaves_type.betterend]
 			pythadendron = true
 			lacugrove = true
 			dragon_tree = true
 			tenanea = true
 			lucernia = true
+
+		[types.leaves_type.betternether]
+			willow = true
+			rubeus = true
+			anchor_tree = true
+			nether_sakura = true
 
 	[types.cake]
 
@@ -151,17 +151,6 @@
 			crystal = true
 			glacia = true
 
-		[types.wood_type.betternether]
-			nether_reed = true
-			stalagnate = true
-			willow = true
-			wart = true
-			rubeus = true
-			mushroom_fir = true
-			nether_mushroom = true
-			anchor_tree = true
-			nether_sakura = true
-
 		[types.wood_type.betterend]
 			mossy_glowshroom = true
 			pythadendron = true
@@ -173,6 +162,17 @@
 			umbrella_tree = true
 			jellyshroom = true
 			lucernia = true
+
+		[types.wood_type.betternether]
+			nether_reed = true
+			stalagnate = true
+			willow = true
+			wart = true
+			rubeus = true
+			mushroom_fir = true
+			nether_mushroom = true
+			anchor_tree = true
+			nether_sakura = true
 
 	[types.stone_type]
 
@@ -240,9 +240,6 @@
 		[types.stone_type.supplementaries]
 			ash = true
 
-		[types.stone_type.betternether]
-			blue_obsidian = true
-
 		[types.stone_type.betterend]
 			flavolite = true
 			violecite = true
@@ -252,6 +249,9 @@
 			sandy_jadestone = true
 			umbralith = true
 			smaragdant_crystal = true
+
+		[types.stone_type.betternether]
+			blue_obsidian = true
 
 #Disables specific entries
 [entries]

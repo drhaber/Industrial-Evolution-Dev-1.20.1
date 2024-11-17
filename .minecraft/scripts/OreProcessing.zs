@@ -37,8 +37,6 @@ import mods.jeitweaker.Jei;
 craftingTable.remove(<tag:items:forge:wires>);
 <recipetype:create:mixing>.remove(<tag:items:forge:ingots>);
 
-//<recipetype:create_dd:superheating>.remove(<tag:items:forge:ingots>);
-
 <recipetype:minecraft:blasting>.remove(<item:sgjourney:pure_naquadah>);
 
 <recipetype:railcraft:coking>.removeAll();
@@ -83,11 +81,11 @@ craftingTable.addShaped("handcrafted_iron_block_wrought_iron_ingot", <item:minec
 //craftingTable.removeByName("betternether:cincinnasite_ingot");
 
 
-craftingTable.removeByName("railcraft:bronze_ingot_crafted_with_ingots");
-craftingTable.removeByName("railcraft:bronze_ingot_from_bronze_nugget");
-craftingTable.removeByName("railcraft:bronze_ingot");
+//craftingTable.removeByName("railcraft:bronze_ingot_crafted_with_ingots");
+//craftingTable.removeByName("railcraft:bronze_ingot_from_bronze_nugget");
+//craftingTable.removeByName("railcraft:bronze_ingot");
 //craftingTable.removeByName("railcraft:bronze_block_from_bronze_ingot");
-craftingTable.removeByName("railcraft:brass_ingot_crafted_with_ingots");
+//craftingTable.removeByName("railcraft:brass_ingot_crafted_with_ingots");
 //craftingTable.removeByName("railcraft:brass_ingot_from_brass_nugget");
 //craftingTable.removeByName("railcraft:brass_ingot");
 //craftingTable.removeByName("railcraft:brass_block_from_brass_ingot");
@@ -835,6 +833,7 @@ addTFCoresmelting("tfc:metal/copper","immersiveengineering:dust_copper",100,1080
 addTFCoresmelting("tfc:metal/silver","immersiveengineering:dust_silver",100,961);
 addTFCoresmelting("tfc_ie_addon:metal/lead","immersiveengineering:dust_lead",100,500);
 addTFCoresmelting("tfc:metal/nickel","immersiveengineering:dust_nickel",100,1453);
+addTFCoresmelting("tfc_ie_addon:metal/aluminum","immersiveengineering:dust_aluminum",100,650);
 
 //lead
 addOrecrushing("tfc_ie_addon:ore/poor_galena","tfc_ie_addon:ore/small_galena");
@@ -1215,7 +1214,7 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
     },
     {
       "fluid": "kubejs:aluminium_hydroxide",
-      "amount": 250
+      "amount": 1000
     }
   ],
   "processingTime": 1600,
@@ -1223,10 +1222,7 @@ addIEOrecrushing("tfc_ie_addon:ore/rich_bauxite","tfc_ie_addon:ore/small_bauxite
     {
       "fluid": "kubejs:red_mud",
       "amount": 50
-    },
-    {
-      "item": "immersiveengineering:dust_aluminum"
-    },         
+    },        
     {
       "item": "immersiveengineering:dust_aluminum",
       "chance": 0.75
